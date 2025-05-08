@@ -1,0 +1,48 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Xemer Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-08 15:54+0000\n"
+"PO-Revision-Date: 2025-05-08 15:55+0000\n"
+"Last-Translator: \n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.7.2; wp-6.8.1\n"
+"X-Domain: xemer_theme"
+
+#: functions.php:130
+msgid "Add widgets here."
+msgstr ""
+
+#. URI of the theme
+msgid "http://underscores.me/"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://tramkienthuc.net/"
+msgstr ""
+
+#. Author of the theme
+msgid "longxemer"
+msgstr ""
+
+#: functions.php:53
+msgid "Primary"
+msgstr ""
+
+#: functions.php:128
+msgid "Sidebar"
+msgstr ""
+
+#. Description of the theme
+msgid "Thiết kế website WordPress chuyên nghiệp, chuẩn SEO, tối ưu UX/UI."
+msgstr ""
+
+#. Name of the theme
+msgid "Xemer Theme"
+msgstr ""
