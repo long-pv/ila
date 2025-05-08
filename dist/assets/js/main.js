@@ -1,1 +1,0 @@
-$(document).ready(function(){$(".carousel").slick({slidesToShow:3,dots:!0,centerMode:!0})});
