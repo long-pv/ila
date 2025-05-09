@@ -213,4 +213,5 @@ require get_template_directory() . '/inc/cpt_custom.php';
 require get_template_directory() . '/inc/write_log.php';
 require get_template_directory() . '/inc/longpv.php';
 require get_template_directory() . '/inc/vucoder.php';
+require get_template_directory() . '/inc/ncd.php';
 
