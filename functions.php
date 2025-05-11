@@ -17,6 +17,11 @@ if (!defined('THEME_URI')) {
 }
 
 /**
+ * get currernt lang.
+ */
+define('LANG', function_exists('pll_current_language') ? pll_current_language('slug') : 'vi');
+
+/**
  * Sets up theme defaults and registers support for various WordPress features.
  *
  * Note that this function is hooked into the after_setup_theme hook, which
