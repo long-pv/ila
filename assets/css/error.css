@@ -1,0 +1,51 @@
+main.error .section-error {
+  padding: 100px 0; }
+  @media screen and (max-width: 767px) {
+    main.error .section-error {
+      padding: 50px 0; } }
+  main.error .section-error .box-error {
+    text-align: center; }
+    main.error .section-error .box-error h1 {
+      font-size: 160px;
+      font-family: "Montserrat Bold";
+      text-transform: uppercase;
+      color: #2b378b;
+      line-height: 1;
+      margin-bottom: 0; }
+      main.error .section-error .box-error h1 span {
+        color: #c60c30; }
+      @media screen and (max-width: 767px) {
+        main.error .section-error .box-error h1 {
+          font-size: 140px; } }
+    main.error .section-error .box-error h2 {
+      font-size: 25px;
+      color: #2b378b;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      font-family: "Montserrat Bold"; }
+    main.error .section-error .box-error p {
+      font-size: 20px;
+      color: #000;
+      font-family: "Montserrat Regular";
+      margin-bottom: 15px; }
+      @media screen and (max-width: 767px) {
+        main.error .section-error .box-error p {
+          font-size: 16px; } }
+    main.error .section-error .box-error .btn {
+      display: inline-block;
+      font-family: "Montserrat Bold";
+      text-decoration: none;
+      background-color: #2b378b;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 13px 25px;
+      font-size: 16px;
+      border-radius: 40px;
+      margin: 7px;
+      -webkit-transition: 0.2s all;
+      transition: 0.2s all; }
+      @media screen and (max-width: 767px) {
+        main.error .section-error .box-error .btn {
+          width: 100%; } }
+
+/*# sourceMappingURL=error.css.map */

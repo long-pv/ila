@@ -1,0 +1,49 @@
+.page-template-page-center .site-content-contain .site-content {
+  padding-bottom: 0 !important; }
+  .page-template-page-center .site-content-contain .site-content .main-center {
+    position: relative; }
+    .page-template-page-center .site-content-contain .site-content .main-center .banner-center img {
+      width: 100%;
+      height: auto;
+      object-fit: cover; }
+      @media screen and (max-width: 991px) {
+        .page-template-page-center .site-content-contain .site-content .main-center .banner-center img {
+          height: 400px; } }
+      @media screen and (width: 1024px) {
+        .page-template-page-center .site-content-contain .site-content .main-center .banner-center img {
+          height: 300px; } }
+    .page-template-page-center .site-content-contain .site-content .main-center .content-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      right: 0;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      color: #fff;
+      font-family: "Montserrat Regular"; }
+      @media screen and (max-width: 991px) {
+        .page-template-page-center .site-content-contain .site-content .main-center .content-center {
+          top: 50%;
+          left: 15px;
+          right: 15px;
+          transform: translate(0, -50%);
+          max-width: 600px; } }
+      @media screen and (max-width: 576px) {
+        .page-template-page-center .site-content-contain .site-content .main-center .content-center {
+          text-align: justify; } }
+      .page-template-page-center .site-content-contain .site-content .main-center .content-center h1 {
+        font-family: "Montserrat Bold";
+        font-size: 30px;
+        color: #fff;
+        line-height: 1.5; }
+        @media screen and (max-width: 1024px) {
+          .page-template-page-center .site-content-contain .site-content .main-center .content-center h1 {
+            font-size: 24px;
+            text-align: center; } }
+        @media screen and (max-width: 360px) {
+          .page-template-page-center .site-content-contain .site-content .main-center .content-center h1 {
+            font-size: 20px; } }
+
+/*# sourceMappingURL=template-custom.css.map */
