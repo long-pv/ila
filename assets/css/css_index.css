@@ -1796,3 +1796,104 @@ main .h--timeline .container .box-timeline .h--timeline-events .h--timeline-even
 .widget .addtoany_list a:hover path {
 	fill: #c60c30 !important;
 }
+
+.external-link button.btn-register {
+	border: none;
+	background: #1b3f94;
+	border-radius: 50px;
+	width: auto;
+	padding: 0;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.external-link button.btn-register::before {
+	content: "";
+	height: 450px;
+	width: 450px;
+	background: #c60c30;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 88%;
+	transform: translateY(-50%) translateX(-50%) scale(0);
+	transition: 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	z-index: -1;
+}
+
+.external-link button.btn-register a {
+	display: block;
+	text-decoration: none;
+	font-family: "Montserrat Bold", sans-serif;
+	font-style: normal;
+	font-size: 14px;
+	line-height: normal;
+	padding: 16px 50px 16px 20px;
+	text-transform: uppercase;
+	color: #ffffff;
+	position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+	.external-link button.btn-register a {
+		padding: 10px 40px 10px 20px;
+		font-size: 12px;
+		line-height: 1.25;
+	}
+}
+
+.external-link button.btn-register a::after {
+	content: "";
+	width: 10px;
+	height: 10px;
+	background: #c60c30;
+	position: absolute;
+	border-radius: 50%;
+	right: 30px;
+	top: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+	.external-link button.btn-register a::after {
+		right: 15px;
+		top: 15px;
+	}
+}
+
+.external-link button.btn-register a:hover::after {
+	background-color: #fff;
+}
+
+.external-link button.btn-register:hover::before {
+	transform: translateY(-50%) translateX(-50%) scale(1);
+}
+
+.site-content-contain .external-link {
+	position: fixed;
+	bottom: 15px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	left: 0;
+	right: 0;
+	z-index: 99999;
+}
+
+.site-content-contain .external-link button.btn-register::before {
+	width: 520px;
+	height: 520px;
+}
+
+.site-content-contain.viewported .external-link {
+	display: none;
+}
+
+.form-content .form-register .form-group .error-text {
+	font-size: 14px;
+
+	font-family: "Montserrat Medium";
+
+	color: red;
+}
