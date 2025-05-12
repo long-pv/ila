@@ -46,8 +46,21 @@
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/main.js" id="main-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/global.js" id="fptheme-global-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.scrollTo.js" id="jquery-scrollto-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/page-template-teacher.js" id="page-template-teacher-js-js"></script>
 <!-- <script src="js/courses.js" id="page-course-js-js"></script> -->
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/email-subscribers-public.js" id="email-subscribers-js"></script>
+
+<!-- vucoder -->
+<!--  -->
+<!--  -->
+<!--  -->
+
+
+<!-- longpv -->
+<!--  -->
+<!--  -->
+<!--  -->
+
 
 <!-- ajax -->
 <script id="my-ajax-script-js-extra">
