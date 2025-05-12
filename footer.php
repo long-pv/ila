@@ -28,12 +28,16 @@
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/wow.min.js" id="wow-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.magnific-popup.js" id="magnific-popup-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery-scrolltofixed-min.js" id="jquery-scrollfixed-js-js"></script>
-<!-- <script src="<?php echo THEME_URI . '/assets/'; ?>js/mapservice.js" id="fptheme-mapservice-js"></script> -->
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/mapservice.js" id="fptheme-mapservice-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/list-center.js" id="fptheme-list-center-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/aboutus.js" id="page-about-us-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/timeline.js" id="timeline-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/main.js" id="main-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/global.js" id="fptheme-global-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.scrollTo.js" id="jquery-scrollto-js"></script>
-<!-- <script src="<?php echo THEME_URI . '/assets/'; ?>js/api.js" id="google-recaptcha-js"></script> -->
+
+
+<!-- ajax -->
 <script id="my-ajax-script-js-extra">
     var myAjax = {
         ajaxUrl: '<?php echo admin_url('admin-ajax.php'); ?>',
