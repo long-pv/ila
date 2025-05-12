@@ -63,6 +63,57 @@
 					'<span class=""><span class="eztoc-hide" style="display:none;">Toggle<\/span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http:\/\/www.w3.org\/2000\/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"><\/path><\/svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http:\/\/www.w3.org\/2000\/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"\/><\/svg><\/span><\/span>',
 			};
 		</script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/youtubehtml5.js" id="youtube-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/video.min.js" id="video-js-js"></script>
+<script type="text/javascript">
+			function getYouTubeVideoID(url) {
+				const regex = /(?:https?:\/\/)?(?:www\.)?youtube\.com\/watch\?v=([^\s&]+)/;
+				const match = url.match(regex);
+				return match ? match[1] : null;
+			}
+			const element = document.getElementById("player-yt");
+			const dataUrl = element.getAttribute("data-url");
+			const url = dataUrl;
+			const videoID = getYouTubeVideoID(url);
+			// Load the IFrame Player API code asynchronously.
+			var tag = document.createElement("script");
+			tag.src = "https://www.youtube.com/iframe_api";
+			var firstScriptTag = document.getElementsByTagName("script")[0];
+			firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+			var player;
+			function onYouTubeIframeAPIReady() {
+				player = new YT.Player("player-yt", {
+					videoId: videoID, // Replace VIDEO_ID with your video ID
+					playerVars: {
+						autoplay: 0, // Autoplay off, user has to click play
+						controls: 1, // Show controls
+						mute: 1, // Start muted to ensure autoplay works (if needed)
+						rel: 0, // Disable related videos at the end
+						showinfo: 0, // Hide video title
+					},
+					events: {
+						onReady: onPlayerReady,
+					},
+				});
+			}
+
+			function onPlayerReady(event) {
+				let volume = 0;
+				player.unMute(); // Unmute the player
+				player.setVolume(volume); // Start with volume 0
+
+				const fadeAudio = setInterval(function () {
+					if (volume < 50) {
+						// Gradually increase volume to 50%
+						volume += 1;
+						player.setVolume(volume);
+					} else {
+						clearInterval(fadeAudio);
+					}
+				}, 100); // Increase volume every 100ms
+			}
+		</script>
 <!--  -->
 <!--  -->
 <!--  -->
