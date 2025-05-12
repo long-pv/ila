@@ -52,7 +52,22 @@
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/about-us.css" media="all">
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/jumpstart.css" media="all">
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/facility.css" media="all">
+<<<<<<< HEAD
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/page-template-teacher.css" media="all">		 
+=======
+	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/page-template-teacher.css" media="all">
+
+	<!-- vucoder -->
+	<!--  -->
+	<!--  -->
+	<!--  -->
+
+
+	<!-- longpv -->
+	<!--  -->
+	<!--  -->
+	<!--  -->
+>>>>>>> 1ed9435a0c54d326a8eb8b87422924aa83524f2a
 
 
 	<!-- video home -->

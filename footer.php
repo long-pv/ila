@@ -50,6 +50,18 @@
 <!-- <script src="js/courses.js" id="page-course-js-js"></script> -->
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/email-subscribers-public.js" id="email-subscribers-js"></script>
 
+<!-- vucoder -->
+<!--  -->
+<!--  -->
+<!--  -->
+
+
+<!-- longpv -->
+<!--  -->
+<!--  -->
+<!--  -->
+
+
 <!-- ajax -->
 <script id="my-ajax-script-js-extra">
     var myAjax = {
