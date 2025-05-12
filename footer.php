@@ -12,7 +12,15 @@
 
 ?>
 
-
+<script>
+    jQuery(function($) {
+        $(".navbar-dropdown-item .btn-dropdown-mb").on("click", function() {
+            console.log($(this).children('i'));
+            $(this).children('i').toggleClass('fa-angle-down fa-angle-up');
+            $(this).next(".dropdown-content").slideToggle();
+        })
+    })
+</script>
 
 <script id="fptheme-skip-link-focus-fix-js-extra">
     var fpthemeScreenReaderText = {
@@ -28,7 +36,7 @@
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/wow.min.js" id="wow-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.magnific-popup.js" id="magnific-popup-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery-scrolltofixed-min.js" id="jquery-scrollfixed-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/mapservice.js" id="fptheme-mapservice-js"></script>
+<!-- <script src="<?php echo THEME_URI . '/assets/'; ?>js/mapservice.js" id="fptheme-mapservice-js"></script> -->
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/list-center.js" id="fptheme-list-center-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/aboutus.js" id="page-about-us-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/timeline.js" id="timeline-js-js"></script>
