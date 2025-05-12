@@ -47,7 +47,9 @@
 	<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.min.js" id="jquery-core-js"></script>
 	<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
 	<script async="" src="<?php echo THEME_URI . '/assets/'; ?>js/addtoany.min.js" id="addtoany-jquery-js"></script>
+	<script async="" src="<?php echo THEME_URI . '/assets/'; ?>js/owl.carousel.min.js" id="owl-carousel-js-js"></script>
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/about-us.css" media="all">
+	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/jumpstart.css" media="all">
 
 	<?php wp_head(); ?>
 </head>
