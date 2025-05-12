@@ -65,6 +65,7 @@
 	<!--  -->
 	<!--  -->
 	<link rel="stylesheet" id="page-center-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/center.css" media="all" />
+	<link rel="stylesheet" id="category-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/archive.css" media="all" />
 
 
 	<!-- video home -->
