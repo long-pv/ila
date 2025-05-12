@@ -75,7 +75,9 @@
 
 	<!-- vucoder -->
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/archive.css" media="all">
-
+	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/single.css" media="all">
+	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/single-custom.css" media="all">
+	<link rel="stylesheet" id="ez-toc-css" href="<?php echo THEME_URI . '/assets/'; ?>css/screen.min.css" media="all" />
 	<!--  -->
 	<!--  -->
 	<!--  -->
