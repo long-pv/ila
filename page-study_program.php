@@ -111,7 +111,7 @@ get_header();
                             </div>
                             <div class="col-md-6 col-xl-6">
                                 <div class="box-item box-item-2" data-aos="fade-up" data-aos-delay="50"
-                                    data-aos-duration="800" style="background: ">
+                                    data-aos-duration="800" style="">
                                     <div class="box-thumb">
                                         <img width="615" height="760"
                                             src="<?php echo THEME_URI . '/assets/'; ?>images/lop-hoc-tieng-anh-cho-tre-3-6-tuoi-jumpstart.jpg"
