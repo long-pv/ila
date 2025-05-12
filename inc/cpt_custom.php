@@ -2,14 +2,14 @@
 function register_cpt_post_types()
 {
     $cpt_list = [
-        // 'event' => [
-        //     'labels' => __('Event', 'basetheme'),
-        //     'slug' => 'su_kien',
-        //     'cap' => false,
-        //     'hierarchical' => false,
-        //     'position' => false,
-        //     'icon' => 'dashicons-calendar'
-        // ],
+        'media_video' => [
+            'labels' => __('Media Video', 'basetheme'),
+            'slug' => 'media_video',
+            'cap' => false,
+            'hierarchical' => false,
+            'position' => false,
+            'icon' => 'dashicons-format-video'
+        ],
     ];
 
     $cpt_tax = [

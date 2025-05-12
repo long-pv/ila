@@ -80,6 +80,7 @@
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/single.css" media="all">
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/single-custom.css" media="all">
 	<link rel="stylesheet" id="ez-toc-css" href="<?php echo THEME_URI . '/assets/'; ?>css/screen.min.css" media="all" />
+	<link rel="stylesheet" id="video-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/video.min.css" media="all" />
 	<!--  -->
 	<!--  -->
 	<!--  -->
