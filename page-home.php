@@ -47,7 +47,7 @@ get_header();
                                                                         muted="muted" loop="loop"
                                                                         data-reset-slide-change="1">
                                                                         <source
-                                                                            src="media/homepage-greater-video.mp4"
+                                                                            src="<?php echo THEME_URI . '/assets/'; ?>media/homepage-greater-video.mp4"
                                                                             type="video/mp4">
                                                                     </video></div>
                                                                 <div class="n2-ss-slide-background"
@@ -60,7 +60,7 @@ get_header();
                                                                         data-keepplaying="1" preload="none"
                                                                         muted="muted" loop="loop"
                                                                         data-reset-slide-change="1">
-                                                                        <source src="media/ILO-trailer-website.mp4"
+                                                                        <source src="<?php echo THEME_URI . '/assets/'; ?>media/ILO-trailer-website.mp4"
                                                                             type="video/mp4">
                                                                     </video>
                                                                     <div class="n2-ss-slide-background-image"
@@ -83,7 +83,7 @@ get_header();
                                                                         data-keepplaying="1" preload="none"
                                                                         muted="muted" loop="loop"
                                                                         data-reset-slide-change="1">
-                                                                        <source src="media/OSC-summer-trailer.mp4"
+                                                                        <source src="<?php echo THEME_URI . '/assets/'; ?>media/OSC-summer-trailer.mp4"
                                                                             type="video/mp4">
                                                                     </video>
                                                                     <div class="n2-ss-slide-background-image"
@@ -477,7 +477,7 @@ get_header();
                                         <img width="896" height="896" src="<?php echo THEME_URI . '/assets/'; ?>images/du-hoc-he-du-hoc-dai-han.png"
                                             class="attachment-full size-full wp-post-image"
                                             alt="Du học hè & Du học dài hạn" decoding="async" loading="lazy"
-                                            srcset="images/du-hoc-he-du-hoc-dai-han.png 896w, images/du-hoc-he-du-hoc-dai-han-300x300.png 300w, images/du-hoc-he-du-hoc-dai-han-150x150.png 150w, images/du-hoc-he-du-hoc-dai-han-768x768.png 768w, images/du-hoc-he-du-hoc-dai-han-100x100.png 100w"
+                                            srcset="<?php echo THEME_URI . '/assets/'; ?>images/du-hoc-he-du-hoc-dai-han.png 896w,<?php echo THEME_URI . '/assets/'; ?>images/du-hoc-he-du-hoc-dai-han-300x300.png 300w,<?php echo THEME_URI . '/assets/'; ?>images/du-hoc-he-du-hoc-dai-han-150x150.png 150w,<?php echo THEME_URI . '/assets/'; ?>images/du-hoc-he-du-hoc-dai-han-768x768.png 768w,<?php echo THEME_URI . '/assets/'; ?>images/du-hoc-he-du-hoc-dai-han-100x100.png 100w"
                                             sizes="100vw">
                                         <div class="course-main">
                                             <div class="course-logo">
@@ -517,7 +517,7 @@ get_header();
                                         <img width="896" height="896" src="<?php echo THEME_URI . '/assets/'; ?>images/luyen-thi-sat-ielts.png"
                                             class="attachment-full size-full wp-post-image"
                                             alt="Luyện thi SAT & IELTS" decoding="async" loading="lazy"
-                                            srcset="images/luyen-thi-sat-ielts.png 896w, images/luyen-thi-sat-ielts-300x300.png 300w, images/luyen-thi-sat-ielts-150x150.png 150w, images/luyen-thi-sat-ielts-768x768.png 768w, images/luyen-thi-sat-ielts-100x100.png 100w"
+                                            srcset="<?php echo THEME_URI . '/assets/'; ?>images/luyen-thi-sat-ielts.png 896w,<?php echo THEME_URI . '/assets/'; ?>images/luyen-thi-sat-ielts-300x300.png 300w,<?php echo THEME_URI . '/assets/'; ?>images/luyen-thi-sat-ielts-150x150.png 150w,<?php echo THEME_URI . '/assets/'; ?>images/luyen-thi-sat-ielts-768x768.png 768w,<?php echo THEME_URI . '/assets/'; ?>images/luyen-thi-sat-ielts-100x100.png 100w"
                                             sizes="100vw">
                                         <div class="course-main">
                                             <div class="course-logo">
@@ -604,7 +604,7 @@ get_header();
                                                         src="<?php echo THEME_URI . '/assets/'; ?>images/Speakup2024_banner_desktop_2048x657.png"
                                                         class="attachment-full size-full wp-post-image" alt=""
                                                         decoding="async" loading="lazy"
-                                                        srcset="images/Speakup2024_banner_desktop_2048x657.png 2048w, images/Speakup2024_banner_desktop_2048x657-300x96.png 300w, images/Speakup2024_banner_desktop_2048x657-1024x329.png 1024w, images/Speakup2024_banner_desktop_2048x657-768x246.png 768w, images/Speakup2024_banner_desktop_2048x657-1536x493.png 1536w"
+                                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/Speakup2024_banner_desktop_2048x657.png 2048w,<?php echo THEME_URI . '/assets/'; ?>images/Speakup2024_banner_desktop_2048x657-300x96.png 300w,<?php echo THEME_URI . '/assets/'; ?>images/Speakup2024_banner_desktop_2048x657-1024x329.png 1024w,<?php echo THEME_URI . '/assets/'; ?>images/Speakup2024_banner_desktop_2048x657-768x246.png 768w,<?php echo THEME_URI . '/assets/'; ?>images/Speakup2024_banner_desktop_2048x657-1536x493.png 1536w"
                                                         sizes="100vw"> </a>
                                             </div>
                                         </div>
@@ -619,7 +619,7 @@ get_header();
                                                         src="<?php echo THEME_URI . '/assets/'; ?>images/ILO_BannerWeb-02-1-2.png"
                                                         class="attachment-full size-full wp-post-image" alt=""
                                                         decoding="async" loading="lazy"
-                                                        srcset="images/ILO_BannerWeb-02-1-2.png 2560w, images/ILO_BannerWeb-02-1-2-300x96.png 300w, images/ILO_BannerWeb-02-1-2-1024x329.png 1024w, images/ILO_BannerWeb-02-1-2-768x247.png 768w, images/ILO_BannerWeb-02-1-2-1536x493.png 1536w, images/ILO_BannerWeb-02-1-2-2048x658.png 2048w"
+                                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ILO_BannerWeb-02-1-2.png 2560w,<?php echo THEME_URI . '/assets/'; ?>images/ILO_BannerWeb-02-1-2-300x96.png 300w,<?php echo THEME_URI . '/assets/'; ?>images/ILO_BannerWeb-02-1-2-1024x329.png 1024w,<?php echo THEME_URI . '/assets/'; ?>images/ILO_BannerWeb-02-1-2-768x247.png 768w,<?php echo THEME_URI . '/assets/'; ?>images/ILO_BannerWeb-02-1-2-1536x493.png 1536w,<?php echo THEME_URI . '/assets/'; ?>images/ILO_BannerWeb-02-1-2-2048x658.png 2048w"
                                                         sizes="100vw"> </a>
                                             </div>
                                         </div>
@@ -634,7 +634,7 @@ get_header();
                                                         src="<?php echo THEME_URI . '/assets/'; ?>images/ILA_CSR_NAMTRAMY_WEBbanner-01.png"
                                                         class="attachment-full size-full wp-post-image" alt=""
                                                         decoding="async" loading="lazy"
-                                                        srcset="images/ILA_CSR_NAMTRAMY_WEBbanner-01.png 2560w, images/ILA_CSR_NAMTRAMY_WEBbanner-01-300x96.png 300w, images/ILA_CSR_NAMTRAMY_WEBbanner-01-1024x329.png 1024w, images/ILA_CSR_NAMTRAMY_WEBbanner-01-768x247.png 768w, images/ILA_CSR_NAMTRAMY_WEBbanner-01-1536x493.png 1536w, images/ILA_CSR_NAMTRAMY_WEBbanner-01-2048x658.png 2048w"
+                                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ILA_CSR_NAMTRAMY_WEBbanner-01.png 2560w,<?php echo THEME_URI . '/assets/'; ?>images/ILA_CSR_NAMTRAMY_WEBbanner-01-300x96.png 300w,<?php echo THEME_URI . '/assets/'; ?>images/ILA_CSR_NAMTRAMY_WEBbanner-01-1024x329.png 1024w,<?php echo THEME_URI . '/assets/'; ?>images/ILA_CSR_NAMTRAMY_WEBbanner-01-768x247.png 768w,<?php echo THEME_URI . '/assets/'; ?>images/ILA_CSR_NAMTRAMY_WEBbanner-01-1536x493.png 1536w,<?php echo THEME_URI . '/assets/'; ?>images/ILA_CSR_NAMTRAMY_WEBbanner-01-2048x658.png 2048w"
                                                         sizes="100vw"> </a>
                                             </div>
                                         </div>
@@ -649,7 +649,7 @@ get_header();
                                                         src="<?php echo THEME_URI . '/assets/'; ?>images/Ecom_webbanner_1-scaled.jpg"
                                                         class="attachment-full size-full wp-post-image" alt=""
                                                         decoding="async" loading="lazy"
-                                                        srcset="images/Ecom_webbanner_1-scaled.jpg 2560w, images/Ecom_webbanner_1-300x96.jpg 300w, images/Ecom_webbanner_1-1024x329.jpg 1024w, images/Ecom_webbanner_1-768x247.jpg 768w, images/Ecom_webbanner_1-1536x494.jpg 1536w, images/Ecom_webbanner_1-2048x658.jpg 2048w"
+                                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/Ecom_webbanner_1-scaled.jpg 2560w,<?php echo THEME_URI . '/assets/'; ?>images/Ecom_webbanner_1-300x96.jpg 300w,<?php echo THEME_URI . '/assets/'; ?>images/Ecom_webbanner_1-1024x329.jpg 1024w,<?php echo THEME_URI . '/assets/'; ?>images/Ecom_webbanner_1-768x247.jpg 768w,<?php echo THEME_URI . '/assets/'; ?>images/Ecom_webbanner_1-1536x494.jpg 1536w,<?php echo THEME_URI . '/assets/'; ?>images/Ecom_webbanner_1-2048x658.jpg 2048w"
                                                         sizes="100vw"> </a>
                                             </div>
                                         </div>
@@ -664,7 +664,7 @@ get_header();
                                                         src="<?php echo THEME_URI . '/assets/'; ?>images/banner-summer-2025_2080x657.jpg"
                                                         class="attachment-full size-full wp-post-image"
                                                         alt="banner summer 2025" decoding="async" loading="lazy"
-                                                        srcset="images/banner-summer-2025_2080x657.jpg 2080w, images/banner-summer-2025_2080x657-300x95.jpg 300w, images/banner-summer-2025_2080x657-1024x323.jpg 1024w, images/banner-summer-2025_2080x657-768x243.jpg 768w, images/banner-summer-2025_2080x657-1536x485.jpg 1536w, images/banner-summer-2025_2080x657-2048x647.jpg 2048w"
+                                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/banner-summer-2025_2080x657.jpg 2080w,<?php echo THEME_URI . '/assets/'; ?>images/banner-summer-2025_2080x657-300x95.jpg 300w,<?php echo THEME_URI . '/assets/'; ?>images/banner-summer-2025_2080x657-1024x323.jpg 1024w,<?php echo THEME_URI . '/assets/'; ?>images/banner-summer-2025_2080x657-768x243.jpg 768w,<?php echo THEME_URI . '/assets/'; ?>images/banner-summer-2025_2080x657-1536x485.jpg 1536w,<?php echo THEME_URI . '/assets/'; ?>images/banner-summer-2025_2080x657-2048x647.jpg 2048w"
                                                         sizes="100vw"> </a>
                                             </div>
                                         </div>
@@ -680,7 +680,7 @@ get_header();
                                                         class="attachment-full size-full wp-post-image"
                                                         alt="Banner ILA Du học hè [1440x450] desktop"
                                                         decoding="async" loading="lazy"
-                                                        srcset="images/banner-digital_summer-2025_1440x450px.png 1440w, images/banner-digital_summer-2025_1440x450px-300x94.png 300w, images/banner-digital_summer-2025_1440x450px-1024x320.png 1024w, images/banner-digital_summer-2025_1440x450px-768x240.png 768w"
+                                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/banner-digital_summer-2025_1440x450px.png 1440w,<?php echo THEME_URI . '/assets/'; ?>images/banner-digital_summer-2025_1440x450px-300x94.png 300w,<?php echo THEME_URI . '/assets/'; ?>images/banner-digital_summer-2025_1440x450px-1024x320.png 1024w,<?php echo THEME_URI . '/assets/'; ?>images/banner-digital_summer-2025_1440x450px-768x240.png 768w"
                                                         sizes="100vw"> </a>
                                             </div>
                                         </div>
@@ -720,7 +720,7 @@ get_header();
                                                 alt="ILA ra mắt trại hè " studycation"="" đỉnh="" nóc="" kịch=""
                                                 trần="" dành="" cho="" gen="" alpha"="" decoding="async"
                                                 loading="lazy"
-                                                srcset="images/ila-gioi-tieng-anh-thoi-chua-du-con-ban-can-gi-de-but-pha-2.jpg 885w, images/ila-gioi-tieng-anh-thoi-chua-du-con-ban-can-gi-de-but-pha-2-300x199.jpg 300w, images/ila-gioi-tieng-anh-thoi-chua-du-con-ban-can-gi-de-but-pha-2-768x510.jpg 768w"
+                                                srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-gioi-tieng-anh-thoi-chua-du-con-ban-can-gi-de-but-pha-2.jpg 885w,<?php echo THEME_URI . '/assets/'; ?>images/ila-gioi-tieng-anh-thoi-chua-du-con-ban-can-gi-de-but-pha-2-300x199.jpg 300w,<?php echo THEME_URI . '/assets/'; ?>images/ila-gioi-tieng-anh-thoi-chua-du-con-ban-can-gi-de-but-pha-2-768x510.jpg 768w"
                                                 sizes="100vw"></a>
                                     </div>
                                     <div class="blog-content">
@@ -754,7 +754,7 @@ get_header();
                                                             class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                                             alt="Cắt băng khánh thành khai trương ILA Thích Quảng Đức"
                                                             decoding="async" loading="lazy"
-                                                            srcset="images/ila-mo-rong-tai-nha-trang-dinh-hinh-the-he-toan-cau-4.jpg 885w, images/ila-mo-rong-tai-nha-trang-dinh-hinh-the-he-toan-cau-4-300x199.jpg 300w, images/ila-mo-rong-tai-nha-trang-dinh-hinh-the-he-toan-cau-4-768x510.jpg 768w"
+                                                            srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-mo-rong-tai-nha-trang-dinh-hinh-the-he-toan-cau-4.jpg 885w,<?php echo THEME_URI . '/assets/'; ?>images/ila-mo-rong-tai-nha-trang-dinh-hinh-the-he-toan-cau-4-300x199.jpg 300w,<?php echo THEME_URI . '/assets/'; ?>images/ila-mo-rong-tai-nha-trang-dinh-hinh-the-he-toan-cau-4-768x510.jpg 768w"
                                                             sizes="100vw"></a>
                                                 </div>
                                                 <div class="blog-content">
@@ -781,7 +781,7 @@ get_header();
                                                             class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                                             alt="Giỏi tiếng Anh thôi chưa đủ – Con bạn cần gì để bứt phá?"
                                                             decoding="async" loading="lazy"
-                                                            srcset="images/ila-gioi-tieng-anh-thoi-chua-du-con-ban-can-gi-de-but-pha-1.jpg 885w, images/ila-gioi-tieng-anh-thoi-chua-du-con-ban-can-gi-de-but-pha-1-300x199.jpg 300w, images/ila-gioi-tieng-anh-thoi-chua-du-con-ban-can-gi-de-but-pha-1-768x510.jpg 768w"
+                                                            srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-gioi-tieng-anh-thoi-chua-du-con-ban-can-gi-de-but-pha-1.jpg 885w,<?php echo THEME_URI . '/assets/'; ?>images/ila-gioi-tieng-anh-thoi-chua-du-con-ban-can-gi-de-but-pha-1-300x199.jpg 300w,<?php echo THEME_URI . '/assets/'; ?>images/ila-gioi-tieng-anh-thoi-chua-du-con-ban-can-gi-de-but-pha-1-768x510.jpg 768w"
                                                             sizes="100vw"></a>
                                                 </div>
                                                 <div class="blog-content">
@@ -808,7 +808,7 @@ get_header();
                                                             class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                                             alt="Du học Mỹ bậc trung học: Tạo lợi thế vào đại học Top 50"
                                                             decoding="async" loading="lazy"
-                                                            srcset="images/ila-mini-fair-19-4-2025.jpg 885w, images/ila-mini-fair-19-4-2025-300x199.jpg 300w, images/ila-mini-fair-19-4-2025-768x510.jpg 768w"
+                                                            srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-mini-fair-19-4-2025.jpg 885w,<?php echo THEME_URI . '/assets/'; ?>images/ila-mini-fair-19-4-2025-300x199.jpg 300w,<?php echo THEME_URI . '/assets/'; ?>images/ila-mini-fair-19-4-2025-768x510.jpg 768w"
                                                             sizes="100vw"></a>
                                                 </div>
                                                 <div class="blog-content">
@@ -834,7 +834,7 @@ get_header();
                                                             class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                                             alt="ILA Du học Flash Live" decoding="async"
                                                             loading="lazy"
-                                                            srcset="images/ila-du-hoc-flash-live-2025-1.jpg 855w, images/ila-du-hoc-flash-live-2025-1-300x206.jpg 300w, images/ila-du-hoc-flash-live-2025-1-768x528.jpg 768w"
+                                                            srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-du-hoc-flash-live-2025-1.jpg 855w,<?php echo THEME_URI . '/assets/'; ?>images/ila-du-hoc-flash-live-2025-1-300x206.jpg 300w,<?php echo THEME_URI . '/assets/'; ?>images/ila-du-hoc-flash-live-2025-1-768x528.jpg 768w"
                                                             sizes="100vw"></a>
                                                 </div>
                                                 <div class="blog-content">
@@ -972,7 +972,7 @@ get_header();
                                                                     class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                                                     alt="ILA Võ Văn Kiệt" decoding="async"
                                                                     loading="lazy"
-                                                                    srcset="images/khai-truong-ila-vo-van-kiet-quan-6.jpg 1500w, images/khai-truong-ila-vo-van-kiet-quan-6-300x200.jpg 300w, images/khai-truong-ila-vo-van-kiet-quan-6-1024x683.jpg 1024w, images/khai-truong-ila-vo-van-kiet-quan-6-768x512.jpg 768w"
+                                                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/khai-truong-ila-vo-van-kiet-quan-6.jpg 1500w,<?php echo THEME_URI . '/assets/'; ?>images/khai-truong-ila-vo-van-kiet-quan-6-300x200.jpg 300w,<?php echo THEME_URI . '/assets/'; ?>images/khai-truong-ila-vo-van-kiet-quan-6-1024x683.jpg 1024w,<?php echo THEME_URI . '/assets/'; ?>images/khai-truong-ila-vo-van-kiet-quan-6-768x512.jpg 768w"
                                                                     sizes="100vw"> </a>
                                                             <div class="video-content">
                                                                 <h3>
@@ -1003,7 +1003,7 @@ get_header();
                                                                     class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                                                     alt="khai trương ila nguyễn duy trinh"
                                                                     decoding="async" loading="lazy"
-                                                                    srcset="images/khai-truong-ila-nguyen-duy-trinh-1.jpg 1500w, images/khai-truong-ila-nguyen-duy-trinh-1-300x194.jpg 300w, images/khai-truong-ila-nguyen-duy-trinh-1-1024x662.jpg 1024w, images/khai-truong-ila-nguyen-duy-trinh-1-768x497.jpg 768w"
+                                                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/khai-truong-ila-nguyen-duy-trinh-1.jpg 1500w,<?php echo THEME_URI . '/assets/'; ?>images/khai-truong-ila-nguyen-duy-trinh-1-300x194.jpg 300w,<?php echo THEME_URI . '/assets/'; ?>images/khai-truong-ila-nguyen-duy-trinh-1-1024x662.jpg 1024w,<?php echo THEME_URI . '/assets/'; ?>images/khai-truong-ila-nguyen-duy-trinh-1-768x497.jpg 768w"
                                                                     sizes="100vw"> </a>
                                                             <div class="video-content">
                                                                 <h3>
@@ -1048,7 +1048,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/ho-Tue-Man-OLA-Ha-Huy-Giap.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Hồ Tuệ Mẫn" decoding="async" loading="lazy"
-                                        srcset="images/ho-Tue-Man-OLA-Ha-Huy-Giap.png 433w, images/ho-Tue-Man-OLA-Ha-Huy-Giap-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ho-Tue-Man-OLA-Ha-Huy-Giap.png 433w,<?php echo THEME_URI . '/assets/'; ?>images/ho-Tue-Man-OLA-Ha-Huy-Giap-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1062,7 +1062,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/le-Minh-Khang-Tran-Nao.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Lê Minh Khang" decoding="async" loading="lazy"
-                                        srcset="images/le-Minh-Khang-Tran-Nao.png 433w, images/le-Minh-Khang-Tran-Nao-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/le-Minh-Khang-Tran-Nao.png 433w,<?php echo THEME_URI . '/assets/'; ?>images/le-Minh-Khang-Tran-Nao-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1077,7 +1077,7 @@ get_header();
                                         src="<?php echo THEME_URI . '/assets/'; ?>images/huynh-hoang-Viet-Han-ILA-Mac-Dinh-Chi.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Huỳnh Hoàng Việt Hân" decoding="async" loading="lazy"
-                                        srcset="images/huynh-hoang-Viet-Han-ILA-Mac-Dinh-Chi.png 433w, images/huynh-hoang-Viet-Han-ILA-Mac-Dinh-Chi-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/huynh-hoang-Viet-Han-ILA-Mac-Dinh-Chi.png 433w,<?php echo THEME_URI . '/assets/'; ?>images/huynh-hoang-Viet-Han-ILA-Mac-Dinh-Chi-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1091,7 +1091,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-Tien-Dung-Nguyen-Xi.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Tiến Dũng" decoding="async" loading="lazy"
-                                        srcset="images/nguyen-Tien-Dung-Nguyen-Xi.png 433w, images/nguyen-Tien-Dung-Nguyen-Xi-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-Tien-Dung-Nguyen-Xi.png 433w,<?php echo THEME_URI . '/assets/'; ?>images/nguyen-Tien-Dung-Nguyen-Xi-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1105,7 +1105,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/Tran-Diep-Anh-VT.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Trần Diệp Anh" decoding="async" loading="lazy"
-                                        srcset="images/Tran-Diep-Anh-VT.png 433w, images/Tran-Diep-Anh-VT-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/Tran-Diep-Anh-VT.png 433w,<?php echo THEME_URI . '/assets/'; ?>images/Tran-Diep-Anh-VT-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1119,7 +1119,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/tran-Tue-Anh-PMH.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Trần Tuệ Anh" decoding="async" loading="lazy"
-                                        srcset="images/tran-Tue-Anh-PMH.png 433w, images/tran-Tue-Anh-PMH-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/tran-Tue-Anh-PMH.png 433w,<?php echo THEME_URI . '/assets/'; ?>images/tran-Tue-Anh-PMH-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1133,7 +1133,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/truong-gia-tuong-PMH.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Trương Gia Tường" decoding="async" loading="lazy"
-                                        srcset="images/truong-gia-tuong-PMH.png 433w, images/truong-gia-tuong-PMH-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/truong-gia-tuong-PMH.png 433w,<?php echo THEME_URI . '/assets/'; ?>images/truong-gia-tuong-PMH-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1147,7 +1147,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-tran-Minh-Anh-PMH.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Trần Minh Anh" decoding="async" loading="lazy"
-                                        srcset="images/nguyen-tran-Minh-Anh-PMH.png 433w, images/nguyen-tran-Minh-Anh-PMH-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-tran-Minh-Anh-PMH.png 433w,<?php echo THEME_URI . '/assets/'; ?>images/nguyen-tran-Minh-Anh-PMH-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1161,7 +1161,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/Chau-Ngoc-Quyen-Hoa-Binh.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Châu Ngọc Quyên" decoding="async" loading="lazy"
-                                        srcset="images/Chau-Ngoc-Quyen-Hoa-Binh.png 433w, images/Chau-Ngoc-Quyen-Hoa-Binh-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/Chau-Ngoc-Quyen-Hoa-Binh.png 433w,<?php echo THEME_URI . '/assets/'; ?>images/Chau-Ngoc-Quyen-Hoa-Binh-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1175,7 +1175,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/truong-hoang-bao-an-ila-phu-lam.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Trương Hoàng Bảo An" decoding="async" loading="lazy"
-                                        srcset="images/truong-hoang-bao-an-ila-phu-lam.jpg 433w, images/truong-hoang-bao-an-ila-phu-lam-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/truong-hoang-bao-an-ila-phu-lam.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/truong-hoang-bao-an-ila-phu-lam-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1189,7 +1189,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/vo-thao-nguyen-ila-mac-dinh-chi.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Võ Thảo Nguyên" decoding="async" loading="lazy"
-                                        srcset="images/vo-thao-nguyen-ila-mac-dinh-chi.jpg 433w, images/vo-thao-nguyen-ila-mac-dinh-chi-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/vo-thao-nguyen-ila-mac-dinh-chi.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/vo-thao-nguyen-ila-mac-dinh-chi-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1203,7 +1203,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/tran-tuong-quan-ila-mac-dinh-chi.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Trần Tường Quân" decoding="async" loading="lazy"
-                                        srcset="images/tran-tuong-quan-ila-mac-dinh-chi.jpg 433w, images/tran-tuong-quan-ila-mac-dinh-chi-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/tran-tuong-quan-ila-mac-dinh-chi.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/tran-tuong-quan-ila-mac-dinh-chi-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1217,7 +1217,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/van-pham-due-tram-ila-tan-phu.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Văn Phạm Duệ Trầm" decoding="async" loading="lazy"
-                                        srcset="images/van-pham-due-tram-ila-tan-phu.jpg 433w, images/van-pham-due-tram-ila-tan-phu-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/van-pham-due-tram-ila-tan-phu.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/van-pham-due-tram-ila-tan-phu-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1231,7 +1231,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/pham-huynh-tu-anh-ila-phu-lam.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Phạm Huỳnh Tú Anh" decoding="async" loading="lazy"
-                                        srcset="images/pham-huynh-tu-anh-ila-phu-lam.jpg 433w, images/pham-huynh-tu-anh-ila-phu-lam-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/pham-huynh-tu-anh-ila-phu-lam.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/pham-huynh-tu-anh-ila-phu-lam-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1245,7 +1245,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/thai-thien-kim-ila-phu-lam.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Thái Thiên Kim" decoding="async" loading="lazy"
-                                        srcset="images/thai-thien-kim-ila-phu-lam.jpg 433w, images/thai-thien-kim-ila-phu-lam-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/thai-thien-kim-ila-phu-lam.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/thai-thien-kim-ila-phu-lam-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1259,7 +1259,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-uyen-vy-ila-phu-lam.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Uyên Vy" decoding="async" loading="lazy"
-                                        srcset="images/nguyen-uyen-vy-ila-phu-lam.jpg 433w, images/nguyen-uyen-vy-ila-phu-lam-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-uyen-vy-ila-phu-lam.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/nguyen-uyen-vy-ila-phu-lam-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1273,7 +1273,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-tran-minh-khoi-ila-pmh.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Trần Minh Khôi" decoding="async" loading="lazy"
-                                        srcset="images/nguyen-tran-minh-khoi-ila-pmh.jpg 433w, images/nguyen-tran-minh-khoi-ila-pmh-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-tran-minh-khoi-ila-pmh.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/nguyen-tran-minh-khoi-ila-pmh-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1288,7 +1288,7 @@ get_header();
                                         src="<?php echo THEME_URI . '/assets/'; ?>images/pham-nguyen-thao-my-ila-phan-van-tri.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Phạm Nguyễn Thảo My" decoding="async" loading="lazy"
-                                        srcset="images/pham-nguyen-thao-my-ila-phan-van-tri.jpg 433w, images/pham-nguyen-thao-my-ila-phan-van-tri-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/pham-nguyen-thao-my-ila-phan-van-tri.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/pham-nguyen-thao-my-ila-phan-van-tri-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1302,7 +1302,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/tran-trong-khoi-ila-pmh.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Trần Trọng Khôi" decoding="async" loading="lazy"
-                                        srcset="images/tran-trong-khoi-ila-pmh.jpg 433w, images/tran-trong-khoi-ila-pmh-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/tran-trong-khoi-ila-pmh.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/tran-trong-khoi-ila-pmh-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1316,7 +1316,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-phuc-van-ila-nguyen-trai.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Phúc Văn" decoding="async" loading="lazy"
-                                        srcset="images/nguyen-phuc-van-ila-nguyen-trai.jpg 433w, images/nguyen-phuc-van-ila-nguyen-trai-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-phuc-van-ila-nguyen-trai.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/nguyen-phuc-van-ila-nguyen-trai-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1331,7 +1331,7 @@ get_header();
                                         src="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-tat-minh-khang-ila-mac-dinh-chi.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Tất Minh Khang" decoding="async" loading="lazy"
-                                        srcset="images/nguyen-tat-minh-khang-ila-mac-dinh-chi.jpg 433w, images/nguyen-tat-minh-khang-ila-mac-dinh-chi-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-tat-minh-khang-ila-mac-dinh-chi.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/nguyen-tat-minh-khang-ila-mac-dinh-chi-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1345,7 +1345,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-nhat-bao-anh-ila-pmh.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Nhật Bảo Anh" decoding="async" loading="lazy"
-                                        srcset="images/nguyen-nhat-bao-anh-ila-pmh.jpg 433w, images/nguyen-nhat-bao-anh-ila-pmh-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-nhat-bao-anh-ila-pmh.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/nguyen-nhat-bao-anh-ila-pmh-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1360,7 +1360,7 @@ get_header();
                                         src="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-minh-triet-ila-mac-dinh-chi.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Minh Triết" decoding="async" loading="lazy"
-                                        srcset="images/nguyen-minh-triet-ila-mac-dinh-chi.jpg 433w, images/nguyen-minh-triet-ila-mac-dinh-chi-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-minh-triet-ila-mac-dinh-chi.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/nguyen-minh-triet-ila-mac-dinh-chi-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1374,7 +1374,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/luong-ngoc-mai-ila-nguyen-trai.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Lương Ngọc Mai" decoding="async" loading="lazy"
-                                        srcset="images/luong-ngoc-mai-ila-nguyen-trai.jpg 433w, images/luong-ngoc-mai-ila-nguyen-trai-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/luong-ngoc-mai-ila-nguyen-trai.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/luong-ngoc-mai-ila-nguyen-trai-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1388,7 +1388,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/ly-manh-ky-ila-phu-lam.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Lý Mạnh Kỳ" decoding="async" loading="lazy"
-                                        srcset="images/ly-manh-ky-ila-phu-lam.jpg 433w, images/ly-manh-ky-ila-phu-lam-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ly-manh-ky-ila-phu-lam.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/ly-manh-ky-ila-phu-lam-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1402,7 +1402,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/le-thanh-phu-ila-nguyen-xi.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Lê Thanh Phú" decoding="async" loading="lazy"
-                                        srcset="images/le-thanh-phu-ila-nguyen-xi.jpg 433w, images/le-thanh-phu-ila-nguyen-xi-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/le-thanh-phu-ila-nguyen-xi.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/le-thanh-phu-ila-nguyen-xi-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1416,7 +1416,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/le-quan-bao-ila-nguyen-trai.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Lê Quân Bảo" decoding="async" loading="lazy"
-                                        srcset="images/le-quan-bao-ila-nguyen-trai.jpg 433w, images/le-quan-bao-ila-nguyen-trai-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/le-quan-bao-ila-nguyen-trai.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/le-quan-bao-ila-nguyen-trai-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1430,7 +1430,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/le-duc-minh-khoi-ila-phu-lam.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Lê Đức Minh Khôi" decoding="async" loading="lazy"
-                                        srcset="images/le-duc-minh-khoi-ila-phu-lam.jpg 433w, images/le-duc-minh-khoi-ila-phu-lam-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/le-duc-minh-khoi-ila-phu-lam.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/le-duc-minh-khoi-ila-phu-lam-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1444,7 +1444,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/le-an-bao-ila-nguyen-trai.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Lê An Bảo" decoding="async" loading="lazy"
-                                        srcset="images/le-an-bao-ila-nguyen-trai.jpg 433w, images/le-an-bao-ila-nguyen-trai-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/le-an-bao-ila-nguyen-trai.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/le-an-bao-ila-nguyen-trai-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1459,7 +1459,7 @@ get_header();
                                         src="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-tang-khanh-an-ila-nguyen-trai.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Tăng Khánh An" decoding="async" loading="lazy"
-                                        srcset="images/nguyen-tang-khanh-an-ila-nguyen-trai.jpg 433w, images/nguyen-tang-khanh-an-ila-nguyen-trai-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-tang-khanh-an-ila-nguyen-trai.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/nguyen-tang-khanh-an-ila-nguyen-trai-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1473,7 +1473,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/huynh-ngoc-minh-khanh-ila-phu-lam.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Huỳnh Ngọc Minh Khánh" decoding="async" loading="lazy"
-                                        srcset="images/huynh-ngoc-minh-khanh-ila-phu-lam.jpg 433w, images/huynh-ngoc-minh-khanh-ila-phu-lam-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/huynh-ngoc-minh-khanh-ila-phu-lam.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/huynh-ngoc-minh-khanh-ila-phu-lam-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1487,7 +1487,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/ho-my-anh-ila-pmh.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Hồ Mỹ Anh" decoding="async" loading="lazy"
-                                        srcset="images/ho-my-anh-ila-pmh.jpg 433w, images/ho-my-anh-ila-pmh-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ho-my-anh-ila-pmh.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/ho-my-anh-ila-pmh-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1501,7 +1501,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/phan-le-duc-nghi-ila-tan-phu.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Phan Lê Đức Nghi" decoding="async" loading="lazy"
-                                        srcset="images/phan-le-duc-nghi-ila-tan-phu.jpg 433w, images/phan-le-duc-nghi-ila-tan-phu-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/phan-le-duc-nghi-ila-tan-phu.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/phan-le-duc-nghi-ila-tan-phu-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1515,7 +1515,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/dinh-le-uyen-nhi-ila-nguyen-trai.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Đinh Lê Uyên Nhi" decoding="async" loading="lazy"
-                                        srcset="images/dinh-le-uyen-nhi-ila-nguyen-trai.jpg 433w, images/dinh-le-uyen-nhi-ila-nguyen-trai-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/dinh-le-uyen-nhi-ila-nguyen-trai.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/dinh-le-uyen-nhi-ila-nguyen-trai-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1529,7 +1529,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/dao-an-binh-ila-tan-phu.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Đào An Bình" decoding="async" loading="lazy"
-                                        srcset="images/dao-an-binh-ila-tan-phu.jpg 433w, images/dao-an-binh-ila-tan-phu-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/dao-an-binh-ila-tan-phu.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/dao-an-binh-ila-tan-phu-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1543,7 +1543,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/tran-dang-khoa-ila-pham-hung.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Trần Đặng Khoa" decoding="async" loading="lazy"
-                                        srcset="images/tran-dang-khoa-ila-pham-hung.jpg 433w, images/tran-dang-khoa-ila-pham-hung-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/tran-dang-khoa-ila-pham-hung.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/tran-dang-khoa-ila-pham-hung-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1557,7 +1557,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/dang-bao-han-ila-tran-nao.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Đặng Bảo Hân" decoding="async" loading="lazy"
-                                        srcset="images/dang-bao-han-ila-tran-nao.jpg 433w, images/dang-bao-han-ila-tran-nao-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/dang-bao-han-ila-tran-nao.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/dang-bao-han-ila-tran-nao-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1571,7 +1571,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/hoang-cao-minh-ila-mac-dinh-chi.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Hoàng Cao Minh" decoding="async" loading="lazy"
-                                        srcset="images/hoang-cao-minh-ila-mac-dinh-chi.jpg 433w, images/hoang-cao-minh-ila-mac-dinh-chi-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/hoang-cao-minh-ila-mac-dinh-chi.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/hoang-cao-minh-ila-mac-dinh-chi-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1585,7 +1585,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/cao-duong-phuoc-khang-ila-phu-lam.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Cao Dương Phước Khang" decoding="async" loading="lazy"
-                                        srcset="images/cao-duong-phuoc-khang-ila-phu-lam.jpg 433w, images/cao-duong-phuoc-khang-ila-phu-lam-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/cao-duong-phuoc-khang-ila-phu-lam.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/cao-duong-phuoc-khang-ila-phu-lam-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1599,7 +1599,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-ngoc-bich-tram-ila-pmh.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Ngọc Bích Trâm" decoding="async" loading="lazy"
-                                        srcset="images/nguyen-ngoc-bich-tram-ila-pmh.jpg 433w, images/nguyen-ngoc-bich-tram-ila-pmh-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-ngoc-bich-tram-ila-pmh.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/nguyen-ngoc-bich-tram-ila-pmh-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1613,7 +1613,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/huynh-bao-nam-ila-tan-phu.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Huỳnh Bảo Nam" decoding="async" loading="lazy"
-                                        srcset="images/huynh-bao-nam-ila-tan-phu.jpg 433w, images/huynh-bao-nam-ila-tan-phu-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/huynh-bao-nam-ila-tan-phu.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/huynh-bao-nam-ila-tan-phu-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1627,7 +1627,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-vu-loc.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Vũ Lộc" decoding="async" loading="lazy"
-                                        srcset="images/nguyen-vu-loc.jpg 433w, images/nguyen-vu-loc-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-vu-loc.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/nguyen-vu-loc-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1641,7 +1641,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/Vo-Quynh-Nhu.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Võ Quỳnh Như" decoding="async" loading="lazy"
-                                        srcset="images/Vo-Quynh-Nhu.jpg 433w, images/Vo-Quynh-Nhu-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/Vo-Quynh-Nhu.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/Vo-Quynh-Nhu-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1655,7 +1655,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/tho-tong-quan.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Thọ Tòng Quân" decoding="async" loading="lazy"
-                                        srcset="images/tho-tong-quan.jpg 433w, images/tho-tong-quan-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/tho-tong-quan.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/tho-tong-quan-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1669,7 +1669,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/ta-thien-thanh.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Đặng Thiên Thanh" decoding="async" loading="lazy"
-                                        srcset="images/ta-thien-thanh.jpg 433w, images/ta-thien-thanh-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ta-thien-thanh.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/ta-thien-thanh-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1683,7 +1683,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/ta-quang-thien-phuc.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Tạ Quang Thiên Phúc" decoding="async" loading="lazy"
-                                        srcset="images/ta-quang-thien-phuc.jpg 433w, images/ta-quang-thien-phuc-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ta-quang-thien-phuc.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/ta-quang-thien-phuc-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1697,7 +1697,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-dang-quynh-anh.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Đặng Quỳnh Anh" decoding="async" loading="lazy"
-                                        srcset="images/nguyen-dang-quynh-anh.jpg 433w, images/nguyen-dang-quynh-anh-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-dang-quynh-anh.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/nguyen-dang-quynh-anh-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1711,7 +1711,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-tan-dat.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Tấn Đạt" decoding="async" loading="lazy"
-                                        srcset="images/nguyen-tan-dat.jpg 433w, images/nguyen-tan-dat-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-tan-dat.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/nguyen-tan-dat-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1725,7 +1725,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/Sofia.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Sofia Nguyễn Leboutillier" decoding="async" loading="lazy"
-                                        srcset="images/Sofia.jpg 433w, images/Sofia-254x300.jpg 254w" sizes="100vw">
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/Sofia.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/Sofia-254x300.jpg 254w" sizes="100vw">
                                 </div>
                                 <div class="hall-content">
                                     <h3><a href="#">Sofia Nguyễn Leboutillier</a></h3>
@@ -1738,7 +1738,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-thanh-binh.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Thanh Bình" decoding="async" loading="lazy"
-                                        srcset="images/nguyen-thanh-binh.jpg 433w, images/nguyen-thanh-binh-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-thanh-binh.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/nguyen-thanh-binh-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1752,7 +1752,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/tran-phuong-nghi.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Trần Phương Nghi" decoding="async" loading="lazy"
-                                        srcset="images/tran-phuong-nghi.jpg 433w, images/tran-phuong-nghi-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/tran-phuong-nghi.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/tran-phuong-nghi-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1766,7 +1766,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/Phan-Hoang-Bach.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Phan Hoàng Bách" decoding="async" loading="lazy"
-                                        srcset="images/Phan-Hoang-Bach.jpg 433w, images/Phan-Hoang-Bach-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/Phan-Hoang-Bach.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/Phan-Hoang-Bach-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1780,7 +1780,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/Nguyen-Khang.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Khang" decoding="async" loading="lazy"
-                                        srcset="images/Nguyen-Khang.jpg 433w, images/Nguyen-Khang-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/Nguyen-Khang.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/Nguyen-Khang-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1794,7 +1794,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/ha-le-nguyen-chuong.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Hà Lê Nguyên Chương" decoding="async" loading="lazy"
-                                        srcset="images/ha-le-nguyen-chuong.jpg 433w, images/ha-le-nguyen-chuong-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ha-le-nguyen-chuong.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/ha-le-nguyen-chuong-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1808,7 +1808,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/phan-nguyen-ngoc-khue.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Phan Nguyễn Ngọc Khuê" decoding="async" loading="lazy"
-                                        srcset="images/phan-nguyen-ngoc-khue.jpg 433w, images/phan-nguyen-ngoc-khue-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/phan-nguyen-ngoc-khue.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/phan-nguyen-ngoc-khue-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1822,7 +1822,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-hong-minh-khue.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Hồng Minh Khuê" decoding="async" loading="lazy"
-                                        srcset="images/nguyen-hong-minh-khue.jpg 433w, images/nguyen-hong-minh-khue-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-hong-minh-khue.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/nguyen-hong-minh-khue-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1836,7 +1836,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/pham-nguyen-mai-thy.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Phạm Nguyễn Mai Thy" decoding="async" loading="lazy"
-                                        srcset="images/pham-nguyen-mai-thy.jpg 433w, images/pham-nguyen-mai-thy-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/pham-nguyen-mai-thy.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/pham-nguyen-mai-thy-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1850,7 +1850,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-lu-lam.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Lữ Lâm" decoding="async" loading="lazy"
-                                        srcset="images/nguyen-lu-lam.jpg 433w, images/nguyen-lu-lam-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-lu-lam.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/nguyen-lu-lam-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1864,7 +1864,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-ngoc-khanh-chi.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Ngọc Khánh Chi" decoding="async" loading="lazy"
-                                        srcset="images/nguyen-ngoc-khanh-chi.jpg 433w, images/nguyen-ngoc-khanh-chi-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-ngoc-khanh-chi.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/nguyen-ngoc-khanh-chi-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1878,7 +1878,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/huynh-nguyen-huu-dinh.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Huỳnh Nguyễn Hữu Định" decoding="async" loading="lazy"
-                                        srcset="images/huynh-nguyen-huu-dinh.jpg 433w, images/huynh-nguyen-huu-dinh-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/huynh-nguyen-huu-dinh.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/huynh-nguyen-huu-dinh-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1892,7 +1892,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-vo-hong-ngoc.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Võ Hồng Ngọc" decoding="async" loading="lazy"
-                                        srcset="images/nguyen-vo-hong-ngoc.jpg 433w, images/nguyen-vo-hong-ngoc-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-vo-hong-ngoc.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/nguyen-vo-hong-ngoc-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1906,7 +1906,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/pham-lac-hong-anh.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Phạm Lạc Hồng Anh" decoding="async" loading="lazy"
-                                        srcset="images/pham-lac-hong-anh.jpg 433w, images/pham-lac-hong-anh-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/pham-lac-hong-anh.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/pham-lac-hong-anh-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1920,7 +1920,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/ta-hoang-danh.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Tạ Hoàng Danh" decoding="async" loading="lazy"
-                                        srcset="images/ta-hoang-danh.jpg 433w, images/ta-hoang-danh-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ta-hoang-danh.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/ta-hoang-danh-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1934,7 +1934,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/le-anh-minh.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Lê Ánh Minh" decoding="async" loading="lazy"
-                                        srcset="images/le-anh-minh.jpg 433w, images/le-anh-minh-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/le-anh-minh.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/le-anh-minh-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1948,7 +1948,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/Tran-le-bao-ngoc.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Trần Lê Bảo Ngọc" decoding="async" loading="lazy"
-                                        srcset="images/Tran-le-bao-ngoc.jpg 433w, images/Tran-le-bao-ngoc-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/Tran-le-bao-ngoc.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/Tran-le-bao-ngoc-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1962,7 +1962,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-huu-bao-lam.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Hữu Bảo Lâm" decoding="async" loading="lazy"
-                                        srcset="images/nguyen-huu-bao-lam.jpg 433w, images/nguyen-huu-bao-lam-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-huu-bao-lam.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/nguyen-huu-bao-lam-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1976,7 +1976,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/dang-minh-bao-chau.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Đặng Minh Bảo Châu" decoding="async" loading="lazy"
-                                        srcset="images/dang-minh-bao-chau.jpg 433w, images/dang-minh-bao-chau-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/dang-minh-bao-chau.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/dang-minh-bao-chau-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -1990,7 +1990,7 @@ get_header();
                                     <img width="433" height="512" src="<?php echo THEME_URI . '/assets/'; ?>images/dao-duy-anh.jpg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Đào Duy Anh" decoding="async" loading="lazy"
-                                        srcset="images/dao-duy-anh.jpg 433w, images/dao-duy-anh-254x300.jpg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/dao-duy-anh.jpg 433w,<?php echo THEME_URI . '/assets/'; ?>images/dao-duy-anh-254x300.jpg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2004,7 +2004,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/minh-anh-pham-hung.jpeg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Trương Minh Anh" decoding="async" loading="lazy"
-                                        srcset="images/minh-anh-pham-hung.jpeg 448w, images/minh-anh-pham-hung-254x300.jpeg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/minh-anh-pham-hung.jpeg 448w,<?php echo THEME_URI . '/assets/'; ?>images/minh-anh-pham-hung-254x300.jpeg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2018,7 +2018,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/ila-nguyen-hoang-thien-trang-pvt.jpeg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Hoàng Thiên Trang" decoding="async" loading="lazy"
-                                        srcset="images/ila-nguyen-hoang-thien-trang-pvt.jpeg 448w, images/ila-nguyen-hoang-thien-trang-pvt-254x300.jpeg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-nguyen-hoang-thien-trang-pvt.jpeg 448w,<?php echo THEME_URI . '/assets/'; ?>images/ila-nguyen-hoang-thien-trang-pvt-254x300.jpeg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2032,7 +2032,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/ila-inari-anh-tuan-cong-hoa.jpeg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="INARI Anh Tuấn" decoding="async" loading="lazy"
-                                        srcset="images/ila-inari-anh-tuan-cong-hoa.jpeg 448w, images/ila-inari-anh-tuan-cong-hoa-254x300.jpeg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-inari-anh-tuan-cong-hoa.jpeg 448w,<?php echo THEME_URI . '/assets/'; ?>images/ila-inari-anh-tuan-cong-hoa-254x300.jpeg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2046,7 +2046,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/ila-tong-phan-minh-bao-him-lam.jpeg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Tông Phan Minh Bảo" decoding="async" loading="lazy"
-                                        srcset="images/ila-tong-phan-minh-bao-him-lam.jpeg 448w, images/ila-tong-phan-minh-bao-him-lam-254x300.jpeg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-tong-phan-minh-bao-him-lam.jpeg 448w,<?php echo THEME_URI . '/assets/'; ?>images/ila-tong-phan-minh-bao-him-lam-254x300.jpeg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2060,7 +2060,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/ila-le-pham-quynh-anh-him-lam.jpeg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Lê Phạm Quỳnh Anh" decoding="async" loading="lazy"
-                                        srcset="images/ila-le-pham-quynh-anh-him-lam.jpeg 448w, images/ila-le-pham-quynh-anh-him-lam-254x300.jpeg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-le-pham-quynh-anh-him-lam.jpeg 448w,<?php echo THEME_URI . '/assets/'; ?>images/ila-le-pham-quynh-anh-him-lam-254x300.jpeg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2074,7 +2074,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/ila-to-van-thanh-phong-pvd.jpeg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Tô Vận Thanh Phong" decoding="async" loading="lazy"
-                                        srcset="images/ila-to-van-thanh-phong-pvd.jpeg 448w, images/ila-to-van-thanh-phong-pvd-254x300.jpeg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-to-van-thanh-phong-pvd.jpeg 448w,<?php echo THEME_URI . '/assets/'; ?>images/ila-to-van-thanh-phong-pvd-254x300.jpeg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2088,7 +2088,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/ila-huynh-ngoc-khanh-pvd.jpeg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Huỳnh Ngọc Khanh" decoding="async" loading="lazy"
-                                        srcset="images/ila-huynh-ngoc-khanh-pvd.jpeg 448w, images/ila-huynh-ngoc-khanh-pvd-254x300.jpeg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-huynh-ngoc-khanh-pvd.jpeg 448w,<?php echo THEME_URI . '/assets/'; ?>images/ila-huynh-ngoc-khanh-pvd-254x300.jpeg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2102,7 +2102,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/ila-nguyen-tran-bao-han-pvd-1.jpeg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Trần Bảo Hân" decoding="async" loading="lazy"
-                                        srcset="images/ila-nguyen-tran-bao-han-pvd-1.jpeg 448w, images/ila-nguyen-tran-bao-han-pvd-1-254x300.jpeg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-nguyen-tran-bao-han-pvd-1.jpeg 448w,<?php echo THEME_URI . '/assets/'; ?>images/ila-nguyen-tran-bao-han-pvd-1-254x300.jpeg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2116,7 +2116,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/ila-ha-bao-chau-nguyen-xi.jpeg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Hà Bảo Châu" decoding="async" loading="lazy"
-                                        srcset="images/ila-ha-bao-chau-nguyen-xi.jpeg 448w, images/ila-ha-bao-chau-nguyen-xi-254x300.jpeg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-ha-bao-chau-nguyen-xi.jpeg 448w,<?php echo THEME_URI . '/assets/'; ?>images/ila-ha-bao-chau-nguyen-xi-254x300.jpeg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2130,7 +2130,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/ila-vu-mai-anh-nguyen-xi.jpeg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Vũ Mai Anh" decoding="async" loading="lazy"
-                                        srcset="images/ila-vu-mai-anh-nguyen-xi.jpeg 448w, images/ila-vu-mai-anh-nguyen-xi-254x300.jpeg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-vu-mai-anh-nguyen-xi.jpeg 448w,<?php echo THEME_URI . '/assets/'; ?>images/ila-vu-mai-anh-nguyen-xi-254x300.jpeg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2144,7 +2144,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/xuan-khang-tan-phu.jpeg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Trần Xuân Khang" decoding="async" loading="lazy"
-                                        srcset="images/xuan-khang-tan-phu.jpeg 448w, images/xuan-khang-tan-phu-254x300.jpeg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/xuan-khang-tan-phu.jpeg 448w,<?php echo THEME_URI . '/assets/'; ?>images/xuan-khang-tan-phu-254x300.jpeg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2159,7 +2159,7 @@ get_header();
                                         src="<?php echo THEME_URI . '/assets/'; ?>images/ila-tran-ngoc-minh-vy-phu-my-hung.jpeg"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Trần Ngọc Minh Vy" decoding="async" loading="lazy"
-                                        srcset="images/ila-tran-ngoc-minh-vy-phu-my-hung.jpeg 448w, images/ila-tran-ngoc-minh-vy-phu-my-hung-254x300.jpeg 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-tran-ngoc-minh-vy-phu-my-hung.jpeg 448w,<?php echo THEME_URI . '/assets/'; ?>images/ila-tran-ngoc-minh-vy-phu-my-hung-254x300.jpeg 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2173,7 +2173,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/Tien-Duc-Mac-Dinh-Chi-1.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="PHẠM TIẾN ĐỨC" decoding="async" loading="lazy"
-                                        srcset="images/Tien-Duc-Mac-Dinh-Chi-1.png 448w, images/Tien-Duc-Mac-Dinh-Chi-1-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/Tien-Duc-Mac-Dinh-Chi-1.png 448w,<?php echo THEME_URI . '/assets/'; ?>images/Tien-Duc-Mac-Dinh-Chi-1-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2187,7 +2187,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/Duong-ILA-MDC-1.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="NGUYỄN THUỲ DƯƠNG" decoding="async" loading="lazy"
-                                        srcset="images/Duong-ILA-MDC-1.png 448w, images/Duong-ILA-MDC-1-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/Duong-ILA-MDC-1.png 448w,<?php echo THEME_URI . '/assets/'; ?>images/Duong-ILA-MDC-1-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2201,7 +2201,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/Hoang-Minh-Le-Van-Viet-1.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="LÊ PHAN HOÀNG MINH" decoding="async" loading="lazy"
-                                        srcset="images/Hoang-Minh-Le-Van-Viet-1.png 448w, images/Hoang-Minh-Le-Van-Viet-1-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/Hoang-Minh-Le-Van-Viet-1.png 448w,<?php echo THEME_URI . '/assets/'; ?>images/Hoang-Minh-Le-Van-Viet-1-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2215,7 +2215,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/Huynh-Ngoc-Phuong-Vy-Hoa-Binh.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="HUỲNH NGỌC PHƯƠNG VY" decoding="async" loading="lazy"
-                                        srcset="images/Huynh-Ngoc-Phuong-Vy-Hoa-Binh.png 448w, images/Huynh-Ngoc-Phuong-Vy-Hoa-Binh-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/Huynh-Ngoc-Phuong-Vy-Hoa-Binh.png 448w,<?php echo THEME_URI . '/assets/'; ?>images/Huynh-Ngoc-Phuong-Vy-Hoa-Binh-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2229,7 +2229,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/Ha-Thu-Hoa-Binh-1.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="PHÙNG HÀ THU" decoding="async" loading="lazy"
-                                        srcset="images/Ha-Thu-Hoa-Binh-1.png 448w, images/Ha-Thu-Hoa-Binh-1-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/Ha-Thu-Hoa-Binh-1.png 448w,<?php echo THEME_URI . '/assets/'; ?>images/Ha-Thu-Hoa-Binh-1-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2243,7 +2243,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/Phuong-An-Hoa-Binh-1.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="TRẦN NGỌC PHƯƠNG AN" decoding="async" loading="lazy"
-                                        srcset="images/Phuong-An-Hoa-Binh-1.png 448w, images/Phuong-An-Hoa-Binh-1-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/Phuong-An-Hoa-Binh-1.png 448w,<?php echo THEME_URI . '/assets/'; ?>images/Phuong-An-Hoa-Binh-1-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2257,7 +2257,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/Minh-Khoa-Phan-Van-Tri-1.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="TRẦN MINH KHOA" decoding="async" loading="lazy"
-                                        srcset="images/Minh-Khoa-Phan-Van-Tri-1.png 448w, images/Minh-Khoa-Phan-Van-Tri-1-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/Minh-Khoa-Phan-Van-Tri-1.png 448w,<?php echo THEME_URI . '/assets/'; ?>images/Minh-Khoa-Phan-Van-Tri-1-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2271,7 +2271,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/Gia-An-Phan-Van-Tri-1.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="PHẠM ĐẶNG GIA AN" decoding="async" loading="lazy"
-                                        srcset="images/Gia-An-Phan-Van-Tri-1.png 448w, images/Gia-An-Phan-Van-Tri-1-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/Gia-An-Phan-Van-Tri-1.png 448w,<?php echo THEME_URI . '/assets/'; ?>images/Gia-An-Phan-Van-Tri-1-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2285,7 +2285,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/Minh-Diep-PMH-1.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="TRẦN NGỌC MINH DIỆP" decoding="async" loading="lazy"
-                                        srcset="images/Minh-Diep-PMH-1.png 448w, images/Minh-Diep-PMH-1-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/Minh-Diep-PMH-1.png 448w,<?php echo THEME_URI . '/assets/'; ?>images/Minh-Diep-PMH-1-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2300,7 +2300,7 @@ get_header();
                                         src="<?php echo THEME_URI . '/assets/'; ?>images/doan-long-hy-ila-nguyen-dinh-chieu.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Đoàn Long Hy - ILA Nguyễn Đình Chiểu" decoding="async" loading="lazy"
-                                        srcset="images/doan-long-hy-ila-nguyen-dinh-chieu.png 448w, images/doan-long-hy-ila-nguyen-dinh-chieu-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/doan-long-hy-ila-nguyen-dinh-chieu.png 448w,<?php echo THEME_URI . '/assets/'; ?>images/doan-long-hy-ila-nguyen-dinh-chieu-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2314,7 +2314,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/le-minh-thien-ila-hoang-van-thu.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Lê Minh Thiên - ILA Hoàng Văn Thụ" decoding="async" loading="lazy"
-                                        srcset="images/le-minh-thien-ila-hoang-van-thu.png 448w, images/le-minh-thien-ila-hoang-van-thu-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/le-minh-thien-ila-hoang-van-thu.png 448w,<?php echo THEME_URI . '/assets/'; ?>images/le-minh-thien-ila-hoang-van-thu-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2328,7 +2328,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/ong-thuy-sy-ila-go-vap.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Ong Thụy Sỹ - ILA Gò Vấp" decoding="async" loading="lazy"
-                                        srcset="images/ong-thuy-sy-ila-go-vap.png 448w, images/ong-thuy-sy-ila-go-vap-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ong-thuy-sy-ila-go-vap.png 448w,<?php echo THEME_URI . '/assets/'; ?>images/ong-thuy-sy-ila-go-vap-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2342,7 +2342,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/truong-duc-trong-ila-thu-dau-mot.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Trương Đức Trọng - ILA Thủ Dầu Một" decoding="async" loading="lazy"
-                                        srcset="images/truong-duc-trong-ila-thu-dau-mot.png 448w, images/truong-duc-trong-ila-thu-dau-mot-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/truong-duc-trong-ila-thu-dau-mot.png 448w,<?php echo THEME_URI . '/assets/'; ?>images/truong-duc-trong-ila-thu-dau-mot-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2356,7 +2356,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-phuc-duyen-ila-bien-hoa.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Phúc Duyên - ILA Biên Hòa" decoding="async" loading="lazy"
-                                        srcset="images/nguyen-phuc-duyen-ila-bien-hoa.png 448w, images/nguyen-phuc-duyen-ila-bien-hoa-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-phuc-duyen-ila-bien-hoa.png 448w,<?php echo THEME_URI . '/assets/'; ?>images/nguyen-phuc-duyen-ila-bien-hoa-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2371,7 +2371,7 @@ get_header();
                                     <img width="448" height="530" src="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-nhat-duong-ila-hai-phong.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                         alt="Nguyễn Nhật Dương - ILA Hải Phòng" decoding="async" loading="lazy"
-                                        srcset="images/nguyen-nhat-duong-ila-hai-phong.png 448w, images/nguyen-nhat-duong-ila-hai-phong-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/nguyen-nhat-duong-ila-hai-phong.png 448w,<?php echo THEME_URI . '/assets/'; ?>images/nguyen-nhat-duong-ila-hai-phong-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2388,7 +2388,7 @@ get_header();
                                         src="<?php echo THEME_URI . '/assets/'; ?>images/do-le-nguyen-khoi-ila-nguyen-cu-trinh.png"
                                         class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
                                         decoding="async" loading="lazy"
-                                        srcset="images/do-le-nguyen-khoi-ila-nguyen-cu-trinh.png 448w, images/do-le-nguyen-khoi-ila-nguyen-cu-trinh-254x300.png 254w"
+                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/do-le-nguyen-khoi-ila-nguyen-cu-trinh.png 448w,<?php echo THEME_URI . '/assets/'; ?>images/do-le-nguyen-khoi-ila-nguyen-cu-trinh-254x300.png 254w"
                                         sizes="100vw">
                                 </div>
                                 <div class="hall-content">
@@ -2413,7 +2413,7 @@ get_header();
                                 <img width="1355" height="762" src="<?php echo THEME_URI . '/assets/'; ?>images/center-6.png"
                                     class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
                                     decoding="async" loading="lazy"
-                                    srcset="images/center-6.png 1355w, images/center-6-300x169.png 300w, images/center-6-1024x576.png 1024w, images/center-6-768x432.png 768w"
+                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/center-6.png 1355w,<?php echo THEME_URI . '/assets/'; ?>images/center-6-300x169.png 300w,<?php echo THEME_URI . '/assets/'; ?>images/center-6-1024x576.png 1024w,<?php echo THEME_URI . '/assets/'; ?>images/center-6-768x432.png 768w"
                                     sizes="100vw">
                             </div>
                             <!-- <div class="space-content">
@@ -2428,7 +2428,7 @@ get_header();
                                 <img width="1352" height="762" src="<?php echo THEME_URI . '/assets/'; ?>images/center-5.png"
                                     class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
                                     decoding="async" loading="lazy"
-                                    srcset="images/center-5.png 1352w, images/center-5-300x169.png 300w, images/center-5-1024x577.png 1024w, images/center-5-768x433.png 768w"
+                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/center-5.png 1352w,<?php echo THEME_URI . '/assets/'; ?>images/center-5-300x169.png 300w,<?php echo THEME_URI . '/assets/'; ?>images/center-5-1024x577.png 1024w,<?php echo THEME_URI . '/assets/'; ?>images/center-5-768x433.png 768w"
                                     sizes="100vw">
                             </div>
                             <!-- <div class="space-content">
@@ -2443,7 +2443,7 @@ get_header();
                                 <img width="1131" height="762" src="<?php echo THEME_URI . '/assets/'; ?>images/center-4.png"
                                     class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
                                     decoding="async" loading="lazy"
-                                    srcset="images/center-4.png 1131w, images/center-4-300x202.png 300w, images/center-4-1024x690.png 1024w, images/center-4-768x517.png 768w"
+                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/center-4.png 1131w,<?php echo THEME_URI . '/assets/'; ?>images/center-4-300x202.png 300w,<?php echo THEME_URI . '/assets/'; ?>images/center-4-1024x690.png 1024w,<?php echo THEME_URI . '/assets/'; ?>images/center-4-768x517.png 768w"
                                     sizes="100vw">
                             </div>
                             <!-- <div class="space-content">
@@ -2458,7 +2458,7 @@ get_header();
                                 <img width="1347" height="762" src="<?php echo THEME_URI . '/assets/'; ?>images/center-3.png"
                                     class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
                                     decoding="async" loading="lazy"
-                                    srcset="images/center-3.png 1347w, images/center-3-300x170.png 300w, images/center-3-1024x579.png 1024w, images/center-3-768x434.png 768w"
+                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/center-3.png 1347w,<?php echo THEME_URI . '/assets/'; ?>images/center-3-300x170.png 300w,<?php echo THEME_URI . '/assets/'; ?>images/center-3-1024x579.png 1024w,<?php echo THEME_URI . '/assets/'; ?>images/center-3-768x434.png 768w"
                                     sizes="100vw">
                             </div>
                             <!-- <div class="space-content">
@@ -2473,7 +2473,7 @@ get_header();
                                 <img width="1122" height="762" src="<?php echo THEME_URI . '/assets/'; ?>images/center-2.png"
                                     class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
                                     decoding="async" loading="lazy"
-                                    srcset="images/center-2.png 1122w, images/center-2-300x204.png 300w, images/center-2-1024x695.png 1024w, images/center-2-768x522.png 768w"
+                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/center-2.png 1122w,<?php echo THEME_URI . '/assets/'; ?>images/center-2-300x204.png 300w,<?php echo THEME_URI . '/assets/'; ?>images/center-2-1024x695.png 1024w,<?php echo THEME_URI . '/assets/'; ?>images/center-2-768x522.png 768w"
                                     sizes="100vw">
                             </div>
                             <!-- <div class="space-content">
@@ -2488,7 +2488,7 @@ get_header();
                                 <img width="1017" height="762" src="<?php echo THEME_URI . '/assets/'; ?>images/center-1.png"
                                     class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
                                     decoding="async" loading="lazy"
-                                    srcset="images/center-1.png 1017w, images/center-1-300x225.png 300w, images/center-1-768x575.png 768w"
+                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/center-1.png 1017w,<?php echo THEME_URI . '/assets/'; ?>images/center-1-300x225.png 300w,<?php echo THEME_URI . '/assets/'; ?>images/center-1-768x575.png 768w"
                                     sizes="100vw">
                             </div>
                             <!-- <div class="space-content">

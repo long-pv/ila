@@ -188,3 +188,13 @@ require get_template_directory() . '/inc/write_log.php';
 require get_template_directory() . '/inc/longpv.php';
 require get_template_directory() . '/inc/vucoder.php';
 require get_template_directory() . '/inc/ncd.php';
+
+// trang chủ
+add_filter('body_class', 'add_custom_body_class_for_home_page');
+function add_custom_body_class_for_home_page($classes)
+{
+	if (is_page_template('page-home.php')) {
+		$classes[] = 'home';
+	}
+	return $classes;
+}

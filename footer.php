@@ -13,8 +13,8 @@
 ?>
 
 <script>
-    jQuery(function ($) {
-        $(".navbar-dropdown-item .btn-dropdown-mb").on("click", function () {
+    jQuery(function($) {
+        $(".navbar-dropdown-item .btn-dropdown-mb").on("click", function() {
             console.log($(this).children('i'));
             $(this).children('i').toggleClass('fa-angle-down fa-angle-up');
             $(this).next(".dropdown-content").slideToggle();
@@ -48,6 +48,7 @@
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.scrollTo.js" id="jquery-scrollto-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/page-template-teacher.js" id="page-template-teacher-js-js"></script>
 <!-- <script src="js/courses.js" id="page-course-js-js"></script> -->
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/email-subscribers-public.js" id="email-subscribers-js"></script>
 
 <!-- ajax -->
 <script id="my-ajax-script-js-extra">
