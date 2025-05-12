@@ -49,7 +49,9 @@
 	<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
 	<script async="" src="<?php echo THEME_URI . '/assets/'; ?>js/addtoany.min.js" id="addtoany-jquery-js"></script>
 	<script async="" src="<?php echo THEME_URI . '/assets/'; ?>js/owl.carousel.min.js" id="owl-carousel-js-js"></script>
-	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/about-us.css" media="all">
+	<?php if (is_page_template('page-about_us.php')) { ?>
+		<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/about-us.css" media="all">
+	<?php } ?>
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/jumpstart.css" media="all">
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/facility.css" media="all">
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/page-template-teacher.css" media="all">
@@ -66,6 +68,9 @@
 	<!--  -->
 	<link rel="stylesheet" id="page-center-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/center.css" media="all" />
 	<link rel="stylesheet" id="category-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/archive.css" media="all" />
+	<?php if (is_page_template('page-recruitment_study_abroad.php')) { ?>
+		<link rel="stylesheet" id="page-ola-or-ielts-custom-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/ola-or-ielts.css" media="all" />
+	<?php } ?>
 
 
 	<!-- video home -->
