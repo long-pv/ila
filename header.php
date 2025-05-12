@@ -22,6 +22,7 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?display=swap&family=Montserrat:300,400|Roboto:300,400&subset=latin" media="all">
 
 	<!-- style -->
+	<link rel="stylesheet" id="wp-block-library-css" href="<?php echo THEME_URI . '/assets/'; ?>css/style.min.css" media="all" />
 	<link rel="stylesheet" id="email-subscribers-css" href="<?php echo THEME_URI . '/assets/'; ?>css/email-subscribers-public.css" media="all">
 	<link rel="stylesheet" id="fptheme-style-css" href="<?php echo THEME_URI . '/assets/'; ?>css/style.css" media="all">
 	<link rel="stylesheet" id="animation-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/animate.css" media="all">
@@ -51,7 +52,15 @@
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/about-us.css" media="all">
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/jumpstart.css" media="all">
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/facility.css" media="all">
-	
+
+
+	<!-- video home -->
+	<script src="<?php echo THEME_URI . '/assets/'; ?>js/n2.min.js" defer="" async=""></script>
+	<script src="<?php echo THEME_URI . '/assets/'; ?>js/smartslider-frontend.min.js" defer="" async=""></script>
+	<script src="<?php echo THEME_URI . '/assets/'; ?>js/ss-simple.min.js" defer="" async=""></script>
+	<script src="<?php echo THEME_URI . '/assets/'; ?>js/w-bullet.min.js" defer="" async=""></script>
+	<script src="<?php echo THEME_URI . '/assets/'; ?>js/index_add.js" defer="" async=""></script>
+
 	<?php wp_head(); ?>
 </head>
 
