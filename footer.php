@@ -206,8 +206,8 @@
 </div>
 
 <script>
-    jQuery(function($) {
-        $(".navbar-dropdown-item .btn-dropdown-mb").on("click", function() {
+    jQuery(function ($) {
+        $(".navbar-dropdown-item .btn-dropdown-mb").on("click", function () {
             console.log($(this).children('i'));
             $(this).children('i').toggleClass('fa-angle-down fa-angle-up');
             $(this).next(".dropdown-content").slideToggle();
@@ -239,11 +239,23 @@
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/main.js" id="main-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/global.js" id="fptheme-global-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.scrollTo.js" id="jquery-scrollto-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/page-template-teacher.js" id="page-template-teacher-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/page-template-teacher.js"
+    id="page-template-teacher-js-js"></script>
 <!-- <script src="js/courses.js" id="page-course-js-js"></script> -->
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/email-subscribers-public.js" id="email-subscribers-js"></script>
 
 <!-- vucoder -->
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/smooth_scroll.min.js" id="ez-toc-scroll-scriptjs-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/front.min.js" id="ez-toc-js-js"></script>
+<script id="ez-toc-js-js-extra">
+			var ezTOC = {
+				smooth_scroll: "1",
+				visibility_hide_by_default: "",
+				scroll_offset: "100",
+				fallbackIcon:
+					'<span class=""><span class="eztoc-hide" style="display:none;">Toggle<\/span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http:\/\/www.w3.org\/2000\/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"><\/path><\/svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http:\/\/www.w3.org\/2000\/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"\/><\/svg><\/span><\/span>',
+			};
+		</script>
 <!--  -->
 <!--  -->
 <!--  -->
