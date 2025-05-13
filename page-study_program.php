@@ -235,299 +235,299 @@ get_header();
             </div>
         </section>
 
-        <section class="section-8 section-gallery-video">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="main-blog" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
+            <section class="section-8 section-gallery-video">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="main-blog" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
+                                <div class="title-blog">
+                                    <h2>ILAVerse</h2>
+                                    <button>
+                                        <a href="https://ila.edu.vn/ilaverse">Xem tất cả <i
+                                                class="fa-regular fa-arrow-right"></i></a>
+                                    </button>
+                                </div>
+                                <span class="quote-heading">Chào mừng bạn đến với thế giới của ILAVerse – nơi bạn có thể
+                                    tìm thấy tất cả bí quyết học tiếng Anh, mẹo nuôi dạy và chăm sóc con cái… để con
+                                    trưởng thành hơn mỗi ngày.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-7">
+                            <div class="box-video-top">
+                                <div class="video-item-lg">
+                                    <div class="box-video">
+                                        <a href="https://www.youtube.com/watch?v=ewbkTOKS47o" class="popup-youtube"><img
+                                                width="600" height="337"
+                                                src="<?php echo THEME_URI . '/assets/'; ?>images/645daec2dd002-fbutube-maxresdefault-16-1.jpg"
+                                                class="attachment-full size-full wp-post-image" alt="ila jumpstart"
+                                                decoding="async" fetchpriority="high"
+                                                srcset="<?php echo THEME_URI . '/assets/'; ?>images/645daec2dd002-fbutube-maxresdefault-16-1.jpg 600w, images/645daec2dd002-fbutube-maxresdefault-16-1-300x169.jpg 300w"
+                                                sizes="100vw" /></a>
+                                    </div>
+                                    <div class="box-description">
+                                        <h3 class="title">
+                                            <a href="https://ila.edu.vn/ila-jumpstart-chia-khoa-anh-ngu-cho-con-kham-pha-the-gioi"
+                                                class="box-title">ILA Jumpstart  Chìa khóa Anh ngữ cho con khám phá thế
+                                                giới</a>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-video-bottom">
+                                <div class="row">
+                                    <div class="col-xl-4 col-12">
+                                        <div class="video-item">
+                                            <div class="box-video">
+                                                <a href="https://www.youtube.com/embed/0fmPP2OSktY"
+                                                    class="popup-youtube"><img width="600" height="337"
+                                                        src="<?php echo THEME_URI . '/assets/'; ?>images/645deab106e7d-fbutube-Jumpstart-Class-Tour-1-4-screenshot-1.png"
+                                                        class="attachment-full size-full wp-post-image"
+                                                        alt="lớp học jumpstart" decoding="async"
+                                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/645deab106e7d-fbutube-Jumpstart-Class-Tour-1-4-screenshot-1.png 600w, images/645deab106e7d-fbutube-Jumpstart-Class-Tour-1-4-screenshot-1-300x169.png 300w"
+                                                        sizes="100vw" /></a>
+                                            </div>
+                                            <div class="box-description">
+                                                <h3 class="title">
+                                                    <a href="https://ila.edu.vn/ila-jumpstart-noi-kich-hoat-tinh-than-vui-hoc-tieng-anh-cho-tre"
+                                                        class="box-title">ILA Jumpstart  Nơi kích hoạt tinh thần vui
+                                                        học Tiếng Anh cho trẻ mầm non</a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-12">
+                                        <div class="video-item">
+                                            <div class="box-video">
+                                                <a href="https://www.youtube.com/watch?v=ZC5AdGdFgpk"
+                                                    class="popup-youtube"><img width="600" height="337"
+                                                        src="<?php echo THEME_URI . '/assets/'; ?>images/645da3c7ca54b-fbutube-Jumpstart-Class-Tour-1-8-screenshot-1.png"
+                                                        class="attachment-full size-full wp-post-image"
+                                                        alt="jumpstart class tour" decoding="async"
+                                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/645da3c7ca54b-fbutube-Jumpstart-Class-Tour-1-8-screenshot-1.png 600w, images/645da3c7ca54b-fbutube-Jumpstart-Class-Tour-1-8-screenshot-1-300x169.png 300w"
+                                                        sizes="100vw" /></a>
+                                            </div>
+                                            <div class="box-description">
+                                                <h3 class="title">
+                                                    <a href="https://ila.edu.vn/jumpstart-class-tour"
+                                                        class="box-title">Jumpstart Class Tour</a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-12">
+                                        <div class="video-item">
+                                            <div class="box-video">
+                                                <a href="https://ila.edu.vn/cac-tro-choi-tieng-anh-cho-tre-em"
+                                                    class="box-thumb"><img width="1000" height="667"
+                                                        src="<?php echo THEME_URI . '/assets/'; ?>images/ila-bang-mau-sac-bang-tieng-anh-cho-be-3.jpg"
+                                                        class="attachment-full size-full wp-post-image"
+                                                        alt="các trò chơi dạy tiếng anh cho trẻ em" decoding="async"
+                                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-bang-mau-sac-bang-tieng-anh-cho-be-3.jpg 1000w, images/ila-bang-mau-sac-bang-tieng-anh-cho-be-3-300x200.jpg 300w, images/ila-bang-mau-sac-bang-tieng-anh-cho-be-3-768x512.jpg 768w"
+                                                        sizes="100vw" /></a>
+                                            </div>
+                                            <div class="box-description">
+                                                <h3 class="title">
+                                                    <a href="https://ila.edu.vn/cac-tro-choi-tieng-anh-cho-tre-em"
+                                                        class="box-title">10 trò chơi tiếng Anh cho trẻ em và cách học
+                                                        dễ như ăn kẹo</a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5">
+                            <div class="related-post">
+                                <div class="row">
+                                    <h3 class="related-title">Bài viết liên quan</h3>
+                                    <div class="col-md-6 col-xl-12">
+                                        <div class="post-item">
+                                            <div class="thumb-img">
+                                                <a href="https://ila.edu.vn/trai-nghiem-mua-he-mang-dam-tinh-giao-duc"><img
+                                                        width="885" height="588"
+                                                        src="<?php echo THEME_URI . '/assets/'; ?>images/ila-tang-con-trai-nghiem-gi-he-2023.jpg"
+                                                        class="attachment-full size-full wp-post-image" alt=""
+                                                        decoding="async"
+                                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-tang-con-trai-nghiem-gi-he-2023.jpg 885w, images/ila-tang-con-trai-nghiem-gi-he-2023-300x199.jpg 300w, images/ila-tang-con-trai-nghiem-gi-he-2023-768x510.jpg 768w"
+                                                        sizes="100vw" /></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <h3 class="post-title"><a
+                                                        href="https://ila.edu.vn/trai-nghiem-mua-he-mang-dam-tinh-giao-duc">Xu
+                                                        hướng mới: Trải nghiệm mùa hè mang đậm tính giáo dục</a></h3>
+                                                <a href="https://ila.edu.vn/tin-tuc-su-kien" class="category-name">Tin
+                                                    tức sự kiện</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-12">
+                                        <div class="post-item">
+                                            <div class="thumb-img">
+                                                <a href="https://ila.edu.vn/lo-trinh-hoc-tieng-anh-cho-be"><img
+                                                        width="885" height="588"
+                                                        src="<?php echo THEME_URI . '/assets/'; ?>images/ila-lo-trinh-hoc-tieng-anh-cho-be-2.jpg"
+                                                        class="attachment-full size-full wp-post-image"
+                                                        alt="sai lầm khi học giao tiếp tiếng Anh" decoding="async"
+                                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-lo-trinh-hoc-tieng-anh-cho-be-2.jpg 885w, images/ila-lo-trinh-hoc-tieng-anh-cho-be-2-300x199.jpg 300w, images/ila-lo-trinh-hoc-tieng-anh-cho-be-2-768x510.jpg 768w"
+                                                        sizes="100vw" /></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <h3 class="post-title"><a
+                                                        href="https://ila.edu.vn/lo-trinh-hoc-tieng-anh-cho-be">Lộ trình
+                                                        học tiếng Anh cho trẻ từ mầm non tới tiểu học</a></h3>
+                                                <a href="https://ila.edu.vn/lam-ban-cung-con" class="category-name">Làm
+                                                    bạn cùng con</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-12">
+                                        <div class="post-item">
+                                            <div class="thumb-img">
+                                                <a href="https://ila.edu.vn/hoc-danh-van-tieng-anh"><img width="885"
+                                                        height="588"
+                                                        src="<?php echo THEME_URI . '/assets/'; ?>images/ila-hoc-danh-van-tieng-anh-1.jpg"
+                                                        class="attachment-full size-full wp-post-image"
+                                                        alt="học đánh vần tiếng Anh" decoding="async"
+                                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-hoc-danh-van-tieng-anh-1.jpg 885w, images/ila-hoc-danh-van-tieng-anh-1-300x199.jpg 300w, images/ila-hoc-danh-van-tieng-anh-1-768x510.jpg 768w"
+                                                        sizes="100vw" /></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <h3 class="post-title"><a
+                                                        href="https://ila.edu.vn/hoc-danh-van-tieng-anh">6 quy tắc đơn
+                                                        giản giúp bé học đánh vần tiếng Anh dễ dàng</a></h3>
+                                                <a href="https://ila.edu.vn/lam-ban-cung-con" class="category-name">Làm
+                                                    bạn cùng con</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-12">
+                                        <div class="post-item">
+                                            <div class="thumb-img">
+                                                <a href="https://ila.edu.vn/tieng-anh-cho-tre-mam-non"><img width="885"
+                                                        height="588"
+                                                        src="<?php echo THEME_URI . '/assets/'; ?>images/ila-tieng-anh-cho-tre-mam-non-1.jpg"
+                                                        class="attachment-full size-full wp-post-image"
+                                                        alt="học từ vựng tiếng Anh theo chủ đề trái cây"
+                                                        decoding="async"
+                                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-tieng-anh-cho-tre-mam-non-1.jpg 885w, images/ila-tieng-anh-cho-tre-mam-non-1-300x199.jpg 300w, images/ila-tieng-anh-cho-tre-mam-non-1-768x510.jpg 768w"
+                                                        sizes="100vw" /></a>
+                                            </div>
+                                            <div class="post-content">
+                                                <h3 class="post-title"><a
+                                                        href="https://ila.edu.vn/tieng-anh-cho-tre-mam-non">Bí quyết dạy
+                                                        tiếng Anh cho trẻ mầm non hiệu quả tại nhà</a></h3>
+                                                <a href="https://ila.edu.vn/lam-ban-cung-con" class="category-name">Làm
+                                                    bạn cùng con</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section-5" class="section-hall-of-greatness">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
                             <div class="title-blog">
-                                <h2>ILAVerse</h2>
+                                <h2>GƯƠNG MẶT XUẤT SẮC</h2>
                                 <button>
-                                    <a href="https://ila.edu.vn/ilaverse">Xem tất cả <i
+                                    <a href="https://ila.edu.vn/guong-mat-xuat-sac">Xem tất cả <i
                                             class="fa-regular fa-arrow-right"></i></a>
                                 </button>
                             </div>
-                            <span class="quote-heading">Chào mừng bạn đến với thế giới của ILAVerse – nơi bạn có thể
-                                tìm thấy tất cả bí quyết học tiếng Anh, mẹo nuôi dạy và chăm sóc con cái… để con
-                                trưởng thành hơn mỗi ngày.</span>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-7">
-                        <div class="box-video-top">
-                            <div class="video-item-lg">
-                                <div class="box-video">
-                                    <a href="https://www.youtube.com/watch?v=ewbkTOKS47o" class="popup-youtube"><img
-                                            width="600" height="337"
-                                            src="<?php echo THEME_URI . '/assets/'; ?>images/645daec2dd002-fbutube-maxresdefault-16-1.jpg"
-                                            class="attachment-full size-full wp-post-image" alt="ila jumpstart"
-                                            decoding="async" fetchpriority="high"
-                                            srcset="<?php echo THEME_URI . '/assets/'; ?>images/645daec2dd002-fbutube-maxresdefault-16-1.jpg 600w, images/645daec2dd002-fbutube-maxresdefault-16-1-300x169.jpg 300w"
-                                            sizes="100vw" /></a>
-                                </div>
-                                <div class="box-description">
-                                    <h3 class="title">
-                                        <a href="https://ila.edu.vn/ila-jumpstart-chia-khoa-anh-ngu-cho-con-kham-pha-the-gioi"
-                                            class="box-title">ILA Jumpstart  Chìa khóa Anh ngữ cho con khám phá thế
-                                            giới</a>
-                                    </h3>
-                                </div>
+                    <div class="hall-owl-slider-course owl-carousel owl-theme">
+                        <div class="hall-item">
+                            <div class="hall-image">
+                                <img width="448" height="530"
+                                    src="<?php echo THEME_URI . '/assets/'; ?>images/Tien-Duc-Mac-Dinh-Chi-1.png"
+                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                    alt="PHẠM TIẾN ĐỨC" decoding="async"
+                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/Tien-Duc-Mac-Dinh-Chi-1.png 448w, images/Tien-Duc-Mac-Dinh-Chi-1-254x300.png 254w"
+                                    sizes="100vw" />
+                            </div>
+                            <div class="hall-content">
+                                <h3><a href="#">Phạm Tiến Đức</a></h3>
+                                <p style="font-size: 16px"><span>ILA Mạc Đĩnh Chi</span></p>
+                                <p>15/15 khiên chứng chỉ Starters</p>
                             </div>
                         </div>
-                        <div class="box-video-bottom">
-                            <div class="row">
-                                <div class="col-xl-4 col-12">
-                                    <div class="video-item">
-                                        <div class="box-video">
-                                            <a href="https://www.youtube.com/embed/0fmPP2OSktY"
-                                                class="popup-youtube"><img width="600" height="337"
-                                                    src="<?php echo THEME_URI . '/assets/'; ?>images/645deab106e7d-fbutube-Jumpstart-Class-Tour-1-4-screenshot-1.png"
-                                                    class="attachment-full size-full wp-post-image"
-                                                    alt="lớp học jumpstart" decoding="async"
-                                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/645deab106e7d-fbutube-Jumpstart-Class-Tour-1-4-screenshot-1.png 600w, images/645deab106e7d-fbutube-Jumpstart-Class-Tour-1-4-screenshot-1-300x169.png 300w"
-                                                    sizes="100vw" /></a>
-                                        </div>
-                                        <div class="box-description">
-                                            <h3 class="title">
-                                                <a href="https://ila.edu.vn/ila-jumpstart-noi-kich-hoat-tinh-than-vui-hoc-tieng-anh-cho-tre"
-                                                    class="box-title">ILA Jumpstart  Nơi kích hoạt tinh thần vui
-                                                    học Tiếng Anh cho trẻ mầm non</a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-12">
-                                    <div class="video-item">
-                                        <div class="box-video">
-                                            <a href="https://www.youtube.com/watch?v=ZC5AdGdFgpk"
-                                                class="popup-youtube"><img width="600" height="337"
-                                                    src="<?php echo THEME_URI . '/assets/'; ?>images/645da3c7ca54b-fbutube-Jumpstart-Class-Tour-1-8-screenshot-1.png"
-                                                    class="attachment-full size-full wp-post-image"
-                                                    alt="jumpstart class tour" decoding="async"
-                                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/645da3c7ca54b-fbutube-Jumpstart-Class-Tour-1-8-screenshot-1.png 600w, images/645da3c7ca54b-fbutube-Jumpstart-Class-Tour-1-8-screenshot-1-300x169.png 300w"
-                                                    sizes="100vw" /></a>
-                                        </div>
-                                        <div class="box-description">
-                                            <h3 class="title">
-                                                <a href="https://ila.edu.vn/jumpstart-class-tour"
-                                                    class="box-title">Jumpstart Class Tour</a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-4 col-12">
-                                    <div class="video-item">
-                                        <div class="box-video">
-                                            <a href="https://ila.edu.vn/cac-tro-choi-tieng-anh-cho-tre-em"
-                                                class="box-thumb"><img width="1000" height="667"
-                                                    src="<?php echo THEME_URI . '/assets/'; ?>images/ila-bang-mau-sac-bang-tieng-anh-cho-be-3.jpg"
-                                                    class="attachment-full size-full wp-post-image"
-                                                    alt="các trò chơi dạy tiếng anh cho trẻ em" decoding="async"
-                                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-bang-mau-sac-bang-tieng-anh-cho-be-3.jpg 1000w, images/ila-bang-mau-sac-bang-tieng-anh-cho-be-3-300x200.jpg 300w, images/ila-bang-mau-sac-bang-tieng-anh-cho-be-3-768x512.jpg 768w"
-                                                    sizes="100vw" /></a>
-                                        </div>
-                                        <div class="box-description">
-                                            <h3 class="title">
-                                                <a href="https://ila.edu.vn/cac-tro-choi-tieng-anh-cho-tre-em"
-                                                    class="box-title">10 trò chơi tiếng Anh cho trẻ em và cách học
-                                                    dễ như ăn kẹo</a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="hall-item">
+                            <div class="hall-image">
+                                <img width="448" height="530"
+                                    src="<?php echo THEME_URI . '/assets/'; ?>images/Hoang-Minh-Le-Van-Viet-1.png"
+                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                    alt="LÊ PHAN HOÀNG MINH" decoding="async"
+                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/Hoang-Minh-Le-Van-Viet-1.png 448w, images/Hoang-Minh-Le-Van-Viet-1-254x300.png 254w"
+                                    sizes="100vw" />
+                            </div>
+                            <div class="hall-content">
+                                <h3><a href="#">Lê Phan Hoàng Minh</a></h3>
+                                <p style="font-size: 16px"><span>ILA Lê Văn Việt</span></p>
+                                <p>15/15 khiên chứng chỉ Starters</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-5">
-                        <div class="related-post">
-                            <div class="row">
-                                <h3 class="related-title">Bài viết liên quan</h3>
-                                <div class="col-md-6 col-xl-12">
-                                    <div class="post-item">
-                                        <div class="thumb-img">
-                                            <a href="https://ila.edu.vn/trai-nghiem-mua-he-mang-dam-tinh-giao-duc"><img
-                                                    width="885" height="588"
-                                                    src="<?php echo THEME_URI . '/assets/'; ?>images/ila-tang-con-trai-nghiem-gi-he-2023.jpg"
-                                                    class="attachment-full size-full wp-post-image" alt=""
-                                                    decoding="async"
-                                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-tang-con-trai-nghiem-gi-he-2023.jpg 885w, images/ila-tang-con-trai-nghiem-gi-he-2023-300x199.jpg 300w, images/ila-tang-con-trai-nghiem-gi-he-2023-768x510.jpg 768w"
-                                                    sizes="100vw" /></a>
-                                        </div>
-                                        <div class="post-content">
-                                            <h3 class="post-title"><a
-                                                    href="https://ila.edu.vn/trai-nghiem-mua-he-mang-dam-tinh-giao-duc">Xu
-                                                    hướng mới: Trải nghiệm mùa hè mang đậm tính giáo dục</a></h3>
-                                            <a href="https://ila.edu.vn/tin-tuc-su-kien" class="category-name">Tin
-                                                tức sự kiện</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-xl-12">
-                                    <div class="post-item">
-                                        <div class="thumb-img">
-                                            <a href="https://ila.edu.vn/lo-trinh-hoc-tieng-anh-cho-be"><img
-                                                    width="885" height="588"
-                                                    src="<?php echo THEME_URI . '/assets/'; ?>images/ila-lo-trinh-hoc-tieng-anh-cho-be-2.jpg"
-                                                    class="attachment-full size-full wp-post-image"
-                                                    alt="sai lầm khi học giao tiếp tiếng Anh" decoding="async"
-                                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-lo-trinh-hoc-tieng-anh-cho-be-2.jpg 885w, images/ila-lo-trinh-hoc-tieng-anh-cho-be-2-300x199.jpg 300w, images/ila-lo-trinh-hoc-tieng-anh-cho-be-2-768x510.jpg 768w"
-                                                    sizes="100vw" /></a>
-                                        </div>
-                                        <div class="post-content">
-                                            <h3 class="post-title"><a
-                                                    href="https://ila.edu.vn/lo-trinh-hoc-tieng-anh-cho-be">Lộ trình
-                                                    học tiếng Anh cho trẻ từ mầm non tới tiểu học</a></h3>
-                                            <a href="https://ila.edu.vn/lam-ban-cung-con" class="category-name">Làm
-                                                bạn cùng con</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-xl-12">
-                                    <div class="post-item">
-                                        <div class="thumb-img">
-                                            <a href="https://ila.edu.vn/hoc-danh-van-tieng-anh"><img width="885"
-                                                    height="588"
-                                                    src="<?php echo THEME_URI . '/assets/'; ?>images/ila-hoc-danh-van-tieng-anh-1.jpg"
-                                                    class="attachment-full size-full wp-post-image"
-                                                    alt="học đánh vần tiếng Anh" decoding="async"
-                                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-hoc-danh-van-tieng-anh-1.jpg 885w, images/ila-hoc-danh-van-tieng-anh-1-300x199.jpg 300w, images/ila-hoc-danh-van-tieng-anh-1-768x510.jpg 768w"
-                                                    sizes="100vw" /></a>
-                                        </div>
-                                        <div class="post-content">
-                                            <h3 class="post-title"><a
-                                                    href="https://ila.edu.vn/hoc-danh-van-tieng-anh">6 quy tắc đơn
-                                                    giản giúp bé học đánh vần tiếng Anh dễ dàng</a></h3>
-                                            <a href="https://ila.edu.vn/lam-ban-cung-con" class="category-name">Làm
-                                                bạn cùng con</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-xl-12">
-                                    <div class="post-item">
-                                        <div class="thumb-img">
-                                            <a href="https://ila.edu.vn/tieng-anh-cho-tre-mam-non"><img width="885"
-                                                    height="588"
-                                                    src="<?php echo THEME_URI . '/assets/'; ?>images/ila-tieng-anh-cho-tre-mam-non-1.jpg"
-                                                    class="attachment-full size-full wp-post-image"
-                                                    alt="học từ vựng tiếng Anh theo chủ đề trái cây"
-                                                    decoding="async"
-                                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-tieng-anh-cho-tre-mam-non-1.jpg 885w, images/ila-tieng-anh-cho-tre-mam-non-1-300x199.jpg 300w, images/ila-tieng-anh-cho-tre-mam-non-1-768x510.jpg 768w"
-                                                    sizes="100vw" /></a>
-                                        </div>
-                                        <div class="post-content">
-                                            <h3 class="post-title"><a
-                                                    href="https://ila.edu.vn/tieng-anh-cho-tre-mam-non">Bí quyết dạy
-                                                    tiếng Anh cho trẻ mầm non hiệu quả tại nhà</a></h3>
-                                            <a href="https://ila.edu.vn/lam-ban-cung-con" class="category-name">Làm
-                                                bạn cùng con</a>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="hall-item">
+                            <div class="hall-image">
+                                <img width="896" height="1344"
+                                    src="<?php echo THEME_URI . '/assets/'; ?>images/pham-quang-tuan-huy.jpg"
+                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                    alt="Phạm Quang Tuấn Huy" decoding="async"
+                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/pham-quang-tuan-huy.jpg 896w, images/pham-quang-tuan-huy-200x300.jpg 200w, images/pham-quang-tuan-huy-683x1024.jpg 683w, images/pham-quang-tuan-huy-768x1152.jpg 768w"
+                                    sizes="100vw" />
+                            </div>
+                            <div class="hall-content">
+                                <h3><a href="#">Phạm Quang Tuấn Huy</a></h3>
+                                <p style="font-size: 16px"><span>ILA Gò Vấp</span></p>
+                                <p>"Thầy cô và bạn bè ở trên lớp đều rất thân thiện và vui nhộn. Con muốn học ở ILA mỗi
+                                    ngày"</p>
+                            </div>
+                        </div>
+                        <div class="hall-item">
+                            <div class="hall-image">
+                                <img width="896" height="1344"
+                                    src="<?php echo THEME_URI . '/assets/'; ?>images/le-phuong-bao-anh.jpg"
+                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                    alt="Lê Phương Bảo Anh" decoding="async"
+                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/le-phuong-bao-anh.jpg 896w, images/le-phuong-bao-anh-200x300.jpg 200w, images/le-phuong-bao-anh-683x1024.jpg 683w, images/le-phuong-bao-anh-768x1152.jpg 768w"
+                                    sizes="100vw" />
+                            </div>
+                            <div class="hall-content">
+                                <h3><a href="#">Lê Phương Bảo Anh</a></h3>
+                                <p style="font-size: 16px"><span>ILA Phan Xích Long</span></p>
+                                <p>"Con luôn nhận được sự quan tâm của giáo viên và thầy cô trợ giảng. Con rất yêu quý
+                                    thầy cô của mình!"</p>
+                            </div>
+                        </div>
+                        <div class="hall-item">
+                            <div class="hall-image">
+                                <img width="896" height="1344"
+                                    src="<?php echo THEME_URI . '/assets/'; ?>images/pham-dang-duong.jpg"
+                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                    alt="Phạm Đăng Dương" decoding="async"
+                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/pham-dang-duong.jpg 896w, images/pham-dang-duong-200x300.jpg 200w, images/pham-dang-duong-683x1024.jpg 683w, images/pham-dang-duong-768x1152.jpg 768w"
+                                    sizes="100vw" />
+                            </div>
+                            <div class="hall-content">
+                                <h3><a href="#">Phạm Đăng Dương</a></h3>
+                                <p style="font-size: 16px"><span>ILA Hải Phòng</span></p>
+                                <p>"Các trò chơi tiếng Anh giúp con ghi nhớ nhanh hơn các từ vựng mới và học không bao
+                                    giờ chán"</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="section-5" class="section-hall-of-greatness">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="title-blog">
-                            <h2>GƯƠNG MẶT XUẤT SẮC</h2>
-                            <button>
-                                <a href="https://ila.edu.vn/guong-mat-xuat-sac">Xem tất cả <i
-                                        class="fa-regular fa-arrow-right"></i></a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="hall-owl-slider-course owl-carousel owl-theme">
-                    <div class="hall-item">
-                        <div class="hall-image">
-                            <img width="448" height="530"
-                                src="<?php echo THEME_URI . '/assets/'; ?>images/Tien-Duc-Mac-Dinh-Chi-1.png"
-                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                alt="PHẠM TIẾN ĐỨC" decoding="async"
-                                srcset="<?php echo THEME_URI . '/assets/'; ?>images/Tien-Duc-Mac-Dinh-Chi-1.png 448w, images/Tien-Duc-Mac-Dinh-Chi-1-254x300.png 254w"
-                                sizes="100vw" />
-                        </div>
-                        <div class="hall-content">
-                            <h3><a href="#">Phạm Tiến Đức</a></h3>
-                            <p style="font-size: 16px"><span>ILA Mạc Đĩnh Chi</span></p>
-                            <p>15/15 khiên chứng chỉ Starters</p>
-                        </div>
-                    </div>
-                    <div class="hall-item">
-                        <div class="hall-image">
-                            <img width="448" height="530"
-                                src="<?php echo THEME_URI . '/assets/'; ?>images/Hoang-Minh-Le-Van-Viet-1.png"
-                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                alt="LÊ PHAN HOÀNG MINH" decoding="async"
-                                srcset="<?php echo THEME_URI . '/assets/'; ?>images/Hoang-Minh-Le-Van-Viet-1.png 448w, images/Hoang-Minh-Le-Van-Viet-1-254x300.png 254w"
-                                sizes="100vw" />
-                        </div>
-                        <div class="hall-content">
-                            <h3><a href="#">Lê Phan Hoàng Minh</a></h3>
-                            <p style="font-size: 16px"><span>ILA Lê Văn Việt</span></p>
-                            <p>15/15 khiên chứng chỉ Starters</p>
-                        </div>
-                    </div>
-                    <div class="hall-item">
-                        <div class="hall-image">
-                            <img width="896" height="1344"
-                                src="<?php echo THEME_URI . '/assets/'; ?>images/pham-quang-tuan-huy.jpg"
-                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                alt="Phạm Quang Tuấn Huy" decoding="async"
-                                srcset="<?php echo THEME_URI . '/assets/'; ?>images/pham-quang-tuan-huy.jpg 896w, images/pham-quang-tuan-huy-200x300.jpg 200w, images/pham-quang-tuan-huy-683x1024.jpg 683w, images/pham-quang-tuan-huy-768x1152.jpg 768w"
-                                sizes="100vw" />
-                        </div>
-                        <div class="hall-content">
-                            <h3><a href="#">Phạm Quang Tuấn Huy</a></h3>
-                            <p style="font-size: 16px"><span>ILA Gò Vấp</span></p>
-                            <p>"Thầy cô và bạn bè ở trên lớp đều rất thân thiện và vui nhộn. Con muốn học ở ILA mỗi
-                                ngày"</p>
-                        </div>
-                    </div>
-                    <div class="hall-item">
-                        <div class="hall-image">
-                            <img width="896" height="1344"
-                                src="<?php echo THEME_URI . '/assets/'; ?>images/le-phuong-bao-anh.jpg"
-                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                alt="Lê Phương Bảo Anh" decoding="async"
-                                srcset="<?php echo THEME_URI . '/assets/'; ?>images/le-phuong-bao-anh.jpg 896w, images/le-phuong-bao-anh-200x300.jpg 200w, images/le-phuong-bao-anh-683x1024.jpg 683w, images/le-phuong-bao-anh-768x1152.jpg 768w"
-                                sizes="100vw" />
-                        </div>
-                        <div class="hall-content">
-                            <h3><a href="#">Lê Phương Bảo Anh</a></h3>
-                            <p style="font-size: 16px"><span>ILA Phan Xích Long</span></p>
-                            <p>"Con luôn nhận được sự quan tâm của giáo viên và thầy cô trợ giảng. Con rất yêu quý
-                                thầy cô của mình!"</p>
-                        </div>
-                    </div>
-                    <div class="hall-item">
-                        <div class="hall-image">
-                            <img width="896" height="1344"
-                                src="<?php echo THEME_URI . '/assets/'; ?>images/pham-dang-duong.jpg"
-                                class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                alt="Phạm Đăng Dương" decoding="async"
-                                srcset="<?php echo THEME_URI . '/assets/'; ?>images/pham-dang-duong.jpg 896w, images/pham-dang-duong-200x300.jpg 200w, images/pham-dang-duong-683x1024.jpg 683w, images/pham-dang-duong-768x1152.jpg 768w"
-                                sizes="100vw" />
-                        </div>
-                        <div class="hall-content">
-                            <h3><a href="#">Phạm Đăng Dương</a></h3>
-                            <p style="font-size: 16px"><span>ILA Hải Phòng</span></p>
-                            <p>"Các trò chơi tiếng Anh giúp con ghi nhớ nhanh hơn các từ vựng mới và học không bao
-                                giờ chán"</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
 </div>
-<!-- #content -->
 
 <?php
 get_footer();

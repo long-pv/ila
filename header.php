@@ -74,23 +74,12 @@
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/facility.css" media="all">
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/page-template-teacher.css" media="all">
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/page-template-teacher.css" media="all">
-
-	<!-- vucoder -->
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/archive.css" media="all">
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/single.css" media="all">
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/single-custom.css" media="all">
 	<link rel="stylesheet" id="ez-toc-css" href="<?php echo THEME_URI . '/assets/'; ?>css/screen.min.css" media="all" />
 	<link rel="stylesheet" id="video-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/video.min.css"
 		media="all" />
-	<!--  -->
-	<!--  -->
-	<!--  -->
-
-
-	<!-- longpv -->
-	<!--  -->
-	<!--  -->
-	<!--  -->
 	<link rel="stylesheet" id="page-center-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/center.css"
 		media="all" />
 	<link rel="stylesheet" id="category-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/archive.css"
@@ -100,15 +89,6 @@
 			href="<?php echo THEME_URI . '/assets/'; ?>css/ola-or-ielts.css" media="all" />
 	<?php } ?>
 
-
-	<!-- video home -->
-	<script src="<?php echo THEME_URI . '/assets/'; ?>js/n2.min.js" defer="" async=""></script>
-	<script src="<?php echo THEME_URI . '/assets/'; ?>js/smartslider-frontend.min.js" defer="" async=""></script>
-	<script src="<?php echo THEME_URI . '/assets/'; ?>js/ss-simple.min.js" defer="" async=""></script>
-	<script src="<?php echo THEME_URI . '/assets/'; ?>js/w-bullet.min.js" defer="" async=""></script>
-	<script src="<?php echo THEME_URI . '/assets/'; ?>js/index_add.js" defer="" async=""></script>
-
-
 	<!-- page 2 -->
 	<link rel="stylesheet" id="fptheme-fonts-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/font-nunito-sans.css" media="all">
 	<link rel="stylesheet" id="fptheme-style-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/style_1.css" media="all">
@@ -116,6 +96,8 @@
 	<link rel="stylesheet" id="swiper-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/swiper-bundle.min.css" media="all">
 	<link rel="stylesheet" id="fptheme-style-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/style.css" media="all">
 	<link rel="stylesheet" id="archive-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/archive-main.css" media="all">
+	<link rel="stylesheet" id="page-template-product-list-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/page-product-list.css" media="all">
+	<link rel="stylesheet" id="page-product-details-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/page-product-details.css" media="all">
 
 	<?php wp_head(); ?>
 </head>
