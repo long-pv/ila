@@ -99,8 +99,6 @@
 		<link rel="stylesheet" id="page-ola-or-ielts-custom-css-css"
 			href="<?php echo THEME_URI . '/assets/'; ?>css/ola-or-ielts.css" media="all" />
 	<?php } ?>
-	<link rel="stylesheet" id="video-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/video.min.css"
-		media="all" />
 
 
 	<!-- video home -->
@@ -109,6 +107,15 @@
 	<script src="<?php echo THEME_URI . '/assets/'; ?>js/ss-simple.min.js" defer="" async=""></script>
 	<script src="<?php echo THEME_URI . '/assets/'; ?>js/w-bullet.min.js" defer="" async=""></script>
 	<script src="<?php echo THEME_URI . '/assets/'; ?>js/index_add.js" defer="" async=""></script>
+
+
+	<!-- page 2 -->
+	<link rel="stylesheet" id="fptheme-fonts-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/font-nunito-sans.css" media="all">
+	<link rel="stylesheet" id="fptheme-style-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/style_1.css" media="all">
+	<link rel="stylesheet" id="magnific-popup-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/magnific-popup.min.css" media="all">
+	<link rel="stylesheet" id="swiper-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/swiper-bundle.min.css" media="all">
+	<link rel="stylesheet" id="fptheme-style-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/style.css" media="all">
+	<link rel="stylesheet" id="archive-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/archive-main.css" media="all">
 
 	<?php wp_head(); ?>
 </head>
