@@ -80,7 +80,8 @@
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/single.css" media="all">
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/single-custom.css" media="all">
 	<link rel="stylesheet" id="ez-toc-css" href="<?php echo THEME_URI . '/assets/'; ?>css/screen.min.css" media="all" />
-	<link rel="stylesheet" id="video-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/video.min.css" media="all" />
+	<link rel="stylesheet" id="video-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/video.min.css"
+		media="all" />
 	<!--  -->
 	<!--  -->
 	<!--  -->
@@ -90,12 +91,16 @@
 	<!--  -->
 	<!--  -->
 	<!--  -->
-	<link rel="stylesheet" id="page-center-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/center.css" media="all" />
-	<link rel="stylesheet" id="category-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/archive.css" media="all" />
+	<link rel="stylesheet" id="page-center-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/center.css"
+		media="all" />
+	<link rel="stylesheet" id="category-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/archive.css"
+		media="all" />
 	<?php if (is_page_template('page-recruitment_study_abroad.php')) { ?>
-		<link rel="stylesheet" id="page-ola-or-ielts-custom-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/ola-or-ielts.css" media="all" />
+		<link rel="stylesheet" id="page-ola-or-ielts-custom-css-css"
+			href="<?php echo THEME_URI . '/assets/'; ?>css/ola-or-ielts.css" media="all" />
 	<?php } ?>
-	<link rel="stylesheet" id="video-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/video.min.css" media="all" />
+	<link rel="stylesheet" id="video-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/video.min.css"
+		media="all" />
 
 
 	<!-- video home -->
@@ -110,6 +115,7 @@
 
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
+
 
 	<header class="main-header">
 		<div class="nav-header-top">

@@ -2,9 +2,9 @@
 function register_cpt_post_types()
 {
     $cpt_list = [
-        'media_video' => [
-            'labels' => __('Media Video', 'basetheme'),
-            'slug' => 'media_video',
+        'video_media' => [
+            'labels' => 'Video Media',
+            'slug' => 'video_media',
             'cap' => false,
             'hierarchical' => false,
             'position' => false,
