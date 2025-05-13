@@ -20,193 +20,190 @@ get_header();
 <!-- Content Start -->
 <div id="content" class="site-content">
     <main class="facility">
-        <section class="section-1">
-            <div class="container">
-                <video id="banner-video" autoplay="autoplay" loop="loop" muted="" defaultmuted="" playsinline=""
-                    oncontextmenu="return false;" preload="auto">
-                    <source src="<?php echo THEME_URI . '/assets/'; ?>media/video-co-so-vat-chat-ila.mp4" type="video/mp4" />
-                </video>
-                <div class="banner-content">
-                    <div class="container">
-                        <div class="banner-content-main" data-aos="fade-up" data-aos-delay="50"
-                            data-aos-duration="800">
-                            <h1 style="color: #ffffff">
-                                CƠ SỞ VẬT CHẤT<br />
-                                TẠI TRUNG TÂM ILA
-                            </h1>
-                            <p>
-                                <a class="open-popup" href="https://www.youtube.com/watch?v=Pm1rvCFKkjw">Xem
-                                    video</a><a class="open-popup"
-                                    href="https://www.youtube.com/watch?v=Pm1rvCFKkjw"
-                                    style="margin-left: 10px"><img width="65" height="64" class="img-bound-fill"
-                                        src="<?php echo THEME_URI . '/assets/'; ?>images/video-icon.png" /></a>
-                            </p>
+        <!-- Video Start -->
+        <?php
+        $section_1 = get_field('section_1') ?? [];
+
+        $video_url = !empty($section_1['video_bg']) ? esc_url($section_1['video_bg']) : '';
+        $heading = !empty($section_1['heading']) ? $section_1['heading'] : '';
+        $youtube_link = !empty($section_1['youtube_link']) ? esc_url($section_1['youtube_link']) : '';
+
+        $video_icon_url = !empty($section_1['video_icon']['url']) ? esc_url($section_1['video_icon']['url']) : '';
+        $video_icon_alt = !empty($section_1['video_icon']['alt']) ? esc_attr($section_1['video_icon']['alt']) : '';
+        ?>
+
+        <?php if ($video_url || $heading || $youtube_link): ?>
+            <section class="section-1">
+                <div class="container">
+                    <?php if ($video_url): ?>
+                        <video id="banner-video" autoplay loop muted playsinline oncontextmenu="return false" preload="auto">
+                            <source src="<?php echo $video_url; ?>" type="video/mp4" />
+                        </video>
+                    <?php endif; ?>
+
+                    <div class="banner-content">
+                        <div class="container">
+                            <div class="banner-content-main" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
+                                <?php if ($heading): ?>
+                                    <h1 style="color: #ffffff"><?php echo nl2br(esc_html($heading)); ?></h1>
+                                <?php endif; ?>
+
+                                <?php if ($youtube_link): ?>
+                                    <p>
+                                        <a class="open-popup" href="<?php echo $youtube_link; ?>">Xem video</a>
+                                        <?php if ($video_icon_url): ?>
+                                            <a class="open-popup" href="<?php echo $youtube_link; ?>" style="margin-left: 10px">
+                                                <img width="65" height="64" class="img-bound-fill"
+                                                    src="<?php echo $video_icon_url; ?>" alt="<?php echo $video_icon_alt; ?>" />
+                                            </a>
+                                        <?php endif; ?>
+                                    </p>
+                                <?php endif; ?>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="section-2">
-            <div class="container">
-                <div class="box-wrapper">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="box-content">
-                                <h2 class="p1">Phong cách thiết kế</h2>
-                                <p class="p1">Nhằm nâng cao tối đa trải nghiệm học tập cho học sinh, ILA có ngôn ngữ
-                                    thiết kế tối giản, hiện đại với 3 tông màu chủ đạo: màu vàng mang đến cảm giác
-                                    vui vẻ và tích cực; màu xanh dương giúp tập trung và học hiệu quả; màu nâu gỗ
-                                    tạo cảm giác tin cậy và an toàn.</p>
-                                <div class="box-circle"></div>
-                                <div class="box-rectangle"></div>
+            </section>
+        <?php endif; ?>
+        <!-- Video End -->
+
+        <!-- Banner Start -->
+        <?php
+        $section_2 = get_field('banner_section') ?? [];
+
+        $background_image = !empty($section_2['background_image']['url']) ? esc_url($section_2['background_image']['url']) : '';
+        $background_alt = !empty($section_2['background_image']['alt']) ? esc_attr($section_2['background_image']['alt']) : '';
+
+        $title = !empty($section_2['title']) ? esc_html($section_2['title']) : '';
+        $content = !empty($section_2['content']) ? wp_kses_post($section_2['content']) : '';
+
+        $image = !empty($section_2['image']['url']) ? esc_url($section_2['image']['url']) : '';
+        $image_alt = !empty($section_2['image']['alt']) ? esc_attr($section_2['image']['alt']) : '';
+        ?>
+
+        <?php if ($title || $content || $image): ?>
+            <section class="section-2">
+                <div class="container">
+                    <div class="box-wrapper">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="box-content">
+                                    <?php if ($title): ?>
+                                        <h2 class="p1"><?php echo $title; ?></h2>
+                                    <?php endif; ?>
+
+                                    <?php if ($content): ?>
+                                        <p class="p1"><?php echo $content; ?></p>
+                                    <?php endif; ?>
+
+                                    <div class="box-circle"></div>
+                                    <div class="box-rectangle"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="box-gallery">
-                                <!-- <img src="<?php echo THEME_URI . '/assets/'; ?>assets/images/csvc-gallery-group.png" alt=""> -->
-                                <div class="box-rectangle"></div>
-                                <div class="row">
-                                    <div class="col-6 col-first">
-                                        <img width="329" height="401" class="img-gallery-1"
-                                            src="<?php echo THEME_URI . '/assets/'; ?>images/gallery-1.png" alt="" />
-                                        <img width="329" height="245" class="img-gallery-2"
-                                            src="<?php echo THEME_URI . '/assets/'; ?>images/gallery-2.png" alt="" />
-                                    </div>
-                                    <div class="col-6">
-                                        <img width="365" height="267" class="img-gallery-3"
-                                            src="<?php echo THEME_URI . '/assets/'; ?>images/gallery-3.png" alt="" />
-                                        <img width="365" height="355" class="img-gallery-4"
-                                            src="<?php echo THEME_URI . '/assets/'; ?>images/gallery-4.png" alt="" />
-                                    </div>
+
+                            <div class="col-lg-6">
+                                <div class="box-gallery">
+                                    <div class="box-rectangle"></div>
+
+                                    <?php if ($image): ?>
+                                        <img class="img-gallery-1" src="<?php echo $image; ?>"
+                                            alt="<?php echo $image_alt; ?>" />
+                                    <?php endif; ?>
+
+                                    <?php if ($background_image): ?>
+                                        <img class="img-gallery-2" src="<?php echo $background_image; ?>"
+                                            alt="<?php echo $background_alt; ?>" />
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="section-3">
-            <img width="1920" height="948" class="img-background" src="<?php echo THEME_URI . '/assets/'; ?>images/bg-section-system.png" alt="" />
-            <div class="box-content">
+            </section>
+        <?php endif; ?>
+        <!-- Banner End -->
+
+        <!-- Banner 2 Start -->
+        <?php
+        $section_3 = get_field('banner_2_section') ?? [];
+
+        $background = !empty($section_3['background_image']['url']) ? esc_url($section_3['background_image']['url']) : '';
+        $bg_alt = !empty($section_3['background_image']['alt']) ? esc_attr($section_3['background_image']['alt']) : '';
+
+        $title = !empty($section_3['title']) ? esc_html($section_3['title']) : '';
+        $content = !empty($section_3['content']) ? wp_kses_post($section_3['content']) : '';
+        ?>
+
+        <?php if ($title || $content || $background): ?>
+            <section class="section-3">
+                <?php if ($background): ?>
+                    <img width="1920" height="948" class="img-background" src="<?php echo $background; ?>"
+                        alt="<?php echo $bg_alt; ?>" />
+                <?php endif; ?>
+
+                <div class="box-content">
+                    <div class="container">
+                        <div class="box-main-content">
+                            <?php if ($title): ?>
+                                <h2 class="p1"><?php echo $title; ?></h2>
+                            <?php endif; ?>
+
+                            <?php if ($content): ?>
+                                <div class="p1"><?php echo $content; ?></div>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <?php endif; ?>
+        <!-- Banner 2 End -->
+
+        <!-- Slide Image Start -->
+        <?php
+        $slide_section = get_field('slide_section') ?? [];
+
+        $title = !empty($slide_section['title']) ? esc_html($slide_section['title']) : '';
+        $gallery = !empty($slide_section['slide_item']) && is_array($slide_section['slide_item']) ? $slide_section['slide_item'] : [];
+        ?>
+
+        <?php if ($title || !empty($gallery)): ?>
+            <section id="section-6" class="section-space-powers">
                 <div class="container">
-                    <div class="box-main-content">
-                        <h2 class="p1">Trang thiết bị và nội thất</h2>
-                        <p class="p1">ILA chú trọng vào trang thiết bị và nội thất chất lượng cao, an toàn, phù hợp
-                            cho từng độ tuổi như thảm, bàn ghế gỗ bo tròn các cạnh hay đóng mở để con thoải mái vận
-                            động, dễ dàng tham gia các hoạt động nhóm.</p>
-                        <p class="p1">Màn hình tương tác 65 inch giúp các em hiểu sâu và rõ bài học. Bảng viết 360
-                            độ bao quanh phòng học hỗ trợ tối đa việc thể hiện ý tưởng của các em.</p>
-                        <p class="p1">Bên cạnh hệ thống đèn phòng ngừa mỏi mắt, ILA còn tận dụng ánh sáng tự nhiên,
-                            kết hợp cửa kính, tấm film cách nhiệt và tia UV để bảo vệ sức khỏe cho học sinh.</p>
+                    <?php if ($title): ?>
+                        <div class="title-space">
+                            <h2><?php echo nl2br($title); ?></h2>
+                        </div>
+                    <?php endif; ?>
+                </div>
+
+                <?php if (!empty($gallery)): ?>
+                    <div class="space-owl-slider owl-carousel owl-theme">
+                        <?php foreach ($gallery as $image):
+                            $img_url = !empty($image['url']) ? esc_url($image['url']) : '';
+                            $img_alt = !empty($image['alt']) ? esc_attr($image['alt']) : '';
+                            $img_width = !empty($image['width']) ? (int) $image['width'] : '';
+                            $img_height = !empty($image['height']) ? (int) $image['height'] : '';
+                            ?>
+                            <?php if ($img_url): ?>
+                                <div class="space-item">
+                                    <div class="space-image">
+                                        <img width="<?php echo $img_width; ?>" height="<?php echo $img_height; ?>"
+                                            src="<?php echo $img_url; ?>"
+                                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                            alt="<?php echo $img_alt; ?>" decoding="async" sizes="100vw" />
+                                    </div>
+                                </div>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section id="section-6" class="section-space-powers">
-            <div class="container">
-                <div class="title-space">
-                    <h2>
-                        Không gian học tập <br />
-                        chuẩn quốc tế tại ILA
-                    </h2>
-                </div>
-            </div>
-            <div class="space-owl-slider owl-carousel owl-theme">
-                <div class="space-item">
-                    <div class="space-image">
-                        <img width="1355" height="762" src="<?php echo THEME_URI . '/assets/'; ?>images/center-6.png"
-                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
-                            decoding="async" fetchpriority="high"
-                            srcset="<?php echo THEME_URI . '/assets/'; ?>images/center-6.png 1355w, images/center-6-300x169.png 300w, images/center-6-1024x576.png 1024w, images/center-6-768x432.png 768w"
-                            sizes="100vw" />
-                    </div>
-                    <!-- <div class="space-content">
-                <h3><a href="#"></a></h3>
-                                <div class="space-location">
-                    <p><img src="<?php echo THEME_URI . '/assets/'; ?>"> </p>
-                </div>
-            </div> -->
-                </div>
-                <div class="space-item">
-                    <div class="space-image">
-                        <img width="1352" height="762" src="<?php echo THEME_URI . '/assets/'; ?>images/center-5.png"
-                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
-                            decoding="async"
-                            srcset="<?php echo THEME_URI . '/assets/'; ?>images/center-5.png 1352w, images/center-5-300x169.png 300w, images/center-5-1024x577.png 1024w, images/center-5-768x433.png 768w"
-                            sizes="100vw" />
-                    </div>
-                    <!-- <div class="space-content">
-                <h3><a href="#"></a></h3>
-                                <div class="space-location">
-                    <p><img src="<?php echo THEME_URI . '/assets/'; ?>"> </p>
-                </div>
-            </div> -->
-                </div>
-                <div class="space-item">
-                    <div class="space-image">
-                        <img width="1131" height="762" src="<?php echo THEME_URI . '/assets/'; ?>images/center-4.png"
-                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
-                            decoding="async"
-                            srcset="<?php echo THEME_URI . '/assets/'; ?>images/center-4.png 1131w, images/center-4-300x202.png 300w, images/center-4-1024x690.png 1024w, images/center-4-768x517.png 768w"
-                            sizes="100vw" />
-                    </div>
-                    <!-- <div class="space-content">
-                <h3><a href="#"></a></h3>
-                                <div class="space-location">
-                    <p><img src="<?php echo THEME_URI . '/assets/'; ?>"> </p>
-                </div>
-            </div> -->
-                </div>
-                <div class="space-item">
-                    <div class="space-image">
-                        <img width="1347" height="762" src="<?php echo THEME_URI . '/assets/'; ?>images/center-3.png"
-                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
-                            decoding="async"
-                            srcset="<?php echo THEME_URI . '/assets/'; ?>images/center-3.png 1347w, images/center-3-300x170.png 300w, images/center-3-1024x579.png 1024w, images/center-3-768x434.png 768w"
-                            sizes="100vw" />
-                    </div>
-                    <!-- <div class="space-content">
-                <h3><a href="#"></a></h3>
-                                <div class="space-location">
-                    <p><img src="<?php echo THEME_URI . '/assets/'; ?>"> </p>
-                </div>
-            </div> -->
-                </div>
-                <div class="space-item">
-                    <div class="space-image">
-                        <img width="1122" height="762" src="<?php echo THEME_URI . '/assets/'; ?>images/center-2.png"
-                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
-                            decoding="async"
-                            srcset="<?php echo THEME_URI . '/assets/'; ?>images/center-2.png 1122w, images/center-2-300x204.png 300w, images/center-2-1024x695.png 1024w, images/center-2-768x522.png 768w"
-                            sizes="100vw" />
-                    </div>
-                    <!-- <div class="space-content">
-                <h3><a href="#"></a></h3>
-                                <div class="space-location">
-                    <p><img src="<?php echo THEME_URI . '/assets/'; ?>"> </p>
-                </div>
-            </div> -->
-                </div>
-                <div class="space-item">
-                    <div class="space-image">
-                        <img width="1017" height="762" src="<?php echo THEME_URI . '/assets/'; ?>images/center-1.png"
-                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt=""
-                            decoding="async"
-                            srcset="<?php echo THEME_URI . '/assets/'; ?>images/center-1.png 1017w, images/center-1-300x225.png 300w, images/center-1-768x575.png 768w"
-                            sizes="100vw" />
-                    </div>
-                    <!-- <div class="space-content">
-                <h3><a href="#"></a></h3>
-                                <div class="space-location">
-                    <p><img src="<?php echo THEME_URI . '/assets/'; ?>"> </p>
-                </div>
-            </div> -->
-                </div>
-            </div>
-        </section>
+                <?php endif; ?>
+            </section>
+        <?php endif; ?>
+
+        <!-- Slide Image End -->
     </main>
 </div>
-<!-- #content -->
+<!-- Content End -->
 
 
 <?php
