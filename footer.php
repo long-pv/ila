@@ -12,16 +12,14 @@
 
 ?>
 
-<div class="external-link">
+<!-- <div class="external-link">
     <button class="btn-register">
         <a href="https://ila.edu.vn/bai-test-tieng-anh-chuan-quoc-te-mien-phi" target="_blank">KIỂM TRA TRÌNH ĐỘ
             MIỄN PHÍ</a>
     </button>
-</div>
+</div> -->
 <footer class="site-footer">
-
     <div class="container">
-
         <div class="footer-top">
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-order">
@@ -29,24 +27,48 @@
                         <div class="logo-footer">
                             <img width="65" height="51" src="<?php echo THEME_URI . '/assets/'; ?>images/logo-footer.png" alt="">
                         </div>
-                        <p class="footer-info">Hệ thống giáo dục và đào tạo Anh ngữ hàng đầu Việt Nam với chương
-                            trình giảng dạy cùng các dịch vụ giáo dục theo tiêu chuẩn quốc tế.</p>
+                        <p class="footer-info">
+                            <?php echo get_field('footer_setting_short_intro', 'option') ?: ''; ?>
+                        </p>
                         <ul class="links-social">
-                            <li>
-                                <a href="https://www.youtube.com/@ilavietnam" target="_blank">
-                                    <img width="43" height="44" src="<?php echo THEME_URI . '/assets/'; ?>images/logo-youtube.png" alt="youtube">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/ilavn" target="_blank">
-                                    <img width="44" height="44" src="<?php echo THEME_URI . '/assets/'; ?>images/logo-fb.png" alt="facebook">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/ilavietnam" target="_blank">
-                                    <img width="43" height="44" src="<?php echo THEME_URI . '/assets/'; ?>images/logo-insta.png" alt="instagram">
-                                </a>
-                            </li>
+                            <?php
+                            $youtube =  get_field('social_network_youtube', 'option') ?: '';
+                            if ($youtube):
+                            ?>
+                                <li>
+                                    <a href="<?php echo $youtube; ?>" target="_blank">
+                                        <img width="43" height="44" src="<?php echo THEME_URI . '/assets/'; ?>images/logo-youtube.png" alt="youtube">
+                                    </a>
+                                </li>
+                            <?php
+                            endif;
+                            ?>
+
+                            <?php
+                            $facebook =  get_field('social_network_facebook', 'option') ?: '';
+                            if ($facebook):
+                            ?>
+                                <li>
+                                    <a href="<?php echo $facebook; ?>" target="_blank">
+                                        <img width="44" height="44" src="<?php echo THEME_URI . '/assets/'; ?>images/logo-fb.png" alt="facebook">
+                                    </a>
+                                </li>
+                            <?php
+                            endif;
+                            ?>
+
+                            <?php
+                            $instagram =  get_field('social_network_instagram', 'option') ?: '';
+                            if ($instagram):
+                            ?>
+                                <li>
+                                    <a href="<?php echo $instagram; ?>" target="_blank">
+                                        <img width="43" height="44" src="<?php echo THEME_URI . '/assets/'; ?>images/logo-insta.png" alt="instagram">
+                                    </a>
+                                </li>
+                            <?php
+                            endif;
+                            ?>
                         </ul>
                         <div class="logo-bct">
                             <a href="https://www.dmca.com/Protection/Status.aspx?id=beeeb595-c70b-46b3-a077-a11cd6fce531&refurl=https%3a%2f%2fila.edu.vn%2f&rlo=true"
@@ -97,18 +119,25 @@
                                     id="es_subscription_message_68209bccf1cb4"></span>
                             </div>
                         </div>
+
                         <h3 class="box-footer-title">Tiếng Anh cao cấp</h3>
                         <ul class="list-cate">
-                            <li><a href="https://ila.edu.vn/tieng-anh-mam-non-3-6-tuoi">Tiếng Anh Mầm non (3-6
-                                    tuổi)</a></li>
-                            <li><a href="https://ila.edu.vn/tieng-anh-tieu-hoc-6-11-tuoi">Tiếng Anh Tiểu học
-                                    (6-11 tuổi)</a></li>
-                            <li><a href="https://ila.edu.vn/tieng-anh-trung-hoc-11-16-tuoi">Tiếng Anh Trung học
-                                    (11-16 tuổi)</a></li>
-                            <li><a href="https://ila.edu.vn/tieng-anh-chuyen-nganh-cho-nguoi-di-lam">Tiếng Anh
-                                    Chuyên ngành (cho người đi làm)</a></li>
-                            <li><a href="https://ila.edu.vn/tieng-anh-steam-4-10-tuoi">Tiếng Anh STEAM  IMATHS
-                                    (4-10 tuổi)</a></li>
+                            <?php
+                            $advanced_english = get_field('footer_setting_advanced_english', 'option') ?? [];
+                            if ($advanced_english):
+                                foreach ($advanced_english as $item):
+                                    if ($item['link']['url'] && $item['link']['title']):
+                            ?>
+                                        <li>
+                                            <a href="<?php echo $item['link']['url']; ?>">
+                                                <?php echo $item['link']['title']; ?>
+                                            </a>
+                                        </li>
+                            <?php
+                                    endif;
+                                endforeach;
+                            endif;
+                            ?>
                         </ul>
                     </div>
                 </div>
@@ -116,17 +145,41 @@
                     <div class="box-footer">
                         <h3 class="box-footer-title">Tiếng Anh tiêu chuẩn</h3>
                         <ul class="list-cate mb-36">
-                            <li><a href="https://ila.edu.vn/tieng-anh-tieu-chuan-ola-3-16-tuoi">Tiếng Anh OLA
-                                    (3-16 tuổi)</a></li>
+                            <?php
+                            $standard_english = get_field('footer_setting_standard_english', 'option') ?? [];
+                            if ($standard_english):
+                                foreach ($standard_english as $item):
+                                    if ($item['link']['url'] && $item['link']['title']):
+                            ?>
+                                        <li>
+                                            <a href="<?php echo $item['link']['url']; ?>">
+                                                <?php echo $item['link']['title']; ?>
+                                            </a>
+                                        </li>
+                            <?php
+                                    endif;
+                                endforeach;
+                            endif;
+                            ?>
                         </ul>
                         <h3 class="box-footer-title">Luyện thi & Du học</h3>
                         <ul class="list-cate">
-                            <li><a href="https://ila.edu.vn/chuong-trinh-luyen-thi-ielts-sat">Luyện thi IELTS và
-                                    SAT</a></li>
-                            <li><a href="https://ila.edu.vn/tu-van-du-hoc-ila-osc">ILA Du học</a></li>
-                            <li><a class="ilo-style"
-                                    href="https://ila.edu.vn/he-thong-mam-non-phan-lan-ilo-2-6-tuoi">Hệ thống
-                                    mầm non Phần Lan ILO (2-6 tuổi)</a></li>
+                            <?php
+                            $exam_preparation_study_abroad = get_field('footer_setting_exam_preparation_study_abroad', 'option') ?? [];
+                            if ($exam_preparation_study_abroad):
+                                foreach ($exam_preparation_study_abroad as $item):
+                                    if ($item['link']['url'] && $item['link']['title']):
+                            ?>
+                                        <li>
+                                            <a href="<?php echo $item['link']['url']; ?>">
+                                                <?php echo $item['link']['title']; ?>
+                                            </a>
+                                        </li>
+                            <?php
+                                    endif;
+                                endforeach;
+                            endif;
+                            ?>
                         </ul>
                     </div>
                 </div>
@@ -134,12 +187,22 @@
                     <div class="box-footer">
                         <h3 class="box-footer-title">Tìm hiểu thêm</h3>
                         <ul class="list-cate mb-36">
-                            <li><a href="https://ila.edu.vn/gioi-thieu-ila-viet-nam">Giới thiệu ILA</a></li>
-                            <li><a href="https://ila.edu.vn/trung-tam-dao-tao">Trung tâm đào tạo</a></li>
-                            <li><a href="https://ila.edu.vn/ilaverse">ILAVerse</a></li>
-                            <li><a href="https://ila.edu.vn/lien-he">Liên hệ</a></li>
-                            <li><a href="https://ila.edu.vn/chinh-sach-du-lieu" target="_blank"
-                                    rel="noopener">Chính sách dữ liệu</a></li>
+                            <?php
+                            $learn_more = get_field('footer_setting_learn_more', 'option') ?? [];
+                            if ($learn_more):
+                                foreach ($learn_more as $item):
+                                    if ($item['link']['url'] && $item['link']['title']):
+                            ?>
+                                        <li>
+                                            <a href="<?php echo $item['link']['url']; ?>">
+                                                <?php echo $item['link']['title']; ?>
+                                            </a>
+                                        </li>
+                            <?php
+                                    endif;
+                                endforeach;
+                            endif;
+                            ?>
                         </ul>
                         <div class="subscribe-form desktop">
                             <h3 class="subscribe-form-title">Nhận ngay ưu đãi mới nhất tại ILA</h3>
@@ -190,12 +253,12 @@
                 <img width="159" height="61" src="<?php echo THEME_URI . '/assets/'; ?>images/logo-bo-cong-thuong.png" alt="Bộ công thương">
             </div>
             <p class="copy-right">
-                © Copyright 2022 ILA. All rights reserved. </p>
+                <?php echo get_field('footer_setting_copyright', 'option') ?: ''; ?>
+            </p>
             <div class="text-desc">
-                <p>Công ty TNHH ILA Việt Nam, GCN đăng ký đầu tư số 411043000734 ngày cấp 08/09/2017 nơi cấp Sở
-                    Kế Hoạch & Đầu Tư TP.HCM.<br>
-                    Trụ sở chính: The Crest Residence, Khu đô thị Metropole Thủ Thiêm, 15 Trần Bạch Đằng, Phường
-                    Thủ Thiêm, Thành phố Thủ Đức, Thành Phố Hồ Chí Minh.</p>
+                <p>
+                    <?php echo get_field('footer_setting_address', 'option') ?: ''; ?>
+                </p>
             </div>
         </div>
         <div class="footer-bottom-fixed">

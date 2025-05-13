@@ -107,43 +107,25 @@
 
 
 	<header class="main-header">
+
+		<?php
+		$header_top = get_field('header_top', 'option') ?: [];
+		?>
 		<div class="nav-header-top">
 			<div class="container">
 				<ul class="nav-header-flex">
 					<li class="nav-header-item"></li>
-
-					<li class="nav-header-item">
-						<a href="https://ila.edu.vn/moi-hop-tac" target="_blank">#ƯU ĐÃI</a>
-					</li>
-
-					<li class="nav-header-item">
-						<a href="https://hocbongtrondoi.ila.edu.vn/" target="_blank">#HỌC BỔNG TRỌN ĐỜI</a>
-					</li>
-
-					<li class="nav-header-item">
-						<a href="https://speakup.ila.edu.vn/" target="_blank">#SPEAK UP</a>
-					</li>
-
-					<li class="nav-header-item">
-						<a href="https://connect.ila.edu.vn/login/index.php" target="_blank">#ILA Connect</a>
-					</li>
-
-					<li class="nav-header-item">
-						<a href="https://ilo.edu.vn/" target="_blank">#ILO</a>
-					</li>
-
-					<li class="nav-header-item">
-						<a href="https://www.ola-academy.edu.vn/" target="_blank">#OLA</a>
-					</li>
-
-					<li class="nav-header-item">
-						<a href="https://ila.edu.vn/tu-van-du-hoc-ila-osc" target="_blank">#ILA DU HỌC</a>
-					</li>
-
-					<li class="nav-header-item">
-						<a href="https://ila.edu.vn/tieng-anh-chuyen-nganh-cho-nguoi-di-lam" target="_blank">#TIẾNG ANH
-							DOANH NGHIỆP</a>
-					</li>
+					<?php
+					foreach ($header_top as $item) :
+					?>
+						<li class="nav-header-item">
+							<a href="<?php echo $item['link']['url'] ?: '#'; ?>" target="_blank">
+								#<?php echo $item['link']['title'] ?: 'Link'; ?>
+							</a>
+						</li>
+					<?php
+					endforeach;
+					?>
 				</ul>
 			</div>
 		</div>
@@ -154,9 +136,9 @@
 					<div class="polylang-language-mobile">
 						<ul>
 							<li class="lang-item lang-item-7 lang-item-en lang-item-first">
-								<a lang="en-US" hreflang="en-US" href="https://ila.edu.vn/en/"><img width="37"
-										height="28" src="<?php echo THEME_URI . '/assets/'; ?>images/en_US.png"
-										alt="English" /></a>
+								<a lang="en-US" hreflang="en-US" href="<?php echo home_url(); ?>">
+									<img width="37" height="28" src="<?php echo THEME_URI . '/assets/'; ?>images/en_US.png" alt="English" />
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -181,48 +163,104 @@
 
 				<div class="navbar-menu">
 					<div class="menu-icon-close"><i class="fa-regular fa-xmark"></i></div>
-					<a href="https://ila.edu.vn/" class="custom-logo-link" rel="home" aria-current="page">
+					<a href="<?php echo home_url(); ?>" class="custom-logo-link" rel="home" aria-current="page">
 						<img width="250" height="107"
 							src="<?php echo THEME_URI . '/assets/'; ?>images/logo-ila-30-nam.jpg" class="custom-logo"
 							alt="logo ila 30 năm" decoding="async" sizes="100vw" />
 					</a>
-					<a class="" href="https://ila.edu.vn/gioi-thieu-ila-viet-nam">Giới thiệu</a>
-					<div class="navbar-dropdown-item dropdown-item-1">
-						<button class="dropbtn">
-							<a class="" href="#">Chương trình học <i class="fa fa-angle-down"></i></a></button><button
-							class="btn-dropdown-mb"><i class="fa fa-angle-down"></i></button>
-						<div class="dropdown-content">
-							<div class="container">
-								<div class="row">
-									<div class="column">
-										<a class="" href="#">Tiếng Anh cao cấp</a><a class=""
-											href="https://ila.edu.vn/tieng-anh-mam-non-3-6-tuoi">Tiếng Anh Mầm non (3-6
-											tuổi)</a><a class=""
-											href="https://ila.edu.vn/tieng-anh-tieu-hoc-6-11-tuoi">Tiếng Anh Tiểu học
-											(6-11 tuổi)</a><a class=""
-											href="https://ila.edu.vn/tieng-anh-trung-hoc-11-16-tuoi">Tiếng Anh Trung học
-											(11-16 tuổi)</a><a class=""
-											href="https://ila.edu.vn/tieng-anh-chuyen-nganh-cho-nguoi-di-lam">Tiếng Anh
-											Chuyên ngành (cho người đi làm)</a><a class=""
-											href="https://ila.edu.vn/tieng-anh-steam-4-10-tuoi">Tiếng Anh STEAM - IMATHS
-											(4-10 tuổi)</a>
+					<?php
+					$header_setting = get_field('header_setting', 'option') ?: [];
+					?>
+
+					<!-- giới thiệu -->
+					<?php if ($header_setting['about_page'] && $header_setting['about_page']['title'] && $header_setting['about_page']['url']): ?>
+						<a class="" href="<?php echo $header_setting['about_page']['url']; ?>">
+							<?php echo $header_setting['about_page']['title']; ?>
+						</a>
+					<?php endif; ?>
+
+					<!-- Chương trình học -->
+					<?php if ($header_setting['study_program'] && $header_setting['study_program']['title'] && $header_setting['study_program']['url']): ?>
+
+						<div class="navbar-dropdown-item dropdown-item-1">
+							<button class="dropbtn">
+								<a class="" href="<?php echo $header_setting['study_program']['url']; ?>"><?php echo $header_setting['study_program']['title']; ?> <i class="fa fa-angle-down"></i></a></button><button
+								class="btn-dropdown-mb"><i class="fa fa-angle-down"></i></button>
+
+							<div class="dropdown-content">
+								<div class="container">
+									<div class="row">
+										<!-- cột 1 -->
+										<?php
+										if ($header_setting['study_program_column_1']):
+										?>
+											<div class="column">
+												<?php foreach ($header_setting['study_program_column_1'] as $item): ?>
+													<a class="" href="<?php echo $item['item']['url'] ?: '#'; ?>">
+														<?php echo $item['item']['title'] ?: 'Link'; ?>
+													</a>
+												<?php endforeach; ?>
+											</div>
+										<?php
+										endif;
+										?>
+
+										<!-- cột 2 -->
+										<?php
+										if ($header_setting['study_program_column_2']):
+										?>
+											<div class="column">
+												<?php foreach ($header_setting['study_program_column_2'] as $item): ?>
+													<a class="" href="<?php echo $item['item']['url'] ?: '#'; ?>">
+														<?php echo $item['item']['title'] ?: 'Link'; ?>
+													</a>
+												<?php endforeach; ?>
+											</div>
+										<?php
+										endif;
+										?>
+
+										<!-- cột 3 -->
+										<?php
+										if ($header_setting['study_program_column_3']):
+										?>
+											<div class="column">
+												<?php foreach ($header_setting['study_program_column_3'] as $item): ?>
+													<a class="" href="<?php echo $item['item']['url'] ?: '#'; ?>">
+														<?php echo $item['item']['title'] ?: 'Link'; ?>
+													</a>
+												<?php endforeach; ?>
+											</div>
+										<?php
+										endif;
+										?>
 									</div>
-									<div class="column"><a class="" href="#">Tiếng Anh tiêu chuẩn</a><a class=""
-											href="https://ila.edu.vn/tieng-anh-tieu-chuan-ola-3-16-tuoi">Tiếng Anh OLA
-											(3-16 tuổi)</a></div>
-									<div class="column"><a class="" href="#">Luyện thi & Du học</a><a class=""
-											href="https://ila.edu.vn/chuong-trinh-luyen-thi-ielts-sat">Luyện thi IELTS -
-											SAT</a><a class="" href="https://ila.edu.vn/tu-van-du-hoc-ila-osc">ILA Du
-											học</a><a class="custom-style"
-											href="https://ila.edu.vn/he-thong-mam-non-phan-lan-ilo-2-6-tuoi">Hệ thống
-											mầm non Phần Lan ILO (2-6 tuổi)</a></div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<a class="" href="https://ila.edu.vn/co-so-vat-chat">Cơ sở vật chất</a><a class=""
-						href="https://ila.edu.vn/giao-vien-tai-ila">Giáo viên</a>
-					<div class="navbar-dropdown-item dropdown-item-2 centers-style">
+					<?php endif; ?>
+
+					<!-- Cơ sở vật chất -->
+					<?php if ($header_setting['facilities'] && $header_setting['facilities']['title'] && $header_setting['facilities']['url']): ?>
+						<a class="" href="<?php echo $header_setting['facilities']['url']; ?>">
+							<?php echo $header_setting['facilities']['title']; ?>
+						</a>
+					<?php endif; ?>
+
+					<!-- Giáo viên -->
+					<?php if ($header_setting['teacher'] && $header_setting['teacher']['title'] && $header_setting['teacher']['url']): ?>
+						<a class="" href="<?php echo $header_setting['teacher']['url']; ?>">
+							<?php echo $header_setting['teacher']['title']; ?>
+						</a>
+					<?php endif; ?>
+
+					<!-- Trung tâm -->
+					<?php if ($header_setting['center'] && $header_setting['center']['title'] && $header_setting['center']['url']): ?>
+						<a class="" href="<?php echo $header_setting['center']['url']; ?>">
+							<?php echo $header_setting['center']['title']; ?>
+						</a>
+					<?php endif; ?>
+					<!-- <div class="navbar-dropdown-item dropdown-item-2 centers-style">
 						<button class="dropbtn">
 							<a class="centers-style" href="/trung-tam-dao-tao">Trung tâm <i
 									class="fa fa-angle-down"></i></a></button><button class="btn-dropdown-mb"><i
@@ -371,8 +409,15 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="navbar-dropdown-item dropdown-item-3">
+					</div> -->
+
+					<!-- Tin tức -->
+					<?php if ($header_setting['news'] && $header_setting['news']['title'] && $header_setting['news']['url']): ?>
+						<a class="" href="<?php echo $header_setting['news']['url']; ?>">
+							<?php echo $header_setting['news']['title']; ?>
+						</a>
+					<?php endif; ?>
+					<!-- <div class="navbar-dropdown-item dropdown-item-3">
 						<button class="dropbtn">
 							<a class="" href="https://ila.edu.vn/ilaverse">ILAVerse <i
 									class="fa fa-angle-down"></i></a></button><button class="btn-dropdown-mb"><i
@@ -386,8 +431,16 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="navbar-dropdown-item dropdown-item-4">
+					</div> -->
+
+					<!-- Tuyển dụng -->
+					<?php if ($header_setting['recruitment'] && $header_setting['recruitment']['title'] && $header_setting['recruitment']['url']): ?>
+						<a class="" href="<?php echo $header_setting['recruitment']['url']; ?>">
+							<?php echo $header_setting['recruitment']['title']; ?>
+						</a>
+					<?php endif; ?>
+
+					<!-- <div class="navbar-dropdown-item dropdown-item-4">
 						<button class="dropbtn">
 							<a class="" href="https://ila.edu.vn/co-hoi-nghe-nghiep">Tuyển dụng <i
 									class="fa fa-angle-down"></i></a></button><button class="btn-dropdown-mb"><i
@@ -402,7 +455,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 					<div class="navbar-dropdown-item ila-language dropdown-item-5">
 						<button class="dropbtn">
 							<img width="37" height="25" src="<?php echo THEME_URI . '/assets/'; ?>images/vi.png"
@@ -430,7 +483,15 @@
 							</div>
 						</div>
 					</div>
-					<button class="btn-register"><a href="https://ila.edu.vn/dang-ky-tu-van">Đăng ký ngay</a></button>
+
+					<!-- Đăng ký ngay -->
+					<?php if ($header_setting['sign_up_now'] && $header_setting['sign_up_now']['title'] && $header_setting['sign_up_now']['url']): ?>
+						<button class="btn-register">
+							<a href="<?php echo $header_setting['sign_up_now']['url']; ?>">
+								<?php echo $header_setting['sign_up_now']['title']; ?>
+							</a>
+						</button>
+					<?php endif; ?>
 				</div>
 			</div>
 		</div>

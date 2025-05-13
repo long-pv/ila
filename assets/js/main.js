@@ -36,7 +36,7 @@ jQuery(function ($) {
 			}
 		})
 	}
-	activeMenuClass();
+	// activeMenuClass();
 	$('.banner-slider-image').owlCarousel({
 		loop: true,
 		margin: 10,

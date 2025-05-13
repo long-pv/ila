@@ -157,16 +157,29 @@ add_action('wp_enqueue_scripts', 'xemer_theme_scripts');
 
 // Setup theme setting page
 if (function_exists('acf_add_options_page')) {
-	acf_add_options_page(
-		array(
-			'page_title' => 'Theme Settings',
-			'menu_title' => 'Theme Settings',
-			'menu_slug' => 'theme-settings',
-			'capability' => 'edit_posts',
-			'redirect' => false,
-			'position' => 80
-		)
-	);
+	// Trang chính
+	acf_add_options_page(array(
+		'page_title'  => 'Theme Settings',
+		'menu_title'  => 'Theme Settings',
+		'menu_slug'   => 'theme-settings',
+		'capability'  => 'edit_posts',
+		'redirect'    => false,
+		'position'    => 80
+	));
+
+	// Submenu: Header
+	acf_add_options_sub_page(array(
+		'page_title'  => 'Header Settings',
+		'menu_title'  => 'Header',
+		'parent_slug' => 'theme-settings',
+	));
+
+	// Submenu: Footer
+	acf_add_options_sub_page(array(
+		'page_title'  => 'Footer Settings',
+		'menu_title'  => 'Footer',
+		'parent_slug' => 'theme-settings',
+	));
 }
 
 function xemer_theme_custom_admin_footer()
