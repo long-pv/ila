@@ -1,6 +1,6 @@
 {
     "key": "group_681e1156c702c",
-    "title": "Page about us Setting",
+    "title": "Page About us Setting",
     "fields": [
         {
             "key": "field_6822b663194d4",
@@ -1166,5 +1166,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1747131486
+    "modified": 1747197332
 }

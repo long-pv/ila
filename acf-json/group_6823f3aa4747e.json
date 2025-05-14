@@ -373,7 +373,7 @@
         },
         {
             "key": "field_68241346bc745",
-            "label": "Related Posts",
+            "label": "Related Posts Section",
             "name": "",
             "aria-label": "",
             "type": "tab",
@@ -496,5 +496,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1747195273
+    "modified": 1747196989
 }
