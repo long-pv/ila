@@ -10,6 +10,14 @@ function register_cpt_post_types()
             'position' => false,
             'icon' => 'dashicons-format-video'
         ],
+        'member' => [
+            'labels' => 'Member',
+            'slug' => 'member',
+            'cap' => false,
+            'hierarchical' => false,
+            'position' => false,
+            'icon' => 'dashicons-groups'
+        ],
     ];
 
     $cpt_tax = [

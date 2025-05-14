@@ -1,13 +1,13 @@
 {
-    "key": "group_68231f3b66a7a",
-    "title": "Page Teacher Setting",
+    "key": "group_68240090560ec",
+    "title": "Post Member Setting",
     "fields": [
         {
-            "key": "field_68231f3be76ca",
-            "label": "",
-            "name": "",
+            "key": "field_68240090d86fa",
+            "label": "Giám đốc",
+            "name": "is_director",
             "aria-label": "",
-            "type": "text",
+            "type": "checkbox",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,11 +16,16 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "choices": {
+                "giám đốc": "1"
+            },
+            "default_value": [],
+            "return_format": "value",
+            "allow_custom": 0,
+            "layout": "vertical",
+            "toggle": 0,
+            "save_custom": 0,
+            "custom_choice_button_text": "Add new choice"
         }
     ],
     "location": [
@@ -28,7 +33,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "post"
+                "value": "member"
             }
         ]
     ],
@@ -41,5 +46,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1747132231
+    "modified": 1747194672
 }
