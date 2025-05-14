@@ -18,6 +18,14 @@ function register_cpt_post_types()
             'position' => false,
             'icon' => 'dashicons-groups'
         ],
+        'top_student' => [
+            'labels' => 'Top Student',
+            'slug' => 'top_student',
+            'cap' => false,
+            'hierarchical' => false,
+            'position' => false,
+            'icon' => 'dashicons-welcome-learn-more'
+        ],
     ];
 
     $cpt_tax = [
