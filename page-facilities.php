@@ -199,7 +199,6 @@ get_header();
                 <?php endif; ?>
             </section>
         <?php endif; ?>
-
         <!-- Slide Image End -->
     </main>
 </div>
