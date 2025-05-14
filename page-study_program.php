@@ -15,8 +15,6 @@
  */
 
 get_header();
-$top_students = get_field('top_students');
-var_dump($top_students);
 ?>
 
 <!-- Content Start -->
