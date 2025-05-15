@@ -26,6 +26,14 @@ function register_cpt_post_types()
             'position' => false,
             'icon' => 'dashicons-welcome-learn-more'
         ],
+        'student_post' => [
+            'labels' => 'Student Post',
+            'slug' => 'student_post',
+            'cap' => false,
+            'hierarchical' => false,
+            'position' => false,
+            'icon' => 'dashicons-admin-post'
+        ],
     ];
 
     $cpt_tax = [
