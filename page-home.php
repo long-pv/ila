@@ -22,283 +22,152 @@ get_header();
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
 
-            <section id="section-1" class="banner-slider-home">
-                <div><ss3-force-full-width data-overflow-x="body" data-horizontal-selector="body">
-                        <div class="n2-section-smartslider fitvidsignore  n2_clear" data-ssid="7">
-                            <div id="n2-ss-7-align" class="n2-ss-align">
-                                <div class="n2-padding">
-                                    <div id="n2-ss-7" data-creator="Smart Slider 3" data-responsive="fullwidth"
-                                        class="n2-ss-slider n2-ow n2-has-hover n2notransition  ">
-                                        <div class="n2-ss-slider-wrapper-inside">
-                                            <div class="n2-ss-slider-1 n2_ss__touch_element n2-ow" style="">
-                                                <div class="n2-ss-slider-2 n2-ow">
-                                                    <div class="n2-ss-slider-3 n2-ow" style="">
-
-                                                        <div class="n2-ss-slide-backgrounds n2-ow-all">
-                                                            <div class="n2-ss-slide-background"
-                                                                data-public-id="1" data-mode="fill"><video
-                                                                    class="n2-ss-slide-background-video intrinsic-ignore"
-                                                                    style="opacity:1;" data-mode="fill"
-                                                                    playsinline="playsinline"
-                                                                    webkit-playsinline="webkit-playsinline"
-                                                                    onloadstart="this.n2LoadStarted=1;"
-                                                                    data-keepplaying="1" preload="none"
-                                                                    muted="muted" loop="loop"
-                                                                    data-reset-slide-change="1">
-                                                                    <source
-                                                                        src="<?php echo THEME_URI . '/assets/'; ?>media/homepage-greater-video.mp4"
-                                                                        type="video/mp4">
-                                                                </video></div>
-                                                            <div class="n2-ss-slide-background"
-                                                                data-public-id="2" data-mode="fill"><video
-                                                                    class="n2-ss-slide-background-video intrinsic-ignore"
-                                                                    style="opacity:1;" data-mode="fill"
-                                                                    playsinline="playsinline"
-                                                                    webkit-playsinline="webkit-playsinline"
-                                                                    onloadstart="this.n2LoadStarted=1;"
-                                                                    data-keepplaying="1" preload="none"
-                                                                    muted="muted" loop="loop"
-                                                                    data-reset-slide-change="1">
-                                                                    <source src="<?php echo THEME_URI . '/assets/'; ?>media/ILO-trailer-website.mp4"
-                                                                        type="video/mp4">
-                                                                </video>
-                                                                <div class="n2-ss-slide-background-image"
-                                                                    data-blur="0" data-alt="trường mầm non ILO "
-                                                                    data-title="">
-                                                                    <picture><img
-                                                                            src="<?php echo THEME_URI . '/assets/'; ?>images/Hinh-video-ILO_.png"
-                                                                            alt="trường mầm non ILO " title=""
-                                                                            loading="lazy" class="skip-lazy"
-                                                                            data-skip-lazy="1"></picture>
-                                                                </div>
+            <?php
+            $banner = get_field('banner') ?? null;
+            if ($banner):
+            ?>
+                <section id="section-1" class="banner-slider-home">
+                    <div>
+                        <ss3-force-full-width data-overflow-x="body" data-horizontal-selector="body">
+                            <div class="n2-section-smartslider fitvidsignore  n2_clear" data-ssid="7">
+                                <div id="n2-ss-7-align" class="n2-ss-align">
+                                    <div class="n2-padding">
+                                        <div id="n2-ss-7" data-creator="Smart Slider 3" data-responsive="fullwidth"
+                                            class="n2-ss-slider n2-ow n2-has-hover n2notransition  ">
+                                            <div class="n2-ss-slider-wrapper-inside">
+                                                <div class="n2-ss-slider-1 n2_ss__touch_element n2-ow">
+                                                    <div class="n2-ss-slider-2 n2-ow">
+                                                        <div class="n2-ss-slider-3 n2-ow">
+                                                            <div class="n2-ss-slide-backgrounds n2-ow-all">
+                                                                <?php
+                                                                foreach ($banner as $key => $item):
+                                                                    $video = $item['video'] ?? '';
+                                                                ?>
+                                                                    <div class="n2-ss-slide-background"
+                                                                        data-public-id="<?php echo $key + 1; ?>" data-mode="fill">
+                                                                        <video
+                                                                            class="n2-ss-slide-background-video intrinsic-ignore"
+                                                                            style="opacity:1;" data-mode="fill"
+                                                                            playsinline="playsinline"
+                                                                            webkit-playsinline="webkit-playsinline"
+                                                                            onloadstart="this.n2LoadStarted=1;"
+                                                                            data-keepplaying="1" preload="none"
+                                                                            muted="muted" loop="loop"
+                                                                            data-reset-slide-change="1">
+                                                                            <source src="<?php echo  $video; ?>" type="video/mp4">
+                                                                        </video>
+                                                                    </div>
+                                                                <?php endforeach; ?>
                                                             </div>
-                                                            <div class="n2-ss-slide-background"
-                                                                data-public-id="3" data-mode="fill"><video
-                                                                    class="n2-ss-slide-background-video intrinsic-ignore"
-                                                                    style="opacity:1;" data-mode="fill"
-                                                                    playsinline="playsinline"
-                                                                    webkit-playsinline="webkit-playsinline"
-                                                                    onloadstart="this.n2LoadStarted=1;"
-                                                                    data-keepplaying="1" preload="none"
-                                                                    muted="muted" loop="loop"
-                                                                    data-reset-slide-change="1">
-                                                                    <source src="<?php echo THEME_URI . '/assets/'; ?>media/OSC-summer-trailer.mp4"
-                                                                        type="video/mp4">
-                                                                </video>
-                                                                <div class="n2-ss-slide-background-image"
-                                                                    data-blur="0" data-alt="" data-title="">
-                                                                    <picture><img src="<?php echo THEME_URI . '/assets/'; ?>images/OSC-web-ila.jpeg"
-                                                                            alt="" title="" loading="lazy"
-                                                                            class="skip-lazy"
-                                                                            data-skip-lazy="1"></picture>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="n2-ss-slider-4 n2-ow">
-                                                            <svg xmlns="http://www.w3.org/2000/svg"
-                                                                viewBox="0 0 1920 762"
-                                                                data-related-device="desktopPortrait"
-                                                                class="n2-ow n2-ss-preserve-size n2-ss-preserve-size--slider n2-ss-slide-limiter"></svg>
-                                                            <div data-first="1" data-slide-duration="0"
-                                                                data-id="15" data-slide-public-id="1"
-                                                                data-title="5"
-                                                                class="n2-ss-slide n2-ow  n2-ss-slide-15">
-                                                                <div tabindex="-1" class="n2-ss-slide--focus"
-                                                                    role="note">5</div>
-                                                                <div
-                                                                    class="n2-ss-layers-container n2-ss-slide-limiter n2-ow">
-                                                                    <div class="n2-ss-layer n2-ow n-uc-TQC49fVYGdvm"
-                                                                        data-sstype="slide" data-pm="default">
-                                                                        <div class="n2-ss-layer n2-ow content-hidden-desc n-uc-nXXc9ghSB8ef"
-                                                                            data-pm="default"
-                                                                            data-sstype="content"
-                                                                            data-hasbackground="0">
-                                                                            <div
-                                                                                class="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-nXXc9ghSB8ef-inner">
-                                                                                <div class="n2-ss-layer n2-ow n-uc-j8lMT8HAmH6I"
-                                                                                    data-pm="normal"
-                                                                                    data-sstype="layer">
-                                                                                    <h1 id="n2-ss-7item1"
-                                                                                        class="n2-font-ff3aa4d20a8af749fc766ea44c01c45e-hover   n2-ss-item-content n2-ss-text n2-ow"
-                                                                                        style="display:block;">
-                                                                                        Greater you
-                                                                                        everyday<br>Trưởng thành
-                                                                                        hơn mỗi ngày</h1>
-                                                                                </div>
-                                                                                <div class="n2-ss-layer n2-ow n-uc-rcujSYDhcy2y"
-                                                                                    data-pm="normal"
-                                                                                    data-sstype="layer">
+                                                            <div class="n2-ss-slider-4 n2-ow">
+                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 1920 762"
+                                                                    data-related-device="desktopPortrait"
+                                                                    class="n2-ow n2-ss-preserve-size n2-ss-preserve-size--slider n2-ss-slide-limiter"></svg>
+                                                                <?php
+                                                                foreach ($banner as $key => $item) :
+                                                                ?>
+                                                                    <div data-slide-duration="0"
+                                                                        data-id="<?php echo $key + 1; ?>" data-slide-public-id="<?php echo $key + 1; ?>"
+                                                                        data-title="5"
+                                                                        class="n2-ss-slide n2-ow  n2-ss-slide-<?php echo $key + 1; ?>">
+                                                                        <div tabindex="-1" class="n2-ss-slide--focus"
+                                                                            role="note"><?php echo $key + 1; ?></div>
+                                                                        <div
+                                                                            class="n2-ss-layers-container n2-ss-slide-limiter n2-ow">
+                                                                            <div class="n2-ss-layer n2-ow n-uc-TQC49fVYGdvm"
+                                                                                data-sstype="slide" data-pm="default">
+                                                                                <div class="n2-ss-layer n2-ow content-hidden-desc n-uc-nXXc9ghSB8ef"
+                                                                                    data-pm="default"
+                                                                                    data-sstype="content"
+                                                                                    data-hasbackground="0">
                                                                                     <div
-                                                                                        class="n2-ss-item-content n2-ss-text n2-ow-all">
-                                                                                        <div class="">
-                                                                                            <p
-                                                                                                class="n2-font-00c0426d303d9ebf81ec63b1d5d55f94-paragraph   ">
-                                                                                                Đồng hành cùng
-                                                                                                mỗi học viên để
-                                                                                                <br>khơi dậy
-                                                                                                tiềm năng và đam
-                                                                                                mê trên <br>hành
-                                                                                                trình học tập
-                                                                                                trọn đời
-                                                                                            </p>
+                                                                                        class="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-nXXc9ghSB8ef-inner">
+                                                                                        <div class="n2-ss-layer n2-ow n-uc-j8lMT8HAmH6I"
+                                                                                            data-pm="normal"
+                                                                                            data-sstype="layer">
+                                                                                            <h1 id="n2-ss-7item1"
+                                                                                                class="n2-font-ff3aa4d20a8af749fc766ea44c01c45e-hover   n2-ss-item-content n2-ss-text n2-ow"
+                                                                                                style="display:block;">
+                                                                                                <?php echo $item['title']; ?>
+                                                                                            </h1>
+                                                                                        </div>
+                                                                                        <div class="n2-ss-layer n2-ow n-uc-rcujSYDhcy2y"
+                                                                                            data-pm="normal"
+                                                                                            data-sstype="layer">
+                                                                                            <div
+                                                                                                class="n2-ss-item-content n2-ss-text n2-ow-all">
+                                                                                                <div class="">
+                                                                                                    <p
+                                                                                                        class="n2-font-00c0426d303d9ebf81ec63b1d5d55f94-paragraph   ">
+                                                                                                        <?php echo $item['description']; ?>
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="n2-ss-layer n2-ow discover n-uc-EtWs6nvCEvuW n2-ss-layer--auto"
+                                                                                            data-pm="normal"
+                                                                                            data-sstype="layer">
+                                                                                            <div
+                                                                                                class="n2-ss-button-container n2-ss-item-content n2-ow n2-font-b22b6590b1d0109a3ac8466f5692b0e6-link  n2-ss-nowrap n2-ss-button-container--non-full-width">
+                                                                                                <a class="n2-style-92696f28387c165901a67dd410e553f5-heading  n2-ow open-popup"
+                                                                                                    href="<?php echo $item['youtube_url']; ?>">
+                                                                                                    <div>
+                                                                                                        <div>
+                                                                                                            XEM VIDEO
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </a>
+                                                                                            </div>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="n2-ss-layer n2-ow discover n-uc-EtWs6nvCEvuW n2-ss-layer--auto"
-                                                                                    data-pm="normal"
-                                                                                    data-sstype="layer">
-                                                                                    <div
-                                                                                        class="n2-ss-button-container n2-ss-item-content n2-ow n2-font-b22b6590b1d0109a3ac8466f5692b0e6-link  n2-ss-nowrap n2-ss-button-container--non-full-width">
-                                                                                        <a class="n2-style-92696f28387c165901a67dd410e553f5-heading  n2-ow open-popup"
-                                                                                            href="https://www.youtube.com/watch?v=RPFXq1fBJFM">
-                                                                                            <div>
-                                                                                                <div>XEM VIDEO
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </a>
-                                                                                    </div>
-                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                </div>
+                                                                <?php endforeach; ?>
                                                             </div>
-                                                            <div data-slide-duration="0" data-id="27"
-                                                                data-slide-public-id="2"
-                                                                data-title="Hình video ILO_"
-                                                                class="n2-ss-slide n2-ow  n2-ss-slide-27">
-                                                                <div tabindex="-1" class="n2-ss-slide--focus"
-                                                                    role="note">Hình video ILO_</div>
-                                                                <div
-                                                                    class="n2-ss-layers-container n2-ss-slide-limiter n2-ow">
-                                                                    <div class="n2-ss-layer n2-ow n-uc-dWM0UoDcjACb"
-                                                                        data-sstype="slide" data-pm="default">
-                                                                        <div class="n2-ss-layer n2-ow n-uc-SK7HjaIW99m7"
-                                                                            data-pm="default"
-                                                                            data-sstype="content"
-                                                                            data-hasbackground="0">
-                                                                            <div
-                                                                                class="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-SK7HjaIW99m7-inner">
-                                                                                <div class="n2-ss-layer n2-ow n-uc-11bd28d96398a"
-                                                                                    data-pm="normal"
-                                                                                    data-sstype="layer">
-                                                                                    <h2 id="n2-ss-7item4"
-                                                                                        class="n2-font-ff3aa4d20a8af749fc766ea44c01c45e-hover   n2-ss-item-content n2-ss-text n2-ow"
-                                                                                        style="display:block;">
-                                                                                        Hệ thống Mầm non ILO
-                                                                                        Preschool<br>Tinh hoa
-                                                                                        giáo dục Phần Lan</h2>
-                                                                                </div>
-                                                                                <div class="n2-ss-layer n2-ow discover n-uc-18fb06cd58eb4 n2-ss-layer--auto"
-                                                                                    data-pm="normal"
-                                                                                    data-sstype="layer">
-                                                                                    <div
-                                                                                        class="n2-ss-button-container n2-ss-item-content n2-ow n2-font-b22b6590b1d0109a3ac8466f5692b0e6-link  n2-ss-nowrap n2-ss-button-container--non-full-width">
-                                                                                        <a class="n2-style-92696f28387c165901a67dd410e553f5-heading  n2-ow open-popup"
-                                                                                            href="https://www.youtube.com/watch?v=So3ISERLZrw">
-                                                                                            <div>
-                                                                                                <div>XEM VIDEO
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </a>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div data-slide-duration="0" data-id="30"
-                                                                data-slide-public-id="3"
-                                                                data-title="OSC-web-ila"
-                                                                class="n2-ss-slide n2-ow  n2-ss-slide-30">
-                                                                <div tabindex="-1" class="n2-ss-slide--focus"
-                                                                    role="note">OSC-web-ila</div>
-                                                                <div
-                                                                    class="n2-ss-layers-container n2-ss-slide-limiter n2-ow">
-                                                                    <div class="n2-ss-layer n2-ow n-uc-FYmDneDjOp57"
-                                                                        data-sstype="slide" data-pm="default">
-                                                                        <div class="n2-ss-layer n2-ow n-uc-qrI1QJfTs2oo"
-                                                                            data-pm="default"
-                                                                            data-sstype="content"
-                                                                            data-hasbackground="0">
-                                                                            <div
-                                                                                class="n2-ss-section-main-content n2-ss-layer-with-background n2-ss-layer-content n2-ow n-uc-qrI1QJfTs2oo-inner">
-                                                                                <div class="n2-ss-layer n2-ow n-uc-114fbdfa82fc9"
-                                                                                    data-pm="normal"
-                                                                                    data-sstype="layer">
-                                                                                    <h1 id="n2-ss-7item6"
-                                                                                        class="n2-font-ff3aa4d20a8af749fc766ea44c01c45e-hover   n2-ss-item-content n2-ss-text n2-ow"
-                                                                                        style="display:block;">
-                                                                                        ILA Du học hè 2024</h1>
-                                                                                </div>
-                                                                                <div class="n2-ss-layer n2-ow n-uc-135aab87ff6c1"
-                                                                                    data-pm="normal"
-                                                                                    data-sstype="layer">
-                                                                                    <div
-                                                                                        class="n2-ss-item-content n2-ss-text n2-ow-all">
-                                                                                        <div class="">
-                                                                                            <p
-                                                                                                class="n2-font-00c0426d303d9ebf81ec63b1d5d55f94-paragraph   ">
-                                                                                                Hơn 40 chương
-                                                                                                trình, 12 quốc
-                                                                                                gia, 4 châu lục
-                                                                                            </p>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="n2-ss-layer n2-ow discover n-uc-15f5ab8fc179f n2-ss-layer--auto"
-                                                                                    data-pm="normal"
-                                                                                    data-sstype="layer">
-                                                                                    <div
-                                                                                        class="n2-ss-button-container n2-ss-item-content n2-ow n2-font-b22b6590b1d0109a3ac8466f5692b0e6-link  n2-ss-nowrap n2-ss-button-container--non-full-width">
-                                                                                        <a class="n2-style-92696f28387c165901a67dd410e553f5-heading  n2-ow open-popup"
-                                                                                            href="https://www.youtube.com/watch?v=JP886JMsDHI">
-                                                                                            <div>
-                                                                                                <div>XEM VIDEO
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </a>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="n2-ss-slider-controls n2-ss-slider-controls-absolute-center-bottom">
+                                                    <div style="--widget-offset:100px;"
+                                                        class="n2-ss-widget n2-ss-control-bullet n2-ow-all n2-ss-control-bullet-horizontal">
+                                                        <div
+                                                            class=" nextend-bullet-bar n2-bar-justify-content-center">
+                                                            <div class="n2-bullet n2-style-a5a9420075d4bb2a9af989b64ab7edfb-dot "
+                                                                style="visibility:hidden;"></div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div
-                                                class="n2-ss-slider-controls n2-ss-slider-controls-absolute-center-bottom">
-                                                <div style="--widget-offset:100px;"
-                                                    class="n2-ss-widget n2-ss-control-bullet n2-ow-all n2-ss-control-bullet-horizontal">
-                                                    <div
-                                                        class=" nextend-bullet-bar n2-bar-justify-content-center">
-                                                        <div class="n2-bullet n2-style-a5a9420075d4bb2a9af989b64ab7edfb-dot "
-                                                            style="visibility:hidden;"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><ss3-loader></ss3-loader>
+                                        </div><ss3-loader></ss3-loader>
+                                    </div>
                                 </div>
+                                <div class="n2_clear"></div>
                             </div>
-                            <div class="n2_clear"></div>
-                        </div>
-                    </ss3-force-full-width></div>
-            </section>
+                        </ss3-force-full-width>
+                    </div>
+                </section>
+            <?php endif; ?>
+
+
             <section id="section-2" class="section-course">
+
+                <?php
+                $form_course = get_field('form_course') ?? null;
+                ?>
                 <div class="container">
                     <div class="choose-course" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
                         <div class="row">
                             <div class="col-sm-12 col-md-9 col-lg-10 col-xl-10">
                                 <div class="row">
                                     <div class="col-sm-5 col-md-12 col-lg-4 col-xl-4">
-                                        <p>Tìm các khóa học phù hợp với bạn và giúp con đường học vấn của bạn
-                                            thành công</p>
+                                        <p>
+                                            <?php echo $form_course['description'] ?? ''; ?>
+                                        </p>
                                     </div>
                                     <div class="col-sm-7 col-md-12 col-lg-8 col-xl-8">
                                         <div class="form-course">
@@ -343,351 +212,86 @@ get_header();
                             </div>
                             <div class="col-sm-12 col-md-3 col-lg-2 col-xl-2">
                                 <div class="course-illustration">
-                                    <!-- <p data-id="1"></p> -->
-                                    <img width="466" height="433" src="<?php echo THEME_URI . '/assets/'; ?>images/thumb-default.png" data-id="1">
+                                    <img width="466" height="433" src="<?php echo $form_course['image'] ?? ''; ?>" data-id="1">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="container container-list-course">
-                    <div class="list-courses">
-                        <div class="row">
-                            <div class="col-md-6 col-lg-4 col-xl-4">
-                                <div class="course-item" data-aos="fade-up" data-aos-delay="50"
-                                    data-aos-duration="800">
-                                    <img width="896" height="896" src="<?php echo THEME_URI . '/assets/'; ?>images/tieng-anh-mam-non-3-6-tuoi.png"
-                                        class="attachment-full size-full wp-post-image"
-                                        alt="Tiếng Anh mầm non 3 - 6 tuổi" decoding="async" fetchpriority="high">
-                                    <div class="course-main">
-                                        <div class="course-logo">
-                                            <div class="row">
-                                                <div class="col-5">
-                                                    <div class="course-background-img">
-                                                        <a href="https://ila.edu.vn/tieng-anh-mam-non-3-6-tuoi">
-                                                            <img width="289" height="109"
-                                                                src="<?php echo THEME_URI . '/assets/'; ?>images/logo-1.png" alt="">
-                                                        </a>
+
+                <?php
+                $list_course = get_field('list_course') ?? null;
+                if ($list_course):
+                ?>
+                    <div class="container container-list-course">
+                        <div class="list-courses">
+                            <div class="row">
+                                <?php foreach ($list_course as $item) : ?>
+                                    <div class="col-md-6 col-lg-4 col-xl-4">
+                                        <div class="course-item" data-aos="fade-up" data-aos-delay="50"
+                                            data-aos-duration="800">
+                                            <img width="896" height="896" src="<?php echo $item['image']; ?>"
+                                                class="attachment-full size-full wp-post-image"
+                                                alt="Tiếng Anh mầm non 3 - 6 tuổi" decoding="async" fetchpriority="high">
+                                            <div class="course-main">
+                                                <div class="course-logo">
+                                                    <div class="row">
+                                                        <div class="col-5">
+                                                            <div class="course-background-img" style="height: 66px;">
+                                                                <a href="<?php echo $item['link']; ?>" style="color: #fff;font-size: 24px;font-weight: 700;">
+                                                                    <?php echo $item['category']; ?>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-7">
+                                                            <button class="learn-more">
+                                                                <span class="circle" aria-hidden="true">
+                                                                    <i class="icon arrow fa-solid fa-angle-right"></i>
+                                                                </span>
+                                                                <a class="button-text" href="<?php echo $item['link']; ?>">
+                                                                    <span>
+                                                                        Khám phá
+                                                                    </span>
+                                                                </a>
+                                                            </button>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-7">
-                                                    <button class="learn-more">
-                                                        <span class="circle" aria-hidden="true">
-                                                            <i class="icon arrow fa-solid fa-angle-right"></i>
-                                                        </span>
-                                                        <a class="button-text"
-                                                            href="https://ila.edu.vn/tieng-anh-mam-non-3-6-tuoi"><span>Khám
-                                                                phá</span></a>
-                                                    </button>
+                                                <div class="course-content">
+                                                    <a href="<?php echo $item['link']; ?>">
+                                                        <h2>
+                                                            <?php echo $item['title']; ?>
+                                                        </h2>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="course-content">
-                                            <a href="https://ila.edu.vn/tieng-anh-mam-non-3-6-tuoi">
-                                                <h2>Tiếng Anh Mầm non<br>
-                                                    (3-6 tuổi)</h2>
-                                            </a>
-                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 col-xl-4">
-                                <div class="course-item" data-aos="fade-up" data-aos-delay="50"
-                                    data-aos-duration="800">
-                                    <img width="896" height="896" src="<?php echo THEME_URI . '/assets/'; ?>images/tieng-anh-tieu-hoc-6-11-tuoi.png"
-                                        class="attachment-full size-full wp-post-image"
-                                        alt="Tiếng Anh tiểu học 6 - 11 tuổi" decoding="async">
-                                    <div class="course-main">
-                                        <div class="course-logo">
-                                            <div class="row">
-                                                <div class="col-5">
-                                                    <div class="course-background-img">
-                                                        <a
-                                                            href="https://ila.edu.vn/tieng-anh-tieu-hoc-6-11-tuoi">
-                                                            <img width="174" height="109"
-                                                                src="<?php echo THEME_URI . '/assets/'; ?>images/logo-2-1.png" alt="">
+                                <?php endforeach; ?>
+
+                                <?php
+                                $slider_center = get_field('slider_center') ?? null;
+                                if ($slider_center) :
+                                ?>
+                                    <div class="banners-owl-slider owl-carousel owl-theme">
+                                        <?php foreach ($slider_center as $item) : ?>
+                                            <div class="course-main-last" data-aos="fade-up" data-aos-delay="50"
+                                                data-aos-duration="800">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                        <a href="<?php echo $item['link']; ?>" style="display: block;" target="_blank">
+                                                            <img width="2048" height="657" src="<?php echo $item['image']; ?>" class="attachment-full size-full wp-post-image" alt="" decoding="async" loading="lazy">
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <div class="col-7">
-                                                    <button class="learn-more">
-                                                        <span class="circle" aria-hidden="true">
-                                                            <i class="icon arrow fa-solid fa-angle-right"></i>
-                                                        </span>
-                                                        <a class="button-text"
-                                                            href="https://ila.edu.vn/tieng-anh-tieu-hoc-6-11-tuoi"><span>Khám
-                                                                phá</span></a>
-                                                    </button>
-                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="course-content">
-                                            <a href="https://ila.edu.vn/tieng-anh-tieu-hoc-6-11-tuoi">
-                                                <h2>Tiếng Anh Tiểu học<br>
-                                                    (6-11 tuổi)</h2>
-                                            </a>
-                                        </div>
+                                        <?php endforeach; ?>
                                     </div>
-                                </div>
+                                <?php endif; ?>
                             </div>
-                            <div class="col-md-6 col-lg-4 col-xl-4">
-                                <div class="course-item" data-aos="fade-up" data-aos-delay="50"
-                                    data-aos-duration="800">
-                                    <img width="896" height="896"
-                                        src="<?php echo THEME_URI . '/assets/'; ?>images/tieng-anh-trung-hoc-11-16-tuoi.png"
-                                        class="attachment-full size-full wp-post-image"
-                                        alt="Tiếng Anh trung học 11 - 16 tuổi" decoding="async">
-                                    <div class="course-main">
-                                        <div class="course-logo">
-                                            <div class="row">
-                                                <div class="col-5">
-                                                    <div class="course-background-img">
-                                                        <a
-                                                            href="https://ila.edu.vn/tieng-anh-trung-hoc-11-16-tuoi">
-                                                            <img width="232" height="109"
-                                                                src="<?php echo THEME_URI . '/assets/'; ?>images/logo-3.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <button class="learn-more">
-                                                        <span class="circle" aria-hidden="true">
-                                                            <i class="icon arrow fa-solid fa-angle-right"></i>
-                                                        </span>
-                                                        <a class="button-text"
-                                                            href="https://ila.edu.vn/tieng-anh-trung-hoc-11-16-tuoi"><span>Khám
-                                                                phá</span></a>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="course-content">
-                                            <a href="https://ila.edu.vn/tieng-anh-trung-hoc-11-16-tuoi">
-                                                <h2>Tiếng Anh Trung học<br>
-                                                    (11-16 tuổi)</h2>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 col-xl-4">
-                                <div class="course-item" data-aos="fade-up" data-aos-delay="50"
-                                    data-aos-duration="800">
-                                    <img width="896" height="896" src="<?php echo THEME_URI . '/assets/'; ?>images/du-hoc-he-du-hoc-dai-han.png"
-                                        class="attachment-full size-full wp-post-image"
-                                        alt="Du học hè & Du học dài hạn" decoding="async" loading="lazy"
-                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/du-hoc-he-du-hoc-dai-han.png 896w,<?php echo THEME_URI . '/assets/'; ?>images/du-hoc-he-du-hoc-dai-han-300x300.png 300w,<?php echo THEME_URI . '/assets/'; ?>images/du-hoc-he-du-hoc-dai-han-150x150.png 150w,<?php echo THEME_URI . '/assets/'; ?>images/du-hoc-he-du-hoc-dai-han-768x768.png 768w,<?php echo THEME_URI . '/assets/'; ?>images/du-hoc-he-du-hoc-dai-han-100x100.png 100w"
-                                        sizes="100vw">
-                                    <div class="course-main">
-                                        <div class="course-logo">
-                                            <div class="row">
-                                                <div class="col-5">
-                                                    <div class="course-background-img">
-                                                        <a href="https://ila.edu.vn/tu-van-du-hoc-ila-osc">
-                                                            <img width="235" height="59" src="<?php echo THEME_URI . '/assets/'; ?>images/logo-4.png"
-                                                                alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <button class="learn-more">
-                                                        <span class="circle" aria-hidden="true">
-                                                            <i class="icon arrow fa-solid fa-angle-right"></i>
-                                                        </span>
-                                                        <a class="button-text"
-                                                            href="https://ila.edu.vn/tu-van-du-hoc-ila-osc"><span>Khám
-                                                                phá</span></a>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="course-content">
-                                            <a href="https://ila.edu.vn/tu-van-du-hoc-ila-osc">
-                                                <h2>Du học ngắn & dài hạn<br>
-                                                    (9-17 tuổi)</h2>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 col-xl-4">
-                                <div class="course-item" data-aos="fade-up" data-aos-delay="50"
-                                    data-aos-duration="800">
-                                    <img width="896" height="896" src="<?php echo THEME_URI . '/assets/'; ?>images/luyen-thi-sat-ielts.png"
-                                        class="attachment-full size-full wp-post-image"
-                                        alt="Luyện thi SAT & IELTS" decoding="async" loading="lazy"
-                                        srcset="<?php echo THEME_URI . '/assets/'; ?>images/luyen-thi-sat-ielts.png 896w,<?php echo THEME_URI . '/assets/'; ?>images/luyen-thi-sat-ielts-300x300.png 300w,<?php echo THEME_URI . '/assets/'; ?>images/luyen-thi-sat-ielts-150x150.png 150w,<?php echo THEME_URI . '/assets/'; ?>images/luyen-thi-sat-ielts-768x768.png 768w,<?php echo THEME_URI . '/assets/'; ?>images/luyen-thi-sat-ielts-100x100.png 100w"
-                                        sizes="100vw">
-                                    <div class="course-main">
-                                        <div class="course-logo">
-                                            <div class="row">
-                                                <div class="col-5">
-                                                    <div class="course-background-img">
-                                                        <a
-                                                            href="https://ila.edu.vn/chuong-trinh-luyen-thi-ielts-sat">
-                                                            <img width="208" height="83" src="<?php echo THEME_URI . '/assets/'; ?>images/logo-5.png"
-                                                                alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <button class="learn-more">
-                                                        <span class="circle" aria-hidden="true">
-                                                            <i class="icon arrow fa-solid fa-angle-right"></i>
-                                                        </span>
-                                                        <a class="button-text"
-                                                            href="https://ila.edu.vn/chuong-trinh-luyen-thi-ielts-sat"><span>Khám
-                                                                phá</span></a>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="course-content">
-                                            <a href="https://ila.edu.vn/chuong-trinh-luyen-thi-ielts-sat">
-                                                <h2>Khóa học Luyện thi<br>
-                                                    IELTS – SAT</h2>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 col-xl-4">
-                                <div class="course-item" data-aos="fade-up" data-aos-delay="50"
-                                    data-aos-duration="800">
-                                    <img width="896" height="896" src="<?php echo THEME_URI . '/assets/'; ?>images/tieng-anh-chuyen-nganh.png"
-                                        class="attachment-full size-full wp-post-image"
-                                        alt="Tiếng Anh chuyên ngành (cho người đi làm)" decoding="async"
-                                        loading="lazy">
-                                    <div class="course-main">
-                                        <div class="course-logo">
-                                            <div class="row">
-                                                <div class="col-5">
-                                                    <div class="course-background-img">
-                                                        <a
-                                                            href="https://ila.edu.vn/tieng-anh-chuyen-nganh-cho-nguoi-di-lam">
-                                                            <img width="245" height="83" src="<?php echo THEME_URI . '/assets/'; ?>images/logo-6.png"
-                                                                alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-7">
-                                                    <button class="learn-more">
-                                                        <span class="circle" aria-hidden="true">
-                                                            <i class="icon arrow fa-solid fa-angle-right"></i>
-                                                        </span>
-                                                        <a class="button-text"
-                                                            href="https://ila.edu.vn/tieng-anh-chuyen-nganh-cho-nguoi-di-lam"><span>Khám
-                                                                phá</span></a>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="course-content">
-                                            <a
-                                                href="https://ila.edu.vn/tieng-anh-chuyen-nganh-cho-nguoi-di-lam">
-                                                <h2>Tiếng Anh Chuyên ngành<br>
-                                                    (cho người đi làm)</h2>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="banners-owl-slider owl-carousel owl-theme">
-                                <div class="course-main-last" data-aos="fade-up" data-aos-delay="50"
-                                    data-aos-duration="800">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <a href="https://speakup.ila.edu.vn/?utm_campaign=ilaweb-fanpage-earned&utm_content=speak-up&utm_medium=banner-homepage"
-                                                style="display: block;" target="_blank">
-                                                <img width="2048" height="657"
-                                                    src="<?php echo THEME_URI . '/assets/'; ?>images/Speakup2024_banner_desktop_2048x657.png"
-                                                    class="attachment-full size-full wp-post-image" alt=""
-                                                    decoding="async" loading="lazy"
-                                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/Speakup2024_banner_desktop_2048x657.png 2048w,<?php echo THEME_URI . '/assets/'; ?>images/Speakup2024_banner_desktop_2048x657-300x96.png 300w,<?php echo THEME_URI . '/assets/'; ?>images/Speakup2024_banner_desktop_2048x657-1024x329.png 1024w,<?php echo THEME_URI . '/assets/'; ?>images/Speakup2024_banner_desktop_2048x657-768x246.png 768w,<?php echo THEME_URI . '/assets/'; ?>images/Speakup2024_banner_desktop_2048x657-1536x493.png 1536w"
-                                                    sizes="100vw"> </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="course-main-last" data-aos="fade-up" data-aos-delay="50"
-                                    data-aos-duration="800">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <a href="https://ilo.edu.vn/chuong-trinh-hoc?utm_campaign=ilo-2023-ads&utm_content=monthly-promotion&utm_medium=banner-homepage"
-                                                style="display: block;" target="_blank">
-                                                <img width="2560" height="822"
-                                                    src="<?php echo THEME_URI . '/assets/'; ?>images/ILO_BannerWeb-02-1-2.png"
-                                                    class="attachment-full size-full wp-post-image" alt=""
-                                                    decoding="async" loading="lazy"
-                                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/ILO_BannerWeb-02-1-2.png 2560w,<?php echo THEME_URI . '/assets/'; ?>images/ILO_BannerWeb-02-1-2-300x96.png 300w,<?php echo THEME_URI . '/assets/'; ?>images/ILO_BannerWeb-02-1-2-1024x329.png 1024w,<?php echo THEME_URI . '/assets/'; ?>images/ILO_BannerWeb-02-1-2-768x247.png 768w,<?php echo THEME_URI . '/assets/'; ?>images/ILO_BannerWeb-02-1-2-1536x493.png 1536w,<?php echo THEME_URI . '/assets/'; ?>images/ILO_BannerWeb-02-1-2-2048x658.png 2048w"
-                                                    sizes="100vw"> </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="course-main-last" data-aos="fade-up" data-aos-delay="50"
-                                    data-aos-duration="800">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <a href="https://ila.edu.vn/ilaverse/quy-light-up-the-future"
-                                                style="display: block;" target="_blank">
-                                                <img width="2560" height="822"
-                                                    src="<?php echo THEME_URI . '/assets/'; ?>images/ILA_CSR_NAMTRAMY_WEBbanner-01.png"
-                                                    class="attachment-full size-full wp-post-image" alt=""
-                                                    decoding="async" loading="lazy"
-                                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/ILA_CSR_NAMTRAMY_WEBbanner-01.png 2560w,<?php echo THEME_URI . '/assets/'; ?>images/ILA_CSR_NAMTRAMY_WEBbanner-01-300x96.png 300w,<?php echo THEME_URI . '/assets/'; ?>images/ILA_CSR_NAMTRAMY_WEBbanner-01-1024x329.png 1024w,<?php echo THEME_URI . '/assets/'; ?>images/ILA_CSR_NAMTRAMY_WEBbanner-01-768x247.png 768w,<?php echo THEME_URI . '/assets/'; ?>images/ILA_CSR_NAMTRAMY_WEBbanner-01-1536x493.png 1536w,<?php echo THEME_URI . '/assets/'; ?>images/ILA_CSR_NAMTRAMY_WEBbanner-01-2048x658.png 2048w"
-                                                    sizes="100vw"> </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="course-main-last" data-aos="fade-up" data-aos-delay="50"
-                                    data-aos-duration="800">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <a href="https://shopee.vn/ilavietnam" style="display: block;"
-                                                target="_blank">
-                                                <img width="2560" height="823"
-                                                    src="<?php echo THEME_URI . '/assets/'; ?>images/Ecom_webbanner_1-scaled.jpg"
-                                                    class="attachment-full size-full wp-post-image" alt=""
-                                                    decoding="async" loading="lazy"
-                                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/Ecom_webbanner_1-scaled.jpg 2560w,<?php echo THEME_URI . '/assets/'; ?>images/Ecom_webbanner_1-300x96.jpg 300w,<?php echo THEME_URI . '/assets/'; ?>images/Ecom_webbanner_1-1024x329.jpg 1024w,<?php echo THEME_URI . '/assets/'; ?>images/Ecom_webbanner_1-768x247.jpg 768w,<?php echo THEME_URI . '/assets/'; ?>images/Ecom_webbanner_1-1536x494.jpg 1536w,<?php echo THEME_URI . '/assets/'; ?>images/Ecom_webbanner_1-2048x658.jpg 2048w"
-                                                    sizes="100vw"> </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="course-main-last" data-aos="fade-up" data-aos-delay="50"
-                                    data-aos-duration="800">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <a href="https://ila.edu.vn/anh-van-he/?utm_source=ILAWeb+organic&utm_medium=website-banner-home&utm_campaign=ilaweb-fanpage-earned&utm_content=banner-keyvisual-hoc-phi-chi-tu-69-trieu-dong"
-                                                style="display: block;" target="_blank">
-                                                <img width="2080" height="657"
-                                                    src="<?php echo THEME_URI . '/assets/'; ?>images/banner-summer-2025_2080x657.jpg"
-                                                    class="attachment-full size-full wp-post-image"
-                                                    alt="banner summer 2025" decoding="async" loading="lazy"
-                                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/banner-summer-2025_2080x657.jpg 2080w,<?php echo THEME_URI . '/assets/'; ?>images/banner-summer-2025_2080x657-300x95.jpg 300w,<?php echo THEME_URI . '/assets/'; ?>images/banner-summer-2025_2080x657-1024x323.jpg 1024w,<?php echo THEME_URI . '/assets/'; ?>images/banner-summer-2025_2080x657-768x243.jpg 768w,<?php echo THEME_URI . '/assets/'; ?>images/banner-summer-2025_2080x657-1536x485.jpg 1536w,<?php echo THEME_URI . '/assets/'; ?>images/banner-summer-2025_2080x657-2048x647.jpg 2048w"
-                                                    sizes="100vw"> </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="course-main-last" data-aos="fade-up" data-aos-delay="50"
-                                    data-aos-duration="800">
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <a href="https://iladuhoc.edu.vn/duhoche/?utm_campaign=osc-summer-2025&utm_source=ilaweb-organic&utm_content=banner-homepage-ila-website"
-                                                style="display: block;" target="_blank">
-                                                <img width="1440" height="450"
-                                                    src="<?php echo THEME_URI . '/assets/'; ?>images/banner-digital_summer-2025_1440x450px.png"
-                                                    class="attachment-full size-full wp-post-image"
-                                                    alt="Banner ILA Du học hè [1440x450] desktop"
-                                                    decoding="async" loading="lazy"
-                                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/banner-digital_summer-2025_1440x450px.png 1440w,<?php echo THEME_URI . '/assets/'; ?>images/banner-digital_summer-2025_1440x450px-300x94.png 300w,<?php echo THEME_URI . '/assets/'; ?>images/banner-digital_summer-2025_1440x450px-1024x320.png 1024w,<?php echo THEME_URI . '/assets/'; ?>images/banner-digital_summer-2025_1440x450px-768x240.png 768w"
-                                                    sizes="100vw"> </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- Close the row container on the last post -->
                         </div>
                     </div>
-                </div>
+                <?php endif; ?>
             </section>
             <section id="section-3" class="section-blog">
                 <div class="container">
