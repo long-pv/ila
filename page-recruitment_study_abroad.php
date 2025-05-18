@@ -180,155 +180,129 @@ get_header();
                 <?php endif; ?>
 
 
-                <section class="section-8 section-gallery-video">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <div class="main-blog" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
-                                    <div class="title-blog">
-                                        <h2>ILA Verse</h2>
-                                        <button>
-                                            <a href="https://ila.edu.vn/ilaverse">Xem tất cả <i class="fa-regular fa-arrow-right"></i></a>
-                                        </button>
+                <?php
+                $news = get_field('news'); // Lấy group news
+
+                if ($news):
+                ?>
+                    <section class="section-8 section-gallery-video">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="main-blog" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
+                                        <div class="title-blog">
+                                            <h2><?php echo esc_html($news['title']); ?></h2>
+                                            <button>
+                                                <a href="<?php echo esc_url($news['view_all']); ?>">Xem tất cả <i class="fa-regular fa-arrow-right"></i></a>
+                                            </button>
+                                        </div>
+                                        <span class="quote-heading"><?php echo nl2br(esc_html($news['description'])); ?></span>
                                     </div>
-                                    <span class="quote-heading">Chào mừng bạn đến với thế giới của ILAVerse – nơi bạn có thể tìm thấy tất cả bí quyết học tiếng Anh, mẹo nuôi dạy và chăm sóc con cái… để con trưởng thành hơn mỗi ngày.</span>
                                 </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-7">
+                                    <div class="box-video-top">
+                                        <div class="video-item-lg">
+                                            <div class="box-video">
+                                                <?php
+                                                // Lấy post_video ID, hiện video thumbnail + link video (ví dụ youtube)
+                                                $video_id = $news['post_video'];
+                                                if ($video_id) {
+                                                    $video_url = get_permalink($video_id);
+                                                    $thumbnail = get_the_post_thumbnail_url($video_id, 'large');
+                                                ?>
+                                                    <a href="<?php echo esc_url($video_url); ?>" class="popup-youtube">
+                                                        <img src="<?php echo esc_url($thumbnail); ?>" alt="" />
+                                                    </a>
+                                                <?php } ?>
+                                            </div>
+                                            <div class="box-description">
+                                                <?php if ($video_id): ?>
+                                                    <h3 class="title">
+                                                        <a href="<?php echo esc_url(get_permalink($video_id)); ?>" class="box-title"><?php echo get_the_title($video_id); ?></a>
+                                                    </h3>
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="box-video-bottom">
+                                        <div class="row">
+                                            <?php
+                                            // Lặp article_below - max 3 bài
+                                            if (!empty($news['article_below'])):
+                                                foreach ($news['article_below'] as $post_id):
+                                                    $thumb = get_the_post_thumbnail_url($post_id, 'large');
+                                                    $title = get_the_title($post_id);
+                                                    $link = 'https://www.youtube.com/watch?v=90NMZmXdAT8';
+                                            ?>
+                                                    <div class="col-xl-4 col-12">
+                                                        <div class="video-item">
+                                                            <div class="box-video">
+                                                                <a href="<?php echo esc_url($link); ?>" class="box-thumb">
+                                                                    <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($title); ?>" />
+                                                                </a>
+                                                            </div>
+                                                            <div class="box-description">
+                                                                <h3 class="title">
+                                                                    <a href="<?php echo esc_url($link); ?>" class="box-title"><?php echo esc_html($title); ?></a>
+                                                                </h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            <?php
+                                                endforeach;
+                                            endif;
+                                            ?>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-5">
+                                    <div class="related-post">
+                                        <div class="row">
+                                            <h3 class="related-title">Bài viết liên quan</h3>
+                                            <?php
+                                            // Lặp related_articles - max 4 bài
+                                            if (!empty($news['related_articles'])):
+                                                foreach ($news['related_articles'] as $post_id):
+                                                    $thumb = get_the_post_thumbnail_url($post_id, 'large');
+                                                    $title = get_the_title($post_id);
+                                                    $link = get_permalink($post_id);
+                                            ?>
+                                                    <div class="col-md-6 col-xl-12">
+                                                        <div class="post-item">
+                                                            <div class="thumb-img">
+                                                                <a href="<?php echo esc_url($link); ?>">
+                                                                    <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($title); ?>" />
+                                                                </a>
+                                                            </div>
+                                                            <div class="post-content">
+                                                                <h3 class="post-title"><a href="<?php echo esc_url($link); ?>"><?php echo esc_html($title); ?></a></h3>
+                                                                <?php
+                                                                // Lấy taxonomy category của post
+                                                                $categories = get_the_category($post_id);
+                                                                if (!empty($categories)):
+                                                                ?>
+                                                                    <a href="<?php echo esc_url(get_category_link($categories[0]->term_id)); ?>" class="category-name"><?php echo esc_html($categories[0]->name); ?></a>
+                                                                <?php endif; ?>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            <?php
+                                                endforeach;
+                                            endif;
+                                            ?>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-xl-7">
-                                <div class="box-video-top">
-                                    <div class="video-item-lg">
-                                        <div class="box-video">
-                                            <a href="https://www.youtube.com/watch?v=90NMZmXdAT8" class="popup-youtube"><img
-                                                    width="600"
-                                                    height="337"
-                                                    src="<?php echo THEME_URI . '/assets/'; ?>images/648839344f399-fbutube-TU-LOP-HOC-ILA-CON-TU-TIN-VUON-RA-THE-GIOI-0-2-screenshot-1-1.png"
-                                                    class="attachment-full size-full wp-post-image"
-                                                    alt="tăng mỹ nhiên cựu học sinh ila"
-                                                    decoding="async"
-                                                    fetchpriority="high"
-                                                    srcset="<?php echo THEME_URI . '/assets/'; ?>images/648839344f399-fbutube-TU-LOP-HOC-ILA-CON-TU-TIN-VUON-RA-THE-GIOI-0-2-screenshot-1-1.png 600w,<?php echo THEME_URI . '/assets/'; ?>images/648839344f399-fbutube-TU-LOP-HOC-ILA-CON-TU-TIN-VUON-RA-THE-GIOI-0-2-screenshot-1-1-300x169.png 300w"
-                                                    sizes="100vw" /></a>
-                                        </div>
-                                        <div class="box-description">
-                                            <h3 class="title">
-                                                <a href="https://ila.edu.vn/tu-lop-hoc-ila-con-tu-tin-vuon-ra-the-gioi" class="box-title">Từ lớp học ILA, con tự tin vươn ra thế giới</a>
-                                            </h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="box-video-bottom">
-                                    <div class="row">
-                                        <div class="col-xl-4 col-12">
-                                            <div class="video-item">
-                                                <div class="box-video">
-                                                    <a href="https://ila.edu.vn/phuong-phap-hoc-tieng-anh-hieu-qua-nhat-the-gioi" class="box-thumb"><img width="885" height="588" src="<?php echo THEME_URI . '/assets/'; ?>images/ila-phuong-phap-hoc-tieng-anh-hieu-qua-nhat-the-gioi.jpg" class="attachment-full size-full wp-post-image" alt="tiếng anh" decoding="async" srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-phuong-phap-hoc-tieng-anh-hieu-qua-nhat-the-gioi.jpg 885w,<?php echo THEME_URI . '/assets/'; ?>images/ila-phuong-phap-hoc-tieng-anh-hieu-qua-nhat-the-gioi-300x199.jpg 300w,<?php echo THEME_URI . '/assets/'; ?>images/ila-phuong-phap-hoc-tieng-anh-hieu-qua-nhat-the-gioi-768x510.jpg 768w" sizes="100vw" /></a>
-                                                </div>
-                                                <div class="box-description">
-                                                    <h3 class="title">
-                                                        <a href="https://ila.edu.vn/phuong-phap-hoc-tieng-anh-hieu-qua-nhat-the-gioi" class="box-title">Phương pháp học tiếng Anh hiệu quả nhất thế giới dành cho bạn</a>
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-4 col-12">
-                                            <div class="video-item">
-                                                <div class="box-video">
-                                                    <a href="https://ila.edu.vn/nhung-sai-lam-nguoi-hoc-tieng-anh-hay-mac-phai" class="box-thumb"><img
-                                                            width="885"
-                                                            height="588"
-                                                            src="<?php echo THEME_URI . '/assets/'; ?>images/ila-nhung-sai-lam-nguoi-hoc-tieng-anh-hay-mac-phai-2.jpg"
-                                                            class="attachment-full size-full wp-post-image"
-                                                            alt="những sai lầm người học tiếng Anh hay mắc phải"
-                                                            decoding="async"
-                                                            srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-nhung-sai-lam-nguoi-hoc-tieng-anh-hay-mac-phai-2.jpg 885w,<?php echo THEME_URI . '/assets/'; ?>images/ila-nhung-sai-lam-nguoi-hoc-tieng-anh-hay-mac-phai-2-300x199.jpg 300w,<?php echo THEME_URI . '/assets/'; ?>images/ila-nhung-sai-lam-nguoi-hoc-tieng-anh-hay-mac-phai-2-768x510.jpg 768w"
-                                                            sizes="100vw" /></a>
-                                                </div>
-                                                <div class="box-description">
-                                                    <h3 class="title">
-                                                        <a href="https://ila.edu.vn/nhung-sai-lam-nguoi-hoc-tieng-anh-hay-mac-phai" class="box-title">6 sai lầm người học tiếng Anh hay mắc phải nhất và giải pháp</a>
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-4 col-12">
-                                            <div class="video-item">
-                                                <div class="box-video">
-                                                    <a href="https://ila.edu.vn/cach-dat-cau-hoi-wh-trong-tieng-anh" class="box-thumb"><img width="885" height="588" src="<?php echo THEME_URI . '/assets/'; ?>images/ila-cach-hoc-tieng-anh-cho-tre-moi-bat-dau-1.jpg" class="attachment-full size-full wp-post-image" alt="cách đặt câu hỏi wh trong tiếng Anh" decoding="async" srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-cach-hoc-tieng-anh-cho-tre-moi-bat-dau-1.jpg 885w,<?php echo THEME_URI . '/assets/'; ?>images/ila-cach-hoc-tieng-anh-cho-tre-moi-bat-dau-1-300x199.jpg 300w,<?php echo THEME_URI . '/assets/'; ?>images/ila-cach-hoc-tieng-anh-cho-tre-moi-bat-dau-1-768x510.jpg 768w" sizes="100vw" /></a>
-                                                </div>
-                                                <div class="box-description">
-                                                    <h3 class="title">
-                                                        <a href="https://ila.edu.vn/cach-dat-cau-hoi-wh-trong-tieng-anh" class="box-title">Cách đặt câu hỏi Wh trong tiếng Anh và mẫu câu thông dụng</a>
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-5">
-                                <div class="related-post">
-                                    <div class="row">
-                                        <h3 class="related-title">Bài viết liên quan</h3>
-                                        <div class="col-md-6 col-xl-12">
-                                            <div class="post-item">
-                                                <div class="thumb-img">
-                                                    <a href="https://ila.edu.vn/cach-cai-thien-ky-nang-nghe-tieng-anh"><img width="885" height="588" src="<?php echo THEME_URI . '/assets/'; ?>images/ila-cach-cai-thien-ky-nang-nghe-tieng-anh-4.jpg" class="attachment-full size-full wp-post-image" alt="cách cải thiện kỹ năng nghe tiếng Anh" decoding="async" srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-cach-cai-thien-ky-nang-nghe-tieng-anh-4.jpg 885w,<?php echo THEME_URI . '/assets/'; ?>images/ila-cach-cai-thien-ky-nang-nghe-tieng-anh-4-300x199.jpg 300w,<?php echo THEME_URI . '/assets/'; ?>images/ila-cach-cai-thien-ky-nang-nghe-tieng-anh-4-768x510.jpg 768w" sizes="100vw" /></a>
-                                                </div>
-                                                <div class="post-content">
-                                                    <h3 class="post-title"><a href="https://ila.edu.vn/cach-cai-thien-ky-nang-nghe-tieng-anh">5 cách cải thiện kỹ năng nghe tiếng Anh hiệu quả nhất</a></h3>
-                                                    <a href="https://ila.edu.vn/bi-kip-hoc-tieng-anh" class="category-name">Bí kíp học tiếng Anh</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-xl-12">
-                                            <div class="post-item">
-                                                <div class="thumb-img">
-                                                    <a href="https://ila.edu.vn/cach-hoc-thuoc-tu-vung-tieng-anh"><img width="885" height="588" src="<?php echo THEME_URI . '/assets/'; ?>images/ila-cach-hoc-thuoc-tu-vung-tieng-anh-2.jpg" class="attachment-full size-full wp-post-image" alt="Cách học thuộc từ vựng tiếng Anh: 12 mẹo học nhớ lâu hiệu quả" decoding="async" srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-cach-hoc-thuoc-tu-vung-tieng-anh-2.jpg 885w,<?php echo THEME_URI . '/assets/'; ?>images/ila-cach-hoc-thuoc-tu-vung-tieng-anh-2-300x199.jpg 300w,<?php echo THEME_URI . '/assets/'; ?>images/ila-cach-hoc-thuoc-tu-vung-tieng-anh-2-768x510.jpg 768w" sizes="100vw" /></a>
-                                                </div>
-                                                <div class="post-content">
-                                                    <h3 class="post-title"><a href="https://ila.edu.vn/cach-hoc-thuoc-tu-vung-tieng-anh">Cách học thuộc từ vựng tiếng Anh: 12 mẹo học nhớ lâu hiệu quả</a></h3>
-                                                    <a href="https://ila.edu.vn/bi-kip-hoc-tieng-anh" class="category-name">Bí kíp học tiếng Anh</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-xl-12">
-                                            <div class="post-item">
-                                                <div class="thumb-img">
-                                                    <a href="https://ila.edu.vn/hoc-ngu-phap-tieng-anh-co-ban"><img
-                                                            width="885"
-                                                            height="588"
-                                                            src="<?php echo THEME_URI . '/assets/'; ?>images/ila-ngu-phap-tieng-anh-co-ban-cho-hoc-sinh-tieu-hoc-3.jpg"
-                                                            class="attachment-full size-full wp-post-image"
-                                                            alt="ngữ pháp tiếng Anh cơ bản cho học sinh tiểu học"
-                                                            decoding="async"
-                                                            srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-ngu-phap-tieng-anh-co-ban-cho-hoc-sinh-tieu-hoc-3.jpg 885w,<?php echo THEME_URI . '/assets/'; ?>images/ila-ngu-phap-tieng-anh-co-ban-cho-hoc-sinh-tieu-hoc-3-300x199.jpg 300w,<?php echo THEME_URI . '/assets/'; ?>images/ila-ngu-phap-tieng-anh-co-ban-cho-hoc-sinh-tieu-hoc-3-768x510.jpg 768w"
-                                                            sizes="100vw" /></a>
-                                                </div>
-                                                <div class="post-content">
-                                                    <h3 class="post-title"><a href="https://ila.edu.vn/hoc-ngu-phap-tieng-anh-co-ban">Học ngữ pháp tiếng Anh cơ bản cho người mới bắt đầu</a></h3>
-                                                    <a href="https://ila.edu.vn/bi-kip-hoc-tieng-anh" class="category-name">Bí kíp học tiếng Anh</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-xl-12">
-                                            <div class="post-item">
-                                                <div class="thumb-img">
-                                                    <a href="https://ila.edu.vn/cac-thi-trong-tieng-anh"><img width="885" height="588" src="<?php echo THEME_URI . '/assets/'; ?>images/ila-tat-ca-cac-thi-trong-tieng-anh-6.jpg" class="attachment-full size-full wp-post-image" alt="Học các thì trong tiếng Anh" decoding="async" srcset="<?php echo THEME_URI . '/assets/'; ?>images/ila-tat-ca-cac-thi-trong-tieng-anh-6.jpg 885w,<?php echo THEME_URI . '/assets/'; ?>images/ila-tat-ca-cac-thi-trong-tieng-anh-6-300x199.jpg 300w,<?php echo THEME_URI . '/assets/'; ?>images/ila-tat-ca-cac-thi-trong-tieng-anh-6-768x510.jpg 768w" sizes="100vw" /></a>
-                                                </div>
-                                                <div class="post-content">
-                                                    <h3 class="post-title"><a href="https://ila.edu.vn/cac-thi-trong-tieng-anh">12 thì trong tiếng Anh: Công thức và cách sử dụng</a></h3>
-                                                    <a href="https://ila.edu.vn/bi-kip-hoc-tieng-anh" class="category-name">Bí kíp học tiếng Anh</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                    </section>
+                <?php endif; ?>
+
             </main>
         </div>
         <!-- #content -->
