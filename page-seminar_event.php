@@ -54,426 +54,187 @@ get_header();
                             <div class="box-wrapper">
                                 <div class="row">
                                     <div class="col-12">
-                                        <header class="page-header" style="background: #1b3f94">
-                                            <div class="archive-header-content">
-                                                <h1 class="page-title">Hội thảo & Sự kiện</h1>
-                                                <div class="taxonomy-description">
-                                                    <p><span data-sheets-root="1" data-sheets-value="{" data-sheets-userformat="{">Tổng hợp thông tin chương trình hội thảo, sự kiện tư vấn du học, định hướng nghề nghiệp tương lai,… Tham gia cùng ILA để chuẩn bị tốt cho hành trình du học.</span></p>
-                                                </div>
-                                            </div>
-                                            <img width="172" height="174" class="pattern pattern-1" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20172%20174'%3E%3C/svg%3E" alt="background pattern contact 1" data-lazy-src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-contact-1.png" /><noscript><img width="172" height="174" class="pattern pattern-1" src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-contact-1.png" alt="background pattern contact 1" /></noscript>
-                                            <img width="183" height="166" class="pattern pattern-2" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20183%20166'%3E%3C/svg%3E" alt="background pattern contact 2" data-lazy-src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-contact-2.png" /><noscript><img width="183" height="166" class="pattern pattern-2" src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-contact-2.png" alt="background pattern contact 2" /></noscript>
-                                        </header>
-                                    </div>
-                                </div>
-                                <div class="row events-listing events-list-first">
-                                    <div class="col-xl-6 col-lg-5 col-md-12 col-12 first-events">
-                                        <div class="event-main event-first">
-                                            <div class="event-thumbnail">
-                                                <a href="#">
-                                                    <img width="855" height="588" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20855%20588'%3E%3C/svg%3E" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="ILA Cultural Day: Kết nối văn hóa - mở lối tương lai" decoding="async" data-lazy-srcset="https://iladuhoc.edu.vn/wp-content/uploads/2025/05/OSC_CULTURE-DAY_WEBSITE-BANNER_855x588px.png 855w,
-																https://iladuhoc.edu.vn/wp-content/smush-webp/2025/05/OSC_CULTURE-DAY_WEBSITE-BANNER_855x588px-300x206.png.webp 300w, https://iladuhoc.edu.vn/wp-content/smush-webp/2025/05/OSC_CULTURE-DAY_WEBSITE-BANNER_855x588px-768x528.png.webp 768w" data-lazy-sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px"
-                                                        data-lazy-src="https://iladuhoc.edu.vn/wp-content/uploads/2025/05/OSC_CULTURE-DAY_WEBSITE-BANNER_855x588px.png" data-smush-webp-fallback="{" data-lazy-srcset":"https:\="" \="" iladuhoc.edu.vn\="" wp-content\="" uploads\="" 2025\="" 05\="" osc_culture-day_website-banner_855x588px.png="" 855w,="" https:\="" osc_culture-day_website-banner_855x588px-300x206.png="" 300w,="" osc_culture-day_website-banner_855x588px-768x528.png=""
-                                                        768w"}"=""><noscript><img
-                                                            width="855"
-                                                            height="588"
-                                                            src="https://iladuhoc.edu.vn/wp-content/uploads/2025/05/OSC_CULTURE-DAY_WEBSITE-BANNER_855x588px.png"
-                                                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                                            alt="ILA Cultural Day: Kết nối văn hóa - mở lối tương lai"
-                                                            decoding="async"
-                                                            srcset="https://iladuhoc.edu.vn/wp-content/uploads/2025/05/OSC_CULTURE-DAY_WEBSITE-BANNER_855x588px.png 855w, https://iladuhoc.edu.vn/wp-content/uploads/2025/05/OSC_CULTURE-DAY_WEBSITE-BANNER_855x588px-300x206.png 300w, https://iladuhoc.edu.vn/wp-content/uploads/2025/05/OSC_CULTURE-DAY_WEBSITE-BANNER_855x588px-768x528.png 768w"
-                                                            sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></noscript>
-                                                </a>
-                                            </div>
-                                            <div class="event-content">
-                                                <div class="event-title">
-                                                    <h3><a href="#">ILA Cultural Day: Kết nối văn hóa – mở lối tương lai</a></h3>
-                                                </div>
-                                                <div class="event-time">
-                                                    <p><i class="fa-light fa-alarm-clock"></i> 13h30 - 18h00 | Ngày 31/5/2025</p>
-                                                    <p>
-                                                        <i class="fa-light fa-location-dot"></i>
-                                                        Trường ISHCMC, số 1 Xuân Thủy, Thảo Điền, TP. Thủ Đức
-                                                    </p>
-                                                </div>
-                                                <div class="event-button">
-                                                    <button class="btn-register" data-id="3421">
-                                                        <a href="#">Đăng ký ngay</a>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-7 col-md-12 col-12 middle-events">
-                                        <div class="event-main">
-                                            <div class="row">
-                                                <div class="col-xl-4 col-lg-5 col-md-4 col-12">
-                                                    <div class="event-thumbnail">
-                                                        <a href="#">
-                                                            <img width="885" height="588" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20885%20588'%3E%3C/svg%3E" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Du học Mỹ bậc trung học: Tạo lợi thế vào đại học Top 50" decoding="async" data-lazy-srcset="https://iladuhoc.edu.vn/wp-content/uploads/2025/04/ila-mini-fair-19-4-2025.jpg 885w,
-																		https://iladuhoc.edu.vn/wp-content/smush-webp/2025/04/ila-mini-fair-19-4-2025-300x199.jpg.webp 300w, https://iladuhoc.edu.vn/wp-content/smush-webp/2025/04/ila-mini-fair-19-4-2025-768x510.jpg.webp 768w" data-lazy-sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" data-lazy-src="https://iladuhoc.edu.vn/wp-content/uploads/2025/04/ila-mini-fair-19-4-2025.jpg" data-smush-webp-fallback="{"
-                                                                data-lazy-srcset":"https:\="" \="" iladuhoc.edu.vn\="" wp-content\="" uploads\="" 2025\="" 04\="" ila-mini-fair-19-4-2025.jpg="" 885w,="" https:\="" ila-mini-fair-19-4-2025-300x199.jpg="" 300w,="" ila-mini-fair-19-4-2025-768x510.jpg="" 768w"}"=""><noscript><img
-                                                                    width="885"
-                                                                    height="588"
-                                                                    src="https://iladuhoc.edu.vn/wp-content/uploads/2025/04/ila-mini-fair-19-4-2025.jpg"
-                                                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                                                    alt="Du học Mỹ bậc trung học: Tạo lợi thế vào đại học Top 50"
-                                                                    decoding="async"
-                                                                    srcset="https://iladuhoc.edu.vn/wp-content/uploads/2025/04/ila-mini-fair-19-4-2025.jpg 885w, https://iladuhoc.edu.vn/wp-content/uploads/2025/04/ila-mini-fair-19-4-2025-300x199.jpg 300w, https://iladuhoc.edu.vn/wp-content/uploads/2025/04/ila-mini-fair-19-4-2025-768x510.jpg 768w"
-                                                                    sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></noscript>
-                                                        </a>
-                                                    </div>
+                                        <?php
+                                        $banner = get_field('banner');
+                                        ?>
+                                        <?php if ($banner): ?>
+                                            <header class="page-header" style="background: #1b3f94; width: 100%;">
+                                                <div class="archive-header-content">
+                                                    <?php if (!empty($banner['title'])): ?>
+                                                        <h1 class="page-title"><?php echo esc_html($banner['title']); ?></h1>
+                                                    <?php endif; ?>
+
+                                                    <?php if (!empty($banner['description'])): ?>
+                                                        <div class="taxonomy-description">
+                                                            <p><?php echo nl2br(esc_html($banner['description'])); ?></p>
+                                                        </div>
+                                                    <?php endif; ?>
                                                 </div>
 
-                                                <div class="col-xl-8 col-lg-7 col-md-8 col-12">
-                                                    <div class="event-content">
-                                                        <div class="event-title">
-                                                            <h3><a href="#">Du học Mỹ bậc trung học: Tạo lợi thế vào đại học Top 50</a></h3>
-                                                        </div>
-                                                        <div class="event-time">
-                                                            <p><i class="fa-light fa-alarm-clock"></i> 13:30 - 16:00 ngày 19/4/2025</p>
-                                                            <p><i class="fa-light fa-location-dot"></i> Trụ sở ILA Du học, TP. HCM</p>
-                                                        </div>
-                                                        <div class="event-button">
-                                                            <button class="btn-register" data-id="3261">
-                                                                <a href="#">Đăng ký ngay</a>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="event-main">
-                                            <div class="row">
-                                                <div class="col-xl-4 col-lg-5 col-md-4 col-12">
-                                                    <div class="event-thumbnail">
-                                                        <a href="#">
-                                                            <img width="855" height="588" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20855%20588'%3E%3C/svg%3E" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Livestream ILA Du học hè: Quà tặng lên đến 300 triệu" decoding="async" data-lazy-srcset="https://iladuhoc.edu.vn/wp-content/uploads/2025/04/livestream-ila-du-hoc-he-qua-tang-len-den-300-trieu-1.jpg 855w,
-																		https://iladuhoc.edu.vn/wp-content/smush-webp/2025/04/livestream-ila-du-hoc-he-qua-tang-len-den-300-trieu-1-300x206.jpg.webp 300w, https://iladuhoc.edu.vn/wp-content/smush-webp/2025/04/livestream-ila-du-hoc-he-qua-tang-len-den-300-trieu-1-768x528.jpg.webp 768w" data-lazy-sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px"
-                                                                data-lazy-src="https://iladuhoc.edu.vn/wp-content/uploads/2025/04/livestream-ila-du-hoc-he-qua-tang-len-den-300-trieu-1.jpg" data-smush-webp-fallback="{" data-lazy-srcset":"https:\="" \="" iladuhoc.edu.vn\="" wp-content\="" uploads\="" 2025\="" 04\="" livestream-ila-du-hoc-he-qua-tang-len-den-300-trieu-1.jpg="" 855w,="" https:\="" livestream-ila-du-hoc-he-qua-tang-len-den-300-trieu-1-300x206.jpg="" 300w,=""
-                                                                livestream-ila-du-hoc-he-qua-tang-len-den-300-trieu-1-768x528.jpg="" 768w"}"=""><noscript><img
-                                                                    width="855"
-                                                                    height="588"
-                                                                    src="https://iladuhoc.edu.vn/wp-content/uploads/2025/04/livestream-ila-du-hoc-he-qua-tang-len-den-300-trieu-1.jpg"
-                                                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                                                    alt="Livestream ILA Du học hè: Quà tặng lên đến 300 triệu"
-                                                                    decoding="async"
-                                                                    srcset="https://iladuhoc.edu.vn/wp-content/uploads/2025/04/livestream-ila-du-hoc-he-qua-tang-len-den-300-trieu-1.jpg 855w, https://iladuhoc.edu.vn/wp-content/uploads/2025/04/livestream-ila-du-hoc-he-qua-tang-len-den-300-trieu-1-300x206.jpg 300w, https://iladuhoc.edu.vn/wp-content/uploads/2025/04/livestream-ila-du-hoc-he-qua-tang-len-den-300-trieu-1-768x528.jpg 768w"
-                                                                    sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></noscript>
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <img width="172" height="174" class="pattern pattern-1 entered lazyloaded" src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-contact-1.png" alt="background pattern contact 1" data-lazy-src="https://iladuhoc.edu.vn/p-content/themes/fptheme/assets/images/background-pattern-contact-1.png" data-ll-status="loaded">
+                                                <noscript><img width="172" height="174" class="pattern pattern-1" src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-contact-1.png" alt="background pattern contact 1"></noscript>
 
-                                                <div class="col-xl-8 col-lg-7 col-md-8 col-12">
-                                                    <div class="event-content">
-                                                        <div class="event-title">
-                                                            <h3><a href="#">Livestream ILA Du học hè: Quà tặng lên đến 300 triệu</a></h3>
-                                                        </div>
-                                                        <div class="event-time">
-                                                            <p><i class="fa-light fa-alarm-clock"></i> 19 giờ 30 ngày 8/4/2025</p>
-                                                            <p><i class="fa-light fa-location-dot"></i> Facebook và Tiktok ILA Du học</p>
-                                                        </div>
-                                                        <div class="event-button">
-                                                            <button class="btn-register" data-id="3210">
-                                                                <a href="#">Đăng ký ngay</a>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="event-main">
-                                            <div class="row">
-                                                <div class="col-xl-4 col-lg-5 col-md-4 col-12">
-                                                    <div class="event-thumbnail">
-                                                        <a href="#">
-                                                            <img width="855" height="588" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20855%20588'%3E%3C/svg%3E" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Mở khóa ngôi trường mơ ước 2025" decoding="async" data-lazy-srcset="https://iladuhoc.edu.vn/wp-content/uploads/2025/02/Fair.png 855w, https://iladuhoc.edu.vn/wp-content/smush-webp/2025/02/Fair-300x206.png.webp
-																		300w, https://iladuhoc.edu.vn/wp-content/smush-webp/2025/02/Fair-768x528.png.webp 768w" data-lazy-sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" data-lazy-src="https://iladuhoc.edu.vn/wp-content/uploads/2025/02/Fair.png" data-smush-webp-fallback="{" data-lazy-srcset":"https:\="" \="" iladuhoc.edu.vn\="" wp-content\="" uploads\="" 2025\="" 02\="" fair.png="" 855w,="" https:\=""
-                                                                fair-300x206.png="" 300w,="" fair-768x528.png="" 768w"}"=""><noscript><img
-                                                                    width="855"
-                                                                    height="588"
-                                                                    src="https://iladuhoc.edu.vn/wp-content/uploads/2025/02/Fair.png"
-                                                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                                                    alt="Mở khóa ngôi trường mơ ước 2025"
-                                                                    decoding="async"
-                                                                    srcset="https://iladuhoc.edu.vn/wp-content/uploads/2025/02/Fair.png 855w, https://iladuhoc.edu.vn/wp-content/uploads/2025/02/Fair-300x206.png 300w, https://iladuhoc.edu.vn/wp-content/uploads/2025/02/Fair-768x528.png 768w"
-                                                                    sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></noscript>
-                                                        </a>
-                                                    </div>
-                                                </div>
+                                                <img width="183" height="166" class="pattern pattern-2 entered lazyloaded" src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-contact-2.png" alt="background pattern contact 2" data-lazy-src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-contact-2.png" data-ll-status="loaded">
+                                                <noscript><img width="183" height="166" class="pattern pattern-2" src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-contact-2.png" alt="background pattern contact 2"></noscript>
+                                            </header>
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
 
-                                                <div class="col-xl-8 col-lg-7 col-md-8 col-12">
-                                                    <div class="event-content">
-                                                        <div class="event-title">
-                                                            <h3><a href="#">Triển lãm Du học và Hướng nghiệp ILA – Mở khóa ngôi trường mơ ước 2025</a></h3>
+
+                                <?php
+                                $featured_events = get_field('featured_events');
+                                if ($featured_events && is_array($featured_events)) :
+                                    $total = count($featured_events);
+                                    $count = 0;
+                                ?>
+                                    <div class="row events-listing events-list-first">
+                                        <?php foreach ($featured_events as $event_id) :
+                                            if ($count >= 4) break;
+
+                                            $permalink = get_permalink($event_id);
+                                            $title = get_the_title($event_id);
+                                            $thumbnail = get_the_post_thumbnail_url($event_id, 'full');
+                                            $duration = get_field('duration', $event_id);
+                                            $location = get_field('location', $event_id);
+                                            $button_id = $event_id;
+
+                                            // First event: chiếm nửa bên trái
+                                            if ($count === 0) : ?>
+                                                <div class="col-xl-6 col-lg-5 col-md-12 col-12 first-events">
+                                                    <div class="event-main event-first">
+                                                        <div class="event-thumbnail">
+                                                            <a href="<?php echo esc_url($permalink); ?>">
+                                                                <img src="<?php echo esc_url($thumbnail); ?>" alt="<?php echo esc_attr($title); ?>" />
+                                                            </a>
                                                         </div>
-                                                        <div class="event-time">
-                                                            <p><i class="fa-light fa-alarm-clock"></i> Từ 13:00 - 17:30 | Ngày 23/3 và 30/3</p>
-                                                            <p>
-                                                                <i class="fa-light fa-location-dot"></i> Hà Nội (23/3) Khách sạn Mövenpick - 83A Lý Thường Kiệt, Q. Hoàn Kiếm <br />
-                                                                TP. HCM (30/3) Khách sạn Le Méridien - 3C Tôn Đức Thắng, Quận 1
-                                                            </p>
+                                                        <div class="event-content">
+                                                            <div class="event-title">
+                                                                <h3><a href="<?php echo esc_url($permalink); ?>"><?php echo esc_html($title); ?></a></h3>
+                                                            </div>
+                                                            <div class="event-time">
+                                                                <p><i class="fa-light fa-alarm-clock"></i> <?php echo nl2br(esc_html($duration)); ?></p>
+                                                                <p><i class="fa-light fa-location-dot"></i> <?php echo nl2br(esc_html($location)); ?></p>
+                                                            </div>
+                                                            <div class="event-button">
+                                                                <button class="btn-register" data-id="<?php echo esc_attr($button_id); ?>">
+                                                                    <a href="<?php echo esc_url($permalink); ?>">Đăng ký ngay</a>
+                                                                </button>
+                                                            </div>
                                                         </div>
-                                                        <div class="event-button">
-                                                            <button class="btn-register" data-id="2863">
-                                                                <a href="#">Đăng ký ngay</a>
-                                                            </button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-6 col-lg-7 col-md-12 col-12 middle-events">
+                                                <?php else : ?>
+                                                    <div class="event-main">
+                                                        <div class="row">
+                                                            <div class="col-xl-4 col-lg-5 col-md-4 col-12">
+                                                                <div class="event-thumbnail">
+                                                                    <a href="<?php echo esc_url($permalink); ?>">
+                                                                        <img src="<?php echo esc_url($thumbnail); ?>" alt="<?php echo esc_attr($title); ?>" />
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-8 col-lg-7 col-md-8 col-12">
+                                                                <div class="event-content">
+                                                                    <div class="event-title">
+                                                                        <h3><a href="<?php echo esc_url($permalink); ?>"><?php echo esc_html($title); ?></a></h3>
+                                                                    </div>
+                                                                    <div class="event-time">
+                                                                        <p><i class="fa-light fa-alarm-clock"></i> <?php echo nl2br(esc_html($duration)); ?></p>
+                                                                        <p><i class="fa-light fa-location-dot"></i> <?php echo nl2br(esc_html($location)); ?></p>
+                                                                    </div>
+                                                                    <div class="event-button">
+                                                                        <button class="btn-register" data-id="<?php echo esc_attr($button_id); ?>">
+                                                                            <a href="<?php echo esc_url($permalink); ?>">Đăng ký ngay</a>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            <?php endif;
+                                            $count++;
+                                        endforeach; ?>
+                                                </div> <!-- /.middle-events -->
+                                    </div> <!-- /.row.events-listing -->
+                                <?php endif; ?>
+
+
+                                <?php
+                                $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+                                $args = array(
+                                    'post_type'      => 'seminar_event',
+                                    'post_status'    => 'publish',
+                                    'posts_per_page' => 6,
+                                    'paged'          => $paged,
+                                );
+
+                                $event_query = new WP_Query($args);
+                                ?>
+
+                                <?php if ($event_query->have_posts()) : ?>
+                                    <div class="row events-listing events-list-last">
+                                        <?php while ($event_query->have_posts()) : $event_query->the_post();
+                                            $event_id = get_the_ID();
+                                            $title = get_the_title();
+                                            $permalink = get_permalink();
+                                            $thumbnail = get_the_post_thumbnail_url($event_id, 'full');
+                                            $duration = get_field('duration', $event_id);
+                                            $location = get_field('location', $event_id);
+                                        ?>
+                                            <div class="col-xl-12 col-12">
+                                                <div class="event-main">
+                                                    <div class="row">
+                                                        <div class="col-xl-4 col-lg-5 col-md-4 col-12">
+                                                            <div class="event-thumbnail">
+                                                                <a href="<?php echo esc_url($permalink); ?>">
+                                                                    <img src="<?php echo esc_url($thumbnail); ?>" alt="<?php echo esc_attr($title); ?>">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-8 col-lg-7 col-md-8 col-12">
+                                                            <div class="event-content">
+                                                                <div class="event-title">
+                                                                    <h3><a href="<?php echo esc_url($permalink); ?>"><?php echo esc_html($title); ?></a></h3>
+                                                                </div>
+                                                                <div class="event-time">
+                                                                    <p><i class="fa-light fa-alarm-clock"></i> <?php echo nl2br(esc_html($duration)); ?></p>
+                                                                    <p><i class="fa-light fa-location-dot"></i> <?php echo nl2br(esc_html($location)); ?></p>
+                                                                </div>
+                                                                <div class="event-button">
+                                                                    <button class="btn-register" data-id="<?php echo esc_attr($event_id); ?>">
+                                                                        <a href="<?php echo esc_url($permalink); ?>">Đăng ký ngay</a>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                        <?php endwhile; ?>
+                                    </div>
+                                <?php endif; ?>
+
+                                <?php
+                                $total_pages = $event_query->max_num_pages;
+
+                                if ($total_pages > 1) : ?>
+                                    <div class="panigation-main" style="text-align: center; margin-bottom: 20px; margin-top: 20px">
+                                        <div class="paginate_links">
+                                            <?php
+                                            echo paginate_links(array(
+                                                'total'   => $total_pages,
+                                                'current' => $paged,
+                                                'prev_text' => '«',
+                                                'next_text' => '»',
+                                            ));
+                                            ?>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row events-listing events-list-last">
-                                    <div class="col-xl-12 col-12">
-                                        <div class="event-main">
-                                            <div class="row">
-                                                <div class="col-xl-4 col-lg-5 col-md-4 col-12">
-                                                    <div class="event-thumbnail">
-                                                        <a href="#">
-                                                            <img width="855" height="588" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20855%20588'%3E%3C/svg%3E" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" data-lazy-srcset="https://iladuhoc.edu.vn/wp-content/uploads/2025/01/PQV00588-1.png 855w, https://iladuhoc.edu.vn/wp-content/smush-webp/2025/01/PQV00588-1-300x206.png.webp 300w,
-																		https://iladuhoc.edu.vn/wp-content/smush-webp/2025/01/PQV00588-1-768x528.png.webp 768w" data-lazy-sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" data-lazy-src="https://iladuhoc.edu.vn/wp-content/uploads/2025/01/PQV00588-1.png" data-smush-webp-fallback="{" data-lazy-srcset":"https:\="" \="" iladuhoc.edu.vn\="" wp-content\="" uploads\="" 2025\="" 01\="" pqv00588-1.png="" 855w,=""
-                                                                https:\="" pqv00588-1-300x206.png="" 300w,="" pqv00588-1-768x528.png="" 768w"}"=""><noscript><img
-                                                                    width="855"
-                                                                    height="588"
-                                                                    src="https://iladuhoc.edu.vn/wp-content/uploads/2025/01/PQV00588-1.png"
-                                                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                                                    alt=""
-                                                                    decoding="async"
-                                                                    srcset="https://iladuhoc.edu.vn/wp-content/uploads/2025/01/PQV00588-1.png 855w, https://iladuhoc.edu.vn/wp-content/uploads/2025/01/PQV00588-1-300x206.png 300w, https://iladuhoc.edu.vn/wp-content/uploads/2025/01/PQV00588-1-768x528.png 768w"
-                                                                    sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></noscript>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-8 col-lg-7 col-md-8 col-12">
-                                                    <div class="event-content">
-                                                        <div class="event-title">
-                                                            <h3><a href="#">GẶP GỠ PHỤ HUYNH HỌC SINH TRƯỚC KHỞI HÀNH</a></h3>
-                                                        </div>
-                                                        <div class="event-time">
-                                                            <p>
-                                                                <i class="fa-light fa-alarm-clock"></i> • Đoàn Mỹ (22/1 - 31/1): ngày 9/1/2025 lúc 17:30 - 19:30 | Offline tại HO - Learning Hub <br />
-                                                                • Đoàn Anh (21/1 - 31/1): ngày 10/1/2025 lúc 17:30 - 19:30 | Offline tại HO - Lincoln <br />• Đoàn Singapore (22/1 - 31/1): ngày 14/1/2025 lúc 17:30 - 19:30 | Offline tại HO - Learning Hub <br />• Đoàn Úc (21/1 - 31/1): ngày 15/1/2025 lúc 17:30 - 19:30 | Offline tại HO - Learning Hub
-                                                            </p>
-                                                            <p><i class="fa-light fa-location-dot"></i> Trụ sở chính ILA Việt Nam</p>
-                                                        </div>
-                                                        <div class="event-button">
-                                                            <button class="btn-register" data-id="2349">
-                                                                <a href="#">Đăng ký ngay</a>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-12 col-12">
-                                        <div class="event-main">
-                                            <div class="row">
-                                                <div class="col-xl-4 col-lg-5 col-md-4 col-12">
-                                                    <div class="event-thumbnail">
-                                                        <a href="#">
-                                                            <img width="855" height="588" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20855%20588'%3E%3C/svg%3E" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Bí quyết viết bài luận độc bản" decoding="async" data-lazy-srcset="https://iladuhoc.edu.vn/wp-content/uploads/2024/12/OSC_WEBSITE-BANNER_WEBINAR-THANG-12_855x588px.png 855w,
-																		https://iladuhoc.edu.vn/wp-content/smush-webp/2024/12/OSC_WEBSITE-BANNER_WEBINAR-THANG-12_855x588px-300x206.png.webp 300w, https://iladuhoc.edu.vn/wp-content/smush-webp/2024/12/OSC_WEBSITE-BANNER_WEBINAR-THANG-12_855x588px-768x528.png.webp 768w" data-lazy-sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px"
-                                                                data-lazy-src="https://iladuhoc.edu.vn/wp-content/uploads/2024/12/OSC_WEBSITE-BANNER_WEBINAR-THANG-12_855x588px.png" data-smush-webp-fallback="{" data-lazy-srcset":"https:\="" \="" iladuhoc.edu.vn\="" wp-content\="" uploads\="" 2024\="" 12\="" osc_website-banner_webinar-thang-12_855x588px.png="" 855w,="" https:\="" osc_website-banner_webinar-thang-12_855x588px-300x206.png="" 300w,=""
-                                                                osc_website-banner_webinar-thang-12_855x588px-768x528.png="" 768w"}"=""><noscript><img
-                                                                    width="855"
-                                                                    height="588"
-                                                                    src="https://iladuhoc.edu.vn/wp-content/uploads/2024/12/OSC_WEBSITE-BANNER_WEBINAR-THANG-12_855x588px.png"
-                                                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                                                    alt="Bí quyết viết bài luận độc bản"
-                                                                    decoding="async"
-                                                                    srcset="https://iladuhoc.edu.vn/wp-content/uploads/2024/12/OSC_WEBSITE-BANNER_WEBINAR-THANG-12_855x588px.png 855w, https://iladuhoc.edu.vn/wp-content/uploads/2024/12/OSC_WEBSITE-BANNER_WEBINAR-THANG-12_855x588px-300x206.png 300w, https://iladuhoc.edu.vn/wp-content/uploads/2024/12/OSC_WEBSITE-BANNER_WEBINAR-THANG-12_855x588px-768x528.png 768w"
-                                                                    sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></noscript>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-8 col-lg-7 col-md-8 col-12">
-                                                    <div class="event-content">
-                                                        <div class="event-title">
-                                                            <h3><a href="#">Bí quyết viết bài luận độc bản – Chiếm ưu thế vào đại học top đầu</a></h3>
-                                                        </div>
-                                                        <div class="event-time">
-                                                            <p><i class="fa-light fa-alarm-clock"></i> 19:00 - 21:00 | ngày 17/12</p>
-                                                            <p><i class="fa-light fa-location-dot"></i> Trực tuyến qua Zoom </p>
-                                                        </div>
-                                                        <div class="event-button">
-                                                            <button class="btn-register" data-id="2199">
-                                                                <a href="#">Đăng ký ngay</a>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-12 col-12">
-                                        <div class="event-main">
-                                            <div class="row">
-                                                <div class="col-xl-4 col-lg-5 col-md-4 col-12">
-                                                    <div class="event-thumbnail">
-                                                        <a href="#">
-                                                            <img width="855" height="588" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20855%20588'%3E%3C/svg%3E" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Hội thảo trực tuyến du học Mỹ: hoạt động ngoại khóa" decoding="async" data-lazy-srcset="https://iladuhoc.edu.vn/wp-content/uploads/2024/11/OSC_WEBSITE-EVENT-POST_HOI-THAO-TRUC-TUYEN.png 855w,
-																		https://iladuhoc.edu.vn/wp-content/smush-webp/2024/11/OSC_WEBSITE-EVENT-POST_HOI-THAO-TRUC-TUYEN-300x206.png.webp 300w, https://iladuhoc.edu.vn/wp-content/smush-webp/2024/11/OSC_WEBSITE-EVENT-POST_HOI-THAO-TRUC-TUYEN-768x528.png.webp 768w" data-lazy-sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px"
-                                                                data-lazy-src="https://iladuhoc.edu.vn/wp-content/uploads/2024/11/OSC_WEBSITE-EVENT-POST_HOI-THAO-TRUC-TUYEN.png" data-smush-webp-fallback="{" data-lazy-srcset":"https:\="" \="" iladuhoc.edu.vn\="" wp-content\="" uploads\="" 2024\="" 11\="" osc_website-event-post_hoi-thao-truc-tuyen.png="" 855w,="" https:\="" osc_website-event-post_hoi-thao-truc-tuyen-300x206.png="" 300w,=""
-                                                                osc_website-event-post_hoi-thao-truc-tuyen-768x528.png="" 768w"}"=""><noscript><img
-                                                                    width="855"
-                                                                    height="588"
-                                                                    src="https://iladuhoc.edu.vn/wp-content/uploads/2024/11/OSC_WEBSITE-EVENT-POST_HOI-THAO-TRUC-TUYEN.png"
-                                                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                                                    alt="Hội thảo trực tuyến du học Mỹ: hoạt động ngoại khóa"
-                                                                    decoding="async"
-                                                                    srcset="https://iladuhoc.edu.vn/wp-content/uploads/2024/11/OSC_WEBSITE-EVENT-POST_HOI-THAO-TRUC-TUYEN.png 855w, https://iladuhoc.edu.vn/wp-content/uploads/2024/11/OSC_WEBSITE-EVENT-POST_HOI-THAO-TRUC-TUYEN-300x206.png 300w, https://iladuhoc.edu.vn/wp-content/uploads/2024/11/OSC_WEBSITE-EVENT-POST_HOI-THAO-TRUC-TUYEN-768x528.png 768w"
-                                                                    sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></noscript>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-8 col-lg-7 col-md-8 col-12">
-                                                    <div class="event-content">
-                                                        <div class="event-title">
-                                                            <h3><a href="#">Bí kíp xây dựng “kho tàng” hoạt động ngoại khóa ấn tượng</a></h3>
-                                                        </div>
-                                                        <div class="event-time">
-                                                            <p><i class="fa-light fa-alarm-clock"></i> 19:00 - 21:00 | 14/11</p>
-                                                            <p><i class="fa-light fa-location-dot"></i> Trực tuyến qua Zoom </p>
-                                                        </div>
-                                                        <div class="event-button">
-                                                            <button class="btn-register" data-id="2067">
-                                                                <a href="#">Đăng ký ngay</a>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-12 col-12">
-                                        <div class="event-main">
-                                            <div class="row">
-                                                <div class="col-xl-4 col-lg-5 col-md-4 col-12">
-                                                    <div class="event-thumbnail">
-                                                        <a href="#">
-                                                            <img width="855" height="588" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20855%20588'%3E%3C/svg%3E" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Hội thảo du học Bình Dương" decoding="async" data-lazy-srcset="https://iladuhoc.edu.vn/wp-content/uploads/2024/10/OSC_EVENT-BINH-DUONG_855x588px-1.png 855w,
-																		https://iladuhoc.edu.vn/wp-content/smush-webp/2024/10/OSC_EVENT-BINH-DUONG_855x588px-1-300x206.png.webp 300w, https://iladuhoc.edu.vn/wp-content/smush-webp/2024/10/OSC_EVENT-BINH-DUONG_855x588px-1-768x528.png.webp 768w" data-lazy-sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" data-lazy-src="https://iladuhoc.edu.vn/wp-content/uploads/2024/10/OSC_EVENT-BINH-DUONG_855x588px-1.png"
-                                                                data-smush-webp-fallback="{" data-lazy-srcset":"https:\="" \="" iladuhoc.edu.vn\="" wp-content\="" uploads\="" 2024\="" 10\="" osc_event-binh-duong_855x588px-1.png="" 855w,="" https:\="" osc_event-binh-duong_855x588px-1-300x206.png="" 300w,="" osc_event-binh-duong_855x588px-1-768x528.png="" 768w"}"=""><noscript><img
-                                                                    width="855"
-                                                                    height="588"
-                                                                    src="https://iladuhoc.edu.vn/wp-content/uploads/2024/10/OSC_EVENT-BINH-DUONG_855x588px-1.png"
-                                                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                                                    alt="Hội thảo du học Bình Dương"
-                                                                    decoding="async"
-                                                                    srcset="https://iladuhoc.edu.vn/wp-content/uploads/2024/10/OSC_EVENT-BINH-DUONG_855x588px-1.png 855w, https://iladuhoc.edu.vn/wp-content/uploads/2024/10/OSC_EVENT-BINH-DUONG_855x588px-1-300x206.png 300w, https://iladuhoc.edu.vn/wp-content/uploads/2024/10/OSC_EVENT-BINH-DUONG_855x588px-1-768x528.png 768w"
-                                                                    sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></noscript>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-8 col-lg-7 col-md-8 col-12">
-                                                    <div class="event-content">
-                                                        <div class="event-title">
-                                                            <h3><a href="#">Chiến lược và lộ trình chinh phục các trường đại học top đầu Mỹ</a></h3>
-                                                        </div>
-                                                        <div class="event-time">
-                                                            <p><i class="fa-light fa-alarm-clock"></i> 14:00 - 17:00 | 27/10</p>
-                                                            <p><i class="fa-light fa-location-dot"></i> Trung tâm Anh ngữ ILA - Thủ Dầu Một, 657 Cách Mạng Tháng Tám, Phú Cường, Bình Dương</p>
-                                                        </div>
-                                                        <div class="event-button">
-                                                            <button class="btn-register" data-id="2005">
-                                                                <a href="#">Đăng ký ngay</a>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-12 col-12">
-                                        <div class="event-main">
-                                            <div class="row">
-                                                <div class="col-xl-4 col-lg-5 col-md-4 col-12">
-                                                    <div class="event-thumbnail">
-                                                        <a href="#">
-                                                            <img width="670" height="588" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20670%20588'%3E%3C/svg%3E" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Hội thảo trực tuyến du học Mỹ" decoding="async" data-lazy-srcset="https://iladuhoc.edu.vn/wp-content/uploads/2024/10/ila-hoi-thao-du-hoc-my-1.png 670w,
-																		https://iladuhoc.edu.vn/wp-content/smush-webp/2024/10/ila-hoi-thao-du-hoc-my-1-300x263.png.webp 300w" data-lazy-sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" data-lazy-src="https://iladuhoc.edu.vn/wp-content/uploads/2024/10/ila-hoi-thao-du-hoc-my-1.png" data-smush-webp-fallback="{" data-lazy-srcset":"https:\="" \="" iladuhoc.edu.vn\="" wp-content\="" uploads\="" 2024\="" 10\=""
-                                                                ila-hoi-thao-du-hoc-my-1.png="" 670w,="" https:\="" ila-hoi-thao-du-hoc-my-1-300x263.png="" 300w"}"=""><noscript><img
-                                                                    width="670"
-                                                                    height="588"
-                                                                    src="https://iladuhoc.edu.vn/wp-content/uploads/2024/10/ila-hoi-thao-du-hoc-my-1.png"
-                                                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                                                    alt="Hội thảo trực tuyến du học Mỹ"
-                                                                    decoding="async"
-                                                                    srcset="https://iladuhoc.edu.vn/wp-content/uploads/2024/10/ila-hoi-thao-du-hoc-my-1.png 670w, https://iladuhoc.edu.vn/wp-content/uploads/2024/10/ila-hoi-thao-du-hoc-my-1-300x263.png 300w"
-                                                                    sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></noscript>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-8 col-lg-7 col-md-8 col-12">
-                                                    <div class="event-content">
-                                                        <div class="event-title">
-                                                            <h3><a href="#">Hội thảo trực tuyến du học Mỹ: Từ giảng đường đến nghề nghiệp</a></h3>
-                                                        </div>
-                                                        <div class="event-time">
-                                                            <p><i class="fa-light fa-alarm-clock"></i> 10:00 - 11:00 I 19/10</p>
-                                                            <p><i class="fa-light fa-location-dot"></i> Trực tuyến</p>
-                                                        </div>
-                                                        <div class="event-button">
-                                                            <button class="btn-register" data-id="1931">
-                                                                <a href="#">Đăng ký ngay</a>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-12 col-12">
-                                        <div class="event-main">
-                                            <div class="row">
-                                                <div class="col-xl-4 col-lg-5 col-md-4 col-12">
-                                                    <div class="event-thumbnail">
-                                                        <a href="#">
-                                                            <img width="885" height="588" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20885%20588'%3E%3C/svg%3E" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Triển lãm du học và hướng nghiệp ILA: Mở khóa ngôi trường mơ ước" decoding="async" data-lazy-srcset="https://iladuhoc.edu.vn/wp-content/uploads/2024/07/trien-lam-du-hoc-va-huong-nghiep-ila-1.jpeg 885w,
-																		https://iladuhoc.edu.vn/wp-content/smush-webp/2024/07/trien-lam-du-hoc-va-huong-nghiep-ila-1-300x199.jpeg.webp 300w, https://iladuhoc.edu.vn/wp-content/smush-webp/2024/07/trien-lam-du-hoc-va-huong-nghiep-ila-1-768x510.jpeg.webp 768w" data-lazy-sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px"
-                                                                data-lazy-src="https://iladuhoc.edu.vn/wp-content/uploads/2024/07/trien-lam-du-hoc-va-huong-nghiep-ila-1.jpeg" data-smush-webp-fallback="{" data-lazy-srcset":"https:\="" \="" iladuhoc.edu.vn\="" wp-content\="" uploads\="" 2024\="" 07\="" trien-lam-du-hoc-va-huong-nghiep-ila-1.jpeg="" 885w,="" https:\="" trien-lam-du-hoc-va-huong-nghiep-ila-1-300x199.jpeg="" 300w,="" trien-lam-du-hoc-va-huong-nghiep-ila-1-768x510.jpeg=""
-                                                                768w"}"=""><noscript><img
-                                                                    width="885"
-                                                                    height="588"
-                                                                    src="https://iladuhoc.edu.vn/wp-content/uploads/2024/07/trien-lam-du-hoc-va-huong-nghiep-ila-1.jpeg"
-                                                                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                                                                    alt="Triển lãm du học và hướng nghiệp ILA: Mở khóa ngôi trường mơ ước"
-                                                                    decoding="async"
-                                                                    srcset="https://iladuhoc.edu.vn/wp-content/uploads/2024/07/trien-lam-du-hoc-va-huong-nghiep-ila-1.jpeg 885w, https://iladuhoc.edu.vn/wp-content/uploads/2024/07/trien-lam-du-hoc-va-huong-nghiep-ila-1-300x199.jpeg 300w, https://iladuhoc.edu.vn/wp-content/uploads/2024/07/trien-lam-du-hoc-va-huong-nghiep-ila-1-768x510.jpeg 768w"
-                                                                    sizes="(max-width: 767px) 89vw, (max-width: 1000px) 54vw, (max-width: 1071px) 543px, 580px" /></noscript>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-xl-8 col-lg-7 col-md-8 col-12">
-                                                    <div class="event-content">
-                                                        <div class="event-title">
-                                                            <h3><a href="#">Triển lãm du học và hướng nghiệp ILA: Mở khóa ngôi trường mơ ước</a></h3>
-                                                        </div>
-                                                        <div class="event-time">
-                                                            <p><i class="fa-light fa-alarm-clock"></i> 13:30 - 17:30 I 8/9/2024 tại Hồ Chí Minh I 22/9/2024 tại Hà Nội</p>
-                                                            <p><i class="fa-light fa-location-dot"></i> Trụ sở ILA Du học, TP. HCM I Mövenpick Hotel, Hà Nội</p>
-                                                        </div>
-                                                        <div class="event-button">
-                                                            <button class="btn-register" data-id="1501">
-                                                                <a href="#">Đăng ký ngay</a>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panigation-main" style="text-align: center; margin-bottom: 20px; margin-top: 20px">
-                                    <div class="paginate_links">
-                                        <span aria-current="page" class="page-numbers current">1</span>
-                                        <a class="page-numbers" href="https://iladuhoc.edu.vn/hoi-thao-su-kien/page/2">2</a>
-                                        <a class="next page-numbers" href="https://iladuhoc.edu.vn/hoi-thao-su-kien/page/2">»</a>
-                                    </div>
-                                </div>
+                                <?php endif; ?>
+                                <?php wp_reset_postdata(); ?>
                             </div>
                         </div>
                     </div>

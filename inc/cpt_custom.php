@@ -42,6 +42,14 @@ function register_cpt_post_types()
             'position' => false,
             'icon' => 'dashicons-portfolio'
         ],
+        'seminar_event' => [
+            'labels' => 'Seminar & Event',
+            'slug' => 'seminar_event',
+            'cap' => false,
+            'hierarchical' => false,
+            'position' => false,
+            'icon' => 'dashicons-calendar-alt'
+        ],
     ];
 
     $cpt_tax = [
