@@ -19,56 +19,76 @@ get_header();
 
 <div id="page">
     <div id="content" class="site-content">
-        <section class="section-main-product" id="section-1" style="background-color: #1b3f94">
-            <div class="row">
-                <div class="col-xl-6 col-md-12 col-12">
-                    <div class="image-product">
-                        <img width="1192" height="660"
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201192%20660'%3E%3C/svg%3E"
-                            alt="training to enter the top 50 Universities in the US"
-                            data-lazy-src="https://iladuhoc.edu.vn/wp-content/uploads/2024/05/banner-du-hoc-my-desktop-update.png"><noscript><img
-                                width="1192" height="660"
-                                src="https://iladuhoc.edu.vn/wp-content/uploads/2024/05/banner-du-hoc-my-desktop-update.png"
-                                alt="training to enter the top 50 Universities in the US"></noscript>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-md-12 col-12">
-                    <div class="content-main-product">
-                        <div class="content-product">
-                            <h1>HUẤN LUYỆN TOP 50 ĐẠI HỌC MỸ</h1>
-                            <p>Chương trình HUẤN LUYỆN TOP 50 ĐẠI HỌC MỸ – hơn cả một tấm vé đến Harvard – là
-                                một giải pháp, hành trình giúp các em trở thành một phiên bản hoàn thiện, độc
-                                nhất để thể hiện tối đa năng lực bản thân trong bộ hồ sơ du học.</p>
-                            <div class="intro-airc">
-                                <div class="content-airc">
-                                    <p>ILA Du học – đơn vị duy nhất tại Việt Nam</p>
-                                    <p>đạt chứng nhận tư vấn du học chuyên nghiệp,</p>
-                                    <p>chuẩn quốc tế từ Hoa Kỳ</p>
+
+
+        <?php if (have_rows('banner')) : ?>
+            <?php while (have_rows('banner')) : the_row();
+                $title = get_sub_field('title');
+                $description = get_sub_field('description');
+                $certification = get_sub_field('certification');
+                $certificate_content = get_sub_field('certificate_content');
+                $background = get_sub_field('background');
+            ?>
+                <section class="section-main-product" id="section-1" style="background-color: #1b3f94">
+                    <div class="row">
+                        <div class="col-xl-6 col-md-12 col-12">
+                            <div class="image-product">
+                                <?php if ($background) : ?>
+                                    <img width="1192" height="660"
+                                        src="<?php echo esc_url($background); ?>"
+                                        alt="<?php echo esc_attr($title); ?>">
+                                    <noscript>
+                                        <img width="1192" height="660"
+                                            src="<?php echo esc_url($background); ?>"
+                                            alt="<?php echo esc_attr($title); ?>">
+                                    </noscript>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-12 col-12">
+                            <div class="content-main-product">
+                                <div class="content-product">
+                                    <?php if ($title) : ?>
+                                        <h1><?php echo esc_html($title); ?></h1>
+                                    <?php endif; ?>
+
+                                    <?php if ($description) : ?>
+                                        <p><?php echo esc_html($description); ?></p>
+                                    <?php endif; ?>
+
+                                    <div class="intro-airc">
+                                        <?php if ($certificate_content) : ?>
+                                            <div class="content-airc">
+                                                <?php echo $certificate_content; ?>
+                                            </div>
+                                        <?php endif; ?>
+
+                                        <?php if ($certification) : ?>
+                                            <div class="logo-airc">
+                                                <img width="115" height="115"
+                                                    src="<?php echo esc_url($certification); ?>"
+                                                    alt="Certification">
+                                            </div>
+                                        <?php endif; ?>
+                                    </div>
                                 </div>
-                                <div class="logo-airc">
-                                    <img width="115" height="115"
-                                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20115%20115'%3E%3C/svg%3E"
-                                        alt=""
-                                        data-lazy-src="https://iladuhoc.edu.vn/wp-content/uploads/2024/05/AIRC-certified-through-2029.png"><noscript><img
-                                            width="115" height="115"
-                                            src="https://iladuhoc.edu.vn/wp-content/uploads/2024/05/AIRC-certified-through-2029.png"
-                                            alt=""></noscript>
-                                </div>
+                            </div>
+
+                            <!-- Họa tiết cố định -->
+                            <div class="img-pattern">
+                                <img width="1794" height="603"
+                                    src="https://iladuhoc.edu.vn/wp-content/uploads/2024/04/background-pattern-product-list-new.png"
+                                    alt="background pattern product list"
+                                    loading="lazy">
                             </div>
                         </div>
                     </div>
-                    <div class="img-pattern">
-                        <img width="1794" height="603"
-                            src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201794%20603'%3E%3C/svg%3E"
-                            alt="background pattern product list"
-                            data-lazy-src="/wp-content/uploads/2024/04/background-pattern-product-list-new.png"><noscript><img
-                                width="1794" height="603"
-                                src="/wp-content/uploads/2024/04/background-pattern-product-list-new.png"
-                                alt="background pattern product list"></noscript>
-                    </div>
-                </div>
-            </div>
-        </section>
+                </section>
+            <?php endwhile; ?>
+        <?php endif; ?>
+
+
+
         <section class="section-core-value" id="section-2">
             <div class="container">
                 <div class="content-main-value">
