@@ -32,7 +32,15 @@ function register_cpt_post_types()
             'cap' => false,
             'hierarchical' => false,
             'position' => false,
-            'icon' => 'dashicons-admin-post'
+            'icon' => 'dashicons-welcome-write-blog'
+        ],
+        'study_abroad_tips' => [
+            'labels' => 'Study abroad tips',
+            'slug' => 'study_abroad_tips',
+            'cap' => false,
+            'hierarchical' => false,
+            'position' => false,
+            'icon' => 'dashicons-portfolio'
         ],
     ];
 
@@ -77,7 +85,7 @@ function register_cpt($post_type, $data = [])
             'with_front' => false,
             'hierarchical' => true,
         ),
-        'supports' => array('title', 'editor', 'thumbnail', 'revisions', 'author', $attributes),
+        'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'author', $attributes),
         'show_in_nav_menus' => true,
         'show_ui' => true,
         'menu_icon' => $icon,
