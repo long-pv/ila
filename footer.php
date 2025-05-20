@@ -35,7 +35,7 @@
                             <?php
                             $youtube = get_field('social_network_youtube', 'option') ?: '';
                             if ($youtube):
-                                ?>
+                            ?>
                                 <li>
                                     <a href="<?php echo $youtube; ?>" target="_blank">
                                         <img width="43" height="44"
@@ -43,28 +43,28 @@
                                             alt="youtube">
                                     </a>
                                 </li>
-                                <?php
+                            <?php
                             endif;
                             ?>
 
                             <?php
                             $facebook = get_field('social_network_facebook', 'option') ?: '';
                             if ($facebook):
-                                ?>
+                            ?>
                                 <li>
                                     <a href="<?php echo $facebook; ?>" target="_blank">
                                         <img width="44" height="44"
                                             src="<?php echo THEME_URI . '/assets/'; ?>images/logo-fb.png" alt="facebook">
                                     </a>
                                 </li>
-                                <?php
+                            <?php
                             endif;
                             ?>
 
                             <?php
                             $instagram = get_field('social_network_instagram', 'option') ?: '';
                             if ($instagram):
-                                ?>
+                            ?>
                                 <li>
                                     <a href="<?php echo $instagram; ?>" target="_blank">
                                         <img width="43" height="44"
@@ -72,7 +72,7 @@
                                             alt="instagram">
                                     </a>
                                 </li>
-                                <?php
+                            <?php
                             endif;
                             ?>
                         </ul>
@@ -133,13 +133,13 @@
                             if ($advanced_english):
                                 foreach ($advanced_english as $item):
                                     if ($item['link']['url'] && $item['link']['title']):
-                                        ?>
+                            ?>
                                         <li>
                                             <a href="<?php echo $item['link']['url']; ?>">
                                                 <?php echo $item['link']['title']; ?>
                                             </a>
                                         </li>
-                                        <?php
+                            <?php
                                     endif;
                                 endforeach;
                             endif;
@@ -156,13 +156,13 @@
                             if ($standard_english):
                                 foreach ($standard_english as $item):
                                     if ($item['link']['url'] && $item['link']['title']):
-                                        ?>
+                            ?>
                                         <li>
                                             <a href="<?php echo $item['link']['url']; ?>">
                                                 <?php echo $item['link']['title']; ?>
                                             </a>
                                         </li>
-                                        <?php
+                            <?php
                                     endif;
                                 endforeach;
                             endif;
@@ -175,13 +175,13 @@
                             if ($exam_preparation_study_abroad):
                                 foreach ($exam_preparation_study_abroad as $item):
                                     if ($item['link']['url'] && $item['link']['title']):
-                                        ?>
+                            ?>
                                         <li>
                                             <a href="<?php echo $item['link']['url']; ?>">
                                                 <?php echo $item['link']['title']; ?>
                                             </a>
                                         </li>
-                                        <?php
+                            <?php
                                     endif;
                                 endforeach;
                             endif;
@@ -198,13 +198,13 @@
                             if ($learn_more):
                                 foreach ($learn_more as $item):
                                     if ($item['link']['url'] && $item['link']['title']):
-                                        ?>
+                            ?>
                                         <li>
                                             <a href="<?php echo $item['link']['url']; ?>">
                                                 <?php echo $item['link']['title']; ?>
                                             </a>
                                         </li>
-                                        <?php
+                            <?php
                                     endif;
                                 endforeach;
                             endif;
@@ -283,8 +283,8 @@
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/index_add.js" defer="" async=""></script>
 
 <script>
-    jQuery(function ($) {
-        $(".navbar-dropdown-item .btn-dropdown-mb").on("click", function () {
+    jQuery(function($) {
+        $(".navbar-dropdown-item .btn-dropdown-mb").on("click", function() {
             console.log($(this).children('i'));
             $(this).children('i').toggleClass('fa-angle-down fa-angle-up');
             $(this).next(".dropdown-content").slideToggle();
@@ -307,8 +307,7 @@
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/courses.js" id="page-course-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/wow.min.js" id="wow-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.magnific-popup.js" id="magnific-popup-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery-scrolltofixed-min.js"
-    id="jquery-scrollfixed-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery-scrolltofixed-min.js" id="jquery-scrollfixed-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/list-center.js" id="fptheme-list-center-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/aboutus.js" id="page-about-us-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/timeline.js" id="timeline-js-js"></script>
@@ -320,7 +319,7 @@
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/email-subscribers-public.js" id="email-subscribers-js"></script>
 
 <!-- vucoder -->
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/smooth_scroll.min.js" id="ez-toc-scroll-scriptjs-js"></script>
+<!-- <script src="<?php echo THEME_URI . '/assets/'; ?>js/smooth_scroll.min.js" id="ez-toc-scroll-scriptjs-js"></script> -->
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.sticky-kit.min.js"
     id="ez-toc-jquery-sticky-kit-js"></script>
 <script id="ez-toc-js-js-extra">
@@ -331,7 +330,7 @@
         fallbackIcon: '<span class=""><span class="eztoc-hide" style="display:none;">Toggle<\/span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http:\/\/www.w3.org\/2000\/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"><\/path><\/svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http:\/\/www.w3.org\/2000\/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"\/><\/svg><\/span><\/span>',
     };
 </script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/front.min.js" id="ez-toc-js-js"></script>
+<!-- <script src="<?php echo THEME_URI . '/assets/'; ?>js/front.min.js" id="ez-toc-js-js"></script> -->
 
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/youtubehtml5.js" id="youtube-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/video.min.js" id="video-js-js"></script>
@@ -374,7 +373,7 @@
         player.unMute(); // Unmute the player
         player.setVolume(volume); // Start with volume 0
 
-        const fadeAudio = setInterval(function () {
+        const fadeAudio = setInterval(function() {
             if (volume < 50) {
                 // Gradually increase volume to 50%
                 volume += 1;
@@ -397,7 +396,7 @@
 <script src="<?php echo THEME_URI . '/assets_2/'; ?>js/page-product-detail.js" id="fptheme-product-detail-js"></script>
 <script src="<?php echo THEME_URI . '/assets_2/'; ?>js/archive-events.js" id="archive-events-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets_2/'; ?>js/main.js" id="fptheme-main-js"></script>
-<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/api.js" id="google-recaptcha-js"></script>
+<!-- <script src="<?php echo THEME_URI . '/assets_2/'; ?>js/api.js" id="google-recaptcha-js"></script> -->
 
 
 <?php wp_footer(); ?>
