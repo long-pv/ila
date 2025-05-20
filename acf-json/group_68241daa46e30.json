@@ -71,16 +71,16 @@
                     },
                     "default_value": "",
                     "tabs": "all",
-                    "toolbar": "full",
-                    "media_upload": 1,
+                    "toolbar": "basic",
+                    "media_upload": 0,
                     "delay": 0
                 },
                 {
                     "key": "field_68241ea909f54",
-                    "label": "Button",
-                    "name": "button",
+                    "label": "URL maps",
+                    "name": "url_maps",
                     "aria-label": "",
-                    "type": "link",
+                    "type": "url",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -89,7 +89,8 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array"
+                    "default_value": "",
+                    "placeholder": ""
                 },
                 {
                     "key": "field_68241eb309f55",
@@ -133,9 +134,15 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "featured_image"
+    ],
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1747498221
+    "modified": 1747761671
 }

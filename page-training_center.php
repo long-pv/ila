@@ -26,11 +26,11 @@ get_header();
 
         $title_box = isset($box_content_section['title']) ? $box_content_section['title'] : '';
         $content_box = isset($box_content_section['content']) ? $box_content_section['content'] : '';
-        $button_box = isset($box_content_section['button']) ? $box_content_section['button'] : [];
+        $url_maps = isset($box_content_section['url_maps']) ? $box_content_section['url_maps'] : '';
         $image_box = isset($box_content_section['image']) ? $box_content_section['image'] : [];
 
-        if ($title_box || $content_box || !empty($button_box) || !empty($image_box)):
-            ?>
+        if ($title_box || $content_box || !empty($url_maps) || !empty($image_box)):
+        ?>
             <section class="section-intro">
                 <div class="container">
                     <div class="box-wrapper">
@@ -47,10 +47,10 @@ get_header();
                                         </div>
                                     <?php endif; ?>
 
-                                    <?php if (!empty($button_box['url']) && !empty($button_box['title'])): ?>
+                                    <?php if (!empty($url_maps)): ?>
                                         <button class="find-center">
-                                            <a href="<?php echo esc_url($button_box['url']); ?>">
-                                                <?php echo esc_html($button_box['title']); ?>
+                                            <a target="_blank" href="<?php echo esc_url($url_maps); ?>">
+                                                TÌM TRUNG TÂM
                                             </a>
                                         </button>
                                     <?php endif; ?>
