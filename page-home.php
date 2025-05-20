@@ -238,7 +238,7 @@ get_header();
                                                     <div class="row">
                                                         <div class="col-5">
                                                             <div class="course-background-img" style="height: 66px;">
-                                                                <a href="<?php echo $item['link']; ?>" style="color: #fff;font-size: 24px;font-weight: 700;">
+                                                                <a href="<?php echo $item['link']; ?>" style="color: #fff;font-size: 16px;font-weight: 700;">
                                                                     <?php echo $item['category']; ?>
                                                                 </a>
                                                             </div>

@@ -122,13 +122,13 @@ get_header();
                                     <div class="video-list col-6 col-md-4 col-lg-3">
                                         <div class="video-item">
                                             <div class="video-thumb">
-                                                <a href="<?php echo esc_url($video_url); ?>" target="_blank">
+                                                <a href="<?php echo esc_url($permalink); ?>" target="_blank">
                                                     <img src="<?php echo esc_url($thumbnail); ?>" alt="<?php echo esc_attr($title); ?>">
                                                 </a>
                                             </div>
                                             <div class="video-title">
                                                 <h3>
-                                                    <a href="<?php echo esc_url($video_url); ?>" target="_blank"><?php echo esc_html($title); ?></a>
+                                                    <a href="<?php echo esc_url($permalink); ?>" target="_blank"><?php echo esc_html($title); ?></a>
                                                 </h3>
                                             </div>
                                             <div class="video-time-cate">

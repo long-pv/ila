@@ -18,7 +18,37 @@
             MIỄN PHÍ</a>
     </button>
 </div> -->
-<footer class="site-footer">
+<?php
+$google_maps = get_field('google_maps', 'option') ?? null;
+if ($google_maps):
+?>
+    <div class="footer_maps">
+        <?php echo $google_maps; ?>
+    </div>
+
+    <style>
+        .footer_maps {
+            position: relative;
+            height: 700px;
+            margin-top: 3em;
+        }
+
+        @media (max-width: 767px) {
+            .footer_maps {
+                height: 400px;
+            }
+        }
+
+        .footer_maps iframe {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+<?php endif; ?>
+<footer class="site-footer" style="margin-top: 0px;">
     <div class="container">
         <div class="footer-top">
             <div class="row">
@@ -35,7 +65,7 @@
                             <?php
                             $youtube = get_field('social_network_youtube', 'option') ?: '';
                             if ($youtube):
-                                ?>
+                            ?>
                                 <li>
                                     <a href="<?php echo $youtube; ?>" target="_blank">
                                         <img width="43" height="44"
@@ -43,28 +73,28 @@
                                             alt="youtube">
                                     </a>
                                 </li>
-                                <?php
+                            <?php
                             endif;
                             ?>
 
                             <?php
                             $facebook = get_field('social_network_facebook', 'option') ?: '';
                             if ($facebook):
-                                ?>
+                            ?>
                                 <li>
                                     <a href="<?php echo $facebook; ?>" target="_blank">
                                         <img width="44" height="44"
                                             src="<?php echo THEME_URI . '/assets/'; ?>images/logo-fb.png" alt="facebook">
                                     </a>
                                 </li>
-                                <?php
+                            <?php
                             endif;
                             ?>
 
                             <?php
                             $instagram = get_field('social_network_instagram', 'option') ?: '';
                             if ($instagram):
-                                ?>
+                            ?>
                                 <li>
                                     <a href="<?php echo $instagram; ?>" target="_blank">
                                         <img width="43" height="44"
@@ -72,7 +102,7 @@
                                             alt="instagram">
                                     </a>
                                 </li>
-                                <?php
+                            <?php
                             endif;
                             ?>
                         </ul>
@@ -94,35 +124,7 @@
                         <div class="subscribe-form mobile">
                             <h3 class="subscribe-form-title">Nhận ngay ưu đãi mới nhất tại ILA</h3>
                             <div class="emaillist" id="es_form_f1-n1">
-                                <form action="/#es_form_f1-n1" method="post"
-                                    class="es_subscription_form es_shortcode_form "
-                                    id="es_subscription_form_68209bccf1cb4" data-source="ig-es" data-form-id="1">
-                                    <div class="es-field-wrap"><label><input
-                                                class="es_required_field es_txt_email ig_es_form_field_email"
-                                                type="email" name="esfpx_email" value=""
-                                                placeholder="Nhập email để nhận thông tin từ ILA"
-                                                required="required"></label></div><input type="hidden"
-                                        name="esfpx_lists[]" value="e7cade300522"><input type="hidden"
-                                        name="esfpx_form_id" value="1"><input type="hidden" name="es" value="subscribe">
-                                    <input type="hidden" name="esfpx_es_form_identifier" value="f1-n1">
-                                    <input type="hidden" name="esfpx_es_email_page" value="765">
-                                    <input type="hidden" name="esfpx_es_email_page_url"
-                                        value="https://ila.edu.vn/consultant/trang-chu/khu-vuc-tu-van">
-                                    <input type="hidden" name="esfpx_status" value="Unconfirmed">
-                                    <input type="hidden" name="esfpx_es-subscribe" id="es-subscribe-68209bccf1cb4"
-                                        value="ec51cfbf99">
-                                    <label style="position:absolute;top:-99999px;left:-99999px;z-index:-99;"
-                                        aria-hidden="true"><span hidden="">Please leave this field
-                                            empty.</span><input type="email" name="esfpx_es_hp_email"
-                                            class="es_required_field" tabindex="-1" autocomplete="-1"
-                                            value=""></label><input type="submit" name="submit"
-                                        class="es_subscription_form_submit es_submit_button es_textbox_button"
-                                        id="es_subscription_form_submit_68209bccf1cb4" value="Subscribe"><span
-                                        class="es_spinner_image" id="spinner-image"><img width="32" height="32"
-                                            src="<?php echo THEME_URI . '/assets/'; ?>images/spinner.gif"
-                                            alt="Loading"></span>
-                                </form><span class="es_subscription_message "
-                                    id="es_subscription_message_68209bccf1cb4"></span>
+                                <?php echo get_field('get_offer_now', 'option') ?? ''; ?>
                             </div>
                         </div>
 
@@ -133,13 +135,13 @@
                             if ($advanced_english):
                                 foreach ($advanced_english as $item):
                                     if ($item['link']['url'] && $item['link']['title']):
-                                        ?>
+                            ?>
                                         <li>
                                             <a href="<?php echo $item['link']['url']; ?>">
                                                 <?php echo $item['link']['title']; ?>
                                             </a>
                                         </li>
-                                        <?php
+                            <?php
                                     endif;
                                 endforeach;
                             endif;
@@ -156,13 +158,13 @@
                             if ($standard_english):
                                 foreach ($standard_english as $item):
                                     if ($item['link']['url'] && $item['link']['title']):
-                                        ?>
+                            ?>
                                         <li>
                                             <a href="<?php echo $item['link']['url']; ?>">
                                                 <?php echo $item['link']['title']; ?>
                                             </a>
                                         </li>
-                                        <?php
+                            <?php
                                     endif;
                                 endforeach;
                             endif;
@@ -175,13 +177,13 @@
                             if ($exam_preparation_study_abroad):
                                 foreach ($exam_preparation_study_abroad as $item):
                                     if ($item['link']['url'] && $item['link']['title']):
-                                        ?>
+                            ?>
                                         <li>
                                             <a href="<?php echo $item['link']['url']; ?>">
                                                 <?php echo $item['link']['title']; ?>
                                             </a>
                                         </li>
-                                        <?php
+                            <?php
                                     endif;
                                 endforeach;
                             endif;
@@ -198,13 +200,13 @@
                             if ($learn_more):
                                 foreach ($learn_more as $item):
                                     if ($item['link']['url'] && $item['link']['title']):
-                                        ?>
+                            ?>
                                         <li>
                                             <a href="<?php echo $item['link']['url']; ?>">
                                                 <?php echo $item['link']['title']; ?>
                                             </a>
                                         </li>
-                                        <?php
+                            <?php
                                     endif;
                                 endforeach;
                             endif;
@@ -213,36 +215,29 @@
                         <div class="subscribe-form desktop">
                             <h3 class="subscribe-form-title">Nhận ngay ưu đãi mới nhất tại ILA</h3>
                             <div class="emaillist" id="es_form_f1-n2">
-                                <form action="/#es_form_f1-n2" method="post"
-                                    class="es_subscription_form es_shortcode_form "
-                                    id="es_subscription_form_68209bccf2867" data-source="ig-es" data-form-id="1">
-                                    <div class="es-field-wrap"><label><input
-                                                class="es_required_field es_txt_email ig_es_form_field_email"
-                                                type="email" name="esfpx_email" value=""
-                                                placeholder="Nhập email để nhận thông tin từ ILA"
-                                                required="required"></label></div><input type="hidden"
-                                        name="esfpx_lists[]" value="e7cade300522"><input type="hidden"
-                                        name="esfpx_form_id" value="1"><input type="hidden" name="es" value="subscribe">
-                                    <input type="hidden" name="esfpx_es_form_identifier" value="f1-n2">
-                                    <input type="hidden" name="esfpx_es_email_page" value="765">
-                                    <input type="hidden" name="esfpx_es_email_page_url"
-                                        value="https://ila.edu.vn/consultant/trang-chu/khu-vuc-tu-van">
-                                    <input type="hidden" name="esfpx_status" value="Unconfirmed">
-                                    <input type="hidden" name="esfpx_es-subscribe" id="es-subscribe-68209bccf2867"
-                                        value="ec51cfbf99">
-                                    <label style="position:absolute;top:-99999px;left:-99999px;z-index:-99;"
-                                        aria-hidden="true"><span hidden="">Please leave this field
-                                            empty.</span><input type="email" name="esfpx_es_hp_email"
-                                            class="es_required_field" tabindex="-1" autocomplete="-1"
-                                            value=""></label><input type="submit" name="submit"
-                                        class="es_subscription_form_submit es_submit_button es_textbox_button"
-                                        id="es_subscription_form_submit_68209bccf2867" value="Subscribe"><span
-                                        class="es_spinner_image" id="spinner-image"><img width="32" height="32"
-                                            src="<?php echo THEME_URI . '/assets/'; ?>images/spinner.gif"
-                                            alt="Loading"></span>
-                                </form><span class="es_subscription_message "
-                                    id="es_subscription_message_68209bccf2867"></span>
+                                <?php echo get_field('get_offer_now', 'option') ?? ''; ?>
                             </div>
+
+                            <style>
+                                .emaillist .wpcf7-form br {
+                                    display: none !important;
+                                }
+
+                                .emaillist .wpcf7-form p {
+                                    margin: 0px;
+                                }
+
+                                .emaillist .wpcf7-spinner {
+                                    position: absolute;
+                                    left: 50%;
+                                    top: 10px;
+                                    transform: translateX(-50%);
+                                }
+
+                                .emaillist .wpcf7-form .wpcf7-response-output {
+                                    margin: 0px;
+                                }
+                            </style>
                         </div>
                     </div>
                 </div>
@@ -283,8 +278,8 @@
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/index_add.js" defer="" async=""></script>
 
 <script>
-    jQuery(function ($) {
-        $(".navbar-dropdown-item .btn-dropdown-mb").on("click", function () {
+    jQuery(function($) {
+        $(".navbar-dropdown-item .btn-dropdown-mb").on("click", function() {
             console.log($(this).children('i'));
             $(this).children('i').toggleClass('fa-angle-down fa-angle-up');
             $(this).next(".dropdown-content").slideToggle();
@@ -307,8 +302,7 @@
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/courses.js" id="page-course-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/wow.min.js" id="wow-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.magnific-popup.js" id="magnific-popup-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery-scrolltofixed-min.js"
-    id="jquery-scrollfixed-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery-scrolltofixed-min.js" id="jquery-scrollfixed-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/list-center.js" id="fptheme-list-center-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/aboutus.js" id="page-about-us-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/timeline.js" id="timeline-js-js"></script>
@@ -320,7 +314,7 @@
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/email-subscribers-public.js" id="email-subscribers-js"></script>
 
 <!-- vucoder -->
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/smooth_scroll.min.js" id="ez-toc-scroll-scriptjs-js"></script>
+<!-- <script src="<?php echo THEME_URI . '/assets/'; ?>js/smooth_scroll.min.js" id="ez-toc-scroll-scriptjs-js"></script> -->
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.sticky-kit.min.js"
     id="ez-toc-jquery-sticky-kit-js"></script>
 <script id="ez-toc-js-js-extra">
@@ -331,7 +325,7 @@
         fallbackIcon: '<span class=""><span class="eztoc-hide" style="display:none;">Toggle<\/span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http:\/\/www.w3.org\/2000\/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"><\/path><\/svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http:\/\/www.w3.org\/2000\/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"\/><\/svg><\/span><\/span>',
     };
 </script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/front.min.js" id="ez-toc-js-js"></script>
+<!-- <script src="<?php echo THEME_URI . '/assets/'; ?>js/front.min.js" id="ez-toc-js-js"></script> -->
 
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/youtubehtml5.js" id="youtube-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/video.min.js" id="video-js-js"></script>
@@ -374,7 +368,7 @@
         player.unMute(); // Unmute the player
         player.setVolume(volume); // Start with volume 0
 
-        const fadeAudio = setInterval(function () {
+        const fadeAudio = setInterval(function() {
             if (volume < 50) {
                 // Gradually increase volume to 50%
                 volume += 1;
@@ -397,7 +391,7 @@
 <script src="<?php echo THEME_URI . '/assets_2/'; ?>js/page-product-detail.js" id="fptheme-product-detail-js"></script>
 <script src="<?php echo THEME_URI . '/assets_2/'; ?>js/archive-events.js" id="archive-events-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets_2/'; ?>js/main.js" id="fptheme-main-js"></script>
-<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/api.js" id="google-recaptcha-js"></script>
+<!-- <script src="<?php echo THEME_URI . '/assets_2/'; ?>js/api.js" id="google-recaptcha-js"></script> -->
 
 
 <?php wp_footer(); ?>
