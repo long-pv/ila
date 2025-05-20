@@ -59,8 +59,8 @@ get_header();
             <section class="section-2">
                 <!-- Image -->
                 <?php if (!empty($image_banner) && is_array($image_banner)): ?>
-                    <img width="1920" height="920" class="img-background img-banner-about" data-aos="fade-up" data-aos-delay="50"
-                        data-aos-duration="800" src="<?php echo esc_url($image_banner['url']); ?>"
+                    <img width="1920" height="920" class="img-background img-banner-about" data-aos="fade-up"
+                        data-aos-delay="50" data-aos-duration="800" src="<?php echo esc_url($image_banner['url']); ?>"
                         alt="<?php echo esc_attr($image_banner['alt'] ?? 'Banner Image'); ?>" />
                 <?php endif; ?>
                 <!-- Content -->
@@ -72,13 +72,13 @@ get_header();
                             <?php endif; ?>
 
                             <?php if (!empty($content_banner)): ?>
-                                <div class="editor">
+                                <div class="banner__content editor">
                                     <?php echo wp_kses_post($content_banner); ?>
                                 </div>
                             <?php endif; ?>
 
                             <?php if (!empty($more_content_banner)): ?>
-                                <div class="content-show-more">
+                                <div class="banner__content content-show-more">
                                     <?php echo wp_kses_post($more_content_banner); ?>
                                 </div>
                             <?php endif; ?>
@@ -314,7 +314,7 @@ get_header();
                     <div class="title-about-us" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
                         <?php if (!empty($title_education)): ?>
                             <h2>
-                                <?php echo esc_html($title_education); ?>
+                                <?php echo $title_education; ?>
                             </h2>
                         <?php endif; ?>
                     </div>
@@ -335,14 +335,14 @@ get_header();
                                             <?php endif; ?>
                                             <?php if (!empty($section_1_education['logo_item']) && is_array($section_1_education['logo_item'])): ?>
                                                 <div class="list-courses">
-                                                    <div class="row">
+                                                    <div class="row list-courses__row">
                                                         <?php foreach ($section_1_education['logo_item'] as $item):
                                                             $link = !empty($item['link']) ? esc_url($item['link']) : '#';
                                                             $logo = !empty($item['logo']['url']) ? esc_url($item['logo']['url']) : '';
                                                             $alt = !empty($item['logo']['alt']) ? esc_attr($item['logo']['alt']) : '';
                                                             ?>
                                                             <div class="col-6 col-sm-3">
-                                                                <div class="logo-item">
+                                                                <div class="logo-item logo-custom">
                                                                     <a href="<?php echo $link; ?>">
                                                                         <?php if ($logo): ?>
                                                                             <img src="<?php echo $logo; ?>" alt="<?php echo $alt; ?>">
@@ -432,7 +432,6 @@ get_header();
                     </div>
                 </div>
             </section>
-
             <!-- Education End -->
         </main>
     </div>

@@ -14,6 +14,16 @@ body {
 	}
 }
 
+.page-template-page-about-us {
+	.section-4 {
+		padding: 24px 0px;
+
+		@media screen and (max-width: 767px) {
+			padding: 12px 0;
+		}
+	}
+}
+
 main {
 	button.discover {
 		border: none;
@@ -195,7 +205,9 @@ main {
 						}
 					}
 
-					p {
+					// p
+					// ,
+					.banner__content {
 						text-transform: none;
 						font-size: 22px;
 						font-family: "Montserrat SemiBold";
@@ -500,6 +512,10 @@ main {
 
 					.hide-more {
 						display: none;
+
+						a {
+							display: inline-block;
+						}
 					}
 
 					h2,
@@ -526,7 +542,7 @@ main {
 						}
 					}
 
-					p {
+					.banner__content {
 						font-family: "Montserrat Regular";
 						font-size: 18px;
 						line-height: 25px;
@@ -871,6 +887,14 @@ main {
 							}
 
 							.list-courses {
+								.list-courses__row {
+									row-gap: 40px;
+
+									@media screen and (max-width: 767px) {
+										row-gap: 20px;
+									}
+								}
+
 								.row {
 									.col-sm-3 {
 										.logo-item {
@@ -939,13 +963,13 @@ main {
 									}
 								}
 
-								.row:first-child {
-									margin-bottom: 50px;
+								// .row:first-child {
+								// 	margin-bottom: 50px;
 
-									@media screen and (max-width: 767px) {
-										margin-bottom: 0;
-									}
-								}
+								// 	@media screen and (max-width: 767px) {
+								// 		margin-bottom: 0;
+								// 	}
+								// }
 							}
 						}
 					}
@@ -1000,10 +1024,14 @@ main {
 				.row.row-list-ila-two {
 					min-height: 233px;
 					padding: 24px 0;
+					//
+					row-gap: 40px;
 
 					@media screen and (max-width: 767px) {
 						padding: 12px 0;
 						min-height: auto;
+						//
+						row-gap: 20px;
 					}
 
 					.col-sm-4 {
