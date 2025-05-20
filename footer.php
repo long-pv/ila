@@ -18,7 +18,37 @@
             MIỄN PHÍ</a>
     </button>
 </div> -->
-<footer class="site-footer">
+<?php
+$google_maps = get_field('google_maps', 'option') ?? null;
+if ($google_maps):
+?>
+    <div class="footer_maps">
+        <?php echo $google_maps; ?>
+    </div>
+
+    <style>
+        .footer_maps {
+            position: relative;
+            height: 700px;
+            margin-top: 3em;
+        }
+
+        @media (max-width: 767px) {
+            .footer_maps {
+                height: 400px;
+            }
+        }
+
+        .footer_maps iframe {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+<?php endif; ?>
+<footer class="site-footer" style="margin-top: 0px;">
     <div class="container">
         <div class="footer-top">
             <div class="row">
@@ -94,35 +124,7 @@
                         <div class="subscribe-form mobile">
                             <h3 class="subscribe-form-title">Nhận ngay ưu đãi mới nhất tại ILA</h3>
                             <div class="emaillist" id="es_form_f1-n1">
-                                <form action="/#es_form_f1-n1" method="post"
-                                    class="es_subscription_form es_shortcode_form "
-                                    id="es_subscription_form_68209bccf1cb4" data-source="ig-es" data-form-id="1">
-                                    <div class="es-field-wrap"><label><input
-                                                class="es_required_field es_txt_email ig_es_form_field_email"
-                                                type="email" name="esfpx_email" value=""
-                                                placeholder="Nhập email để nhận thông tin từ ILA"
-                                                required="required"></label></div><input type="hidden"
-                                        name="esfpx_lists[]" value="e7cade300522"><input type="hidden"
-                                        name="esfpx_form_id" value="1"><input type="hidden" name="es" value="subscribe">
-                                    <input type="hidden" name="esfpx_es_form_identifier" value="f1-n1">
-                                    <input type="hidden" name="esfpx_es_email_page" value="765">
-                                    <input type="hidden" name="esfpx_es_email_page_url"
-                                        value="https://ila.edu.vn/consultant/trang-chu/khu-vuc-tu-van">
-                                    <input type="hidden" name="esfpx_status" value="Unconfirmed">
-                                    <input type="hidden" name="esfpx_es-subscribe" id="es-subscribe-68209bccf1cb4"
-                                        value="ec51cfbf99">
-                                    <label style="position:absolute;top:-99999px;left:-99999px;z-index:-99;"
-                                        aria-hidden="true"><span hidden="">Please leave this field
-                                            empty.</span><input type="email" name="esfpx_es_hp_email"
-                                            class="es_required_field" tabindex="-1" autocomplete="-1"
-                                            value=""></label><input type="submit" name="submit"
-                                        class="es_subscription_form_submit es_submit_button es_textbox_button"
-                                        id="es_subscription_form_submit_68209bccf1cb4" value="Subscribe"><span
-                                        class="es_spinner_image" id="spinner-image"><img width="32" height="32"
-                                            src="<?php echo THEME_URI . '/assets/'; ?>images/spinner.gif"
-                                            alt="Loading"></span>
-                                </form><span class="es_subscription_message "
-                                    id="es_subscription_message_68209bccf1cb4"></span>
+                                <?php echo get_field('get_offer_now', 'option') ?? ''; ?>
                             </div>
                         </div>
 
@@ -213,36 +215,29 @@
                         <div class="subscribe-form desktop">
                             <h3 class="subscribe-form-title">Nhận ngay ưu đãi mới nhất tại ILA</h3>
                             <div class="emaillist" id="es_form_f1-n2">
-                                <form action="/#es_form_f1-n2" method="post"
-                                    class="es_subscription_form es_shortcode_form "
-                                    id="es_subscription_form_68209bccf2867" data-source="ig-es" data-form-id="1">
-                                    <div class="es-field-wrap"><label><input
-                                                class="es_required_field es_txt_email ig_es_form_field_email"
-                                                type="email" name="esfpx_email" value=""
-                                                placeholder="Nhập email để nhận thông tin từ ILA"
-                                                required="required"></label></div><input type="hidden"
-                                        name="esfpx_lists[]" value="e7cade300522"><input type="hidden"
-                                        name="esfpx_form_id" value="1"><input type="hidden" name="es" value="subscribe">
-                                    <input type="hidden" name="esfpx_es_form_identifier" value="f1-n2">
-                                    <input type="hidden" name="esfpx_es_email_page" value="765">
-                                    <input type="hidden" name="esfpx_es_email_page_url"
-                                        value="https://ila.edu.vn/consultant/trang-chu/khu-vuc-tu-van">
-                                    <input type="hidden" name="esfpx_status" value="Unconfirmed">
-                                    <input type="hidden" name="esfpx_es-subscribe" id="es-subscribe-68209bccf2867"
-                                        value="ec51cfbf99">
-                                    <label style="position:absolute;top:-99999px;left:-99999px;z-index:-99;"
-                                        aria-hidden="true"><span hidden="">Please leave this field
-                                            empty.</span><input type="email" name="esfpx_es_hp_email"
-                                            class="es_required_field" tabindex="-1" autocomplete="-1"
-                                            value=""></label><input type="submit" name="submit"
-                                        class="es_subscription_form_submit es_submit_button es_textbox_button"
-                                        id="es_subscription_form_submit_68209bccf2867" value="Subscribe"><span
-                                        class="es_spinner_image" id="spinner-image"><img width="32" height="32"
-                                            src="<?php echo THEME_URI . '/assets/'; ?>images/spinner.gif"
-                                            alt="Loading"></span>
-                                </form><span class="es_subscription_message "
-                                    id="es_subscription_message_68209bccf2867"></span>
+                                <?php echo get_field('get_offer_now', 'option') ?? ''; ?>
                             </div>
+
+                            <style>
+                                .emaillist .wpcf7-form br {
+                                    display: none !important;
+                                }
+
+                                .emaillist .wpcf7-form p {
+                                    margin: 0px;
+                                }
+
+                                .emaillist .wpcf7-spinner {
+                                    position: absolute;
+                                    left: 50%;
+                                    top: 10px;
+                                    transform: translateX(-50%);
+                                }
+
+                                .emaillist .wpcf7-form .wpcf7-response-output {
+                                    margin: 0px;
+                                }
+                            </style>
                         </div>
                     </div>
                 </div>

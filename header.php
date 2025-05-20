@@ -456,7 +456,7 @@
 							</div>
 						</div>
 					</div> -->
-					<div class="navbar-dropdown-item ila-language dropdown-item-5">
+					<!-- <div class="navbar-dropdown-item ila-language dropdown-item-5">
 						<button class="dropbtn">
 							<img width="37" height="25" src="<?php echo THEME_URI . '/assets/'; ?>images/vi.png"
 								alt="Tiếng Việt" /> <i class="fa fa-angle-down"></i>
@@ -482,7 +482,37 @@
 								</div>
 							</div>
 						</div>
+					</div> -->
+
+					<?php
+					$current_lang = pll_current_language();
+					$vi_url = get_permalink(pll_get_post(get_the_ID(), 'vi'));
+					$en_url = get_permalink(pll_get_post(get_the_ID(), 'en'));
+					?>
+
+					<div class="navbar-dropdown-item ila-language dropdown-item-5">
+						<button class="dropbtn">
+							<img width="37" height="25" src="<?php echo THEME_URI . '/assets/'; ?>images/<?php echo $current_lang === 'vi' ? 'vi.png' : 'en_US.png'; ?>" alt="<?php echo $current_lang === 'vi' ? 'Tiếng Việt' : 'English'; ?>" />
+							<i class="fa fa-angle-down"></i>
+						</button>
+						<div class="dropdown-content">
+							<div class="container">
+								<div class="row">
+									<div class="column">
+										<a class="lang-item lang-item-vi lang-item-4 lang-item-first <?php echo $current_lang === 'vi' ? 'current-lang' : ''; ?>" href="<?php echo esc_url($vi_url); ?>">
+											<img width="37" height="25" src="<?php echo THEME_URI . '/assets/'; ?>images/vi.png" alt="Tiếng Việt" />
+										</a>
+									</div>
+									<div class="column">
+										<a class="lang-item lang-item-en lang-item-7 <?php echo $current_lang === 'en' ? 'current-lang' : ''; ?>" href="<?php echo esc_url($en_url); ?>">
+											<img width="37" height="28" src="<?php echo THEME_URI . '/assets/'; ?>images/en_US.png" alt="English" />
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
+
 
 					<!-- Đăng ký ngay -->
 					<?php if ($header_setting['sign_up_now'] && $header_setting['sign_up_now']['title'] && $header_setting['sign_up_now']['url']): ?>
