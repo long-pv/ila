@@ -27,9 +27,6 @@ get_header();
         $video_url = !empty($section_1['video_bg']) ? esc_url($section_1['video_bg']) : '';
         $heading = !empty($section_1['heading']) ? $section_1['heading'] : '';
         $youtube_link = !empty($section_1['youtube_link']) ? esc_url($section_1['youtube_link']) : '';
-
-        $video_icon_url = !empty($section_1['video_icon']['url']) ? esc_url($section_1['video_icon']['url']) : '';
-        $video_icon_alt = !empty($section_1['video_icon']['alt']) ? esc_attr($section_1['video_icon']['alt']) : '';
         ?>
 
         <?php if ($video_url || $heading || $youtube_link): ?>
@@ -45,18 +42,17 @@ get_header();
                         <div class="container">
                             <div class="banner-content-main" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
                                 <?php if ($heading): ?>
-                                    <h1 style="color: #ffffff"><?php echo nl2br(esc_html($heading)); ?></h1>
+                                    <h1 style="color: #ffffff"><?php echo $heading; ?></h1>
                                 <?php endif; ?>
 
                                 <?php if ($youtube_link): ?>
                                     <p>
                                         <a class="open-popup" href="<?php echo $youtube_link; ?>">Xem video</a>
-                                        <?php if ($video_icon_url): ?>
-                                            <a class="open-popup" href="<?php echo $youtube_link; ?>" style="margin-left: 10px">
-                                                <img width="65" height="64" class="img-bound-fill"
-                                                    src="<?php echo $video_icon_url; ?>" alt="<?php echo $video_icon_alt; ?>" />
-                                            </a>
-                                        <?php endif; ?>
+
+                                        <a class="open-popup" href="<?php echo $youtube_link; ?>" style="margin-left: 10px">
+                                            <img width="65" height="64"
+                                                src="<?php echo THEME_URI . '/assets/'; ?>images/video-icon.png" /></a>
+                                        </a>
                                     </p>
                                 <?php endif; ?>
                             </div>
@@ -74,18 +70,15 @@ get_header();
         $background_image = !empty($section_2['background_image']['url']) ? esc_url($section_2['background_image']['url']) : '';
         $background_alt = !empty($section_2['background_image']['alt']) ? esc_attr($section_2['background_image']['alt']) : '';
 
-        $title = !empty($section_2['title']) ? esc_html($section_2['title']) : '';
+        $title = !empty($section_2['title']) ? $section_2['title'] : '';
         $content = !empty($section_2['content']) ? wp_kses_post($section_2['content']) : '';
-
-        $image = !empty($section_2['image']['url']) ? esc_url($section_2['image']['url']) : '';
-        $image_alt = !empty($section_2['image']['alt']) ? esc_attr($section_2['image']['alt']) : '';
         ?>
 
         <?php if ($title || $content || $image): ?>
-            <section class="section-2">
+            <section class="facility__section-2">
                 <div class="container">
                     <div class="box-wrapper">
-                        <div class="row">
+                        <div class="row box-wrapper__row">
                             <div class="col-lg-6">
                                 <div class="box-content">
                                     <?php if ($title): ?>
@@ -104,12 +97,6 @@ get_header();
                             <div class="col-lg-6">
                                 <div class="box-gallery">
                                     <div class="box-rectangle"></div>
-
-                                    <?php if ($image): ?>
-                                        <img class="img-gallery-1" src="<?php echo $image; ?>"
-                                            alt="<?php echo $image_alt; ?>" />
-                                    <?php endif; ?>
-
                                     <?php if ($background_image): ?>
                                         <img class="img-gallery-2" src="<?php echo $background_image; ?>"
                                             alt="<?php echo $background_alt; ?>" />
@@ -130,7 +117,7 @@ get_header();
         $background = !empty($section_3['background_image']['url']) ? esc_url($section_3['background_image']['url']) : '';
         $bg_alt = !empty($section_3['background_image']['alt']) ? esc_attr($section_3['background_image']['alt']) : '';
 
-        $title = !empty($section_3['title']) ? esc_html($section_3['title']) : '';
+        $title = !empty($section_3['title']) ? $section_3['title'] : '';
         $content = !empty($section_3['content']) ? wp_kses_post($section_3['content']) : '';
         ?>
 
@@ -162,7 +149,7 @@ get_header();
         <?php
         $slide_section = get_field('slide_section') ?? [];
 
-        $title = !empty($slide_section['title']) ? esc_html($slide_section['title']) : '';
+        $title = !empty($slide_section['title']) ? $slide_section['title'] : '';
         $gallery = !empty($slide_section['slide_item']) && is_array($slide_section['slide_item']) ? $slide_section['slide_item'] : [];
         ?>
 
@@ -171,7 +158,7 @@ get_header();
                 <div class="container">
                     <?php if ($title): ?>
                         <div class="title-space">
-                            <h2><?php echo nl2br($title); ?></h2>
+                            <h2 class="space__title"><?php echo $title; ?></h2>
                         </div>
                     <?php endif; ?>
                 </div>
