@@ -24,16 +24,13 @@ get_header();
         <?php
         $section_1 = get_field('section_1') ?? [];
 
+        $heading = !empty($section_1['heading']) ? $section_1['heading'] : '';
         $video_url = !empty($section_1['video_bg']) ? esc_url($section_1['video_bg']) : '';
-        $heading = !empty($section_1['heading']) ? esc_html($section_1['heading']) : '';
         $youtube_link = !empty($section_1['youtube_link']) ? esc_url($section_1['youtube_link']) : '';
-
-        $video_icon_url = !empty($section_1['video_icon']['url']) ? esc_url($section_1['video_icon']['url']) : '';
-        $video_icon_alt = !empty($section_1['video_icon']['alt']) ? esc_attr($section_1['video_icon']['alt']) : '';
         ?>
 
         <?php if ($video_url || $heading || $youtube_link): ?>
-            <section class="section-video">
+            <section class="tearchers__section-video">
                 <div class="container">
                     <?php if ($video_url): ?>
                         <video id="banner-video" autoplay loop muted playsinline oncontextmenu="return false;" preload="auto">
@@ -45,18 +42,17 @@ get_header();
                         <div class="container">
                             <div class="banner-content-main" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
                                 <?php if ($heading): ?>
-                                    <h1 style="color: #ffffff;"><?php echo nl2br($heading); ?></h1>
+                                    <h1 style="color: #ffffff;"><?php echo $heading; ?></h1>
                                 <?php endif; ?>
 
                                 <?php if ($youtube_link): ?>
                                     <p>
                                         <a class="open-popup" href="<?php echo $youtube_link; ?>">Xem video</a>
-                                        <?php if ($video_icon_url): ?>
-                                            <a class="open-popup" href="<?php echo $youtube_link; ?>" style="margin-left: 10px;">
-                                                <img width="65" height="64" class="img-bound-fill"
-                                                    src="<?php echo $video_icon_url; ?>" alt="<?php echo $video_icon_alt; ?>" />
-                                            </a>
-                                        <?php endif; ?>
+
+                                        <a class="open-popup" href="<?php echo $youtube_link; ?>" style="margin-left: 10px">
+                                            <img width="65" height="64"
+                                                src="<?php echo THEME_URI . '/assets/'; ?>images/video-icon.png" /></a>
+                                        </a>
                                     </p>
                                 <?php endif; ?>
                             </div>
@@ -74,15 +70,12 @@ get_header();
         $background_image = !empty($section_2['background_image']['url']) ? esc_url($section_2['background_image']['url']) : '';
         $background_alt = !empty($section_2['background_image']['alt']) ? esc_attr($section_2['background_image']['alt']) : '';
 
-        $title = !empty($section_2['title']) ? esc_html($section_2['title']) : '';
-        $content = !empty($section_2['content']) ? wp_kses_post($section_2['content']) : '';
-
-        $image = !empty($section_2['image']['url']) ? esc_url($section_2['image']['url']) : '';
-        $image_alt = !empty($section_2['image']['alt']) ? esc_attr($section_2['image']['alt']) : '';
+        $title_banner = !empty($section_2['title']) ? $section_2['title'] : '';
+        $content_banner = !empty($section_2['content']) ? wp_kses_post($section_2['content']) : '';
         ?>
 
-        <?php if ($background_image || $title || $content): ?>
-            <section class="section-banner">
+        <?php if ($background_image || $title_banner || $content_banner): ?>
+            <section class="tearchers__section-banner">
                 <?php if ($background_image): ?>
                     <img width="1920" height="1020" class="img-background" data-aos="fade-up" data-aos-delay="50"
                         data-aos-duration="800" src="<?php echo $background_image; ?>" alt="<?php echo $background_alt; ?>">
@@ -91,18 +84,12 @@ get_header();
                 <div class="banner-content">
                     <div class="container">
                         <div class="banner-content-main" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
-                            <?php if ($title): ?>
-                                <h2><?php echo $title; ?></h2>
+                            <?php if ($title_banner): ?>
+                                <h2 class="banner__title"><?php echo $title_banner; ?></h2>
                             <?php endif; ?>
 
-                            <?php if ($content): ?>
-                                <?php echo $content; ?>
-                            <?php endif; ?>
-
-                            <?php if ($image): ?>
-                                <div class="banner-image">
-                                    <img src="<?php echo $image; ?>" alt="<?php echo $image_alt; ?>">
-                                </div>
+                            <?php if ($content_banner): ?>
+                                <?php echo $content_banner; ?>
                             <?php endif; ?>
                         </div>
                     </div>
@@ -119,7 +106,7 @@ get_header();
         ?>
 
         <?php if (!empty($card_items)): ?>
-            <section class="section-usps">
+            <section class="teachers__section-usps">
                 <div class="box-main">
                     <div class="container">
                         <div class="box-main_top">
@@ -127,7 +114,7 @@ get_header();
                                 <?php foreach ($card_items as $index => $item):
                                     $bg_image = !empty($item['background_image']['url']) ? esc_url($item['background_image']['url']) : '';
                                     $bg_alt = !empty($item['background_image']['alt']) ? esc_attr($item['background_image']['alt']) : '';
-                                    $title = !empty($item['title']) ? esc_html($item['title']) : '';
+                                    $title = !empty($item['title']) ? $item['title'] : '';
                                     $content = !empty($item['content']) ? wp_kses_post($item['content']) : '';
                                     ?>
                                     <div class="col-md-6 col-xl-6">
@@ -142,7 +129,7 @@ get_header();
                                             <?php endif; ?>
                                             <div class="box-content">
                                                 <?php if ($title): ?>
-                                                    <h3><?php echo $title; ?></h3>
+                                                    <h3 class="box-content__title"><?php echo $title; ?></h3>
                                                 <?php endif; ?>
                                                 <?php if ($content): ?>
                                                     <p><?php echo $content; ?></p>
@@ -161,25 +148,32 @@ get_header();
 
         <!-- Members Start -->
         <?php
+        $directors_section = get_field('directors_section') ?? [];
+
+        $title_director = !empty($directors_section['title']) ? $directors_section['title'] : [];
+        //
         $args_directors = [
             'post_type' => 'member',
             'meta_query' => [
                 [
                     'key' => 'is_director',
                     'value' => '1',
-                    'compare' => 'LIKE',
+                    'compare' => '='
                 ],
             ],
             'posts_per_page' => -1,
         ];
+
+        //
         $directors = new WP_Query($args_directors);
         ?>
-
         <section class="section-list-teacher">
             <div class="container">
-                <div class="title-blog">
-                    <h2>CÁC GIÁM ĐỐC ĐÀO TẠO</h2>
-                </div>
+                <?php if ($title_director): ?>
+                    <div class="title-blog">
+                        <h2> <?php echo $title_director; ?> </h2>
+                    </div>
+                <?php endif; ?>
                 <div class="teacher-owl-slider owl-carousel owl-theme">
                     <?php if ($directors->have_posts()): ?>
                         <?php while ($directors->have_posts()):
@@ -198,21 +192,23 @@ get_header();
                                 </div>
                                 <div class="teacher-content">
                                     <h3><?php the_title(); ?></h3>
-                                    <p><?php echo esc_html($position); ?></p>
+                                    <p><?php the_excerpt(); ?></p>
                                     <div class="popup-profile">
                                         <div class="popup-wrapper">
                                             <div class="popup-content">
                                                 <div class="close-popup"><i class="fa-solid fa-x"></i></div>
-                                                <h3>
-                                                    <?php if ($image): ?>
-                                                        <img src="<?php echo esc_url($image); ?>"
-                                                            alt="<?php echo esc_attr($image_alt); ?>" width="400">
-                                                    <?php endif; ?>
-                                                    <strong><span style="color: #2b378b;"><?php the_title(); ?></span></strong>
-                                                </h3>
-                                                <p><strong style="color: #2b378b;"><?php echo esc_html($position); ?></strong>
+                                                <h3><img class="alignright wp-image-17625" src="<?php echo esc_url($image); ?>"
+                                                        alt="<?php echo esc_attr($image_alt); ?>" width="400"
+                                                        height="503"><strong><span
+                                                            style="color: #2b378b;"><?php the_title(); ?></span></strong></h3>
+                                                <p>
+                                                    <span style="color: #2b378b;">
+                                                        <strong><?php the_excerpt(); ?> </strong>
+                                                    </span>
                                                 </p>
-                                                <p><?php echo wp_kses_post($description); ?></p>
+                                                <p>
+                                                    <?php the_content(); ?>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -226,26 +222,25 @@ get_header();
         </section>
         <!--  -->
         <div id="popup-profile-teacher"></div>
+
         <!--  -->
         <?php
         $args_staff = [
             'post_type' => 'member',
+            'posts_per_page' => -1,
             'meta_query' => [
                 [
                     'key' => 'is_director',
-                    'compare' => 'NOT EXISTS'
-                ]
+                    'value' => '1',
+                    'compare' => '!=',
+                ],
             ],
-            'posts_per_page' => -1,
         ];
         $staffs = new WP_Query($args_staff);
         ?>
 
         <section class="section-teacher">
             <div class="container">
-                <div class="title-heading">
-                    <h2>ĐỘI NGŨ GIÁO VIÊN</h2>
-                </div>
                 <div class="row">
                     <?php if ($staffs->have_posts()): ?>
                         <?php while ($staffs->have_posts()):
@@ -264,24 +259,26 @@ get_header();
                                         <?php endif; ?>
                                     </div>
                                     <div class="box-content">
-                                        <h3 class="name"><?php the_title(); ?></h3>
-                                        <p class="center"><?php echo esc_html($position); ?></p>
+                                        <h3><?php the_title(); ?></h3>
+                                        <p><?php the_excerpt(); ?></p>
                                         <div class="popup-profile">
                                             <div class="popup-wrapper">
                                                 <div class="popup-content">
                                                     <div class="close-popup"><i class="fa-solid fa-x"></i></div>
-                                                    <h3>
-                                                        <?php if ($image): ?>
-                                                            <img src="<?php echo esc_url($image); ?>"
-                                                                alt="<?php echo esc_attr($image_alt); ?>" width="400">
-                                                        <?php endif; ?>
-                                                        <strong><span
+                                                    <h3><img class="alignright wp-image-17625"
+                                                            src="<?php echo esc_url($image); ?>"
+                                                            alt="<?php echo esc_attr($image_alt); ?>" width="400"
+                                                            height="503"><strong><span
                                                                 style="color: #2b378b;"><?php the_title(); ?></span></strong>
                                                     </h3>
-                                                    <p><strong
-                                                            style="color: #2b378b;"><?php echo esc_html($position); ?></strong>
+                                                    <p>
+                                                        <span style="color: #2b378b;">
+                                                            <strong><?php the_excerpt(); ?> </strong>
+                                                        </span>
                                                     </p>
-                                                    <p><?php echo wp_kses_post($description); ?></p>
+                                                    <p>
+                                                        <?php the_content(); ?>
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -298,8 +295,11 @@ get_header();
 
         <!-- Releated News Start -->
         <?php
-        $related_posts_group = get_field('related_post');
+        $related_posts_group = get_field('related_post') ?? [];
         $featured_posts = $related_posts_group['featured_posts'] ?? [];
+        //
+        $title_related_posts = !empty($related_posts_group['title']) ? $related_posts_group['title'] : [];
+        $desc_related_posts = !empty($related_posts_group['desc']) ? $related_posts_group['desc'] : [];
 
         if (!empty($featured_posts)):
             ?>
@@ -307,13 +307,16 @@ get_header();
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <div class="title-blog">
-                                <h2>ILAVERSE</h2>
-                            </div>
-                            <div class="quote-heading">
-                                Chào mừng bạn đến với thế giới của ILAVerse – nơi bạn có thể tìm thấy tất cả bí quyết học
-                                tiếng Anh, mẹo nuôi dạy và chăm sóc con cái… để con trưởng thành hơn mỗi ngày.
-                            </div>
+                            <?php if ($title_related_posts): ?>
+                                <div class="title-blog">
+                                    <h2><?php echo $title_related_posts; ?></h2>
+                                </div>
+                            <?php endif; ?>
+                            <?php if ($desc_related_posts): ?>
+                                <div class="quote-heading">
+                                    <?php echo $desc_related_posts; ?>
+                                </div>
+                            <?php endif; ?>
                         </div>
                     </div>
                     <div class="row">
@@ -390,14 +393,13 @@ get_header();
                                 </div> <!-- .row -->
                             </div> <!-- .col-xl-12 -->
                         </div> <!-- .col-xl-6 -->
-                    </div> <!-- .row -->
-                </div> <!-- .container -->
+                    </div>
+                </div>
             </section>
             <?php
             wp_reset_postdata();
         endif;
         ?>
-
         <!-- Releated News End -->
     </main>
 </div>
