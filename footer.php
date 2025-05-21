@@ -21,7 +21,7 @@
 <?php
 $google_maps = get_field('google_maps', 'option') ?? null;
 if ($google_maps):
-?>
+    ?>
     <div class="footer_maps">
         <?php echo $google_maps; ?>
     </div>
@@ -65,7 +65,7 @@ if ($google_maps):
                             <?php
                             $youtube = get_field('social_network_youtube', 'option') ?: '';
                             if ($youtube):
-                            ?>
+                                ?>
                                 <li>
                                     <a href="<?php echo $youtube; ?>" target="_blank">
                                         <img width="43" height="44"
@@ -73,28 +73,28 @@ if ($google_maps):
                                             alt="youtube">
                                     </a>
                                 </li>
-                            <?php
+                                <?php
                             endif;
                             ?>
 
                             <?php
                             $facebook = get_field('social_network_facebook', 'option') ?: '';
                             if ($facebook):
-                            ?>
+                                ?>
                                 <li>
                                     <a href="<?php echo $facebook; ?>" target="_blank">
                                         <img width="44" height="44"
                                             src="<?php echo THEME_URI . '/assets/'; ?>images/logo-fb.png" alt="facebook">
                                     </a>
                                 </li>
-                            <?php
+                                <?php
                             endif;
                             ?>
 
                             <?php
                             $instagram = get_field('social_network_instagram', 'option') ?: '';
                             if ($instagram):
-                            ?>
+                                ?>
                                 <li>
                                     <a href="<?php echo $instagram; ?>" target="_blank">
                                         <img width="43" height="44"
@@ -102,7 +102,7 @@ if ($google_maps):
                                             alt="instagram">
                                     </a>
                                 </li>
-                            <?php
+                                <?php
                             endif;
                             ?>
                         </ul>
@@ -135,13 +135,13 @@ if ($google_maps):
                             if ($advanced_english):
                                 foreach ($advanced_english as $item):
                                     if ($item['link']['url'] && $item['link']['title']):
-                            ?>
+                                        ?>
                                         <li>
                                             <a href="<?php echo $item['link']['url']; ?>">
                                                 <?php echo $item['link']['title']; ?>
                                             </a>
                                         </li>
-                            <?php
+                                        <?php
                                     endif;
                                 endforeach;
                             endif;
@@ -158,13 +158,13 @@ if ($google_maps):
                             if ($standard_english):
                                 foreach ($standard_english as $item):
                                     if ($item['link']['url'] && $item['link']['title']):
-                            ?>
+                                        ?>
                                         <li>
                                             <a href="<?php echo $item['link']['url']; ?>">
                                                 <?php echo $item['link']['title']; ?>
                                             </a>
                                         </li>
-                            <?php
+                                        <?php
                                     endif;
                                 endforeach;
                             endif;
@@ -177,13 +177,13 @@ if ($google_maps):
                             if ($exam_preparation_study_abroad):
                                 foreach ($exam_preparation_study_abroad as $item):
                                     if ($item['link']['url'] && $item['link']['title']):
-                            ?>
+                                        ?>
                                         <li>
                                             <a href="<?php echo $item['link']['url']; ?>">
                                                 <?php echo $item['link']['title']; ?>
                                             </a>
                                         </li>
-                            <?php
+                                        <?php
                                     endif;
                                 endforeach;
                             endif;
@@ -200,13 +200,13 @@ if ($google_maps):
                             if ($learn_more):
                                 foreach ($learn_more as $item):
                                     if ($item['link']['url'] && $item['link']['title']):
-                            ?>
+                                        ?>
                                         <li>
                                             <a href="<?php echo $item['link']['url']; ?>">
                                                 <?php echo $item['link']['title']; ?>
                                             </a>
                                         </li>
-                            <?php
+                                        <?php
                                     endif;
                                 endforeach;
                             endif;
@@ -278,8 +278,8 @@ if ($google_maps):
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/index_add.js" defer="" async=""></script>
 
 <script>
-    jQuery(function($) {
-        $(".navbar-dropdown-item .btn-dropdown-mb").on("click", function() {
+    jQuery(function ($) {
+        $(".navbar-dropdown-item .btn-dropdown-mb").on("click", function () {
             console.log($(this).children('i'));
             $(this).children('i').toggleClass('fa-angle-down fa-angle-up');
             $(this).next(".dropdown-content").slideToggle();
@@ -302,7 +302,8 @@ if ($google_maps):
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/courses.js" id="page-course-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/wow.min.js" id="wow-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.magnific-popup.js" id="magnific-popup-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery-scrolltofixed-min.js" id="jquery-scrollfixed-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery-scrolltofixed-min.js"
+    id="jquery-scrollfixed-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/list-center.js" id="fptheme-list-center-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/aboutus.js" id="page-about-us-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/timeline.js" id="timeline-js-js"></script>
@@ -315,6 +316,7 @@ if ($google_maps):
 
 <!-- vucoder -->
 <!-- <script src="<?php echo THEME_URI . '/assets/'; ?>js/smooth_scroll.min.js" id="ez-toc-scroll-scriptjs-js"></script> -->
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/single.js" id="single-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.sticky-kit.min.js"
     id="ez-toc-jquery-sticky-kit-js"></script>
 <script id="ez-toc-js-js-extra">
@@ -368,7 +370,7 @@ if ($google_maps):
         player.unMute(); // Unmute the player
         player.setVolume(volume); // Start with volume 0
 
-        const fadeAudio = setInterval(function() {
+        const fadeAudio = setInterval(function () {
             if (volume < 50) {
                 // Gradually increase volume to 50%
                 volume += 1;

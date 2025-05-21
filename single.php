@@ -14,7 +14,7 @@ get_header();
 <!-- Content Start -->
 
 <div id="content" class="site-content">
-    <main class="single-template">
+    <main class="single-detail-main single-template">
         <section class="section-menu-category">
             <div class="container">
                 <div class="list-cate">
@@ -42,6 +42,7 @@ get_header();
                 </div>
             </div>
         </section>
+
         <div class="blog-detail-area">
             <div class="row">
                 <section class="section-blog-detail">
@@ -86,60 +87,59 @@ get_header();
                                             </div>
                                         </div>
                                         <div id="ez-toc-container"></div>
-                                        <h2 class="ez-toc-section" id="section1">Tiêu đề 1</h2>
-                                        <h3 class="ez-toc-section" id="section2">Tiêu đề 2</h3>
 
                                         <?php the_content(); ?>
                                     </div>
                                 </div>
                                 <div class="col-lg-3">
-                                    <?php
-                                    $current_post_id = get_the_ID();
-                                    $categories = wp_get_post_categories($current_post_id);
-
-                                    $args = [
-                                        'post__not_in' => [$current_post_id],
-                                        'posts_per_page' => 4,
-                                        // 'category__in' => $categories,
-                                        'orderby' => 'date',
-                                        'order' => 'DESC',
-                                    ];
-
-                                    $related_posts = new WP_Query($args);
-
-                                    if ($related_posts->have_posts()):
-                                        ?>
-                                        <div class="related-post">
-                                            <h2>Bài viết liên quan</h2>
-                                            <?php while ($related_posts->have_posts()):
-                                                $related_posts->the_post(); ?>
-                                                <div class="post-item">
-                                                    <a href="<?php the_permalink(); ?>">
-                                                        <h3 class="post-title"><?php the_title(); ?></h3>
-                                                    </a>
-                                                    <?php
-                                                    $categories = get_the_category();
-                                                    if (!empty($categories)):
-                                                        $cat = $categories[0];
-                                                        ?>
-                                                        <a href="<?php echo get_category_link($cat->term_id); ?>">
-                                                            <h4 class="category-name"><?php echo esc_html($cat->name); ?></h4>
-                                                        </a>
-                                                    <?php endif; ?>
-                                                </div>
-                                            <?php endwhile; ?>
-                                        </div>
+                                    <div class="right-sidebar">
                                         <?php
-                                        wp_reset_postdata();
-                                    endif;
-                                    ?>
+                                        $current_post_id = get_the_ID();
+                                        $categories = wp_get_post_categories($current_post_id);
+
+                                        $args = [
+                                            'post__not_in' => [$current_post_id],
+                                            'posts_per_page' => 4,
+                                            // 'category__in' => $categories,
+                                            'orderby' => 'date',
+                                            'order' => 'DESC',
+                                        ];
+
+                                        $related_posts = new WP_Query($args);
+
+                                        if ($related_posts->have_posts()):
+                                            ?>
+                                            <div class="related-post">
+                                                <h2>Bài viết liên quan</h2>
+                                                <?php while ($related_posts->have_posts()):
+                                                    $related_posts->the_post(); ?>
+                                                    <div class="post-item">
+                                                        <a href="<?php the_permalink(); ?>">
+                                                            <h3 class="post-title"><?php the_title(); ?></h3>
+                                                        </a>
+                                                        <?php
+                                                        $categories = get_the_category();
+                                                        if (!empty($categories)):
+                                                            $cat = $categories[0];
+                                                            ?>
+                                                            <a href="<?php echo get_category_link($cat->term_id); ?>">
+                                                                <h4 class="category-name"><?php echo esc_html($cat->name); ?></h4>
+                                                            </a>
+                                                        <?php endif; ?>
+                                                    </div>
+                                                <?php endwhile; ?>
+                                            </div>
+                                            <?php
+                                            wp_reset_postdata();
+                                        endif;
+                                        ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-
-                <!-- Form Start -->
+                <!--  -->
                 <section class="section-footer" id="form-submit-register"
                     style="background-image: url(images/bg-course-section-6.png)">
                     <div class="form-content">
@@ -186,9 +186,9 @@ get_header();
                                                 class="checkbox-form" checked="" required=""
                                                 style="min-width: 20px; max-width: 20px; height: 20px; margin-top: 5px" />
                                             <label class="checkbox-label" for="checkbox-form">Bằng việc đăng ký
-                                                thông tin, bạn đồng ý cho phép ILA liên lạc thông qua các hình thức:
-                                                cuộc gọi, tin nhắn, email nhằm mục đích tư vấn các chương trình Anh
-                                                ngữ & nghiên cứu thị trường.</label>
+                                                thông tin, bạn đồng ý cho phép ILA liên lạc thông qua các hình
+                                                thức: cuộc gọi, tin nhắn, email nhằm mục đích tư vấn các chương
+                                                trình Anh ngữ & nghiên cứu thị trường.</label>
                                         </div>
                                         <span class="error-text checkbox-error"></span>
                                         <input type="hidden" class="g-recaptcha-response" id="g-recaptcha-response-6"
@@ -203,8 +203,7 @@ get_header();
                         </div>
                     </div>
                 </section>
-                <!-- Form End -->
-
+                <!--  -->
             </div>
         </div>
     </main>
@@ -214,3 +213,104 @@ get_header();
 <?php
 get_footer();
 ?>
+
+<script>
+    jQuery(function ($) {
+
+        var width = $(window).width();
+        var header_item = $("#myHeader");
+        console.log("Header", header_item);
+        //
+        if (width > 991) {
+            var archive_ppdts = $(".section-blog-detail .right-sidebar");
+            console.log("archive_ppdts", archive_ppdts);
+            archive_ppdts.each(function (i) {
+                var archive_ppdt = $(archive_ppdts[i]);
+                var next = archive_ppdts[i + 1];
+                archive_ppdt.scrollToFixed({
+                    marginTop: $("#myHeader").outerHeight(true) + 30,
+                    limit: function () {
+                        var limit = 0;
+                        if (next) {
+                            limit =
+                                $(next).offset().top - $(this).outerHeight(true) - 10;
+                        } else {
+                            limit =
+                                $("#form-submit-register.section-footer").offset().top - $(this).outerHeight(true) - 50;
+                        }
+                        return limit;
+                    },
+                    zIndex: 99,
+                });
+            });
+            var archive_ppdts = $(".section-blog-detail .left-sidebar");
+            archive_ppdts.each(function (i) {
+                var archive_ppdt = $(archive_ppdts[i]);
+                var next = archive_ppdts[i + 1];
+                archive_ppdt.scrollToFixed({
+                    marginTop: $("#myHeader").outerHeight(true) + 30,
+                    limit: function () {
+                        var limit = 0;
+                        if (next) {
+                            limit =
+                                $(next).offset().top -
+                                $(this).outerHeight(true) -
+                                10;
+                        } else {
+                            limit =
+                                $("#form-submit-register.section-footer").offset().top -
+                                $(this).outerHeight(true) -
+                                50;
+                        }
+                        return limit;
+                    },
+                    zIndex: 99,
+                });
+            });
+        }
+        var ppp = 4; // Post per page
+        var cat = $('#more_posts').data('category');
+        var postNotIn = $('#more_posts').data('post-not-in');
+        var pageNumber = 0;
+
+        function load_posts() {
+            pageNumber++;
+            //var str = '&cat=' + cat + '&post__not_in=' + postNotIn + '&pageNumber=' + pageNumber + '&ppp=' + ppp + '&action=more_post_ajax';
+            $.ajax({
+                type: "POST",
+                //dataType: "html",
+                url: ajax_posts.ajaxurl,
+                data: {
+                    action: 'more_post_ajax',
+                    cat: cat,
+                    post__not_in: postNotIn,
+                    pageNumber: pageNumber,
+                    ppp: ppp
+                },
+                success: function (data) {
+                    var $data = $(data);
+                    if ($data.length) {
+                        $("#ajax-posts").append($data);
+                        $("#more_posts").attr("disabled", false);
+                    } else {
+                        $("#more_posts").attr("disabled", false);
+                    }
+                    if ($data.length < 4) {
+                        $("#more_posts").attr("disabled", true);
+                        $("#more_posts").hide();
+                    }
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    $loader.html(jqXHR + " :: " + textStatus + " :: " + errorThrown);
+                }
+
+            });
+            return false;
+        }
+
+        $("#more_posts").on("click", function () { // When btn is pressed.
+            $("#more_posts").attr("disabled", true); // Disable the button, temp.
+            load_posts();
+        });
+    });     
+</script>

@@ -71,8 +71,8 @@
                     },
                     "default_value": "",
                     "tabs": "all",
-                    "toolbar": "full",
-                    "media_upload": 1,
+                    "toolbar": "basic",
+                    "media_upload": 0,
                     "delay": 0
                 },
                 {
@@ -136,6 +136,26 @@
             "layout": "block",
             "sub_fields": [
                 {
+                    "key": "field_682dfcd0c5996",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
                     "key": "field_682578e8a9096",
                     "label": "Outstanding Post",
                     "name": "outstanding_post",
@@ -149,7 +169,9 @@
                         "class": "",
                         "id": ""
                     },
-                    "post_type": "",
+                    "post_type": [
+                        "student_post"
+                    ],
                     "post_status": "",
                     "taxonomy": "",
                     "filters": [
@@ -200,6 +222,26 @@
             "layout": "block",
             "sub_fields": [
                 {
+                    "key": "field_682e0040cb4dc",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
                     "key": "field_68259f800c136",
                     "label": "Top student",
                     "name": "top_student",
@@ -213,7 +255,9 @@
                         "class": "",
                         "id": ""
                     },
-                    "post_type": "",
+                    "post_type": [
+                        "top_student"
+                    ],
                     "post_status": "",
                     "taxonomy": "",
                     "filters": [
@@ -249,5 +293,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1747498220
+    "modified": 1747845355
 }

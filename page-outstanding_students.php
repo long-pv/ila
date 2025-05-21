@@ -51,8 +51,8 @@ get_header();
             <!-- Banner Start -->
             <?php
             $section_2 = get_field('banner_section') ?? [];
-
-            $title = isset($section_2['title']) ? esc_html($section_2['title']) : '';
+            // 
+            $title = isset($section_2['title']) ? $section_2['title'] : '';
             $content = isset($section_2['content']) ? wp_kses_post($section_2['content']) : '';
 
             $image_url = isset($section_2['image']['url']) ? esc_url($section_2['image']['url']) : '';
@@ -96,22 +96,27 @@ get_header();
             <!--  -->
             <?php
             $outstanding_section = get_field('outstanding_section') ?? [];
+
+            $outstanding_title = isset($outstanding_section['title']) ? $outstanding_section['title'] : '';
             $outstanding_posts = isset($outstanding_section['outstanding_post']) && is_array($outstanding_section['outstanding_post'])
                 ? $outstanding_section['outstanding_post']
                 : [];
             ?>
 
-            <?php if (!empty($outstanding_posts)): ?>
-                <section id="the-stories" class="section-the-stories">
-                    <div class="container">
-                        <div class="box-wrapper">
-                            <div class="row">
-                                <div class="col-xl-12">
+
+            <section id="the-stories" class="section-the-stories">
+                <div class="container">
+                    <div class="box-wrapper">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <?php if ($outstanding_title): ?>
                                     <div class="title-blog">
-                                        <h2><?php echo esc_html($outstanding_section['title'] ?? 'Đại diện ưu tú'); ?></h2>
+                                        <h2><?php echo $outstanding_title; ?></h2>
                                     </div>
-                                </div>
+                                <?php endif; ?>
                             </div>
+                        </div>
+                        <?php if (!empty($outstanding_posts)): ?>
                             <div class="row" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
                                 <?php foreach ($outstanding_posts as $post): ?>
                                     <?php
@@ -147,15 +152,16 @@ get_header();
                                 <?php endforeach; ?>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <?php wp_reset_postdata(); ?>
-            <?php endif; ?>
+                        <?php wp_reset_postdata(); ?>
+                    <?php endif; ?>
+                </div>
+            </section>
             <!--  -->
 
             <!-- Top Student Start -->
             <?php
             $top_student_section = get_field('top_student') ?? [];
+            $top_student_title = isset($top_student_section['title']) ? $top_student_section['title'] : '';
             $top_student_posts = isset($top_student_section['top_student']) && is_array($top_student_section['top_student'])
                 ? $top_student_section['top_student']
                 : [];
@@ -166,9 +172,11 @@ get_header();
                     <div class="box-wrapper">
                         <div class="row">
                             <div class="col-xl-12">
-                                <div class="title-blog">
-                                    <h2>Thành tích vượt trội</h2>
-                                </div>
+                                <?php if ($top_student_title): ?>
+                                    <div class="title-blog">
+                                        <h2><?php echo $top_student_title; ?></h2>
+                                    </div>
+                                <?php endif; ?>
                             </div>
                         </div>
 
@@ -180,9 +188,11 @@ get_header();
                                     $post_id = $post->ID;
                                     $permalink = get_permalink($post_id);
                                     $title = get_the_title($post_id);
-                                    $excerpt = get_the_excerpt($post_id);
                                     $thumbnail_url = get_the_post_thumbnail_url($post_id, 'medium_large');
                                     $thumbnail_alt = get_post_meta(get_post_thumbnail_id($post_id), '_wp_attachment_image_alt', true);
+                                    //
+                                    $student_center = get_field('school_name', $post_id);
+                                    $student_achievement = get_field('achievement', $post_id);
                                     ?>
                                     <div class="hall-item">
                                         <?php if ($thumbnail_url): ?>
@@ -200,17 +210,17 @@ get_header();
                                                     <?php echo esc_html($title); ?>
                                                 </a>
                                             </h3>
-                                            <p style="font-size: 16px">
-                                                <span><?php echo esc_html(get_field('location', $post_id) ?: ''); ?></span>
-                                            </p>
-                                            <p>
-                                                <?php echo esc_html($excerpt); ?>
-                                            </p>
+                                            <?php if (!empty($student_center)): ?>
+                                                <p style="font-size: 16px"><span><?php echo esc_html($student_center); ?></span></p>
+                                            <?php endif; ?>
+                                            <?php if (!empty($student_achievement)): ?>
+                                                <p><?php echo esc_html($student_achievement); ?></p>
+                                            <?php endif; ?>
                                         </div>
                                     </div>
                                 <?php endforeach; ?>
-                                <?php wp_reset_postdata(); ?>
                             </div>
+                            <?php wp_reset_postdata(); ?>
                         <?php endif; ?>
                     </div>
                 </div>

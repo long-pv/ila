@@ -501,7 +501,7 @@ get_header();
                             $student_image = get_the_post_thumbnail_url($post_student->ID, 'full');
                             $student_name = get_the_title($post_student->ID);
                             $student_link = get_permalink($post_student->ID);
-                            $student_center = get_field('center', $post_student->ID);
+                            $student_center = get_field('school_name', $post_student->ID);
                             $student_achievement = get_field('achievement', $post_student->ID);
                             ?>
                             <div class="hall-item">
