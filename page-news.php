@@ -17,9 +17,8 @@
 get_header();
 ?>
 
-
 <div id="content" class="site-content">
-    <main class="archive-template archive-default">
+    <main class="archive-template archive-default news-event">
         <section class="section-menu-category">
             <div class="container">
                 <div class="list-cate">
@@ -48,7 +47,7 @@ get_header();
 
         $args = array(
             'post_type' => 'post',
-            'posts_per_page' => 6,
+            'posts_per_page' => 10,
             'paged' => $paged,
             // 'category_name' => 'tin-tuc-su-kien', // Đổi nếu bạn có slug khác
         );
@@ -67,7 +66,7 @@ get_header();
                         <div class="box-wrapper">
                             <div class="row">
                                 <header class="page-header">
-                                    <h1 class="page-title">Tin tức sự kiện</h1>
+                                    <h1 class="page-title"> <?php the_title(); ?></h1>
                                 </header>
                             </div>
                             <div class="row">
