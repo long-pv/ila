@@ -597,5 +597,11 @@ get_header();
 
 </div><!-- #content -->
 
+
+<style>
+    .footer_maps {
+        margin-top: 3rem;
+    }
+</style>
 <?php
 get_footer();
