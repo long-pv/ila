@@ -92,33 +92,32 @@ get_header();
                                         <?php foreach ($featured_events as $event_id) :
                                             if ($count >= 4) break;
 
-                                            $permalink = get_permalink($event_id);
+                                            $permalink = 'javascript:void(0);';
                                             $title = get_the_title($event_id);
                                             $thumbnail = get_the_post_thumbnail_url($event_id, 'full');
                                             $duration = get_field('duration', $event_id);
                                             $location = get_field('location', $event_id);
                                             $button_id = $event_id;
 
-                                            // First event: chiếm nửa bên trái
                                             if ($count === 0) : ?>
                                                 <div class="col-xl-6 col-lg-5 col-md-12 col-12 first-events">
                                                     <div class="event-main event-first">
                                                         <div class="event-thumbnail">
-                                                            <a href="<?php echo esc_url($permalink); ?>">
-                                                                <img src="<?php echo esc_url($thumbnail); ?>" alt="<?php echo esc_attr($title); ?>" />
+                                                            <a href="<?php echo $permalink; ?>">
+                                                                <img src="<?php echo $thumbnail; ?>" alt="<?php echo $title; ?>" />
                                                             </a>
                                                         </div>
                                                         <div class="event-content">
                                                             <div class="event-title">
-                                                                <h3><a href="<?php echo esc_url($permalink); ?>"><?php echo esc_html($title); ?></a></h3>
+                                                                <h3><a href="<?php echo $permalink; ?>"><?php echo $title; ?></a></h3>
                                                             </div>
                                                             <div class="event-time">
-                                                                <p><i class="fa-light fa-alarm-clock"></i> <?php echo nl2br(esc_html($duration)); ?></p>
-                                                                <p><i class="fa-light fa-location-dot"></i> <?php echo nl2br(esc_html($location)); ?></p>
+                                                                <p><i class="fa-light fa-alarm-clock"></i> <?php echo $duration; ?></p>
+                                                                <p><i class="fa-light fa-location-dot"></i> <?php echo $location; ?></p>
                                                             </div>
                                                             <div class="event-button">
-                                                                <button class="btn-register" data-id="<?php echo esc_attr($button_id); ?>">
-                                                                    <a href="<?php echo esc_url($permalink); ?>">Đăng ký ngay</a>
+                                                                <button class="btn-register" data-id="<?php echo $button_id; ?>">
+                                                                    <a href="<?php echo $permalink; ?>">Đăng ký ngay</a>
                                                                 </button>
                                                             </div>
                                                         </div>
@@ -130,23 +129,23 @@ get_header();
                                                         <div class="row">
                                                             <div class="col-xl-4 col-lg-5 col-md-4 col-12">
                                                                 <div class="event-thumbnail">
-                                                                    <a href="<?php echo esc_url($permalink); ?>">
-                                                                        <img src="<?php echo esc_url($thumbnail); ?>" alt="<?php echo esc_attr($title); ?>" />
+                                                                    <a href="<?php echo $permalink; ?>">
+                                                                        <img src="<?php echo $thumbnail; ?>" alt="<?php echo $title; ?>" />
                                                                     </a>
                                                                 </div>
                                                             </div>
                                                             <div class="col-xl-8 col-lg-7 col-md-8 col-12">
                                                                 <div class="event-content">
                                                                     <div class="event-title">
-                                                                        <h3><a href="<?php echo esc_url($permalink); ?>"><?php echo esc_html($title); ?></a></h3>
+                                                                        <h3><a href="<?php echo $permalink; ?>"><?php echo $title; ?></a></h3>
                                                                     </div>
                                                                     <div class="event-time">
-                                                                        <p><i class="fa-light fa-alarm-clock"></i> <?php echo nl2br(esc_html($duration)); ?></p>
-                                                                        <p><i class="fa-light fa-location-dot"></i> <?php echo nl2br(esc_html($location)); ?></p>
+                                                                        <p><i class="fa-light fa-alarm-clock"></i> <?php echo $duration; ?></p>
+                                                                        <p><i class="fa-light fa-location-dot"></i> <?php echo $location; ?></p>
                                                                     </div>
                                                                     <div class="event-button">
-                                                                        <button class="btn-register" data-id="<?php echo esc_attr($button_id); ?>">
-                                                                            <a href="<?php echo esc_url($permalink); ?>">Đăng ký ngay</a>
+                                                                        <button class="btn-register" data-id="<?php echo $button_id; ?>">
+                                                                            <a href="<?php echo $permalink; ?>">Đăng ký ngay</a>
                                                                         </button>
                                                                     </div>
                                                                 </div>
@@ -159,6 +158,7 @@ get_header();
                                                 </div> <!-- /.middle-events -->
                                     </div> <!-- /.row.events-listing -->
                                 <?php endif; ?>
+
 
 
                                 <?php
@@ -179,7 +179,7 @@ get_header();
                                         <?php while ($event_query->have_posts()) : $event_query->the_post();
                                             $event_id = get_the_ID();
                                             $title = get_the_title();
-                                            $permalink = get_permalink();
+                                            $permalink = 'javascript:void(0);';
                                             $thumbnail = get_the_post_thumbnail_url($event_id, 'full');
                                             $duration = get_field('duration', $event_id);
                                             $location = get_field('location', $event_id);
@@ -189,23 +189,23 @@ get_header();
                                                     <div class="row">
                                                         <div class="col-xl-4 col-lg-5 col-md-4 col-12">
                                                             <div class="event-thumbnail">
-                                                                <a href="<?php echo esc_url($permalink); ?>">
-                                                                    <img src="<?php echo esc_url($thumbnail); ?>" alt="<?php echo esc_attr($title); ?>">
+                                                                <a href="<?php echo $permalink; ?>">
+                                                                    <img src="<?php echo $thumbnail; ?>" alt="<?php echo $title; ?>">
                                                                 </a>
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-8 col-lg-7 col-md-8 col-12">
                                                             <div class="event-content">
                                                                 <div class="event-title">
-                                                                    <h3><a href="<?php echo esc_url($permalink); ?>"><?php echo esc_html($title); ?></a></h3>
+                                                                    <h3><a href="<?php echo $permalink; ?>"><?php echo $title; ?></a></h3>
                                                                 </div>
                                                                 <div class="event-time">
-                                                                    <p><i class="fa-light fa-alarm-clock"></i> <?php echo nl2br(esc_html($duration)); ?></p>
-                                                                    <p><i class="fa-light fa-location-dot"></i> <?php echo nl2br(esc_html($location)); ?></p>
+                                                                    <p><i class="fa-light fa-alarm-clock"></i> <?php echo $duration; ?></p>
+                                                                    <p><i class="fa-light fa-location-dot"></i> <?php echo $location; ?></p>
                                                                 </div>
                                                                 <div class="event-button">
-                                                                    <button class="btn-register" data-id="<?php echo esc_attr($event_id); ?>">
-                                                                        <a href="<?php echo esc_url($permalink); ?>">Đăng ký ngay</a>
+                                                                    <button class="btn-register" data-id="<?php echo $event_id; ?>">
+                                                                        <a href="<?php echo $permalink; ?>">Đăng ký ngay</a>
                                                                     </button>
                                                                 </div>
                                                             </div>

@@ -73,7 +73,7 @@
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/jumpstart.css" media="all">
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/facility.css" media="all">
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/page-template-teacher.css" media="all">
-	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/page-template-teacher.css" media="all">
+	<!-- <link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/page-template-teacher.css" media="all"> -->
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/archive.css" media="all">
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/single.css" media="all">
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/single-custom.css" media="all">
@@ -90,14 +90,16 @@
 	<?php } ?>
 
 	<!-- page 2 -->
-	<link rel="stylesheet" id="fptheme-fonts-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/font-nunito-sans.css" media="all">
-	<link rel="stylesheet" id="fptheme-style-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/style_1.css" media="all">
-	<link rel="stylesheet" id="magnific-popup-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/magnific-popup.min.css" media="all">
-	<link rel="stylesheet" id="swiper-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/swiper-bundle.min.css" media="all">
-	<link rel="stylesheet" id="fptheme-style-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/style.css" media="all">
-	<link rel="stylesheet" id="archive-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/archive-main.css" media="all">
-	<link rel="stylesheet" id="page-template-product-list-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/page-product-list.css" media="all">
-	<link rel="stylesheet" id="page-product-details-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/page-product-details.css" media="all">
+	<?php if (is_page_template('page-seminar_event.php') || is_page_template('page-study_program.php') || is_page_template('page-study_solutions_details.php')) { ?>
+		<link rel="stylesheet" id="fptheme-fonts-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/font-nunito-sans.css" media="all">
+		<link rel="stylesheet" id="fptheme-style-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/style_1.css" media="all">
+		<link rel="stylesheet" id="magnific-popup-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/magnific-popup.min.css" media="all">
+		<link rel="stylesheet" id="swiper-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/swiper-bundle.min.css" media="all">
+		<link rel="stylesheet" id="fptheme-style-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/style.css" media="all">
+		<link rel="stylesheet" id="archive-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/archive-main.css" media="all">
+		<link rel="stylesheet" id="page-template-product-list-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/page-product-list.css" media="all">
+		<link rel="stylesheet" id="page-product-details-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/page-product-details.css" media="all">
+	<?php } ?>
 
 	<?php wp_head(); ?>
 </head>
