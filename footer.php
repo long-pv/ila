@@ -392,24 +392,24 @@ if ($google_maps):
         icon: '<svg class="icon icon-angle-down" aria-hidden="true" role="img"> <use href="#icon-angle-down" xlink:href="#icon-angle-down"><\/use> <span class="svg-fallback icon-angle-down"><\/span><\/svg>'
     };
 </script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/skip-link-focus-fix.js"
-    id="fptheme-skip-link-focus-fix-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/skip-link-focus-fix.js" id="fptheme-skip-link-focus-fix-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/navigation.js" id="fptheme-navigation-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/owl.carousel.min.js" id="owl-carousel-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/courses.js" id="page-course-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/wow.min.js" id="wow-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.magnific-popup.js" id="magnific-popup-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery-scrolltofixed-min.js"
-    id="jquery-scrollfixed-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery-scrolltofixed-min.js" id="jquery-scrollfixed-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/list-center.js" id="fptheme-list-center-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/aboutus.js" id="page-about-us-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/timeline.js" id="timeline-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/main.js" id="main-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/global.js" id="fptheme-global-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.scrollTo.js" id="jquery-scrollto-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/page-template-teacher.js"
-    id="page-template-teacher-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/page-template-teacher.js" id="page-template-teacher-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/email-subscribers-public.js" id="email-subscribers-js"></script>
+<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/page-product-detail.js" id="fptheme-product-detail-js"></script>
+<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/archive-events.js" id="archive-events-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/main.js" id="fptheme-main-js"></script>
 
 <!-- vucoder -->
 <!-- <script src="<?php echo THEME_URI . '/assets/'; ?>js/smooth_scroll.min.js" id="ez-toc-scroll-scriptjs-js"></script> -->
@@ -426,6 +426,9 @@ if ($google_maps):
 </script>
 <!-- <script src="<?php echo THEME_URI . '/assets/'; ?>js/front.min.js" id="ez-toc-js-js"></script> -->
 
+<?php wp_footer(); ?>
+
+<!-- video -->
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/youtubehtml5.js" id="youtube-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/video.min.js" id="video-js-js"></script>
 <script type="text/javascript">
@@ -478,22 +481,6 @@ if ($google_maps):
         }, 100); // Increase volume every 100ms
     }
 </script>
-<!--  -->
-<!--  -->
-<!--  -->
-
-
-<!-- longpv -->
-<!--  -->
-<!--  -->
-<!--  -->
-<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/page-product-detail.js" id="fptheme-product-detail-js"></script>
-<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/archive-events.js" id="archive-events-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/main.js" id="fptheme-main-js"></script>
-<!-- <script src="<?php echo THEME_URI . '/assets_2/'; ?>js/api.js" id="google-recaptcha-js"></script> -->
-
-
-<?php wp_footer(); ?>
 
 </body>
 
