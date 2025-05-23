@@ -174,8 +174,8 @@ get_header();
                         <h2> <?php echo $title_director; ?> </h2>
                     </div>
                 <?php endif; ?>
-                <div class="teacher-owl-slider owl-carousel owl-theme">
-                    <?php if ($directors->have_posts()): ?>
+                <?php if ($directors->have_posts()): ?>
+                    <div class="teacher-owl-slider owl-carousel owl-theme">
                         <?php while ($directors->have_posts()):
                             $directors->the_post(); ?>
                             <?php
@@ -192,32 +192,30 @@ get_header();
                                 </div>
                                 <div class="teacher-content">
                                     <h3><?php the_title(); ?></h3>
-                                    <p><?php the_excerpt(); ?></p>
+                                    <?php if (has_excerpt()): ?>
+                                        <?php the_excerpt(); ?>
+                                    <?php endif; ?>
                                     <div class="popup-profile">
                                         <div class="popup-wrapper">
                                             <div class="popup-content">
+                                                <!--  -->
                                                 <div class="close-popup"><i class="fa-solid fa-x"></i></div>
+                                                <!--  -->
                                                 <h3><img class="alignright wp-image-17625" src="<?php echo esc_url($image); ?>"
                                                         alt="<?php echo esc_attr($image_alt); ?>" width="400"
                                                         height="503"><strong><span
                                                             style="color: #2b378b;"><?php the_title(); ?></span></strong></h3>
-                                                <p>
-                                                    <span style="color: #2b378b;">
-                                                        <strong><?php the_excerpt(); ?> </strong>
-                                                    </span>
-                                                </p>
-                                                <p>
-                                                    <?php the_content(); ?>
-                                                </p>
+                                                <!--  -->
+                                                <?php the_content(); ?>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        <?php endwhile;
-                        wp_reset_postdata(); ?>
-                    <?php endif; ?>
-                </div>
+                        <?php endwhile; ?>
+                    </div>
+                    <?php wp_reset_postdata(); ?>
+                <?php endif; ?>
             </div>
         </section>
         <!--  -->
@@ -260,25 +258,23 @@ get_header();
                                     </div>
                                     <div class="box-content">
                                         <h3><?php the_title(); ?></h3>
-                                        <p><?php the_excerpt(); ?></p>
+                                        <?php if (has_excerpt()): ?>
+                                            <p><?php the_excerpt(); ?></p>
+                                        <?php endif; ?>
                                         <div class="popup-profile">
                                             <div class="popup-wrapper">
                                                 <div class="popup-content">
+                                                    <!--  -->
                                                     <div class="close-popup"><i class="fa-solid fa-x"></i></div>
+                                                    <!--  -->
                                                     <h3><img class="alignright wp-image-17625"
                                                             src="<?php echo esc_url($image); ?>"
                                                             alt="<?php echo esc_attr($image_alt); ?>" width="400"
                                                             height="503"><strong><span
                                                                 style="color: #2b378b;"><?php the_title(); ?></span></strong>
                                                     </h3>
-                                                    <p>
-                                                        <span style="color: #2b378b;">
-                                                            <strong><?php the_excerpt(); ?> </strong>
-                                                        </span>
-                                                    </p>
-                                                    <p>
-                                                        <?php the_content(); ?>
-                                                    </p>
+                                                    <!--  -->
+                                                    <?php the_content(); ?>
                                                 </div>
                                             </div>
                                         </div>
