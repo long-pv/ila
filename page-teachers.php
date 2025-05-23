@@ -181,8 +181,6 @@ get_header();
                             <?php
                             $image = get_the_post_thumbnail_url(get_the_ID(), 'full');
                             $image_alt = get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true);
-                            $position = get_field('position');
-                            $description = get_field('description');
                             ?>
                             <div class="teacher-item">
                                 <div class="teacher-image">
@@ -246,8 +244,6 @@ get_header();
                             <?php
                             $image = get_the_post_thumbnail_url(get_the_ID(), 'full');
                             $image_alt = get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', true);
-                            $position = get_field('position');
-                            $description = get_field('description');
                             ?>
                             <div class="col-lg-3 col-md-4 col-6">
                                 <div class="box-teacher">
