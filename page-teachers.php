@@ -234,11 +234,11 @@ get_header();
         ];
         $staffs = new WP_Query($args_staff);
         ?>
+        <?php if ($staffs->have_posts()): ?>
+            <section class="section-teacher">
+                <div class="container">
+                    <div class="row">
 
-        <section class="section-teacher">
-            <div class="container">
-                <div class="row">
-                    <?php if ($staffs->have_posts()): ?>
                         <?php while ($staffs->have_posts()):
                             $staffs->the_post(); ?>
                             <?php
@@ -277,12 +277,12 @@ get_header();
                                     </div>
                                 </div>
                             </div>
-                        <?php endwhile;
-                        wp_reset_postdata(); ?>
-                    <?php endif; ?>
+                        <?php endwhile; ?>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <?php wp_reset_postdata(); ?>
+        <?php endif; ?>
         <!-- Members End -->
 
         <!-- Releated News Start -->
@@ -292,25 +292,24 @@ get_header();
         //
         $title_related_posts = !empty($related_posts_group['title']) ? $related_posts_group['title'] : [];
         $desc_related_posts = !empty($related_posts_group['desc']) ? $related_posts_group['desc'] : [];
-
-        if (!empty($featured_posts)):
-            ?>
-            <section class="section-blog">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <?php if ($title_related_posts): ?>
-                                <div class="title-blog">
-                                    <h2><?php echo $title_related_posts; ?></h2>
-                                </div>
-                            <?php endif; ?>
-                            <?php if ($desc_related_posts): ?>
-                                <div class="quote-heading">
-                                    <?php echo $desc_related_posts; ?>
-                                </div>
-                            <?php endif; ?>
-                        </div>
+        ?>
+        <section class="section-blog">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <?php if ($title_related_posts): ?>
+                            <div class="title-blog">
+                                <h2><?php echo $title_related_posts; ?></h2>
+                            </div>
+                        <?php endif; ?>
+                        <?php if ($desc_related_posts): ?>
+                            <div class="quote-heading">
+                                <?php echo $desc_related_posts; ?>
+                            </div>
+                        <?php endif; ?>
                     </div>
+                </div>
+                <?php if (!empty($featured_posts)): ?>
                     <div class="row">
                         <?php foreach ($featured_posts as $index => $post):
                             if (!is_a($post, 'WP_Post'))
@@ -382,20 +381,17 @@ get_header();
                                             </div>
                                         <?php endif; ?>
                                     <?php endforeach; ?>
-                                </div> <!-- .row -->
-                            </div> <!-- .col-xl-12 -->
-                        </div> <!-- .col-xl-6 -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </section>
-            <?php
-            wp_reset_postdata();
-        endif;
-        ?>
+                    <?php wp_reset_postdata(); ?>
+                <?php endif; ?>
+            </div>
+        </section>
         <!-- Releated News End -->
     </main>
 </div>
-
 
 <?php
 get_footer();

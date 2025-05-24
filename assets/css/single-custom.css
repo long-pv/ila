@@ -787,7 +787,7 @@ main.archive-template.archive-video .video-main .container .row .video-list .vid
     content: "";
     width: 3rem;
     height: 3rem;
-    background-image: url(/wp-content/themes/fptheme/assets/images/play-button.svg);
+    background-image: url("./../images/play-button.svg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -805,7 +805,7 @@ main.archive-template.archive-video .video-main .container .row .video-list .vid
         font-size: 15px;
     }
 }
-
+         
 main.single-video .video-main .container .row .video-list .video-item .video-thumb {
     position: relative;
 }
@@ -814,7 +814,7 @@ main.single-video .video-main .container .row .video-list .video-item .video-thu
     content: "";
     width: 3rem;
     height: 3rem;
-    background-image: url(/wp-content/themes/fptheme/assets/images/play-button.svg);
+    background-image: url("./../images/play-button.svg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
