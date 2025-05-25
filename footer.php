@@ -19,17 +19,6 @@
     </button>
 </div> -->
 
-<!-- <section class="section-footer" id="form-submit-register" style="background-image: url(https://ila.edu.vn/wp-content/uploads/2023/02/bg-course-section-6.png);">
-    <div class="form-content">
-        <div class="container">
-            <div class="form-register">
-                <h3 class="form-title">ĐĂNG KÝ LỚP HỌC THỬ MIỄN PHÍ NGAY BÂY GIỜ!</h3>
-                <?php echo do_shortcode('[contact-form-7 id="9d48558" title="ĐĂNG KÝ LỚP HỌC THỬ"]'); ?>
-            </div>
-        </div>
-    </div>
-</section> -->
-
 <?php
 $register_form = get_field('register_for_trial_class', 'option');
 $should_show_form = false;
@@ -314,27 +303,6 @@ if ($google_maps):
                             <div class="emaillist" id="es_form_f1-n2">
                                 <?php echo get_field('get_offer_now', 'option') ?? ''; ?>
                             </div>
-
-                            <style>
-                                .emaillist .wpcf7-form br {
-                                    display: none !important;
-                                }
-
-                                .emaillist .wpcf7-form p {
-                                    margin: 0px;
-                                }
-
-                                .emaillist .wpcf7-spinner {
-                                    position: absolute;
-                                    left: 50%;
-                                    top: 10px;
-                                    transform: translateX(-50%);
-                                }
-
-                                .emaillist .wpcf7-form .wpcf7-response-output {
-                                    margin: 0px;
-                                }
-                            </style>
                         </div>
                     </div>
                 </div>
@@ -364,7 +332,28 @@ if ($google_maps):
     </div>
 </footer><!-- #colophon -->
 
-</div>
+</div> <!-- main container -->
+
+<style>
+    .emaillist .wpcf7-form br {
+        display: none !important;
+    }
+
+    .emaillist .wpcf7-form p {
+        margin: 0px;
+    }
+
+    .emaillist .wpcf7-spinner {
+        position: absolute;
+        left: 50%;
+        top: 10px;
+        transform: translateX(-50%);
+    }
+
+    .emaillist .wpcf7-form .wpcf7-response-output {
+        margin: 0px;
+    }
+</style>
 
 
 <!-- video home -->
@@ -410,21 +399,7 @@ if ($google_maps):
 <script src="<?php echo THEME_URI . '/assets_2/'; ?>js/page-product-detail.js" id="fptheme-product-detail-js"></script>
 <script src="<?php echo THEME_URI . '/assets_2/'; ?>js/archive-events.js" id="archive-events-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets_2/'; ?>js/main.js" id="fptheme-main-js"></script>
-
-<!-- vucoder -->
-<!-- <script src="<?php echo THEME_URI . '/assets/'; ?>js/smooth_scroll.min.js" id="ez-toc-scroll-scriptjs-js"></script> -->
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/single.js" id="single-js-js"></script>
-<!-- <script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.sticky-kit.min.js"
-    id="ez-toc-jquery-sticky-kit-js"></script> -->
-<script id="ez-toc-js-js-extra">
-    // var ezTOC = {
-    //     smooth_scroll: "1",
-    //     visibility_hide_by_default: "",
-    //     scroll_offset: "100",
-    //     fallbackIcon: '<span class=""><span class="eztoc-hide" style="display:none;">Toggle<\/span><span class="ez-toc-icon-toggle-span"><svg style="fill: #999;color:#999" xmlns="http:\/\/www.w3.org\/2000\/svg" class="list-377408" width="20px" height="20px" viewBox="0 0 24 24" fill="none"><path d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z" fill="currentColor"><\/path><\/svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013" xmlns="http:\/\/www.w3.org\/2000\/svg" width="10px" height="10px" viewBox="0 0 24 24" version="1.2" baseProfile="tiny"><path d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z"\/><\/svg><\/span><\/span>',
-    // };
-</script>
-<!-- <script src="<?php echo THEME_URI . '/assets/'; ?>js/front.min.js" id="ez-toc-js-js"></script> -->
 
 <?php wp_footer(); ?>
 
