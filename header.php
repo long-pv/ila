@@ -90,7 +90,7 @@
 	<?php } ?>
 
 	<!-- page 2 -->
-	<?php if (is_page_template('page-seminar_event.php') || is_page_template('page-study_program.php') || is_page_template('page-study_solutions_details.php')) { ?>
+	<?php if (is_page_template('page-seminar_event.php') || is_page_template('page-study_program.php') || is_page_template('page-study_solutions_details.php') ||  is_page_template('page-study_solutions.php')) { ?>
 		<link rel="stylesheet" id="fptheme-fonts-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/font-nunito-sans.css" media="all">
 		<link rel="stylesheet" id="fptheme-style-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/style_1.css" media="all">
 		<link rel="stylesheet" id="magnific-popup-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/magnific-popup.min.css" media="all">
