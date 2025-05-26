@@ -420,6 +420,70 @@ if ($google_maps):
         display: block;
         margin: 0px auto;
     }
+
+    #popup-form-events .wpcf7-form br {
+        display: none !important;
+    }
+
+    #popup-form-events .wpcf7-form p {
+        margin: 0px;
+    }
+
+    #popup-form-events .wpcf7-form .wpcf7-response-output {
+        margin: 0px;
+        color: #fff !important;
+    }
+
+    #popup-form-events .wpcf7-form .wpcf7-not-valid-tip {
+        display: block;
+        color: red;
+        font-family: 'Nunito Bold';
+        font-size: 14px;
+        margin-top: 12px;
+    }
+
+    #popup-form-events .wpcf7-form .wpcf7-list-item {
+        margin: 0px;
+    }
+
+    #popup-form-events .wpcf7-form .wpcf7-list-item label {
+        display: flex;
+        color: #333;
+        font-weight: 400;
+        font-family: 'Nunito Regular';
+        font-size: 14px;
+    }
+
+    #popup-form-events .wpcf7-form .wpcf7-list-item [type="checkbox"] {
+        min-width: 20px;
+        max-width: 20px;
+        height: 20px;
+        margin-top: 5px;
+        border: 1px solid #A7A7A7;
+        font-size: 16px;
+        font-family: 'Nunito Regular';
+        color: #A7A7A7;
+    }
+
+    #popup-form-events .wpcf7-form .wpcf7-submit {
+        display: block;
+        text-decoration: none;
+        font-family: "Nunito Bold", sans-serif;
+        font-style: normal;
+        font-size: 16px;
+        line-height: normal;
+        padding: 16px 50px 16px 50px;
+        text-transform: uppercase;
+        color: #1B3F94;
+        background-color: #EDAC20;
+        border-radius: 50px;
+        margin: 0px auto;
+    }
+
+    #popup-form-events .wpcf7-form .wpcf7-spinner {
+        display: block;
+        margin: 0px auto;
+    }
 </style>
 
 
