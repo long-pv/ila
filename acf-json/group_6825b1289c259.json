@@ -24,7 +24,7 @@
         },
         {
             "key": "field_6825b128c971f",
-            "label": "Link Video",
+            "label": "Iframe youtube",
             "name": "link_video",
             "aria-label": "",
             "type": "textarea",
@@ -112,5 +112,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1748358176
+    "modified": 1748362444
 }
