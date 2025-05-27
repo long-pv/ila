@@ -32,11 +32,13 @@ get_header();
         <?php if ($video_url || $heading || $youtube_link): ?>
             <section class="section-1">
                 <div class="container">
-                    <?php // if ($video_url): ?>
+                    <?php // if ($video_url): 
+                    ?>
                     <video id="banner-video" autoplay loop muted playsinline oncontextmenu="return false;" preload="auto">
                         <source src="<?php echo $video_url; ?>" type="video/mp4" />
                     </video>
-                    <?php //endif; ?>
+                    <?php //endif; 
+                    ?>
 
                     <div class="banner-content">
                         <div class="container">
@@ -363,7 +365,7 @@ get_header();
                                 $thumb = get_the_post_thumbnail_url($post_obj, 'full');
                                 $title = get_the_title($post_obj);
                                 $link = get_permalink($post_obj);
-                                ?>
+                            ?>
                                 <div class="col-xl-7">
                                     <div class="box-video-top">
                                         <div class="video-item-lg">
@@ -393,7 +395,7 @@ get_header();
                                                         $thumb = get_the_post_thumbnail_url($post, 'medium');
                                                         $title = get_the_title($post);
                                                         $link = get_permalink($post);
-                                                        ?>
+                                                    ?>
                                                         <div class="col-xl-4 col-12">
                                                             <div class="video-item">
                                                                 <div class="box-video">
@@ -436,7 +438,7 @@ get_header();
                                                 $link = get_permalink($post);
                                                 $categories = get_the_category($post_id);
                                                 $cat_name = $categories[0]->name ?? '';
-                                                ?>
+                                            ?>
                                                 <div class="col-md-6 col-xl-12">
                                                     <div class="post-item">
                                                         <div class="thumb-img">
@@ -503,7 +505,7 @@ get_header();
                             $student_link = get_permalink($post_student->ID);
                             $student_center = get_field('school_name', $post_student->ID);
                             $student_achievement = get_field('achievement', $post_student->ID);
-                            ?>
+                        ?>
                             <div class="hall-item">
                                 <div class="hall-image">
                                     <?php if ($student_image): ?>
@@ -533,6 +535,12 @@ get_header();
         <!--  -->
     </main>
 </div>
+
+<style>
+    main.page-course-jumpstart .section-5 .box-course-background .row .col-md-6 .banner-content * {
+        color: #000;
+    }
+</style>
 
 <?php
 get_footer();
