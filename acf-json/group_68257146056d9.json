@@ -289,9 +289,15 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "featured_image"
+    ],
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1747845355
+    "modified": 1748327702
 }
