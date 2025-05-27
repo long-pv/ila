@@ -116,11 +116,11 @@ get_header();
                                     $bg_alt = !empty($item['background_image']['alt']) ? esc_attr($item['background_image']['alt']) : '';
                                     $title = !empty($item['title']) ? $item['title'] : '';
                                     $content = !empty($item['content']) ? wp_kses_post($item['content']) : '';
-                                    ?>
+                                ?>
                                     <div class="col-md-6 col-xl-6">
                                         <div class="box-item box-item-<?php echo $index + 1; ?>" data-aos="fade-up"
                                             data-aos-delay="50" data-aos-duration="800" <?php if ($bg_image): ?>
-                                                style="background-image: url('<?php echo $bg_image; ?>'); background-size: cover; background-position: center;"
+                                            style="background-image: url('<?php echo $bg_image; ?>'); background-size: cover; background-position: center;"
                                             <?php else: ?> style="background-color: #cabbb0;" <?php endif; ?>>
                                             <?php if ($bg_image): ?>
                                                 <div class="box-thumb d-none">
@@ -310,6 +310,7 @@ get_header();
                     </div>
                 </div>
                 <?php if (!empty($featured_posts)): ?>
+                    <?php $featured_posts = array_slice($featured_posts, 0, 5); ?>
                     <div class="row">
                         <?php foreach ($featured_posts as $index => $post):
                             if (!is_a($post, 'WP_Post'))
@@ -320,7 +321,7 @@ get_header();
                             $thumb = get_the_post_thumbnail_url($post, 'large');
                             $thumb_alt = get_post_meta(get_post_thumbnail_id($post), '_wp_attachment_image_alt', true);
                             $thumb_alt = $thumb_alt ?: get_the_title($post); // fallback alt
-                    
+
                             // Danh mục đầu tiên
                             $cats = get_the_category($post->ID);
                             $cat_link = !empty($cats) ? get_category_link($cats[0]->term_id) : '';
@@ -328,7 +329,7 @@ get_header();
 
                             // Thêm class riêng cho bài đầu tiên
                             $is_first = ($index === 0);
-                            ?>
+                        ?>
                             <?php if ($is_first): ?>
                                 <div class="col-xl-6 col-md-6">
                                     <div class="blog-main blog-first">
@@ -381,9 +382,9 @@ get_header();
                                             </div>
                                         <?php endif; ?>
                                     <?php endforeach; ?>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
                     </div>
                     <?php wp_reset_postdata(); ?>
                 <?php endif; ?>
