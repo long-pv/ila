@@ -19,7 +19,6 @@ get_header();
 
 <div id="content" class="site-content">
     <main class="archive-template archive-default news-event">
-
         <?php
         $menu_items = get_field('menu_item', 'option') ?? []; // 'option' là theme setting
         if (!empty($menu_items)): ?>
@@ -189,48 +188,55 @@ get_header();
 
                                 <!-- Top News -->
                                 <div class="col-lg-4">
-                                    <div class="related-post">
-                                        <h3 class="related-title">Bài viết phổ biến</h3>
-                                        <div class="row">
-                                            <?php
-                                            $latest_posts = new WP_Query(array(
-                                                'post_type' => 'post',
-                                                'posts_per_page' => 4,
-                                                'orderby' => 'date',
-                                                'order' => 'DESC',
-                                            ));
+                                    <?php
+                                    $popular_posts = get_field('popular_posts', 'option') ?? []; // array of post IDs
+                                    $popular_posts = array_slice($popular_posts, 0, 5); // chỉ lấy tối đa 5 bài
+                                    ?>
 
-                                            if ($latest_posts->have_posts()):
-                                                while ($latest_posts->have_posts()):
-                                                    $latest_posts->the_post();
-                                            ?>
-                                                    <div class="col-12 col-lg-12 col-sm-6">
-                                                        <div class="post-item">
-                                                            <div class="thumb-img">
-                                                                <a href="<?php the_permalink(); ?>">
-                                                                    <?php the_post_thumbnail('full'); ?>
-                                                                </a>
-                                                            </div>
-                                                            <div class="post-content">
-                                                                <h3 class="post-title">
-                                                                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                                                                </h3>
-                                                                <?php
-                                                                $category = get_the_category();
-                                                                if (!empty($category)) {
-                                                                    echo '<a class="category-name" href="' . esc_url(get_category_link($category[0]->term_id)) . '">' . esc_html($category[0]->name) . '</a>';
-                                                                }
-                                                                ?>
+                                    <?php if (!empty($popular_posts)): ?>
+                                        <div class="related-post">
+                                            <h3 class="related-title">Bài viết phổ biến</h3>
+                                            <div class="row">
+                                                <?php
+                                                $query = new WP_Query(array(
+                                                    'post_type' => 'post',
+                                                    'post__in' => $popular_posts,
+                                                    'orderby' => 'post__in', // giữ thứ tự từ ACF
+                                                    'posts_per_page' => 5,
+                                                ));
+
+                                                if ($query->have_posts()):
+                                                    while ($query->have_posts()): $query->the_post();
+                                                ?>
+                                                        <div class="col-12 col-lg-12 col-sm-6">
+                                                            <div class="post-item">
+                                                                <div class="thumb-img">
+                                                                    <a href="<?php the_permalink(); ?>">
+                                                                        <?php the_post_thumbnail('full'); ?>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="post-content">
+                                                                    <h3 class="post-title">
+                                                                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                                                                    </h3>
+                                                                    <?php
+                                                                    $category = get_the_category();
+                                                                    if (!empty($category)) {
+                                                                        echo '<a class="category-name" href="' . esc_url(get_category_link($category[0]->term_id)) . '">' . esc_html($category[0]->name) . '</a>';
+                                                                    }
+                                                                    ?>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                            <?php
-                                                endwhile;
-                                                wp_reset_postdata();
-                                            endif;
-                                            ?>
+                                                <?php
+                                                    endwhile;
+                                                    wp_reset_postdata();
+                                                endif;
+                                                ?>
+                                            </div>
                                         </div>
-                                    </div>
+                                    <?php endif; ?>
+
                                     <div class="right-sidebar">
                                         <div class="row"></div>
                                     </div>
