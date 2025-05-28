@@ -167,7 +167,7 @@
 					<div class="menu-icon-close"><i class="fa-regular fa-xmark"></i></div>
 					<a href="<?php echo home_url(); ?>" class="custom-logo-link" rel="home" aria-current="page">
 						<img width="250" height="107"
-							src="<?php echo THEME_URI . '/assets/'; ?>images/logo-ila-30-nam.jpg" class="custom-logo"
+							src="<?php echo THEME_URI . '/assets/'; ?>img_new/logo.webp" class="custom-logo"
 							alt="logo ila 30 năm" decoding="async" sizes="100vw" />
 					</a>
 					<?php
