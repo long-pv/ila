@@ -24,7 +24,7 @@ if (LANG == 'en') {
 <div id="page">
     <div id="content" class="site-content">
 
-        <section class="section-main-osc" id="section-1" style="background-color: #1b3f94">
+        <section class="section-main-osc" id="section-1" style="background-color: #0075A9">
             <div class="row">
                 <?php
                 $banner = get_field('banner');
@@ -71,7 +71,7 @@ if (LANG == 'en') {
                         </div>
                         <div class="img-pattern">
                             <img width="1794" height="603"
-                                src="/wp-content/uploads/2024/04/background-pattern-product-list-new.png"
+                                src="https://iladuhoc.edu.vn/wp-content/uploads/2024/04/background-pattern-product-list-new.png"
                                 alt="background pattern product list">
                         </div>
                     </div>

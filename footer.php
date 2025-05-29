@@ -63,7 +63,7 @@ if ($register_form && is_array($register_form)) {
         font-family: "Montserrat Bold";
         padding: 12px 30px;
         border: none;
-        background: #2b378b;
+        background: #0075A9;
         border-radius: 50px;
         width: 204px;
         position: relative;
@@ -408,7 +408,7 @@ if ($google_maps):
         padding: 16px 50px 16px 50px;
         text-transform: uppercase;
         color: #ffffff;
-        background: #1B3F94;
+        background: #0075A9;
     }
 
     #form-contact-footer .wpcf7-form .wpcf7-spinner {
@@ -469,7 +469,7 @@ if ($google_maps):
         line-height: normal;
         padding: 16px 50px 16px 50px;
         text-transform: uppercase;
-        color: #1B3F94;
+        color: #0075A9;
         background-color: #EDAC20;
         border-radius: 50px;
         margin: 0px auto;
@@ -492,11 +492,11 @@ if ($google_maps):
 
 
 <!-- video home -->
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/n2.min.js" defer="" async=""></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/smartslider-frontend.min.js" defer="" async=""></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/ss-simple.min.js" defer="" async=""></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/w-bullet.min.js" defer="" async=""></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/index_add.js" defer="" async=""></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/n2.min.js?ver=<?php echo _S_VERSION; ?>" defer="" async=""></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/smartslider-frontend.min.js?ver=<?php echo _S_VERSION; ?>" defer="" async=""></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/ss-simple.min.js?ver=<?php echo _S_VERSION; ?>" defer="" async=""></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/w-bullet.min.js?ver=<?php echo _S_VERSION; ?>" defer="" async=""></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/index_add.js?ver=<?php echo _S_VERSION; ?>" defer="" async=""></script>
 
 <script>
     jQuery(function($) {
@@ -516,31 +516,31 @@ if ($google_maps):
         icon: '<svg class="icon icon-angle-down" aria-hidden="true" role="img"> <use href="#icon-angle-down" xlink:href="#icon-angle-down"><\/use> <span class="svg-fallback icon-angle-down"><\/span><\/svg>'
     };
 </script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/skip-link-focus-fix.js" id="fptheme-skip-link-focus-fix-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/navigation.js" id="fptheme-navigation-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/owl.carousel.min.js" id="owl-carousel-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/courses.js" id="page-course-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/wow.min.js" id="wow-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.magnific-popup.js" id="magnific-popup-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery-scrolltofixed-min.js" id="jquery-scrollfixed-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/list-center.js" id="fptheme-list-center-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/aboutus.js" id="page-about-us-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/timeline.js" id="timeline-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/main.js" id="main-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/global.js" id="fptheme-global-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.scrollTo.js" id="jquery-scrollto-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/page-template-teacher.js" id="page-template-teacher-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/email-subscribers-public.js" id="email-subscribers-js"></script>
-<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/page-product-detail.js" id="fptheme-product-detail-js"></script>
-<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/archive-events.js" id="archive-events-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/main.js" id="fptheme-main-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/single.js" id="single-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/skip-link-focus-fix.js?ver=<?php echo _S_VERSION; ?>" id="fptheme-skip-link-focus-fix-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/navigation.js?ver=<?php echo _S_VERSION; ?>" id="fptheme-navigation-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/owl.carousel.min.js?ver=<?php echo _S_VERSION; ?>" id="owl-carousel-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/courses.js?ver=<?php echo _S_VERSION; ?>" id="page-course-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/wow.min.js?ver=<?php echo _S_VERSION; ?>" id="wow-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.magnific-popup.js?ver=<?php echo _S_VERSION; ?>" id="magnific-popup-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery-scrolltofixed-min.js?ver=<?php echo _S_VERSION; ?>" id="jquery-scrollfixed-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/list-center.js?ver=<?php echo _S_VERSION; ?>" id="fptheme-list-center-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/aboutus.js?ver=<?php echo _S_VERSION; ?>" id="page-about-us-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/timeline.js?ver=<?php echo _S_VERSION; ?>" id="timeline-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/main.js?ver=<?php echo _S_VERSION; ?>" id="main-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/global.js?ver=<?php echo _S_VERSION; ?>" id="fptheme-global-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.scrollTo.js?ver=<?php echo _S_VERSION; ?>" id="jquery-scrollto-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/page-template-teacher.js?ver=<?php echo _S_VERSION; ?>" id="page-template-teacher-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/email-subscribers-public.js?ver=<?php echo _S_VERSION; ?>" id="email-subscribers-js"></script>
+<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/page-product-detail.js?ver=<?php echo _S_VERSION; ?>" id="fptheme-product-detail-js"></script>
+<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/archive-events.js?ver=<?php echo _S_VERSION; ?>" id="archive-events-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/main.js?ver=<?php echo _S_VERSION; ?>" id="fptheme-main-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/single.js?ver=<?php echo _S_VERSION; ?>" id="single-js-js"></script>
 
 <?php wp_footer(); ?>
 
 <!-- video -->
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/youtubehtml5.js" id="youtube-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/video.min.js" id="video-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/youtubehtml5.js?ver=<?php echo _S_VERSION; ?>" id="youtube-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/video.min.js?ver=<?php echo _S_VERSION; ?>" id="video-js-js"></script>
 <script type="text/javascript">
     function getYouTubeVideoID(url) {
         const regex = /(?:https?:\/\/)?(?:www\.)?youtube\.com\/watch\?v=([^\s&]+)/;

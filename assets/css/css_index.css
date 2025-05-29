@@ -478,12 +478,12 @@ body .is-layout-grid > * {
 .site .a2a_kit.addtoany_list a:focus,
 .addtoany_list a:hover,
 .widget .addtoany_list a:hover {
-	border-color: #c60c30 !important;
+	border-color: #f32735 !important;
 }
 .site .a2a_kit.addtoany_list a:focus path,
 .addtoany_list a:hover path,
 .widget .addtoany_list a:hover path {
-	fill: #c60c30 !important;
+	fill: #f32735 !important;
 }
 div#n2-ss-7 .n2-ss-slider-1 {
 	display: grid;
@@ -764,7 +764,7 @@ div#n2-ss-7 .n2-style-a5a9420075d4bb2a9af989b64ab7edfb-dot {
 div#n2-ss-7 .n2-style-a5a9420075d4bb2a9af989b64ab7edfb-dot.n2-active,
 div#n2-ss-7 .n2-style-a5a9420075d4bb2a9af989b64ab7edfb-dot:hover,
 div#n2-ss-7 .n2-style-a5a9420075d4bb2a9af989b64ab7edfb-dot:focus {
-	background: #c60c30;
+	background: #f32735;
 	border-width: 2px;
 	border-style: solid;
 	border-color: #ffffff;
@@ -876,7 +876,7 @@ div#ez-toc-container {
 	height: 40px;
 	line-height: 30px;
 	background-color: #fff;
-	color: #2b378b;
+	color: #0075a9;
 	font-size: 40px;
 	border-radius: 50%;
 	display: flex;
@@ -960,7 +960,7 @@ main .section-blog-detail .container .blog-detail-content td {
 	}
 	.footer-bottom-fixed .call-to-action-main {
 		display: flex;
-		background: #2b378b;
+		background: #0075a9;
 	}
 	.footer-bottom-fixed .call-to-action-main .call-action {
 		width: 50%;
@@ -1434,7 +1434,7 @@ main.product-template-1 #form-submit-register.section-form .form-content .contai
 
 main.product-template-1 #form-submit-register.section-form .form-content .container .form-register .form .button-wrapper .btn-register {
 	border: none;
-	background: #2b378b;
+	background: #0075a9;
 	border-radius: 50px;
 	width: 204px;
 	padding: 0;
@@ -1447,7 +1447,7 @@ main.product-template-1 #form-submit-register.section-form .form-content .contai
 	content: "";
 	height: 450px;
 	width: 450px;
-	background: #c60c30;
+	background: #f32735;
 	border-radius: 50%;
 	position: absolute;
 	top: 50%;
@@ -1470,7 +1470,7 @@ main.product-template-1 #form-submit-register.section-form .form-content .contai
 	content: "";
 	width: 10px;
 	height: 10px;
-	background: #c60c30;
+	background: #f32735;
 	position: absolute;
 	border-radius: 50%;
 	right: 15px;
@@ -1725,7 +1725,7 @@ main .h--timeline .container .box-timeline .h--timeline-events .h--timeline-even
 }
 .blog-detail-content .main-content .post-content button.btn-shortcode {
 	border: none;
-	background: #2b378b;
+	background: #0075a9;
 	border-radius: 50px;
 	padding: 0;
 	position: relative;
@@ -1738,7 +1738,7 @@ main .h--timeline .container .box-timeline .h--timeline-events .h--timeline-even
 	content: "";
 	height: 650px;
 	width: 650px;
-	background: #c60c30;
+	background: #f32735;
 	border-radius: 50%;
 	position: absolute;
 	top: 50%;
@@ -1759,7 +1759,7 @@ main .h--timeline .container .box-timeline .h--timeline-events .h--timeline-even
 	content: "";
 	width: 10px;
 	height: 10px;
-	background: #c60c30;
+	background: #f32735;
 	position: absolute;
 	border-radius: 50%;
 	right: 25px;
@@ -1789,17 +1789,17 @@ main .h--timeline .container .box-timeline .h--timeline-events .h--timeline-even
 .site .a2a_kit.addtoany_list a:focus,
 .addtoany_list a:hover,
 .widget .addtoany_list a:hover {
-	border-color: #c60c30 !important;
+	border-color: #f32735 !important;
 }
 .site .a2a_kit.addtoany_list a:focus path,
 .addtoany_list a:hover path,
 .widget .addtoany_list a:hover path {
-	fill: #c60c30 !important;
+	fill: #f32735 !important;
 }
 
 .external-link button.btn-register {
 	border: none;
-	background: #1b3f94;
+	background: #0075a9;
 	border-radius: 50px;
 	width: auto;
 	padding: 0;
@@ -1812,7 +1812,7 @@ main .h--timeline .container .box-timeline .h--timeline-events .h--timeline-even
 	content: "";
 	height: 450px;
 	width: 450px;
-	background: #c60c30;
+	background: #f32735;
 	border-radius: 50%;
 	position: absolute;
 	top: 50%;
@@ -1847,7 +1847,7 @@ main .h--timeline .container .box-timeline .h--timeline-events .h--timeline-even
 	content: "";
 	width: 10px;
 	height: 10px;
-	background: #c60c30;
+	background: #f32735;
 	position: absolute;
 	border-radius: 50%;
 	right: 30px;

@@ -10,6 +10,7 @@ main {
 		padding: 20px 0;
 		border-top: 1px solid #000000;
 		border-bottom: 1px solid #000000;
+
 		.container {
 			.list-cate {
 				ul {
@@ -19,16 +20,19 @@ main {
 					display: flex;
 					align-items: center;
 					justify-content: space-between;
+
 					@media screen and (max-width: 1024px) {
 						display: block;
 						overflow: hidden;
 						overflow-x: auto;
 						white-space: nowrap;
 					}
+
 					li {
 						@media screen and (max-width: 1024px) {
 							display: inline-block;
 						}
+
 						a {
 							display: block;
 							text-decoration: none;
@@ -39,13 +43,16 @@ main {
 							color: #000000;
 							padding-right: 40px;
 							border-right: 1px solid #000000;
+
 							&:hover {
-								color: #c60c30;
+								color: #F32735;
 							}
+
 							@media screen and (max-width: 1024px) {
 								padding-right: 15px;
 							}
 						}
+
 						&:last-child {
 							a {
 								padding-right: 0;
@@ -57,63 +64,78 @@ main {
 			}
 		}
 	}
+
 	.section-blog-detail {
 		.container {
 			max-width: 1440px !important;
 			padding: 0 24px;
+
 			@media screen and (max-width: 1024px) {
 				padding: 0 12px;
 			}
+
 			.blog-detail-content {
 				border-left: 1px solid #000000;
 				border-right: 1px solid #000000;
 				padding: 24px;
+
 				@media screen and (max-width: 1024px) {
 					padding: 10px;
 				}
+
 				.left-sidebar {
 					.widget {
 						padding-bottom: 0;
 					}
+
 					@media screen and (max-width: 1024px) {
 						margin-bottom: 20px;
 					}
+
 					.category-name {
 						font-family: "Montserrat Medium";
 						font-size: 18px;
 						line-height: 30px;
 						color: #000000;
 						margin-bottom: 50px;
+
 						@media screen and (max-width: 1024px) {
 							margin-bottom: 20px;
 						}
+
 						a {
 							text-decoration: none;
 							color: #000000;
+
 							&:hover {
 								text-decoration: underline;
 							}
 						}
 					}
+
 					.share-title {
 						font-family: "Montserrat SemiBold";
 						font-size: 16px;
 						line-height: 26px;
 						color: #000000;
 					}
+
 					.links-social {
 						padding: 0;
 						margin: 0;
 						list-style-type: none;
 						display: flex;
 						gap: 8px;
+
 						@media screen and (width: 1024px) {
 							display: block;
 						}
+
 						li {
 							@media screen and (width: 1024px) {
 								display: inline-block;
 							}
+
 							a {
 								display: block;
 								width: 30px;
@@ -125,19 +147,23 @@ main {
 								text-decoration: none;
 								color: #000000;
 								transition: all 0.4s;
+
 								&:hover {
-									color: #c60c30;
-									border-color: #c60c30;
+									color: #F32735;
+									border-color: #F32735;
 								}
 							}
 						}
 					}
 				}
+
 				.right-sidebar {
 					.banner-content {
 						margin-bottom: 20px;
+
 						a {
 							display: block;
+
 							img {
 								width: 100%;
 								height: auto;
@@ -145,6 +171,7 @@ main {
 							}
 						}
 					}
+
 					.related-post {
 						h2 {
 							font-family: "Montserrat Bold";
@@ -153,16 +180,20 @@ main {
 							color: #000000;
 							margin-bottom: 0 !important;
 						}
+
 						.post-item {
 							padding: 15px 0;
 							border-bottom: 1px solid #000000;
+
 							a {
 								text-decoration: none;
+
 								&:hover {
 									color: #000000;
 									text-decoration: underline;
 								}
 							}
+
 							.category-name {
 								font-family: "Montserrat Regular";
 								font-size: 14px;
@@ -171,6 +202,7 @@ main {
 								margin-bottom: 0 !important;
 								position: relative;
 								padding-left: 16px;
+
 								&::before {
 									content: "";
 									position: absolute;
@@ -182,6 +214,7 @@ main {
 									background-color: #fdb510;
 								}
 							}
+
 							.post-title {
 								font-family: "Montserrat Bold";
 								font-size: 16px;
@@ -192,6 +225,7 @@ main {
 						}
 					}
 				}
+
 				.main-content {
 					.post-title {
 						font-family: "Montserrat SemiBold";
@@ -199,30 +233,36 @@ main {
 						line-height: 40px;
 						color: #000000;
 						margin-bottom: 24px;
+
 						@media screen and (max-width: 1024px) {
 							font-size: 28px;
 						}
 					}
+
 					.post-thumbnail {
 						width: 100%;
 						height: auto;
 						object-fit: cover;
 						margin-bottom: 30px;
 					}
+
 					.post-content {
 						font-size: 16px;
 						color: #000000;
 						line-height: 1.6;
 						font-family: "Montserrat Regular";
 						text-align: justify;
+
 						p,
 						div {
 							font-size: 18px;
 							margin-bottom: 15px;
 						}
+
 						h2 {
 							margin-bottom: 0.75em;
 						}
+
 						h3,
 						h4,
 						h5,
@@ -231,42 +271,52 @@ main {
 							font-weight: bold;
 							margin-bottom: 0.5em;
 						}
+
 						.fp_col {
 							line-height: 1.25;
+
 							a.related_thumbnail {
 								height: 130px;
+
 								img {
 									height: 100%;
 									object-fit: cover;
 								}
 							}
+
 							a.postTitle {
 								margin-top: 0;
 								text-align: left;
 							}
+
 							.fp_short_dev {
 								font-size: 12px;
 								margin-bottom: 0;
 								margin-top: 10px;
 							}
 						}
+
 						.fp_col:last-child {
 							padding: 10px 10px 10px 0;
 						}
 					}
+
 					.box-reference {
 						color: #000000;
 						border: 1px solid #bfbfbf;
 						border-radius: 8px;
+
 						.box-reference-header {
 							display: flex;
 							padding: 16px;
 							cursor: pointer;
+
 							.box-icon {
 								font-size: 18px;
 								margin-right: 12px;
 								color: #000000;
 							}
+
 							.title {
 								font-size: 18px;
 								margin-bottom: 0;
@@ -275,6 +325,7 @@ main {
 								font-family: "Montserrat SemiBold";
 							}
 						}
+
 						.box-reference-content {
 							display: none;
 							padding: 0 16px 16px;
@@ -286,6 +337,7 @@ main {
 		}
 	}
 }
+
 //Custom blog videos
 body.en {
 	main {
@@ -296,6 +348,7 @@ body.en {
 						li {
 							a {
 								padding-right: 70px;
+
 								@media screen and (max-width: 1024px) {
 									padding-right: 15px;
 								}
@@ -307,20 +360,25 @@ body.en {
 		}
 	}
 }
+
 main.single-video {
 	.video-main {
 		padding-bottom: 50px;
+
 		.container {
 			.video-first-play {
 				background: #f7f7f7;
 				margin-bottom: 50px;
+
 				.row {
 					.video-iframe {
 						max-height: 470px;
+
 						video {
 							width: 100%;
 							max-width: 100%;
 						}
+
 						.video-js .vjs-big-play-button {
 							font-size: 2.5em;
 							height: 2.5em;
@@ -328,15 +386,13 @@ main.single-video {
 							border: 3px solid #fff;
 							border-radius: 50%;
 						}
-						.video-js
-							.vjs-big-play-button
-							.vjs-icon-placeholder:before {
+
+						.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
 							top: 10px;
 							font-size: 3rem;
 						}
-						.my-video-dimensions.vjs-fluid:not(
-								.vjs-audio-only-mode
-							) {
+
+						.my-video-dimensions.vjs-fluid:not(.vjs-audio-only-mode) {
 							padding-top: 56.25%;
 						}
 					}
@@ -346,6 +402,7 @@ main.single-video {
 						font-size: 16px;
 						font-family: "Montserrat Regular";
 						color: #333;
+
 						@media screen and (max-width: 991px) {
 							padding: 15px;
 						}
@@ -355,6 +412,7 @@ main.single-video {
 							font-family: "Montserrat Bold";
 							line-height: 1.31;
 							margin-bottom: 15px;
+
 							@media screen and (max-width: 1024px) {
 								font-size: 20px;
 							}
@@ -374,7 +432,7 @@ main.single-video {
 							p {
 								a {
 									text-decoration: none;
-									color: #2b378b;
+									color: #0075A9;
 									font-size: 16px;
 									margin-right: 10px;
 									font-family: "Montserrat Bold";
@@ -394,53 +452,66 @@ main.single-video {
 					}
 				}
 			}
+
 			.row {
 				.video-list {
 					margin-bottom: 24px;
+
 					.video-item {
 						.video-thumb {
 							a {
 								display: block;
+
 								img {
 									width: 100%;
 									height: auto;
 									object-fit: cover;
+
 									@media screen and (min-width: 768px) and (max-width: 1024px) {
 										max-height: 130px;
 									}
+
 									@media screen and (min-width: 1180px) {
 										max-height: 165px;
 									}
 								}
 							}
 						}
+
 						.video-title {
 							margin: 12px 0;
+
 							h3 {
 								line-height: 1;
+
 								a {
 									text-decoration: none;
 									font-size: 16px;
 									line-height: 16px;
 									color: #333;
 									font-family: "Montserrat Regular";
+
 									&:hover {
 										text-decoration: underline;
 									}
 								}
 							}
 						}
+
 						.video-time-cate {
 							span {
 								color: #999;
+
 								a {
 									color: #999;
 									text-decoration: none;
+
 									&:hover {
 										text-decoration: underline;
 									}
 								}
 							}
+
 							span:first-child {
 								margin-right: 10px;
 								padding-right: 10px;
@@ -451,11 +522,13 @@ main.single-video {
 					}
 				}
 			}
+
 			#more_posts {
 				text-align: center;
+
 				span {
 					padding: 10px 25px;
-					background: #2b378b;
+					background: #0075A9;
 					color: #fff;
 					font-size: 18px;
 					font-family: "Montserrat Medium";

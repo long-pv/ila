@@ -23,8 +23,7 @@ get_header();
             <!-- Banner Start -->
             <?php
             $banner_section = get_field('banner_section') ?? '';
-            var_dump($banner_section);
-            //       
+
             $image_banner = isset($banner_section['image']) ? $banner_section['image'] : [];
             $title_banner = isset($banner_section['title']) ? $banner_section['title'] : '';
             $content_banner = isset($banner_section['content']) ? $banner_section['content'] : '';
@@ -43,7 +42,7 @@ get_header();
                     <div class="container">
                         <div class="banner-content-main" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
                             <?php if (!empty($title_banner)): ?>
-                                <h2><?php echo $title_banner; ?></h2>
+                                <h2><?php echo esc_html($title_banner); ?></h2>
                             <?php endif; ?>
 
                             <?php if (!empty($content_banner)): ?>
@@ -60,11 +59,12 @@ get_header();
 
                             <div class="main-button">
                                 <div class="show-more">
-                                    <a href="#"> <?php _e("Đọc thêm", "xemer_theme"); ?> </a>
+                                    <a href="#"> Đọc thêm </a>
                                 </div>
                                 <div class="hide-more">
-                                    <a href="#"> <?php _e("Thu gọn", "xemer_theme"); ?> </a>
+                                    <a href="#"> Thu gọn </a>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -253,14 +253,14 @@ get_header();
             </section>
             <!-- Timeline End -->
 
-    <!-- Banner 2 Start -->
-    <?php
-    $banner_2_section = get_field('banner_2_section') ?? '';
+            <!-- Banner 2 Start -->
+            <?php
+            $banner_2_section = get_field('banner_2_section') ?? '';
 
-    $image_banner_2 = isset($banner_2_section['image']) ? $banner_2_section['image'] : [];
-    $title_banner_2 = isset($banner_2_section['title']) ? $banner_2_section['title'] : '';
-    $content_banner_2 = isset($banner_2_section['content']) ? $banner_2_section['content'] : '';
-    ?>
+            $image_banner_2 = isset($banner_2_section['image']) ? $banner_2_section['image'] : [];
+            $title_banner_2 = isset($banner_2_section['title']) ? $banner_2_section['title'] : '';
+            $content_banner_2 = isset($banner_2_section['content']) ? $banner_2_section['content'] : '';
+            ?>
 
     <section class="section-3">
         <?php if (!empty($image_banner_2['url'])): ?>
