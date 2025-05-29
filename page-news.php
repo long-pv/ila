@@ -333,12 +333,13 @@ if (LANG == 'en') {
                                             // Video đầu tiên hiển thị lớn bên trái
                                             $first_video = $videos[0];
                                             $video_link = get_permalink($first_video);
+                                            $video_url = get_field('link_youtube', $first_video);
                                             $thumbnail = get_the_post_thumbnail_url($first_video, 'full');
                                             $video_title = get_the_title($first_video);
                                             ?>
                                             <div class="col-md-12 col-xl-6">
                                                 <div class="video-item video-first">
-                                                    <a class="open-popup" href="<?= $video_link ?>">
+                                                    <a class="open-popup" href="<?= $video_url ?>">
                                                         <img src="<?= $thumbnail ?>" alt="<?= $video_title ?>">
                                                     </a>
                                                     <div class="video-content">
@@ -360,6 +361,7 @@ if (LANG == 'en') {
                                                     <div class="row">
                                                         <?php foreach ($chunk as $video_id):
                                                             $video_link = get_permalink($video_id);
+                                                            $video_url = get_field('link_youtube', $video_id);
                                                             $thumbnail = get_the_post_thumbnail_url($video_id, 'full');
                                                             $video_title = get_the_title($video_id);
                                                         ?>
@@ -367,7 +369,7 @@ if (LANG == 'en') {
                                                                 <div class="video-item">
                                                                     <div class="row">
                                                                         <div class="col-xl-12 col-12 col-md-12">
-                                                                            <a class="open-popup" href="<?= $video_link ?>">
+                                                                            <a class="open-popup" href="<?= $video_url ?>">
                                                                                 <img src="<?= $thumbnail ?>" alt="<?= $video_title ?>">
                                                                             </a>
                                                                             <div class="video-content">

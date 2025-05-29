@@ -23,6 +23,23 @@
             "append": ""
         },
         {
+            "key": "field_68386d5e1d201",
+            "label": "Link youtube",
+            "name": "link_youtube",
+            "aria-label": "",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
             "key": "field_6825b128c971f",
             "label": "Iframe youtube",
             "name": "link_video",
@@ -112,5 +129,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1748494487
+    "modified": 1748528499
 }

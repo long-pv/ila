@@ -465,7 +465,7 @@ if (LANG == 'en') {
                                         <div class="col-md-4 col-xl-5">
                                             <div class="tile-multimedia" data-aos="fade-up" data-aos-delay="50"
                                                 data-aos-duration="800">
-                                                <h2><a href=" <?php echo $multimedia['view_all'] ?? '#'; ?>">
+                                                <h2><a href="<?php echo $multimedia['view_all'] ?? '#'; ?>">
                                                         <?php echo $multimedia['title'] ?? ''; ?>
                                                     </a></h2>
                                             </div>
@@ -476,9 +476,6 @@ if (LANG == 'en') {
                         </div>
 
                         <?php
-                        // Lấy URL trang danh sách video từ ACF Options
-                        $page_all_video = get_field('page_all_video', 'option') ?? '#';
-
                         // Query các bài viết từ post_type video_media
                         $args = array(
                             'post_type' => 'video_media',
@@ -493,7 +490,7 @@ if (LANG == 'en') {
                                     $count = 0;
                                     while ($query->have_posts()) : $query->the_post();
                                         $thumb_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
-                                        $video_url = get_field('video_url'); // bạn cần lưu video YouTube URL vào field này
+                                        $video_url = get_field('link_youtube');
                                         $video_title = get_the_title();
                                         $video_permalink = get_permalink();
                                     ?>
@@ -512,7 +509,7 @@ if (LANG == 'en') {
                                                     </div>
                                                     <div class="video-archive">
                                                         <span>
-                                                            <a href="<?php echo esc_url($page_all_video); ?>">
+                                                            <a href="<?php echo $multimedia['view_all'] ?? '#'; ?>">
                                                                 MULTIMEDIA
                                                             </a>
                                                         </span>
@@ -538,7 +535,7 @@ if (LANG == 'en') {
                                                                     </div>
                                                                     <div class="video-archive">
                                                                         <span>
-                                                                            <a href="<?php echo esc_url($page_all_video); ?>">MULTIMEDIA</a>
+                                                                            <a href="<?php echo $multimedia['view_all'] ?? '#'; ?>">MULTIMEDIA</a>
                                                                         </span>
                                                                     </div>
                                                                 </div>
