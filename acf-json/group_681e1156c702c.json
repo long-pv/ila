@@ -313,6 +313,7 @@
                         "id": ""
                     },
                     "layout": "row",
+                    "parent_repeater": "field_6836efa2aa533",
                     "sub_fields": [
                         {
                             "key": "field_6836f06a3f5be",
@@ -359,8 +360,7 @@
                             "mime_types": "",
                             "preview_size": "medium"
                         }
-                    ],
-                    "parent_repeater": "field_6836efa2aa533"
+                    ]
                 },
                 {
                     "key": "field_6836f0be26048",
@@ -385,6 +385,7 @@
                         "id": ""
                     },
                     "layout": "row",
+                    "parent_repeater": "field_6836efa2aa533",
                     "sub_fields": [
                         {
                             "key": "field_6836f0d52604b",
@@ -451,8 +452,7 @@
                             "mime_types": "",
                             "preview_size": "medium"
                         }
-                    ],
-                    "parent_repeater": "field_6836efa2aa533"
+                    ]
                 },
                 {
                     "key": "field_6836f15de0adc",
@@ -477,6 +477,7 @@
                         "id": ""
                     },
                     "layout": "row",
+                    "parent_repeater": "field_6836efa2aa533",
                     "sub_fields": [
                         {
                             "key": "field_6836f15de0add",
@@ -589,8 +590,7 @@
                             "mime_types": "",
                             "preview_size": "medium"
                         }
-                    ],
-                    "parent_repeater": "field_6836efa2aa533"
+                    ]
                 },
                 {
                     "key": "field_6836f1cbdb1da",
@@ -615,6 +615,7 @@
                         "id": ""
                     },
                     "layout": "row",
+                    "parent_repeater": "field_6836efa2aa533",
                     "sub_fields": [
                         {
                             "key": "field_6836f1cbdb1dc",
@@ -707,8 +708,7 @@
                             "mime_types": "",
                             "preview_size": "medium"
                         }
-                    ],
-                    "parent_repeater": "field_6836efa2aa533"
+                    ]
                 }
             ]
         },
@@ -1310,5 +1310,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1748443522
+    "modified": 1748494485
 }
