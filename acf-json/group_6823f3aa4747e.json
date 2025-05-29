@@ -475,7 +475,7 @@
                     ],
                     "return_format": "object",
                     "min": "",
-                    "max": "",
+                    "max": 5,
                     "elements": "",
                     "bidirectional": 0,
                     "bidirectional_target": []
@@ -497,9 +497,15 @@
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "featured_image"
+    ],
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1747824157
+    "modified": 1748327703
 }

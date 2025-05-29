@@ -24,10 +24,10 @@
         },
         {
             "key": "field_6825b128c971f",
-            "label": "Link Video",
+            "label": "Iframe youtube",
             "name": "link_video",
             "aria-label": "",
-            "type": "text",
+            "type": "textarea",
             "instructions": "",
             "required": 1,
             "conditional_logic": 0,
@@ -38,9 +38,9 @@
             },
             "default_value": "",
             "maxlength": "",
+            "rows": "",
             "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "new_lines": ""
         },
         {
             "key": "field_682b62e3304c7",
@@ -104,7 +104,7 @@
         ]
     ],
     "menu_order": 0,
-    "position": "normal",
+    "position": "acf_after_title",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
@@ -112,5 +112,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1747750117
+    "modified": 1748362444
 }

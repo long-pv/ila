@@ -21,33 +21,36 @@ get_header();
     <div id="content" class="site-content">
         <main class="archive-template archive-event">
             <div class="archive-post">
-                <section class="section-menu-category">
-                    <div class="container">
-                        <div class="list-cate">
-                            <ul>
-                                <li class="navbar-blog-item">
-                                    <a href="https://iladuhoc.edu.vn/hoi-thao-su-kien">Hội thảo sự kiện</a>
-                                </li>
 
-                                <li class="navbar-blog-item">
-                                    <a href="https://iladuhoc.edu.vn/tin-tuc">Tin tức</a>
-                                </li>
-
-                                <li class="navbar-blog-item">
-                                    <a href="https://iladuhoc.edu.vn/tips-du-hoc">Tips du học</a>
-                                </li>
-
-                                <li class="navbar-blog-item">
-                                    <a href="https://iladuhoc.edu.vn/xu-huong-nghe-nghiep-du-hoc">Xu hướng nghề nghiệp & du học</a>
-                                </li>
-
-                                <li class="navbar-blog-item">
-                                    <a href="https://iladuhoc.edu.vn/video">Multimedia</a>
-                                </li>
-                            </ul>
+                <?php
+                $menu_items = get_field('menu_item', 'option') ?? []; // 'option' là theme setting
+                if (!empty($menu_items)): ?>
+                    <section class="section-menu-category">
+                        <div class="container">
+                            <div class="list-cate">
+                                <ul>
+                                    <?php foreach ($menu_items as $item):
+                                        $link = $item['link'];
+                                        if (!empty($link['url']) && !empty($link['title'])):
+                                            $url = esc_url($link['url']);
+                                            $title = esc_html($link['title']);
+                                            $target = isset($link['target']) ? esc_attr($link['target']) : '_self';
+                                    ?>
+                                            <li class="navbar-blog-item">
+                                                <a href="<?php echo $url; ?>" target="<?php echo $target; ?>">
+                                                    <?php echo $title; ?>
+                                                </a>
+                                            </li>
+                                    <?php
+                                        endif;
+                                    endforeach; ?>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                <?php endif; ?>
+
+
                 <section class="section-1">
                     <div class="archive-post">
                         <div class="container">
@@ -245,110 +248,73 @@ get_header();
     </div>
     <!-- #content -->
 
-    <div id="popup-event-fixed">
-        <div class="popup-event-main">
-            <div class="popup-close">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-            <div class="popup-content-main">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 col-12">
-                        <div class="popup-event-content"><img class="pattern pattern-1" src="/wp-content/themes/fptheme/assets/images/background-pattern-17.png" alt="background pattern 16">
-                            <img class="pattern pattern-2" src="/wp-content/themes/fptheme/assets/images/background-pattern-18.png" alt="background pattern 18">
-                            <div class="popup-title">
-                                <h2>Du học Mỹ bậc trung học: Tạo lợi thế vào đại học Top 50</h2>
-                            </div>
-                            <div class="popup-desc">
-                                <h2><strong>Thông tin sự kiện</strong></h2>
-                                <p>• Thời gian: 13h30 – 16h00, Thứ Bảy, ngày 19.04.2025</p>
-                                <p>• Địa điểm: Hội sở ILA, The Crest, 15 Trần Bạch Đằng, Thủ Thiêm, TP. HCM.</p>
-                                <p>Khi tham gia hội thảo, phụ huynh và học sinh sẽ có cơ hội:</p>
-                                <p>√ Tìm hiểu 5 yếu tố then chốt khi chọn trường từ bậc trung học đến đại học.</p>
-                                <p>√ Lợi thế tiến thẳng vào trường TOP 50 khi du học từ bậc trung học.</p>
-                                <p>√ Làm bài trắc nghiệm định hướng nghề nghiệp và lựa chọn ngành học phù hợp.</p>
-                                <p>√ Gặp gỡ và tư vấn 1:1 với đại diện các trường THPT và đại học top đầu như St. Bernard Preparatory School, North Yarmouth Academy, California State University Fullerton, University of Wisconsin Oshkosh…</p>
-                                <p>√ Nhận ngay thư mời nhập học sau khi đăng ký.</p>
-                                <h2><strong>Ưu đãi đặc biệt</strong></h2>
-                                <p>• Ưu tiên phỏng vấn và xét duyệt học bổng, trị giá đến 42.000 USD</p>
-                                <p>• Tài trợ 10.000.000 đồng chi phí vé máy bay đến Mỹ</p>
-                                <p>• Miễn phí 2 tháng huấn luyện SAT cùng ILA &amp; The Princeton Review</p>
-                                <p>• Giảm đến 25.000.000 đồng khi đăng ký gói huấn luyện du học Mỹ</p>
-                                <p>• Tặng 5.000.000 đồng phí dịch vụ visa Mỹ</p>
-                                <p>Đối tác đồng hành tại hội thảo:</p>
-                                <p>• <strong>Educatius</strong> – Hệ thống trường trung học Mỹ giúp học sinh sớm hòa nhập và xây dựng hồ sơ vào đại học.</p>
-                                <p>• <strong>Kings Education</strong> – Cung cấp chương trình chuyển tiếp giúp rút ngắn thời gian học và tăng cơ hội vào đại học Top 50 Mỹ.</p>
-
-                            </div>
-                            <div class="popup-thumbnail">
-                                <img width="885" height="588" src="https://iladuhoc.edu.vn/wp-content/uploads/2025/04/ila-mini-fair-19-4-2025.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Du học Mỹ bậc trung học: Tạo lợi thế vào đại học Top 50" decoding="async" loading="lazy" srcset="https://iladuhoc.edu.vn/wp-content/uploads/2025/04/ila-mini-fair-19-4-2025.jpg 885w, https://iladuhoc.edu.vn/wp-content/uploads/2025/04/ila-mini-fair-19-4-2025-300x199.jpg 300w, https://iladuhoc.edu.vn/wp-content/uploads/2025/04/ila-mini-fair-19-4-2025-768x510.jpg 768w" sizes="100vw">
+    <?php
+    $register_for_the_event = get_field('register_for_the_event', 'option') ?? null;
+    if ($register_for_the_event):
+        $title = $register_for_the_event['title'] ?? '';
+        $contact_form_7 = $register_for_the_event['contact_form_7'] ?? '';
+        $image = $register_for_the_event['image'] ?? '';
+        $content = $register_for_the_event['content'] ?? '';
+    ?>
+        <div id="popup-event-fixed">
+            <div class="popup-event-main">
+                <div class="popup-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="popup-content-main">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <div class="popup-event-content"><img class="pattern pattern-1" src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-17.png" alt="background pattern 16">
+                                <img class="pattern pattern-2" src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-18.png" alt="background pattern 18">
+                                <?php if ($title) : ?>
+                                    <div class="popup-title">
+                                        <h2><?php echo $title; ?></h2>
+                                    </div>
+                                <?php endif; ?>
+                                <div class="popup-desc">
+                                    <?php echo $content; ?>
+                                </div>
+                                <?php if ($image): ?>
+                                    <div class="popup-thumbnail">
+                                        <img width="885" height="588" src="<?php echo $image; ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="<?php echo $title; ?>" sizes="100vw">
+                                    </div>
+                                <?php endif; ?>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 col-12">
-                        <div class="popup-form" id="popup-form-events">
-                            <div class="form">
-                                <div class="form-title">
-                                    <h3>ĐĂNG KÝ THAM GIA NGAY</h3>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="customer-name form-control" name="your_name" id="customer-name" placeholder="Họ và tên (*)">
-                                    <span class="error-text name-error" id="fullname-error"></span>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="customer-phone form-control" name="your_phone" id="customer-phone" placeholder="Số điện thoại (*)">
-                                    <span class="error-text phone-error" id="phonenumber-error"></span>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="customer-email form-control" name="your_email" id="customer-email" placeholder="Email">
-                                    <span class="error-text email-error" id="email-error"></span>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="customer-address form-control" name="your_address" id="customer-address" placeholder="Địa chỉ">
-                                    <span class="error-text address-error" id="address-error"></span>
-                                </div>
-                                <div class="form-group">
-                                    <select name="program" id="program" class="customer-program form-control">
-                                        <option value="0">Bạn muốn tư vấn chương trình nào? (*)</option>
-                                        <option value="OSC-SM">Du học trải nghiệm (Hè/ Tết)</option>
-                                        <option value="OSC-LT">Du học Trung học</option>
-                                        <option value="OSC-LT">Du học Đại học/ Sau đại học</option>
-                                        <option value="OSC-LT">Huấn luyện vào TOP 50 Đại Học Mỹ </option>
-                                    </select>
-                                    <span class="error-text program-error" id="program-error"></span>
-                                </div>
-                                <div class="form-group">
-                                    <select name="nation" id="nation" class="customer-nation form-control">
-                                        <option value="0">Quốc gia mà bạn đang quan tâm</option>
-                                        <option value="Mỹ">Mỹ</option>
-                                        <option value="Úc">Úc</option>
-                                        <option value="Canada">Canada</option>
-                                        <option value="Singapore">Singapore</option>
-                                        <option value="Anh">Anh</option>
-                                        <option value="Châu Âu">Châu Âu</option>
-                                        <option value="Khác">Khác</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <div class="box-checkbox required" style="display: flex; align-items: start; font-family: 'Nunito Regular'; font-size: 14px;">
-                                        <input type="checkbox" name="checkbox-form-2" id="checkbox-form-2" class="checkbox-form-2" checked="" required="" style="min-width: 20px; max-width: 20px; height: 20px; margin-top: 5px;">
-                                        <label class="checkbox-label" for="checkbox-form-2">Bằng việc đăng ký thông tin, bạn đồng ý cho phép ILA liên lạc thông qua các hình thức: cuộc gọi, tin nhắn, email nhằm mục đích tư vấn các chương trình du học và nghiên cứu thị trường. Xem chi tiết về các điều khoản bảo vệ dữ liệu cá nhân mà ILA sẽ thực hiện cho khách hàng <a href="https://ila.edu.vn/dieu-khoan-chung-ve-bao-ve-va-xu-ly-du-lieu-ca-nhan" target="_blank">tại đây.</a></label>
-                                    </div>
-                                    <span class="error-text checkbox-error"></span>
-                                    <input type="hidden" class="g-recaptcha-response" id="g-recaptcha-response-3" name="g-recaptcha-response-3">
-                                </div>
-                                <div class="form-group button-wrapper text-center">
-                                    <button class="btn-register btn-submit" id="submit-form-popup">
-                                        <a href="#">Đăng ký ngay</a>
-                                    </button>
-                                </div>
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <div class="popup-form" id="popup-form-events">
+                                <?php echo $contact_form_7; ?>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    <?php endif; ?>
 </div>
+
+<?php
+$sign_up_for_consultation = get_field('sign_up_for_consultation', 'option') ?? null;
+if ($sign_up_for_consultation):
+    $bg = $sign_up_for_consultation['background'] ?? '';
+    $title = $sign_up_for_consultation['title'] ?? '';
+    $contact_form_7 = $sign_up_for_consultation['contact_form_7'] ?? '';
+?>
+    <footer id="colophon" class="site-footer" style="padding: 0px;">
+        <div class="footer-contact-form rocket-lazyload entered lazyloaded" style="background-image: url('<?php echo $bg; ?>'); margin-bottom: 0px;">
+            <div class="container">
+                <div class="footer-contact-main">
+                    <div class="form-footer" id="form-contact-footer">
+                        <div class="form-title">
+                            <h2><?php echo $title; ?></h2>
+                        </div>
+                        <?php echo $contact_form_7; ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<?php endif; ?>
 
 <?php
 get_footer();

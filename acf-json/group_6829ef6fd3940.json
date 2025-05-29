@@ -50,13 +50,6 @@
                 "operator": "==",
                 "value": "top_student"
             }
-        ],
-        [
-            {
-                "param": "post_type",
-                "operator": "==",
-                "value": "student_post"
-            }
         ]
     ],
     "menu_order": 0,
@@ -73,5 +66,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1747578808
+    "modified": 1748327703
 }

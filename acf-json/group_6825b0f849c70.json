@@ -1,13 +1,13 @@
 {
-    "key": "group_68240090560ec",
-    "title": "Post Member Setting",
+    "key": "group_6825b0f849c70",
+    "title": "Page Multi media Setting",
     "fields": [
         {
-            "key": "field_68240090d86fa",
-            "label": "Giám đốc",
-            "name": "is_director",
+            "key": "field_6825b0f8c066c",
+            "label": "",
+            "name": "",
             "aria-label": "",
-            "type": "true_false",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,19 +16,19 @@
                 "class": "",
                 "id": ""
             },
-            "message": "Giám đốc",
-            "default_value": 0,
-            "ui": 0,
-            "ui_on_text": "",
-            "ui_off_text": ""
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "page_template",
                 "operator": "==",
-                "value": "member"
+                "value": "page-multimedia.php"
             }
         ]
     ],
@@ -41,5 +41,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1748327703
+    "modified": 1748327702
 }

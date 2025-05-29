@@ -73,8 +73,6 @@
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/jumpstart.css" media="all">
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/facility.css" media="all">
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/page-template-teacher.css" media="all">
-	<!-- <link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/page-template-teacher.css" media="all"> -->
-	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/archive.css" media="all">
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/single.css" media="all">
 	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/single-custom.css" media="all">
 	<link rel="stylesheet" id="ez-toc-css" href="<?php echo THEME_URI . '/assets/'; ?>css/screen.min.css" media="all" />
@@ -82,15 +80,17 @@
 		media="all" />
 	<link rel="stylesheet" id="page-center-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/center.css"
 		media="all" />
-	<link rel="stylesheet" id="category-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/archive.css"
-		media="all" />
+	<?php if (!is_page_template('page-study_program.php')) { ?>
+		<link rel="stylesheet" id="category-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/archive.css"
+			media="all" />
+	<?php } ?>
 	<?php if (is_page_template('page-recruitment_study_abroad.php')) { ?>
 		<link rel="stylesheet" id="page-ola-or-ielts-custom-css-css"
 			href="<?php echo THEME_URI . '/assets/'; ?>css/ola-or-ielts.css" media="all" />
 	<?php } ?>
 
 	<!-- page 2 -->
-	<?php if (is_page_template('page-seminar_event.php') || is_page_template('page-study_program.php') || is_page_template('page-study_solutions_details.php')) { ?>
+	<?php if (is_page_template('page-seminar_event.php') || is_page_template('page-study_solutions_details.php') ||  is_page_template('page-study_solutions.php')) { ?>
 		<link rel="stylesheet" id="fptheme-fonts-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/font-nunito-sans.css" media="all">
 		<link rel="stylesheet" id="fptheme-style-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/style_1.css" media="all">
 		<link rel="stylesheet" id="magnific-popup-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/magnific-popup.min.css" media="all">

@@ -19,29 +19,35 @@ get_header();
 
 <div id="content" class="site-content">
     <main class="archive-template archive-default news-event">
-        <section class="section-menu-category">
-            <div class="container">
-                <div class="list-cate">
-                    <ul>
-                        <li class="navbar-blog-item">
-                            <a href="https://ila.edu.vn/lam-ban-cung-con">Làm bạn cùng con</a>
-                        </li>
-                        <li class="navbar-blog-item">
-                            <a href="https://ila.edu.vn/bi-kip-hoc-tieng-anh">Bí kíp học tiếng Anh</a>
-                        </li>
-                        <li class="navbar-blog-item">
-                            <a href="https://ila.edu.vn/guong-mat-xuat-sac">Gương mặt xuất sắc</a>
-                        </li>
-                        <li class="navbar-blog-item">
-                            <a href="https://ila.edu.vn/tin-tuc-su-kien">Tin tức sự kiện</a>
-                        </li>
-                        <li class="navbar-blog-item">
-                            <a href="https://ila.edu.vn/video">Multimedia</a>
-                        </li>
-                    </ul>
+
+        <?php
+        $menu_items = get_field('menu_item', 'option') ?? []; // 'option' là theme setting
+        if (!empty($menu_items)): ?>
+            <section class="section-menu-category">
+                <div class="container">
+                    <div class="list-cate">
+                        <ul>
+                            <?php foreach ($menu_items as $item):
+                                $link = $item['link'];
+                                if (!empty($link['url']) && !empty($link['title'])):
+                                    $url = esc_url($link['url']);
+                                    $title = esc_html($link['title']);
+                                    $target = isset($link['target']) ? esc_attr($link['target']) : '_self';
+                            ?>
+                                    <li class="navbar-blog-item">
+                                        <a href="<?php echo $url; ?>" target="<?php echo $target; ?>">
+                                            <?php echo $title; ?>
+                                        </a>
+                                    </li>
+                            <?php
+                                endif;
+                            endforeach; ?>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        <?php endif; ?>
+
         <?php
         $paged = get_query_var('paged') ? get_query_var('paged') : 1;
 
@@ -104,7 +110,7 @@ get_header();
                                                     if (!empty($posts[$i])):
                                                         $post = $posts[$i];
                                                         setup_postdata($post);
-                                                        ?>
+                                                ?>
                                                         <div class="col-12">
                                                             <div class="post-item post-sm">
                                                                 <div class="post-thumbnail">
@@ -121,7 +127,7 @@ get_header();
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <?php
+                                                <?php
                                                     endif;
                                                 endfor;
                                                 ?>
@@ -134,7 +140,7 @@ get_header();
                                                 <?php for ($i = 3; $i < count($posts); $i++):
                                                     $post = $posts[$i];
                                                     setup_postdata($post);
-                                                    ?>
+                                                ?>
                                                     <div class="row article-horizontal">
                                                         <div class="col-4">
                                                             <div class="post-thumbnail">
@@ -197,7 +203,7 @@ get_header();
                                             if ($latest_posts->have_posts()):
                                                 while ($latest_posts->have_posts()):
                                                     $latest_posts->the_post();
-                                                    ?>
+                                            ?>
                                                     <div class="col-12 col-lg-12 col-sm-6">
                                                         <div class="post-item">
                                                             <div class="thumb-img">
@@ -218,7 +224,7 @@ get_header();
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <?php
+                                            <?php
                                                 endwhile;
                                                 wp_reset_postdata();
                                             endif;
