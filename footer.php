@@ -479,6 +479,15 @@ if ($google_maps):
         display: block;
         margin: 0px auto;
     }
+
+    header.main-header .nav-main-menu .container .navbar-menu a.custom-logo-link {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .custom-logo-link img {
+        max-height: 60px;
+    }
 </style>
 
 
