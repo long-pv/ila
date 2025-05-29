@@ -149,7 +149,7 @@ if (LANG == 'en') {
                                                 <h2><?php echo $title; ?></h2>
                                                 <p><?php echo $description; ?></p>
                                                 <div class="course-button">
-                                                    <button class="btn-register"><a href="<?php echo $link ?: '#'; ?>">Xem thêm</a></button>
+                                                    <button class="btn-register"><a href="<?php echo $link ?: '#'; ?>"><?php _e(" Xem thêm", "xemer_theme"); ?></a></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -200,7 +200,7 @@ if (LANG == 'en') {
                                                         <?php if (!empty($item['link'])): ?>
                                                             <div class="course-button">
                                                                 <button class="btn-register">
-                                                                    <a href="<?php echo esc_url($item['link']); ?>">Xem thêm</a>
+                                                                    <a href="<?php echo esc_url($item['link']); ?>"><?php _e(" Xem thêm", "xemer_theme"); ?></a>
                                                                 </button>
                                                             </div>
                                                         <?php endif; ?>
