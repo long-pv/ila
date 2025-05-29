@@ -59,7 +59,7 @@ get_header();
                                     <?php if ($url): ?>
                                         <p>
                                             <button class="discover">
-                                                <a href="<?php echo esc_url($url); ?>" target="_blank" rel="noopener">Xem thêm</a>
+                                                <a href="<?php echo esc_url($url); ?>" target="_blank" rel="noopener"> <?php _e("Xem thêm", "xemer_theme"); ?> </a>
                                             </button>
                                         </p>
                                     <?php endif; ?>
@@ -193,7 +193,7 @@ get_header();
                                         <div class="title-blog">
                                             <h2><?php echo esc_html($news['title']); ?></h2>
                                             <button>
-                                                <a href="<?php echo esc_url($news['view_all']); ?>">Xem tất cả <i class="fa-regular fa-arrow-right"></i></a>
+                                                <a href="<?php echo esc_url($news['view_all']); ?>"><?php _e(" Xem tất cả", "xemer_theme"); ?> <i class="fa-regular fa-arrow-right"></i></a>
                                             </button>
                                         </div>
                                         <span class="quote-heading"><?php echo nl2br(esc_html($news['description'])); ?></span>
@@ -262,7 +262,7 @@ get_header();
                                 <div class="col-xl-5">
                                     <div class="related-post">
                                         <div class="row">
-                                            <h3 class="related-title">Bài viết liên quan</h3>
+                                            <h3 class="related-title"> <?php _e("Bài viết liên quan", "xemer_theme"); ?> </h3>
                                             <?php
                                             // Lặp related_articles - max 4 bài
                                             if (!empty($news['related_articles'])):

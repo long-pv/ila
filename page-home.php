@@ -119,7 +119,7 @@ if (LANG == 'en') {
                                                                                                     href="<?php echo $item['youtube_url']; ?>">
                                                                                                     <div>
                                                                                                         <div>
-                                                                                                            XEM VIDEO
+                                                                                                             <?php _e("XEM VIDEO", "xemer_theme") ?>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </a>
@@ -184,11 +184,11 @@ if (LANG == 'en') {
                                                                 width="24" height="24">
                                                         </div>
                                                         <select name="your_course" id="your_course">
-                                                            <option selected="" value="0">Độ tuổi</option>
-                                                            <option value="3_6_years_old">3-6 tuổi</option>
-                                                            <option value="6_11_years_old">6-11 tuổi</option>
-                                                            <option value="11_16_years_old">11-16 tuổi</option>
-                                                            <option value="working_people">Người đi làm</option>
+                                                            <option selected="" value="0"> <?php _e("Độ tuổi", "xemer_theme"); ?></option>
+                                                            <option value="3_6_years_old"> <?php _e("3-6 tuổi", "xemer_theme"); ?> </option>
+                                                            <option value="6_11_years_old"> <?php _e("6-11 tuổi", "xemer_theme"); ?> </option>
+                                                            <option value="11_16_years_old"> <?php _e("11-16 tuổi", "xemer_theme"); ?> </option>
+                                                            <option value="working_people"> <?php _e("Người đi làm", "xemer_theme"); ?> </option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -252,7 +252,7 @@ if (LANG == 'en') {
 
                                                         <select name="your_option" id="your_option">
                                                             <option selected="" value="0">
-                                                                Chương trình học
+                                                            <?php _e("Chương trình học", "xemer_theme"); ?> 
                                                             </option>
 
                                                             <!-- các option ở jquery hãy thêm vào đây và xóa đi tương ứng theo lựa chọn -->
@@ -261,7 +261,7 @@ if (LANG == 'en') {
                                                 </div>
                                                 <div class="col-md-4 col-lg-3 col-xl-3">
                                                     <button class="btn-change-option">
-                                                        <a href="#">Xem thêm</a>
+                                                        <a href="#"><?php _e("Xem thêm", "xemer_theme") ?> </a>
                                                     </button>
                                                 </div>
                                             </div>
@@ -309,7 +309,7 @@ if (LANG == 'en') {
                                                                 </span>
                                                                 <a class="button-text" href="<?php echo $item['link']; ?>">
                                                                     <span>
-                                                                        Khám phá
+                                                                    <?php _e("Khám phá", "xemer_theme") ?>
                                                                     </span>
                                                                 </a>
                                                             </button>
@@ -368,7 +368,7 @@ if (LANG == 'en') {
                                     </h2>
                                     <button>
                                         <a href="<?php echo $news['view_all'] ?? '#'; ?>">
-                                            Xem tất cả <i class="fa-regular fa-arrow-right"></i>
+                                        <?php _e("Xem tất cả", "xemer_theme") ?>  <i class="fa-regular fa-arrow-right"></i>
                                         </a>
                                     </button>
                                 </div>
@@ -576,7 +576,7 @@ if (LANG == 'en') {
                                     <h2><?php echo esc_html($title); ?></h2>
                                     <button>
                                         <a href="<?php echo esc_url($view_all); ?>">
-                                            Xem tất cả <i class="fa-regular fa-arrow-right"></i>
+                                        <?php _e("Xem tất cả", "xemer_theme") ?> <i class="fa-regular fa-arrow-right"></i>
                                         </a>
                                     </button>
                                 </div>
@@ -622,7 +622,7 @@ if (LANG == 'en') {
             <?php
             $learning_space = get_field('learning_space');
             $gallery = $learning_space['gallery'] ?? [];
-            $title = $learning_space['title'] ?? 'Không gian học tập <br> chuẩn quốc tế tại ILA';
+            $title = $learning_space['title'] ?? _e('Không gian học tập <br> chuẩn quốc tế tại ILA', "xemer_theme");
             ?>
             <section id="section-6" class="section-space-powers">
                 <div class="container">

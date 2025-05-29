@@ -127,7 +127,7 @@ if (LANG == 'en') {
                                                 </div>
                                                 <div class="video-time-publish">
                                                     <p>
-                                                        <a href="<?php echo $category_link; ?>">Multimedia</a>
+                                                        <a href="<?php echo $category_link; ?>"> <?php _e("Multimedia", "xemer_theme"); ?> </a>
                                                         <span><?php echo $published; ?> (GTM+7)</span>
                                                     </p>
                                                 </div>
@@ -188,7 +188,7 @@ if (LANG == 'en') {
                                                     <span class="icon-time"><i class="fa-solid fa-timer"></i>
                                                         <?php echo $video_duration; ?></span>
                                                     <span class="category-link">
-                                                        <a href="<?php echo $category_link; ?>">MULTIMEDIA</a>
+                                                        <a href="<?php echo $category_link; ?>"><?php _e("MULTIMEDIA", "xemer_theme"); ?> </a>
                                                     </span>
                                                 </p>
                                             </div>

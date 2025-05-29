@@ -26,8 +26,9 @@ if (LANG == 'en') {
     <div id="content" class="site-content">
 
 
-        <?php if (have_rows('banner')) : ?>
-            <?php while (have_rows('banner')) : the_row();
+        <?php if (have_rows('banner')): ?>
+            <?php while (have_rows('banner')):
+                the_row();
                 $title = get_sub_field('title');
                 $description = get_sub_field('description');
                 $certification = get_sub_field('certification');
@@ -38,13 +39,11 @@ if (LANG == 'en') {
                     <div class="row">
                         <div class="col-xl-6 col-md-12 col-12">
                             <div class="image-product">
-                                <?php if ($background) : ?>
-                                    <img width="1192" height="660"
-                                        src="<?php echo esc_url($background); ?>"
+                                <?php if ($background): ?>
+                                    <img width="1192" height="660" src="<?php echo esc_url($background); ?>"
                                         alt="<?php echo esc_attr($title); ?>">
                                     <noscript>
-                                        <img width="1192" height="660"
-                                            src="<?php echo esc_url($background); ?>"
+                                        <img width="1192" height="660" src="<?php echo esc_url($background); ?>"
                                             alt="<?php echo esc_attr($title); ?>">
                                     </noscript>
                                 <?php endif; ?>
@@ -53,25 +52,24 @@ if (LANG == 'en') {
                         <div class="col-xl-6 col-md-12 col-12">
                             <div class="content-main-product">
                                 <div class="content-product">
-                                    <?php if ($title) : ?>
+                                    <?php if ($title): ?>
                                         <h1><?php echo esc_html($title); ?></h1>
                                     <?php endif; ?>
 
-                                    <?php if ($description) : ?>
+                                    <?php if ($description): ?>
                                         <p><?php echo esc_html($description); ?></p>
                                     <?php endif; ?>
 
                                     <div class="intro-airc">
-                                        <?php if ($certificate_content) : ?>
+                                        <?php if ($certificate_content): ?>
                                             <div class="content-airc">
                                                 <?php echo $certificate_content; ?>
                                             </div>
                                         <?php endif; ?>
 
-                                        <?php if ($certification) : ?>
+                                        <?php if ($certification): ?>
                                             <div class="logo-airc">
-                                                <img width="115" height="115"
-                                                    src="<?php echo esc_url($certification); ?>"
+                                                <img width="115" height="115" src="<?php echo esc_url($certification); ?>"
                                                     alt="Certification">
                                             </div>
                                         <?php endif; ?>
@@ -83,8 +81,7 @@ if (LANG == 'en') {
                             <div class="img-pattern">
                                 <img width="1794" height="603"
                                     src="https://iladuhoc.edu.vn/wp-content/uploads/2024/04/background-pattern-product-list-new.png"
-                                    alt="background pattern product list"
-                                    loading="lazy">
+                                    alt="background pattern product list" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -121,8 +118,9 @@ if (LANG == 'en') {
                             src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-10.png"
                             alt="background pattern 10">
                         <div class="core-main">
-                            <?php if (have_rows('core_value_list_value')) : ?>
-                                <?php while (have_rows('core_value_list_value')) : the_row(); ?>
+                            <?php if (have_rows('core_value_list_value')): ?>
+                                <?php while (have_rows('core_value_list_value')):
+                                    the_row(); ?>
                                     <div class="core-item">
                                         <div class="core-item-main">
                                             <div class="core-icon">
@@ -166,12 +164,13 @@ if (LANG == 'en') {
                         </div>
                         <div class="content-core">
                             <p><?php the_field('core_value_description_2'); ?></p>
-                            <?php if (have_rows('core_value_todo_list')) : ?>
-                                <?php while (have_rows('core_value_todo_list')) : the_row(); ?>
+                            <?php if (have_rows('core_value_todo_list')): ?>
+                                <?php while (have_rows('core_value_todo_list')):
+                                    the_row(); ?>
                                     <p>
                                         <img decoding="async" class="size-full wp-image-842 alignleft"
-                                            src="https://iladuhoc.edu.vn/wp-content/uploads/2024/05/icon-check.png"
-                                            alt="" width="30" height="30" />
+                                            src="https://iladuhoc.edu.vn/wp-content/uploads/2024/05/icon-check.png" alt=""
+                                            width="30" height="30" />
                                         <?php the_sub_field('title'); ?>
                                     </p>
                                 <?php endwhile; ?>
@@ -189,20 +188,15 @@ if (LANG == 'en') {
         <?php
         $cta = get_field('cta');
         if ($cta):
-        ?>
+            ?>
             <section class="section-cta-product" id="section-3">
                 <div class="cta-product-image">
                     <?php if (!empty($cta['background'])): ?>
-                        <img width="1910" height="433"
-                            src="<?php echo esc_url($cta['background']); ?>"
-                            alt="Banner CTA"
-                            data-lazy-src="<?php echo esc_url($cta['background']); ?>"
-                            data-ll-status="loaded"
+                        <img width="1910" height="433" src="<?php echo esc_url($cta['background']); ?>" alt="Banner CTA"
+                            data-lazy-src="<?php echo esc_url($cta['background']); ?>" data-ll-status="loaded"
                             class="entered lazyloaded">
                         <noscript>
-                            <img width="1910" height="433"
-                                src="<?php echo esc_url($cta['background']); ?>"
-                                alt="Banner CTA">
+                            <img width="1910" height="433" src="<?php echo esc_url($cta['background']); ?>" alt="Banner CTA">
                         </noscript>
                     <?php endif; ?>
                 </div>
@@ -215,7 +209,7 @@ if (LANG == 'en') {
                     <?php if (!empty($cta['link'])): ?>
                         <div class="cta-button">
                             <button class="btn-register">
-                                <a href="<?php echo esc_url($cta['link']); ?>">Đăng ký ngay</a>
+                                <a href="<?php echo esc_url($cta['link']); ?>"><?php _e("Đăng ký ngay", "xemer_theme"); ?></a>
                             </button>
                         </div>
                     <?php endif; ?>
@@ -230,7 +224,7 @@ if (LANG == 'en') {
             $faq_title = $faqs['title'];
             $faq_image = $faqs['image'];
             $faq_list = $faqs['list'];
-        ?>
+            ?>
             <section class="section-faq-product" id="section-4">
                 <div class="container">
                     <div class="row">
@@ -241,8 +235,11 @@ if (LANG == 'en') {
                                 </div>
                                 <div class="faq-product-image">
                                     <?php if (!empty($faq_image)): ?>
-                                        <img width="463" height="301" src="<?php echo esc_url($faq_image); ?>" alt="FAQ" data-lazy-src="<?php echo esc_url($faq_image); ?>" data-ll-status="loaded" class="entered lazyloaded">
-                                        <noscript><img width="463" height="301" src="<?php echo esc_url($faq_image); ?>" alt="FAQ"></noscript>
+                                        <img width="463" height="301" src="<?php echo esc_url($faq_image); ?>" alt="FAQ"
+                                            data-lazy-src="<?php echo esc_url($faq_image); ?>" data-ll-status="loaded"
+                                            class="entered lazyloaded">
+                                        <noscript><img width="463" height="301" src="<?php echo esc_url($faq_image); ?>"
+                                                alt="FAQ"></noscript>
                                     <?php endif; ?>
                                 </div>
                             </div>
@@ -280,10 +277,10 @@ if (LANG == 'en') {
         <section class="section-news" id="section-5">
             <div class="container">
                 <div class="news-title">
-                    <h2>TIPS DU HỌC</h2>
+                    <h2><?php _e("TIPS DU HỌC", "xemer_theme"); ?> </h2>
                     <div class="news-button">
                         <a href="<?php echo get_post_type_archive_link('study_abroad_tips'); ?>">
-                            Xem tất cả <i class="fa-solid fa-arrow-right"></i>
+                            <?php _e("Đăng ký ngay", "xemer_theme"); ?> <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
@@ -298,17 +295,19 @@ if (LANG == 'en') {
                     $index = 0;
                     ?>
 
-                    <?php if ($loop->have_posts()) : ?>
-                        <?php while ($loop->have_posts()) : $loop->the_post(); ?>
+                    <?php if ($loop->have_posts()): ?>
+                        <?php while ($loop->have_posts()):
+                            $loop->the_post(); ?>
                             <?php $index++; ?>
 
-                            <?php if ($index === 1) : ?>
+                            <?php if ($index === 1): ?>
                                 <div class="col-xl-6 col-md-6">
                                     <div class="blog-main blog-first">
                                         <div class="blog-thumbnail">
                                             <a href="<?php the_permalink(); ?>">
-                                                <?php if (has_post_thumbnail()) : ?>
-                                                    <img src="<?php the_post_thumbnail_url('large'); ?>" alt="<?php the_title_attribute(); ?>">
+                                                <?php if (has_post_thumbnail()): ?>
+                                                    <img src="<?php the_post_thumbnail_url('large'); ?>"
+                                                        alt="<?php the_title_attribute(); ?>">
                                                 <?php endif; ?>
                                             </a>
                                         </div>
@@ -317,7 +316,8 @@ if (LANG == 'en') {
                                                 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                                             </div>
                                             <div class="blog-archive arrow-before">
-                                                <span><a href="<?php echo get_post_type_archive_link('study_abroad_tips'); ?>">Tips du học</a></span>
+                                                <span><a href="<?php echo get_post_type_archive_link('study_abroad_tips'); ?>"><?php _e("Tips du học", "xemer_theme"); ?>
+                                                    </a></span>
                                             </div>
                                             <div class="blog-content-description">
                                                 <?php echo wp_trim_words(get_the_excerpt(), 30, '...'); ?>
@@ -328,13 +328,14 @@ if (LANG == 'en') {
                                 <div class="col-xl-6 col-md-6">
                                     <div class="col-xl-12">
                                         <div class="row">
-                                        <?php elseif ($index > 1) : ?>
+                                        <?php elseif ($index > 1): ?>
                                             <div class="col-xl-6 col-md-6">
                                                 <div class="blog-main">
                                                     <div class="blog-thumbnail">
                                                         <a href="<?php the_permalink(); ?>">
-                                                            <?php if (has_post_thumbnail()) : ?>
-                                                                <img src="<?php the_post_thumbnail_url('large'); ?>" alt="<?php the_title_attribute(); ?>">
+                                                            <?php if (has_post_thumbnail()): ?>
+                                                                <img src="<?php the_post_thumbnail_url('large'); ?>"
+                                                                    alt="<?php the_title_attribute(); ?>">
                                                             <?php endif; ?>
                                                         </a>
                                                     </div>
@@ -343,18 +344,19 @@ if (LANG == 'en') {
                                                             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                                                         </div>
                                                         <div class="blog-archive arrow-before">
-                                                            <span><a href="<?php echo get_post_type_archive_link('study_abroad_tips'); ?>">Tips du học</a></span>
+                                                            <span><a
+                                                                    href="<?php echo get_post_type_archive_link('study_abroad_tips'); ?>"><?php _e("Tips du học", "xemer_theme"); ?></a></span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         <?php endif; ?>
                                     <?php endwhile; ?>
-                                        </div> <!-- .row -->
-                                    </div> <!-- .col-xl-12 -->
-                                </div> <!-- .col-xl-6 -->
-                                <?php wp_reset_postdata(); ?>
-                            <?php endif; ?>
+                                </div> <!-- .row -->
+                            </div> <!-- .col-xl-12 -->
+                        </div> <!-- .col-xl-6 -->
+                        <?php wp_reset_postdata(); ?>
+                    <?php endif; ?>
                 </div>
             </div>
         </section>
@@ -370,9 +372,10 @@ if ($sign_up_for_consultation):
     $bg = $sign_up_for_consultation['background'] ?? '';
     $title = $sign_up_for_consultation['title'] ?? '';
     $contact_form_7 = $sign_up_for_consultation['contact_form_7'] ?? '';
-?>
+    ?>
     <footer id="colophon" class="site-footer" style="padding: 0px;">
-        <div class="footer-contact-form rocket-lazyload entered lazyloaded" style="background-image: url('<?php echo $bg; ?>'); margin-bottom: 0px;">
+        <div class="footer-contact-form rocket-lazyload entered lazyloaded"
+            style="background-image: url('<?php echo $bg; ?>'); margin-bottom: 0px;">
             <div class="container">
                 <div class="footer-contact-main">
                     <div class="form-footer" id="form-contact-footer">

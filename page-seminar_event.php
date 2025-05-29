@@ -124,7 +124,7 @@ if (LANG == 'en') {
                                                             </div>
                                                             <div class="event-button">
                                                                 <button class="btn-register" data-id="<?php echo $button_id; ?>">
-                                                                    <a href="<?php echo $permalink; ?>">Đăng ký ngay</a>
+                                                                    <a href="<?php echo $permalink; ?>"> <?php _e("Đăng ký ngay", "xemer_theme"); ?> </a>
                                                                 </button>
                                                             </div>
                                                         </div>
@@ -152,7 +152,7 @@ if (LANG == 'en') {
                                                                     </div>
                                                                     <div class="event-button">
                                                                         <button class="btn-register" data-id="<?php echo $button_id; ?>">
-                                                                            <a href="<?php echo $permalink; ?>">Đăng ký ngay</a>
+                                                                            <a href="<?php echo $permalink; ?>"><?php _e("Đăng ký ngay", "xemer_theme"); ?></a>
                                                                         </button>
                                                                     </div>
                                                                 </div>
@@ -212,7 +212,7 @@ if (LANG == 'en') {
                                                                 </div>
                                                                 <div class="event-button">
                                                                     <button class="btn-register" data-id="<?php echo $event_id; ?>">
-                                                                        <a href="<?php echo $permalink; ?>">Đăng ký ngay</a>
+                                                                        <a href="<?php echo $permalink; ?>"><?php _e("Đăng ký ngay", "xemer_theme"); ?></a>
                                                                     </button>
                                                                 </div>
                                                             </div>

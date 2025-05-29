@@ -56,7 +56,7 @@ if (LANG == 'en') {
                         <div id="breadcrumbs">
                             <span>
                                 <span>
-                                    <a href="<?php echo esc_url(home_url('/')); ?>">Trang chủ</a>
+                                    <a href="<?php echo esc_url(home_url('/')); ?>"> <?php _e("Trang chủ", "xemer_theme"); ?> </a>
                                 </span> »
                                 <span>
                                     <a
