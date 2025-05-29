@@ -202,7 +202,7 @@ get_header();
                                                 <h3><img class="alignright wp-image-17625" src="<?php echo esc_url($image); ?>"
                                                         alt="<?php echo esc_attr($image_alt); ?>" width="400"
                                                         height="503"><strong><span
-                                                            style="color: #2b378b;"><?php the_title(); ?></span></strong></h3>
+                                                            style="color: #0075A9;"><?php the_title(); ?></span></strong></h3>
                                                 <!--  -->
                                                 <?php the_content(); ?>
                                             </div>
@@ -267,7 +267,7 @@ get_header();
                                                             src="<?php echo esc_url($image); ?>"
                                                             alt="<?php echo esc_attr($image_alt); ?>" width="400"
                                                             height="503"><strong><span
-                                                                style="color: #2b378b;"><?php the_title(); ?></span></strong>
+                                                                style="color: #0075A9;"><?php the_title(); ?></span></strong>
                                                     </h3>
                                                     <!--  -->
                                                     <?php the_content(); ?>

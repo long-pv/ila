@@ -34,7 +34,7 @@ if (LANG == 'en') {
                 $certificate_content = get_sub_field('certificate_content');
                 $background = get_sub_field('background');
             ?>
-                <section class="section-main-product" id="section-1" style="background-color: #1b3f94">
+                <section class="section-main-product" id="section-1" style="background-color: #0075A9">
                     <div class="row">
                         <div class="col-xl-6 col-md-12 col-12">
                             <div class="image-product">
@@ -101,7 +101,7 @@ if (LANG == 'en') {
                         src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-16.png"
                         alt="background pattern 16">
                     <h2>
-                        <span style="color: #1b3f94;">
+                        <span style="color: #0075A9;">
                             <?php the_field('core_value_title'); ?>
                         </span>
                     </h2>

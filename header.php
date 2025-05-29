@@ -24,81 +24,81 @@
 		media="all">
 
 	<!-- style -->
-	<link rel="stylesheet" id="wp-block-library-css" href="<?php echo THEME_URI . '/assets/'; ?>css/style.min.css"
+	<link rel="stylesheet" id="wp-block-library-css" href="<?php echo THEME_URI . '/assets/'; ?>css/style.min.css?ver=<?php echo _S_VERSION; ?>"
 		media="all" />
 	<link rel="stylesheet" id="email-subscribers-css"
-		href="<?php echo THEME_URI . '/assets/'; ?>css/email-subscribers-public.css" media="all">
-	<link rel="stylesheet" id="fptheme-style-css" href="<?php echo THEME_URI . '/assets/'; ?>css/style.css" media="all">
-	<link rel="stylesheet" id="animation-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/animate.css"
+		href="<?php echo THEME_URI . '/assets/'; ?>css/email-subscribers-public.css?ver=<?php echo _S_VERSION; ?>" media="all">
+	<link rel="stylesheet" id="fptheme-style-css" href="<?php echo THEME_URI . '/assets/'; ?>css/style.css?ver=<?php echo _S_VERSION; ?>" media="all">
+	<link rel="stylesheet" id="animation-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/animate.css?ver=<?php echo _S_VERSION; ?>"
 		media="all">
 	<link rel="stylesheet" id="owl-carousel-css-css"
-		href="<?php echo THEME_URI . '/assets/'; ?>css/owl.carousel.min.css" media="all">
+		href="<?php echo THEME_URI . '/assets/'; ?>css/owl.carousel.min.css?ver=<?php echo _S_VERSION; ?>" media="all">
 	<link rel="stylesheet" id="magnific-popup-css-css"
-		href="<?php echo THEME_URI . '/assets/'; ?>css/magnific-popup.css" media="all">
-	<link rel="stylesheet" id="swiper-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/swiper.min.css"
+		href="<?php echo THEME_URI . '/assets/'; ?>css/magnific-popup.css?ver=<?php echo _S_VERSION; ?>" media="all">
+	<link rel="stylesheet" id="swiper-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/swiper.min.css?ver=<?php echo _S_VERSION; ?>"
 		media="all">
 	<link rel="stylesheet" id="owl-carousel-theme-default-css-css"
-		href="<?php echo THEME_URI . '/assets/'; ?>css/owl.theme.default.min.css" media="all">
-	<link rel="stylesheet" id="font-awesome-6-css" href="<?php echo THEME_URI . '/assets/'; ?>css/all.min.css"
+		href="<?php echo THEME_URI . '/assets/'; ?>css/owl.theme.default.min.css?ver=<?php echo _S_VERSION; ?>" media="all">
+	<link rel="stylesheet" id="font-awesome-6-css" href="<?php echo THEME_URI . '/assets/'; ?>css/all.min.css?ver=<?php echo _S_VERSION; ?>"
 		media="all">
-	<link rel="stylesheet" id="bootstrap-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/bootstrap.min.css"
+	<link rel="stylesheet" id="bootstrap-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/bootstrap.min.css?ver=<?php echo _S_VERSION; ?>"
 		media="all">
-	<link rel="stylesheet" id="footer-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/footer.css" media="all">
-	<link rel="stylesheet" id="custom-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/custom.css" media="all">
-	<link rel="stylesheet" id="list-center-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/list-center.css"
+	<link rel="stylesheet" id="footer-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/footer.css?ver=<?php echo _S_VERSION; ?>" media="all">
+	<link rel="stylesheet" id="custom-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/custom.css?ver=<?php echo _S_VERSION; ?>" media="all">
+	<link rel="stylesheet" id="list-center-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/list-center.css?ver=<?php echo _S_VERSION; ?>"
 		media="all">
-	<link rel="stylesheet" id="video-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/video.min.css" media="all">
-	<link rel="stylesheet" id="homepage-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/homepage.css"
+	<link rel="stylesheet" id="video-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/video.min.css?ver=<?php echo _S_VERSION; ?>" media="all">
+	<link rel="stylesheet" id="homepage-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/homepage.css?ver=<?php echo _S_VERSION; ?>"
 		media="all">
-	<link rel="stylesheet" id="page-404-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/error.css" media="all">
-	<link rel="stylesheet" id="page-custom-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/template-custom.css"
+	<link rel="stylesheet" id="page-404-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/error.css?ver=<?php echo _S_VERSION; ?>" media="all">
+	<link rel="stylesheet" id="page-custom-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/template-custom.css?ver=<?php echo _S_VERSION; ?>"
 		media="all">
-	<link rel="stylesheet" id="fptheme-block-style-css" href="<?php echo THEME_URI . '/assets/'; ?>css/blocks.css"
+	<link rel="stylesheet" id="fptheme-block-style-css" href="<?php echo THEME_URI . '/assets/'; ?>css/blocks.css?ver=<?php echo _S_VERSION; ?>"
 		media="all">
 	<link rel="stylesheet" id="tablepress-default-css"
-		href="<?php echo THEME_URI . '/assets/'; ?>css/tablepress-combined.min.css" media="all">
-	<link rel="stylesheet" id="addtoany-css" href="<?php echo THEME_URI . '/assets/'; ?>css/addtoany.min.css"
+		href="<?php echo THEME_URI . '/assets/'; ?>css/tablepress-combined.min.css?ver=<?php echo _S_VERSION; ?>" media="all">
+	<link rel="stylesheet" id="addtoany-css" href="<?php echo THEME_URI . '/assets/'; ?>css/addtoany.min.css?ver=<?php echo _S_VERSION; ?>"
 		media="all">
-	<link rel="stylesheet" type="text/css" href="<?php echo THEME_URI . '/assets/'; ?>css/smartslider.min.css"
+	<link rel="stylesheet" type="text/css" href="<?php echo THEME_URI . '/assets/'; ?>css/smartslider.min.css?ver=<?php echo _S_VERSION; ?>"
 		media="all">
-	<link rel="stylesheet" type="text/css" href="<?php echo THEME_URI . '/assets/'; ?>css/css_index.css" media="all">
-	<script async="" src="<?php echo THEME_URI . '/assets/'; ?>js/page.js" id="addtoany-core-js"></script>
-	<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.min.js" id="jquery-core-js"></script>
-	<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
-	<script async="" src="<?php echo THEME_URI . '/assets/'; ?>js/addtoany.min.js" id="addtoany-jquery-js"></script>
-	<script async="" src="<?php echo THEME_URI . '/assets/'; ?>js/owl.carousel.min.js" id="owl-carousel-js-js"></script>
+	<link rel="stylesheet" type="text/css" href="<?php echo THEME_URI . '/assets/'; ?>css/css_index.css?ver=<?php echo _S_VERSION; ?>" media="all">
+	<script async="" src="<?php echo THEME_URI . '/assets/'; ?>js/page.js?ver=<?php echo _S_VERSION; ?>" id="addtoany-core-js"></script>
+	<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.min.js?ver=<?php echo _S_VERSION; ?>" id="jquery-core-js"></script>
+	<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery-migrate.min.js?ver=<?php echo _S_VERSION; ?>" id="jquery-migrate-js"></script>
+	<script async="" src="<?php echo THEME_URI . '/assets/'; ?>js/addtoany.min.js?ver=<?php echo _S_VERSION; ?>" id="addtoany-jquery-js"></script>
+	<script async="" src="<?php echo THEME_URI . '/assets/'; ?>js/owl.carousel.min.js?ver=<?php echo _S_VERSION; ?>" id="owl-carousel-js-js"></script>
 	<?php if (is_page_template('page-about_us.php')) { ?>
-		<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/about-us.css" media="all">
+		<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/about-us.css?ver=<?php echo _S_VERSION; ?>" media="all">
 	<?php } ?>
-	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/jumpstart.css" media="all">
-	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/facility.css" media="all">
-	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/page-template-teacher.css" media="all">
-	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/single.css" media="all">
-	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/single-custom.css" media="all">
-	<link rel="stylesheet" id="ez-toc-css" href="<?php echo THEME_URI . '/assets/'; ?>css/screen.min.css" media="all" />
-	<link rel="stylesheet" id="video-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/video.min.css"
+	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/jumpstart.css?ver=<?php echo _S_VERSION; ?>" media="all">
+	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/facility.css?ver=<?php echo _S_VERSION; ?>" media="all">
+	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/page-template-teacher.css?ver=<?php echo _S_VERSION; ?>" media="all">
+	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/single.css?ver=<?php echo _S_VERSION; ?>" media="all">
+	<link rel="stylesheet" href="<?php echo THEME_URI . '/assets/'; ?>css/single-custom.css?ver=<?php echo _S_VERSION; ?>" media="all">
+	<link rel="stylesheet" id="ez-toc-css" href="<?php echo THEME_URI . '/assets/'; ?>css/screen.min.css?ver=<?php echo _S_VERSION; ?>" media="all" />
+	<link rel="stylesheet" id="video-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/video.min.css?ver=<?php echo _S_VERSION; ?>"
 		media="all" />
-	<link rel="stylesheet" id="page-center-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/center.css"
+	<link rel="stylesheet" id="page-center-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/center.css?ver=<?php echo _S_VERSION; ?>"
 		media="all" />
 	<?php if (!is_page_template('page-study_program.php')) { ?>
-		<link rel="stylesheet" id="category-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/archive.css"
+		<link rel="stylesheet" id="category-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/archive.css?ver=<?php echo _S_VERSION; ?>"
 			media="all" />
 	<?php } ?>
 	<?php if (is_page_template('page-recruitment_study_abroad.php')) { ?>
 		<link rel="stylesheet" id="page-ola-or-ielts-custom-css-css"
-			href="<?php echo THEME_URI . '/assets/'; ?>css/ola-or-ielts.css" media="all" />
+			href="<?php echo THEME_URI . '/assets/'; ?>css/ola-or-ielts.css?ver=<?php echo _S_VERSION; ?>" media="all" />
 	<?php } ?>
 
 	<!-- page 2 -->
 	<?php if (is_page_template('page-seminar_event.php') || is_page_template('page-study_solutions_details.php') ||  is_page_template('page-study_solutions.php')) { ?>
-		<link rel="stylesheet" id="fptheme-fonts-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/font-nunito-sans.css" media="all">
-		<link rel="stylesheet" id="fptheme-style-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/style_1.css" media="all">
-		<link rel="stylesheet" id="magnific-popup-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/magnific-popup.min.css" media="all">
-		<link rel="stylesheet" id="swiper-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/swiper-bundle.min.css" media="all">
-		<link rel="stylesheet" id="fptheme-style-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/style.css" media="all">
-		<link rel="stylesheet" id="archive-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/archive-main.css" media="all">
-		<link rel="stylesheet" id="page-template-product-list-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/page-product-list.css" media="all">
-		<link rel="stylesheet" id="page-product-details-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/page-product-details.css" media="all">
+		<link rel="stylesheet" id="fptheme-fonts-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/font-nunito-sans.css?ver=<?php echo _S_VERSION; ?>" media="all">
+		<link rel="stylesheet" id="fptheme-style-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/style_1.css?ver=<?php echo _S_VERSION; ?>" media="all">
+		<link rel="stylesheet" id="magnific-popup-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/magnific-popup.min.css?ver=<?php echo _S_VERSION; ?>" media="all">
+		<link rel="stylesheet" id="swiper-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/swiper-bundle.min.css?ver=<?php echo _S_VERSION; ?>" media="all">
+		<link rel="stylesheet" id="fptheme-style-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/style.css?ver=<?php echo _S_VERSION; ?>" media="all">
+		<link rel="stylesheet" id="archive-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/archive-main.css?ver=<?php echo _S_VERSION; ?>" media="all">
+		<link rel="stylesheet" id="page-template-product-list-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/page-product-list.css?ver=<?php echo _S_VERSION; ?>" media="all">
+		<link rel="stylesheet" id="page-product-details-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/page-product-details.css?ver=<?php echo _S_VERSION; ?>" media="all">
 	<?php } ?>
 
 	<?php wp_head(); ?>
