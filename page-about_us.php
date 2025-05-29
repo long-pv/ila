@@ -23,7 +23,8 @@ get_header();
             <!-- Banner Start -->
             <?php
             $banner_section = get_field('banner_section') ?? '';
-
+            var_dump($banner_section);
+            //       
             $image_banner = isset($banner_section['image']) ? $banner_section['image'] : [];
             $title_banner = isset($banner_section['title']) ? $banner_section['title'] : '';
             $content_banner = isset($banner_section['content']) ? $banner_section['content'] : '';
@@ -42,7 +43,7 @@ get_header();
                     <div class="container">
                         <div class="banner-content-main" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
                             <?php if (!empty($title_banner)): ?>
-                                <h2><?php echo esc_html($title_banner); ?></h2>
+                                <h2><?php echo $title_banner; ?></h2>
                             <?php endif; ?>
 
                             <?php if (!empty($content_banner)): ?>
@@ -64,7 +65,6 @@ get_header();
                                 <div class="hide-more">
                                     <a href="#"> Thu gọn </a>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -100,54 +100,67 @@ get_header();
                                         <div class="h--timeline-line" style="width: 1080px;">
                                             <ol>
                                                 <li>
-                                                    <a href="#0" data-date="2/7/1995" class="h--timeline-date h--timeline-date--selected" style="left:120px">
+                                                    <a href="#0" data-date="2/7/1995"
+                                                        class="h--timeline-date h--timeline-date--selected"
+                                                        style="left:120px">
                                                         1995 </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#0" data-date="23/7/2005" class="h--timeline-date" style="left:240px">
+                                                    <a href="#0" data-date="23/7/2005" class="h--timeline-date"
+                                                        style="left:240px">
                                                         2000 – 2005 </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#0" data-date="26/8/2010" class="h--timeline-date" style="left:360px">
+                                                    <a href="#0" data-date="26/8/2010" class="h--timeline-date"
+                                                        style="left:360px">
                                                         2006 – 2010 </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#0" data-date="28/9/2018" class="h--timeline-date" style="left:480px">
+                                                    <a href="#0" data-date="28/9/2018" class="h--timeline-date"
+                                                        style="left:480px">
                                                         2011 – 2018 </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#0" data-date="30/7/2019" class="h--timeline-date" style="left:600px">
+                                                    <a href="#0" data-date="30/7/2019" class="h--timeline-date"
+                                                        style="left:600px">
                                                         2019 </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#0" data-date="2/6/2020" class="h--timeline-date" style="left:720px">
+                                                    <a href="#0" data-date="2/6/2020" class="h--timeline-date"
+                                                        style="left:720px">
                                                         2020 </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#0" data-date="15/6/2021" class="h--timeline-date" style="left:840px">
+                                                    <a href="#0" data-date="15/6/2021" class="h--timeline-date"
+                                                        style="left:840px">
                                                         2021 </a>
                                                 </li>
                                                 <li>
-                                                    <a href="#0" data-date="10/10/2025" class="h--timeline-date" style="left:960px">
+                                                    <a href="#0" data-date="10/10/2025" class="h--timeline-date"
+                                                        style="left:960px">
                                                         2025 </a>
                                                 </li>
                                             </ol>
 
-                                            <span class="h--timeline-filling-line" aria-hidden="true" style="transform: scaleX(0.128993);"></span>
+                                            <span class="h--timeline-filling-line" aria-hidden="true"
+                                                style="transform: scaleX(0.128993);"></span>
                                         </div> <!-- .h--timeline-line -->
                                     </div> <!-- .h--timeline-dates -->
 
                                     <nav class="h--timeline-navigation-container">
                                         <ul>
-                                            <li><a href="#0" class="text-replace h--timeline-navigation h--timeline-navigation--prev h--timeline-navigation--inactive">Prev
+                                            <li><a href="#0"
+                                                    class="text-replace h--timeline-navigation h--timeline-navigation--prev h--timeline-navigation--inactive">Prev
                                                     <i class="fa-solid fa-chevron-left"></i></a></li>
-                                            <li><a href="#0" class="text-replace h--timeline-navigation h--timeline-navigation--next h--timeline-navigation--inactive">Next
+                                            <li><a href="#0"
+                                                    class="text-replace h--timeline-navigation h--timeline-navigation--next h--timeline-navigation--inactive">Next
                                                     <i class="fa-solid fa-chevron-right"></i></a></li>
                                         </ul>
                                     </nav>
                                 </div> <!-- .h--timeline-container -->
 
-                                <div class="h--timeline-events aos-init aos-animate" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
+                                <div class="h--timeline-events aos-init aos-animate" data-aos="fade-left"
+                                    data-aos-delay="100" data-aos-duration="1000">
                                     <ol>
                                         <?php
                                         $block_1 = $timeline_block['block_1'] ?? '';
@@ -173,17 +186,26 @@ get_header();
                                                                     <p><?php echo $block_1['description'] ?? ""; ?></p>
                                                                 </div>
                                                             </div>
-                                                            <img width="150" height="86" class="img-dot" src="https://ila.edu.vn/wp-content/uploads/2023/05/Frame.png" alt="">
+                                                            <img width="150" height="86" class="img-dot"
+                                                                src="https://ila.edu.vn/wp-content/uploads/2023/05/Frame.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5">
                                                         <div class="box-right">
-                                                            <img width="380" height="380" class="img-main" src="<?php echo $block_1['image'] ?? ""; ?>" alt="">
-                                                            <img width="88" height="68" class="img-arrow" src="https://ila.edu.vn/wp-content/uploads/2023/05/arrow-arrow.png" alt="">
-                                                            <img width="149" height="16" class="arrow-bottom" src="https://ila.edu.vn/wp-content/uploads/2023/05/arrow-bottom.png" alt="">
+                                                            <img width="380" height="380" class="img-main"
+                                                                src="<?php echo $block_1['image'] ?? ""; ?>" alt="">
+                                                            <img width="88" height="68" class="img-arrow"
+                                                                src="https://ila.edu.vn/wp-content/uploads/2023/05/arrow-arrow.png"
+                                                                alt="">
+                                                            <img width="149" height="16" class="arrow-bottom"
+                                                                src="https://ila.edu.vn/wp-content/uploads/2023/05/arrow-bottom.png"
+                                                                alt="">
                                                             <div class="box-text-1995">
                                                                 DẤU CHÂN<br><span>ĐẦU TIÊN</span> </div>
-                                                            <img width="155" height="167" class="img-ellipse" src="https://ila.edu.vn/wp-content/uploads/2023/05/ellipse.png" alt="">
+                                                            <img width="155" height="167" class="img-ellipse"
+                                                                src="https://ila.edu.vn/wp-content/uploads/2023/05/ellipse.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -202,8 +224,12 @@ get_header();
                                                                 <div class="box-years">
                                                                     <div class="list">
                                                                         <ul>
-                                                                            <li class="item-1"><?php echo $block_1['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_2['year'] ?? ""; ?></li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_1['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_2['year'] ?? ""; ?>
+                                                                            </li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
@@ -212,14 +238,17 @@ get_header();
                                                                     <?php echo $block_2['content'] ?? ""; ?>
                                                                 </div>
                                                             </div>
-                                                            <img width="100" height="75" class="img-dot" src="https://ila.edu.vn/wp-content/uploads/2023/05/dot-green.png" alt="">
+                                                            <img width="100" height="75" class="img-dot"
+                                                                src="https://ila.edu.vn/wp-content/uploads/2023/05/dot-green.png"
+                                                                alt="">
                                                             <div class="triangle-left"></div>
                                                             <div class="triangle-right"></div>
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5">
                                                         <div class="box-right">
-                                                            <img width="418" height="440" class="img-main" src="<?php echo $block_2['image'] ?? ""; ?>" alt="">
+                                                            <img width="418" height="440" class="img-main"
+                                                                src="<?php echo $block_2['image'] ?? ""; ?>" alt="">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -238,27 +267,39 @@ get_header();
                                                                 <div class="box-years">
                                                                     <div class="list">
                                                                         <ul>
-                                                                            <li class="item-1"><?php echo $block_1['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_2['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_3['year'] ?? ""; ?></li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_1['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_2['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_3['year'] ?? ""; ?>
+                                                                            </li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
                                                                 <div class="line"></div>
                                                                 <div class="box-content">
-                                                                    <p class="text-desc"><?php echo $block_3['title'] ?? ""; ?></p>
+                                                                    <p class="text-desc">
+                                                                        <?php echo $block_3['title'] ?? ""; ?>
+                                                                    </p>
 
                                                                     <?php
-                                                                    if ($block_3['list']) :
+                                                                    if ($block_3['list']):
                                                                         foreach ($block_3['list'] as $item):
-                                                                    ?>
+                                                                            ?>
                                                                             <div class="list-timeline">
                                                                                 <div class="item">
-                                                                                    <h3 class="number"><?php echo $item['title'] ?? ""; ?></h3>
-                                                                                    <p class="text"><?php echo $item['content'] ?? ""; ?></p>
+                                                                                    <h3 class="number">
+                                                                                        <?php echo $item['title'] ?? ""; ?>
+                                                                                    </h3>
+                                                                                    <p class="text">
+                                                                                        <?php echo $item['content'] ?? ""; ?>
+                                                                                    </p>
                                                                                 </div>
                                                                             </div>
-                                                                    <?php
+                                                                            <?php
                                                                         endforeach;
                                                                     endif;
                                                                     ?>
@@ -268,7 +309,8 @@ get_header();
                                                     </div>
                                                     <div class="col-lg-5">
                                                         <div class="box-right">
-                                                            <img width="524" height="380" class="img-main" src="<?php echo $block_3['image'] ?? ""; ?>" alt="">
+                                                            <img width="524" height="380" class="img-main"
+                                                                src="<?php echo $block_3['image'] ?? ""; ?>" alt="">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -287,10 +329,18 @@ get_header();
                                                                 <div class="box-years">
                                                                     <div class="list">
                                                                         <ul>
-                                                                            <li class="item-1"><?php echo $block_1['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_2['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_3['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_4['year'] ?? ""; ?></li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_1['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_2['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_3['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_4['year'] ?? ""; ?>
+                                                                            </li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
@@ -299,13 +349,18 @@ get_header();
                                                                     <?php echo $block_4['content'] ?? ""; ?>
                                                                 </div>
                                                             </div>
-                                                            <img width="100" height="75" class="img-dot" src="https://ila.edu.vn/wp-content/uploads/2023/05/dot-green.png" alt="">
+                                                            <img width="100" height="75" class="img-dot"
+                                                                src="https://ila.edu.vn/wp-content/uploads/2023/05/dot-green.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5">
                                                         <div class="box-right">
-                                                            <img width="310" height="442" class="img-main" src="<?php echo $block_4['image'] ?? ""; ?>" alt="">
-                                                            <img width="88" height="68" class="img-arrow" src="https://ila.edu.vn/wp-content/uploads/2023/05/arrow-arrow.png" alt="">
+                                                            <img width="310" height="442" class="img-main"
+                                                                src="<?php echo $block_4['image'] ?? ""; ?>" alt="">
+                                                            <img width="88" height="68" class="img-arrow"
+                                                                src="https://ila.edu.vn/wp-content/uploads/2023/05/arrow-arrow.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -324,11 +379,21 @@ get_header();
                                                                 <div class="box-years">
                                                                     <div class="list">
                                                                         <ul>
-                                                                            <li class="item-1"><?php echo $block_1['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_2['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_3['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_4['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_5['year'] ?? ""; ?></li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_1['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_2['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_3['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_4['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_5['year'] ?? ""; ?>
+                                                                            </li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
@@ -337,17 +402,26 @@ get_header();
                                                                     <?php echo $block_5['content'] ?? ""; ?>
                                                                 </div>
                                                             </div>
-                                                            <img width="86" height="60" class="img-dot-h" src="https://ila.edu.vn/wp-content/uploads/2023/05/dot-orange.png" alt="">
-                                                            <img width="74" height="29" class="img-wave" src="https://ila.edu.vn/wp-content/uploads/2023/05/wave.png" alt="">
-                                                            <img width="111" height="111" class="img-matrix" src="https://ila.edu.vn/wp-content/uploads/2023/05/matrix.png" alt="">
+                                                            <img width="86" height="60" class="img-dot-h"
+                                                                src="https://ila.edu.vn/wp-content/uploads/2023/05/dot-orange.png"
+                                                                alt="">
+                                                            <img width="74" height="29" class="img-wave"
+                                                                src="https://ila.edu.vn/wp-content/uploads/2023/05/wave.png"
+                                                                alt="">
+                                                            <img width="111" height="111" class="img-matrix"
+                                                                src="https://ila.edu.vn/wp-content/uploads/2023/05/matrix.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5">
                                                         <div class="box-right">
-                                                            <img width="381" height="425" class="img-main" src="<?php echo $block_5['image'] ?? ""; ?>" alt="">
+                                                            <img width="381" height="425" class="img-main"
+                                                                src="<?php echo $block_5['image'] ?? ""; ?>" alt="">
                                                             <div class="circle-lg"></div>
                                                             <div class="circle-sm"></div>
-                                                            <img width="43" height="76" class="img-dot-v" src="https://ila.edu.vn/wp-content/uploads/2023/05/dot-orange-vertical.png" alt="">
+                                                            <img width="43" height="76" class="img-dot-v"
+                                                                src="https://ila.edu.vn/wp-content/uploads/2023/05/dot-orange-vertical.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -366,12 +440,24 @@ get_header();
                                                                 <div class="box-years">
                                                                     <div class="list">
                                                                         <ul>
-                                                                            <li class="item-1"><?php echo $block_1['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_2['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_3['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_4['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_5['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_6['year'] ?? ""; ?></li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_1['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_2['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_3['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_4['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_5['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_6['year'] ?? ""; ?>
+                                                                            </li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
@@ -380,14 +466,21 @@ get_header();
                                                                     <?php echo $block_6['content'] ?? ""; ?>
                                                                 </div>
                                                             </div>
-                                                            <img width="100" height="75" class="img-dot" src="https://ila.edu.vn/wp-content/uploads/2023/05/dot-green.png" alt="">
-                                                            <img width="64" height="33" class="img-arrow-left" src="https://ila.edu.vn/wp-content/uploads/2023/05/img-arrow-left.png" alt="">
-                                                            <img width="64" height="33" class="img-arrow-right" src="https://ila.edu.vn/wp-content/uploads/2023/05/img-arrow-right.png" alt="">
+                                                            <img width="100" height="75" class="img-dot"
+                                                                src="https://ila.edu.vn/wp-content/uploads/2023/05/dot-green.png"
+                                                                alt="">
+                                                            <img width="64" height="33" class="img-arrow-left"
+                                                                src="https://ila.edu.vn/wp-content/uploads/2023/05/img-arrow-left.png"
+                                                                alt="">
+                                                            <img width="64" height="33" class="img-arrow-right"
+                                                                src="https://ila.edu.vn/wp-content/uploads/2023/05/img-arrow-right.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5">
                                                         <div class="box-right">
-                                                            <img width="520" height="443" class="img-main" src="<?php echo $block_6['image'] ?? ""; ?>" alt="">
+                                                            <img width="520" height="443" class="img-main"
+                                                                src="<?php echo $block_6['image'] ?? ""; ?>" alt="">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -407,13 +500,27 @@ get_header();
                                                                     <!-- <span>1995</span> -->
                                                                     <div class="list">
                                                                         <ul>
-                                                                            <li class="item-1"><?php echo $block_1['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_2['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_3['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_4['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_5['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_6['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_7['year'] ?? ""; ?></li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_1['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_2['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_3['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_4['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_5['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_6['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_7['year'] ?? ""; ?>
+                                                                            </li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
@@ -422,13 +529,18 @@ get_header();
                                                                     <?php echo $block_7['content'] ?? ""; ?>
                                                                 </div>
                                                             </div>
-                                                            <img width="100" height="75" class="img-dot" src="https://ila.edu.vn/wp-content/uploads/2023/05/dot-green.png" alt="">
-                                                            <img width="79" height="31" class="img-wave" src="https://ila.edu.vn/wp-content/uploads/2023/05/wave-orange.png" alt="">
+                                                            <img width="100" height="75" class="img-dot"
+                                                                src="https://ila.edu.vn/wp-content/uploads/2023/05/dot-green.png"
+                                                                alt="">
+                                                            <img width="79" height="31" class="img-wave"
+                                                                src="https://ila.edu.vn/wp-content/uploads/2023/05/wave-orange.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5">
                                                         <div class="box-right">
-                                                            <img width="503" height="398" class="img-main" src="<?php echo $block_7['image'] ?? ""; ?>" alt="">
+                                                            <img width="503" height="398" class="img-main"
+                                                                src="<?php echo $block_7['image'] ?? ""; ?>" alt="">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -447,14 +559,30 @@ get_header();
                                                                 <div class="box-years">
                                                                     <div class="list">
                                                                         <ul>
-                                                                            <li class="item-1"><?php echo $block_1['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_2['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_3['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_4['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_5['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_6['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_7['year'] ?? ""; ?></li>
-                                                                            <li class="item-1"><?php echo $block_8['year'] ?? ""; ?></li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_1['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_2['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_3['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_4['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_5['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_6['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_7['year'] ?? ""; ?>
+                                                                            </li>
+                                                                            <li class="item-1">
+                                                                                <?php echo $block_8['year'] ?? ""; ?>
+                                                                            </li>
                                                                         </ul>
                                                                     </div>
                                                                 </div>
@@ -462,29 +590,36 @@ get_header();
                                                                 <div class="box-content">
                                                                     <div class="row">
                                                                         <?php
-                                                                        if ($block_8['list']) :
+                                                                        if ($block_8['list']):
                                                                             foreach ($block_8['list'] as $item):
-                                                                        ?>
+                                                                                ?>
                                                                                 <div class="col-md-4 col-6">
                                                                                     <div class="box-item">
-                                                                                        <h3><?php echo $item['title'] ?? ''; ?></h3>
-                                                                                        <p><?php echo $item['content'] ?? ''; ?></p>
+                                                                                        <h3><?php echo $item['title'] ?? ''; ?>
+                                                                                        </h3>
+                                                                                        <p><?php echo $item['content'] ?? ''; ?>
+                                                                                        </p>
                                                                                     </div>
                                                                                 </div>
-                                                                        <?php
+                                                                                <?php
                                                                             endforeach;
                                                                         endif;
                                                                         ?>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <img width="100" height="75" class="img-dot" src="https://ila.edu.vn/wp-content/uploads/2023/05/dot-green.png" alt="">
+                                                            <img width="100" height="75" class="img-dot"
+                                                                src="https://ila.edu.vn/wp-content/uploads/2023/05/dot-green.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-5">
                                                         <div class="box-right">
-                                                            <img width="482" height="373" class="img-main" src="<?php echo $block_8['image'] ?? ""; ?>" alt="">
-                                                            <img width="79" height="31" class="img-wave" src="https://ila.edu.vn/wp-content/uploads/2023/05/wave-orange.png" alt="">
+                                                            <img width="482" height="373" class="img-main"
+                                                                src="<?php echo $block_8['image'] ?? ""; ?>" alt="">
+                                                            <img width="79" height="31" class="img-wave"
+                                                                src="https://ila.edu.vn/wp-content/uploads/2023/05/wave-orange.png"
+                                                                alt="">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -521,7 +656,7 @@ get_header();
                     <div class="container">
                         <div class="banner-content-main" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
                             <?php if (!empty($title_banner_2)): ?>
-                                <h2><span style="color: #ffffff"><?php echo esc_html($title_banner_2); ?></span></h2>
+                                <h2><span style="color: #ffffff"><?php echo $title_banner_2; ?></span></h2>
                             <?php endif; ?>
 
                             <?php if (!empty($content_banner_2)): ?>
@@ -542,7 +677,7 @@ get_header();
             $about_items = isset($about_section['about_item']) && is_array($about_section['about_item']) ? $about_section['about_item'] : [];
 
             if (!empty($about_items)):
-            ?>
+                ?>
                 <section class="section-4">
                     <div class="container">
                         <div class="row">
@@ -553,7 +688,7 @@ get_header();
 
                                 $image_url = isset($image['url']) ? esc_url($image['url']) : '';
                                 $image_alt = isset($image['alt']) ? esc_attr($image['alt']) : '';
-                            ?>
+                                ?>
                                 <div class="col-md-4">
                                     <div class="box-main">
                                         <div class="box-background"></div>
@@ -622,7 +757,7 @@ get_header();
                                                             $link = !empty($item['link']) ? esc_url($item['link']) : '#';
                                                             $logo = !empty($item['logo']['url']) ? esc_url($item['logo']['url']) : '';
                                                             $alt = !empty($item['logo']['alt']) ? esc_attr($item['logo']['alt']) : '';
-                                                        ?>
+                                                            ?>
                                                             <div class="col-6 col-sm-3">
                                                                 <div class="logo-item logo-custom">
                                                                     <a href="<?php echo $link; ?>">
@@ -655,7 +790,7 @@ get_header();
                                                             $link = !empty($item['link']) ? esc_url($item['link']) : '#';
                                                             $logo = !empty($item['logo']['url']) ? esc_url($item['logo']['url']) : '';
                                                             $alt = !empty($item['logo']['alt']) ? esc_attr($item['logo']['alt']) : '';
-                                                        ?>
+                                                            ?>
                                                             <div class="col-sm-4 col-4">
                                                                 <a href="<?php echo $link; ?>">
                                                                     <?php if ($logo): ?>
@@ -686,7 +821,7 @@ get_header();
                                     // Xác định class cột và box theo thứ tự
                                     $col_class = 'col-sm-4';
                                     $box_class = $index === 0 ? 'box-left' : ($index === 1 ? 'box-middle' : 'box-right');
-                                ?>
+                                    ?>
                                     <div class="<?php echo esc_attr($col_class); ?>">
                                         <div class="<?php echo esc_attr($box_class); ?>">
                                             <?php if ($title): ?>
