@@ -10,17 +10,12 @@
  * @package xemer_theme
  */
 
-?>
+$lang = '';
+if (LANG == 'en') {
+    $lang = '_en';
+}
 
-<!-- <div class="external-link">
-    <button class="btn-register">
-        <a href="https://ila.edu.vn/bai-test-tieng-anh-chuan-quoc-te-mien-phi" target="_blank">KIỂM TRA TRÌNH ĐỘ
-            MIỄN PHÍ</a>
-    </button>
-</div> -->
-
-<?php
-$register_form = get_field('register_for_trial_class', 'option');
+$register_form = get_field('register_for_trial_class' . $lang, 'option') ?? null;
 $should_show_form = false;
 
 if ($register_form && is_array($register_form)) {
@@ -145,7 +140,7 @@ if ($google_maps):
                                 src="<?php echo THEME_URI . '/assets/'; ?>images/logo-footer.png" alt="">
                         </div>
                         <p class="footer-info">
-                            <?php echo get_field('footer_setting_short_intro', 'option') ?: ''; ?>
+                            <?php echo get_field('footer_setting' . $lang . '_short_intro', 'option') ?: ''; ?>
                         </p>
                         <ul class="links-social">
                             <?php
@@ -210,14 +205,14 @@ if ($google_maps):
                         <div class="subscribe-form mobile">
                             <h3 class="subscribe-form-title">Nhận ngay ưu đãi mới nhất tại ILA</h3>
                             <div class="emaillist" id="es_form_f1-n1">
-                                <?php echo get_field('get_offer_now', 'option') ?? ''; ?>
+                                <?php echo get_field('get_offer_now' . $lang, 'option') ?? ''; ?>
                             </div>
                         </div>
 
                         <h3 class="box-footer-title">Tiếng Anh cao cấp</h3>
                         <ul class="list-cate">
                             <?php
-                            $advanced_english = get_field('footer_setting_advanced_english', 'option') ?? [];
+                            $advanced_english = get_field('footer_setting' . $lang . '_advanced_english', 'option') ?? [];
                             if ($advanced_english):
                                 foreach ($advanced_english as $item):
                                     if ($item['link']['url'] && $item['link']['title']):
@@ -240,7 +235,7 @@ if ($google_maps):
                         <h3 class="box-footer-title">Tiếng Anh tiêu chuẩn</h3>
                         <ul class="list-cate mb-36">
                             <?php
-                            $standard_english = get_field('footer_setting_standard_english', 'option') ?? [];
+                            $standard_english = get_field('footer_setting' . $lang . '_standard_english', 'option') ?? [];
                             if ($standard_english):
                                 foreach ($standard_english as $item):
                                     if ($item['link']['url'] && $item['link']['title']):
@@ -259,7 +254,7 @@ if ($google_maps):
                         <h3 class="box-footer-title">Luyện thi & Du học</h3>
                         <ul class="list-cate">
                             <?php
-                            $exam_preparation_study_abroad = get_field('footer_setting_exam_preparation_study_abroad', 'option') ?? [];
+                            $exam_preparation_study_abroad = get_field('footer_setting' . $lang . '_exam_preparation_study_abroad', 'option') ?? [];
                             if ($exam_preparation_study_abroad):
                                 foreach ($exam_preparation_study_abroad as $item):
                                     if ($item['link']['url'] && $item['link']['title']):
@@ -282,7 +277,7 @@ if ($google_maps):
                         <h3 class="box-footer-title">Tìm hiểu thêm</h3>
                         <ul class="list-cate mb-36">
                             <?php
-                            $learn_more = get_field('footer_setting_learn_more', 'option') ?? [];
+                            $learn_more = get_field('footer_setting' . $lang . '_learn_more', 'option') ?? [];
                             if ($learn_more):
                                 foreach ($learn_more as $item):
                                     if ($item['link']['url'] && $item['link']['title']):
@@ -301,7 +296,7 @@ if ($google_maps):
                         <div class="subscribe-form desktop">
                             <h3 class="subscribe-form-title">Nhận ngay ưu đãi mới nhất tại ILA</h3>
                             <div class="emaillist" id="es_form_f1-n2">
-                                <?php echo get_field('get_offer_now', 'option') ?? ''; ?>
+                                <?php echo get_field('get_offer_now' . $lang, 'option') ?? ''; ?>
                             </div>
                         </div>
                     </div>
@@ -319,11 +314,11 @@ if ($google_maps):
                     alt="Bộ công thương">
             </div>
             <p class="copy-right">
-                <?php echo get_field('footer_setting_copyright', 'option') ?: ''; ?>
+                <?php echo get_field('footer_setting' . $lang . '_copyright', 'option') ?: ''; ?>
             </p>
             <div class="text-desc">
                 <p>
-                    <?php echo get_field('footer_setting_address', 'option') ?: ''; ?>
+                    <?php echo get_field('footer_setting' . $lang . '_address', 'option') ?: ''; ?>
                 </p>
             </div>
         </div>
@@ -483,6 +478,15 @@ if ($google_maps):
     #popup-form-events .wpcf7-form .wpcf7-spinner {
         display: block;
         margin: 0px auto;
+    }
+
+    header.main-header .nav-main-menu .container .navbar-menu a.custom-logo-link {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .custom-logo-link img {
+        max-height: 60px;
     }
 </style>
 

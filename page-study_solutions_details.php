@@ -15,6 +15,11 @@
  */
 
 get_header();
+
+$lang = '';
+if (LANG == 'en') {
+    $lang = '_en';
+}
 ?>
 
 <div id="page">
@@ -360,7 +365,7 @@ get_header();
 </div><!-- #content -->
 
 <?php
-$sign_up_for_consultation = get_field('sign_up_for_consultation', 'option') ?? null;
+$sign_up_for_consultation = get_field('sign_up_for_consultation' . $lang, 'option') ?? null;
 if ($sign_up_for_consultation):
     $bg = $sign_up_for_consultation['background'] ?? '';
     $title = $sign_up_for_consultation['title'] ?? '';

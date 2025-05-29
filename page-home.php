@@ -15,6 +15,11 @@
  */
 
 get_header();
+
+$lang = '';
+if (LANG == 'en') {
+    $lang = '_en';
+}
 ?>
 
 
@@ -180,10 +185,10 @@ get_header();
                                                         </div>
                                                         <select name="your_course" id="your_course">
                                                             <option selected="" value="0">Độ tuổi</option>
-                                                            <option value="193">3-6 tuổi</option>
-                                                            <option value="199">6-11 tuổi</option>
-                                                            <option value="203">11-16 tuổi</option>
-                                                            <option value="1210">Người đi làm</option>
+                                                            <option value="3_6_years_old">3-6 tuổi</option>
+                                                            <option value="6_11_years_old">6-11 tuổi</option>
+                                                            <option value="11_16_years_old">11-16 tuổi</option>
+                                                            <option value="working_people">Người đi làm</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -193,10 +198,64 @@ get_header();
                                                             <img src="<?php echo THEME_URI . '/assets/'; ?>images/book.png" alt="icon" width="24"
                                                                 height="24">
                                                         </div>
+
+                                                        <script>
+                                                            const options_3_6_years_old = [
+                                                                <?php
+                                                                $s3_6_years_old = get_field('3_6_years_old' . $lang, 'option') ?? [];
+                                                                if ($s3_6_years_old):
+                                                                    foreach ($s3_6_years_old as $item):
+                                                                        echo '{"title" : "' . $item['link']['title'] . '", "url" : "' . $item['link']['url'] . '"},';
+                                                                    endforeach;
+                                                                endif;
+                                                                ?>
+                                                            ];
+
+                                                            const options_6_11_years_old = [
+                                                                <?php
+                                                                $s6_11_years_old = get_field('6_11_years_old' . $lang, 'option') ?? [];
+                                                                if ($s6_11_years_old):
+                                                                    foreach ($s6_11_years_old as $item):
+                                                                        echo '{"title" : "' . $item['link']['title'] . '", "url" : "' . $item['link']['url'] . '"},';
+                                                                    endforeach;
+                                                                endif;
+                                                                ?>
+                                                            ];
+
+                                                            const options_11_16_years_old = [
+                                                                <?php
+                                                                $s11_16_years_old = get_field('11_16_years_old' . $lang, 'option') ?? [];
+                                                                if ($s11_16_years_old):
+                                                                    foreach ($s11_16_years_old as $item):
+                                                                        echo '{"title" : "' . $item['link']['title'] . '", "url" : "' . $item['link']['url'] . '"},';
+                                                                    endforeach;
+                                                                endif;
+                                                                ?>
+                                                            ];
+
+                                                            const options_working_people = [
+                                                                <?php
+                                                                $working_people = get_field('working_people' . $lang, 'option') ?? [];
+                                                                if ($working_people):
+                                                                    foreach ($working_people as $item):
+                                                                        echo '{"title" : "' . $item['link']['title'] . '", "url" : "' . $item['link']['url'] . '"},';
+                                                                    endforeach;
+                                                                endif;
+                                                                ?>
+                                                            ];
+
+                                                            console.log(options_3_6_years_old);
+                                                            console.log(options_6_11_years_old);
+                                                            console.log(options_11_16_years_old);
+                                                            console.log(options_working_people);
+                                                        </script>
+
                                                         <select name="your_option" id="your_option">
-                                                            <option selected="" value="0"
-                                                                data-src="https://ila.edu.vn/wp-content/uploads/2023/07/thumb-default.png">
-                                                                Chương trình học</option>
+                                                            <option selected="" value="0">
+                                                                Chương trình học
+                                                            </option>
+
+                                                            <!-- các option ở jquery hãy thêm vào đây và xóa đi tương ứng theo lựa chọn -->
                                                         </select>
                                                     </div>
                                                 </div>
@@ -406,7 +465,7 @@ get_header();
                                         <div class="col-md-4 col-xl-5">
                                             <div class="tile-multimedia" data-aos="fade-up" data-aos-delay="50"
                                                 data-aos-duration="800">
-                                                <h2><a href=" <?php echo $multimedia['view_all'] ?? '#'; ?>">
+                                                <h2><a href="<?php echo $multimedia['view_all'] ?? '#'; ?>">
                                                         <?php echo $multimedia['title'] ?? ''; ?>
                                                     </a></h2>
                                             </div>
@@ -417,9 +476,6 @@ get_header();
                         </div>
 
                         <?php
-                        // Lấy URL trang danh sách video từ ACF Options
-                        $page_all_video = get_field('page_all_video', 'option') ?? '#';
-
                         // Query các bài viết từ post_type video_media
                         $args = array(
                             'post_type' => 'video_media',
@@ -434,7 +490,7 @@ get_header();
                                     $count = 0;
                                     while ($query->have_posts()) : $query->the_post();
                                         $thumb_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
-                                        $video_url = get_field('video_url'); // bạn cần lưu video YouTube URL vào field này
+                                        $video_url = get_field('link_youtube');
                                         $video_title = get_the_title();
                                         $video_permalink = get_permalink();
                                     ?>
@@ -453,7 +509,7 @@ get_header();
                                                     </div>
                                                     <div class="video-archive">
                                                         <span>
-                                                            <a href="<?php echo esc_url($page_all_video); ?>">
+                                                            <a href="<?php echo $multimedia['view_all'] ?? '#'; ?>">
                                                                 MULTIMEDIA
                                                             </a>
                                                         </span>
@@ -479,7 +535,7 @@ get_header();
                                                                     </div>
                                                                     <div class="video-archive">
                                                                         <span>
-                                                                            <a href="<?php echo esc_url($page_all_video); ?>">MULTIMEDIA</a>
+                                                                            <a href="<?php echo $multimedia['view_all'] ?? '#'; ?>">MULTIMEDIA</a>
                                                                         </span>
                                                                     </div>
                                                                 </div>
@@ -605,3 +661,45 @@ get_header();
 </style>
 <?php
 get_footer();
+?>
+<script>
+    const allOptions = {
+        "3_6_years_old": options_3_6_years_old,
+        "6_11_years_old": options_6_11_years_old,
+        "11_16_years_old": options_11_16_years_old,
+        "working_people": options_working_people
+    };
+
+    jQuery(document).ready(function($) {
+        $('#your_course').on('change', function() {
+            const selected = $(this).val();
+            const $yourOption = $('#your_option');
+
+            // Xóa tất cả option cũ, trừ option đầu tiên
+            $yourOption.find('option:not(:first)').remove();
+
+            if (allOptions[selected]) {
+                allOptions[selected].forEach(opt => {
+                    const newOption = $('<option></option>')
+                        .val(opt.url)
+                        .text(opt.title)
+                        .attr('data-select', selected);
+                    $yourOption.append(newOption);
+                });
+            }
+        });
+
+        // Khi ấn nút "Xem thêm"
+        $('.btn-change-option a').on('click', function(e) {
+            e.preventDefault(); // Ngăn chặn hành vi mặc định
+
+            const url = $('#your_option').val();
+
+            if (url && url !== '0') {
+                window.location.href = url;
+            } else {
+                alert('Vui lòng chọn chương trình học.');
+            }
+        });
+    });
+</script>

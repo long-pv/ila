@@ -96,9 +96,13 @@ get_header();
                         <div class="col-12 col-xl-10">
                             <div class="box-timeline">
                                 <div class="h--timeline-container">
+                                    <?php
+                                    $timeline = get_field('timeline') ?: [];
+                                    ?>
                                     <div class="h--timeline-dates">
                                         <div class="h--timeline-line" style="width: 1080px;">
                                             <ol>
+<<<<<<< HEAD
                                                 <li>
                                                     <a href="#0" data-date="2/7/1995"
                                                         class="h--timeline-date h--timeline-date--selected"
@@ -144,8 +148,25 @@ get_header();
 
                                             <span class="h--timeline-filling-line" aria-hidden="true"
                                                 style="transform: scaleX(0.128993);"></span>
+=======
+                                                <?php foreach ($timeline as $index => $item):
+                                                    $left = 120 + $index * 120;
+                                                    $is_selected = $index === 0 ? ' h--timeline-date--selected' : '';
+                                                    $title_tab = htmlspecialchars($item['title_tab']);
+                                                ?>
+                                                    <li>
+                                                        <a href="#0" data-date="27/7/1995" class="h--timeline-date<?= $is_selected ?>"
+                                                            style="left:<?= $left ?>px">
+                                                            <?= $title_tab ?>
+                                                        </a>
+                                                    </li>
+                                                <?php endforeach; ?>
+                                            </ol>
+                                            <span class="h--timeline-filling-line" aria-hidden="true" style="transform: scaleX(0.128993);"></span>
+>>>>>>> main
                                         </div> <!-- .h--timeline-line -->
                                     </div> <!-- .h--timeline-dates -->
+
 
                                     <nav class="h--timeline-navigation-container">
                                         <ul>
@@ -157,28 +178,40 @@ get_header();
                                                     <i class="fa-solid fa-chevron-right"></i></a></li>
                                         </ul>
                                     </nav>
-                                </div> <!-- .h--timeline-container -->
+                                </div>
+                                <!-- .h--timeline-container -->
+
 
                                 <div class="h--timeline-events aos-init aos-animate" data-aos="fade-left"
                                     data-aos-delay="100" data-aos-duration="1000">
                                     <ol>
                                         <?php
-                                        $block_1 = $timeline_block['block_1'] ?? '';
+                                        $timeline = get_field('timeline') ?: [];
+                                        $years = [];
+                                        $index = 1;
+                                        foreach ($timeline as $row) {
+                                            $type = $row['display_type'] ?? 'default';
+                                            $year = $row['year'] ?? '';
+                                            $years[] = $year;
+                                            $active_class = $index === 1 ? 'h--timeline-event--selected' : '';
                                         ?>
-                                        <li class="h--timeline-event text-component h--timeline-event--selected">
-                                            <div class="h--timeline-event-content timeline-1 container">
-                                                <div class="row">
-                                                    <div class="col-lg-7">
-                                                        <div class="box-left">
-                                                            <div class="box-heading">
-                                                                <div class="box-years">
-                                                                    <div class="list">
-                                                                        <ul>
-                                                                            <li class="item-1">
-                                                                                <?php echo $block_1['year'] ?? ""; ?>
-                                                                            </li>
-                                                                        </ul>
+                                            <li class="h--timeline-event text-component <?php echo $active_class; ?>">
+                                                <div class="h--timeline-event-content timeline-<?php echo $index; ?> container">
+                                                    <div class="row">
+                                                        <!-- BÊN TRÁI -->
+                                                        <div class="col-lg-7">
+                                                            <div class="box-left">
+                                                                <div class="box-heading">
+                                                                    <div class="box-years">
+                                                                        <div class="list">
+                                                                            <ul>
+                                                                                <?php foreach ($years as $y): ?>
+                                                                                    <li class="item-1"><?php echo $y; ?></li>
+                                                                                <?php endforeach; ?>
+                                                                            </ul>
+                                                                        </div>
                                                                     </div>
+<<<<<<< HEAD
                                                                 </div>
                                                                 <div class="line"></div>
                                                                 <div class="box-content">
@@ -605,9 +638,52 @@ get_header();
                                                                             endforeach;
                                                                         endif;
                                                                         ?>
+=======
+                                                                    <div class="line"></div>
+                                                                    <div class="box-content">
+                                                                        <?php if ($type === 'type_1'): ?>
+                                                                            <h3><?php echo $row['type_1']['title'] ?? ''; ?></h3>
+                                                                            <p><?php echo $row['type_1']['description'] ?? ''; ?></p>
+                                                                        <?php elseif ($type === 'type_2'): ?>
+                                                                            <p class="text-desc"><?php echo $row['type_2']['title'] ?? ''; ?></p>
+                                                                            <?php if (!empty($row['type_2']['list'])):
+                                                                                foreach ($row['type_2']['list'] as $item): ?>
+                                                                                    <div class="list-timeline">
+                                                                                        <div class="item">
+                                                                                            <h3 class="number"><?php echo $item['title'] ?? ''; ?></h3>
+                                                                                            <p class="text"><?php echo $item['content'] ?? ''; ?></p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                            <?php endforeach;
+                                                                            endif; ?>
+                                                                        <?php elseif ($type === 'type_3'): ?>
+                                                                            <div class="row">
+                                                                                <?php if (!empty($row['type_3']['list'])):
+                                                                                    foreach ($row['type_3']['list'] as $item): ?>
+                                                                                        <div class="col-md-4 col-6">
+                                                                                            <div class="box-item">
+                                                                                                <h3><?php echo $item['title'] ?? ''; ?></h3>
+                                                                                                <p><?php echo $item['content'] ?? ''; ?></p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                <?php endforeach;
+                                                                                endif; ?>
+                                                                            </div>
+                                                                        <?php else: ?>
+                                                                            <?php echo $row['default']['content'] ?? ''; ?>
+                                                                        <?php endif; ?>
+>>>>>>> main
                                                                     </div>
                                                                 </div>
+                                                                <?php if ($type === 'type_2' || $type === 'type_3' || ($type === 'default' && !empty($row['default']['content']))): ?>
+                                                                    <img width="100" height="75" class="img-dot" src="https://ila.edu.vn/wp-content/uploads/2023/05/dot-green.png" alt="">
+                                                                <?php endif; ?>
+                                                                <?php if ($type === 'type_2'): ?>
+                                                                    <div class="triangle-left"></div>
+                                                                    <div class="triangle-right"></div>
+                                                                <?php endif; ?>
                                                             </div>
+<<<<<<< HEAD
                                                             <img width="100" height="75" class="img-dot"
                                                                 src="https://ila.edu.vn/wp-content/uploads/2023/05/dot-green.png"
                                                                 alt="">
@@ -620,13 +696,51 @@ get_header();
                                                             <img width="79" height="31" class="img-wave"
                                                                 src="https://ila.edu.vn/wp-content/uploads/2023/05/wave-orange.png"
                                                                 alt="">
+=======
+                                                        </div>
+                                                        <!-- BÊN PHẢI -->
+                                                        <div class="col-lg-5">
+                                                            <div class="box-right">
+                                                                <?php
+                                                                $img_url = '';
+                                                                if ($type === 'type_1') {
+                                                                    $img_url = $row['type_1']['image'] ?? '';
+                                                                } elseif ($type === 'type_2') {
+                                                                    $img_url = $row['type_2']['image'] ?? '';
+                                                                } elseif ($type === 'type_3') {
+                                                                    $img_url = $row['type_3']['image'] ?? '';
+                                                                } else {
+                                                                    $img_url = $row['default']['image'] ?? '';
+                                                                }
+                                                                if ($img_url): ?>
+                                                                    <img class="img-main" src="<?php echo $img_url; ?>" alt="" style="max-width:100%;height:auto;">
+                                                                <?php endif; ?>
+
+                                                                <?php if ($type === 'type_1'): ?>
+                                                                    <img width="150" height="86" class="img-dot" src="https://ila.edu.vn/wp-content/uploads/2023/05/Frame.png" alt="">
+                                                                    <img width="88" height="68" class="img-arrow" src="https://ila.edu.vn/wp-content/uploads/2023/05/arrow-arrow.png" alt="">
+                                                                    <img width="149" height="16" class="arrow-bottom" src="https://ila.edu.vn/wp-content/uploads/2023/05/arrow-bottom.png" alt="">
+                                                                    <div class="box-text-1995">DẤU CHÂN<br><span>ĐẦU TIÊN</span></div>
+                                                                    <img width="155" height="167" class="img-ellipse" src="https://ila.edu.vn/wp-content/uploads/2023/05/ellipse.png" alt="">
+                                                                <?php endif; ?>
+                                                                <?php if ($type === 'type_3'): ?>
+                                                                    <img width="79" height="31" class="img-wave" src="https://ila.edu.vn/wp-content/uploads/2023/05/wave-orange.png" alt="">
+                                                                <?php endif; ?>
+                                                            </div>
+>>>>>>> main
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </li>
+                                            </li>
+                                        <?php $index++;
+                                        } ?>
                                     </ol>
-                                </div> <!-- .h--timeline-events -->
+                                </div>
+
+
+
+
+                                <!-- .h--timeline-events -->
                             </div>
                         </div>
                     </div>

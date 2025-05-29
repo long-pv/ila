@@ -9,6 +9,11 @@
  */
 
 get_header();
+
+$lang = '';
+if (LANG == 'en') {
+    $lang = '_en';
+}
 ?>
 
 <!-- Content Start -->
@@ -16,7 +21,7 @@ get_header();
 <div id="content" class="site-content">
     <main class="single-detail-main single-template">
         <?php
-        $menu_items = get_field('menu_item', 'option') ?? []; // 'option' là theme setting
+        $menu_items = get_field('menu_item' . $lang, 'option') ?? []; // 'option' là theme setting
         if (!empty($menu_items)): ?>
             <section class="section-menu-category">
                 <div class="container">
@@ -175,7 +180,7 @@ get_header();
                 </section>
                 <!--  -->
                 <?php
-                $register_form = get_field('register_for_trial_class', 'option');
+                $register_form = get_field('register_for_trial_class' . $lang, 'option');
                 if ($register_form && is_array($register_form)) :
                     $title = $register_form['title'] ?? 'ĐĂNG KÝ LỚP HỌC THỬ MIỄN PHÍ NGAY BÂY GIỜ!';
                     $form_content = $register_form['contact_form_7'] ?? '';

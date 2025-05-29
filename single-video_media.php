@@ -9,6 +9,11 @@
  */
 
 get_header();
+
+$lang = '';
+if (LANG == 'en') {
+    $lang = '_en';
+}
 ?>
 
 <div class="site-content-contain-xxx">
@@ -16,7 +21,7 @@ get_header();
         <main class="single-template single-video">
             <!--  -->
             <?php
-            $menu_items = get_field('menu_item', 'option') ?? []; // 'option' là theme setting
+            $menu_items = get_field('menu_item' . $lang, 'option') ?? []; // 'option' là theme setting
 
             //
             if (!empty($menu_items)): ?>
