@@ -59,10 +59,10 @@ get_header();
 
                             <div class="main-button">
                                 <div class="show-more">
-                                    <a href="#"> Đọc thêm </a>
+                                    <a href="#"> <?php _e("Đọc thêm", "xemer_theme"); ?>  </a>
                                 </div>
                                 <div class="hide-more">
-                                    <a href="#"> Thu gọn </a>
+                                    <a href="#">  <?php _e("Thu gọn", "xemer_theme"); ?>   </a>
                                 </div>
 
                             </div>
@@ -226,7 +226,7 @@ get_header();
                                                                             <img width="150" height="86" class="img-dot" src="https://ila.edu.vn/wp-content/uploads/2023/05/Frame.png" alt="">
                                                                             <img width="88" height="68" class="img-arrow" src="https://ila.edu.vn/wp-content/uploads/2023/05/arrow-arrow.png" alt="">
                                                                             <img width="149" height="16" class="arrow-bottom" src="https://ila.edu.vn/wp-content/uploads/2023/05/arrow-bottom.png" alt="">
-                                                                            <div class="box-text-1995">DẤU CHÂN<br><span>ĐẦU TIÊN</span></div>
+                                                                            <div class="box-text-1995"> <?php _e("DẤU CHÂN", "xemer_theme"); ?> <br><span> <?php _e("ĐẦU TIÊN", "xemer_theme"); ?> </span></div>
                                                                             <img width="155" height="167" class="img-ellipse" src="https://ila.edu.vn/wp-content/uploads/2023/05/ellipse.png" alt="">
                                                                     <?php endif; ?>
                                                                     <?php if ($type === 'type_3'): ?>

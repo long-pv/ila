@@ -394,7 +394,7 @@ if (LANG == 'en') {
                                 $thumb_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
                                 $category  = get_the_category();
                                 $category_link = !empty($category) ? get_category_link($category[0]->term_id) : '#';
-                                $category_name = !empty($category) ? $category[0]->name : 'Chưa phân loại';
+                                $category_name = !empty($category) ? $category[0]->name : _e("Chưa phân loại","xemer_theme");
                             ?>
                                 <?php if ($i == 0): ?>
                                     <!-- Bài viết chính bên trái -->
@@ -510,7 +510,7 @@ if (LANG == 'en') {
                                                     <div class="video-archive">
                                                         <span>
                                                             <a href="<?php echo $multimedia['view_all'] ?? '#'; ?>">
-                                                                MULTIMEDIA
+                                                            <?php _e("MULTIMEDIA","xemer_theme"); ?>
                                                             </a>
                                                         </span>
                                                     </div>
@@ -535,7 +535,7 @@ if (LANG == 'en') {
                                                                     </div>
                                                                     <div class="video-archive">
                                                                         <span>
-                                                                            <a href="<?php echo $multimedia['view_all'] ?? '#'; ?>">MULTIMEDIA</a>
+                                                                            <a href="<?php echo $multimedia['view_all'] ?? '#'; ?>"> <?php _e("MULTIMEDIA","xemer_theme"); ?> </a>
                                                                         </span>
                                                                     </div>
                                                                 </div>
@@ -698,8 +698,9 @@ get_footer();
             if (url && url !== '0') {
                 window.location.href = url;
             } else {
-                alert('Vui lòng chọn chương trình học.');
+                alert('<?php _e("Vui lòng chọn chương trình học.","xemer_theme"); ?>');
             }
+           
         });
     });
 </script>
