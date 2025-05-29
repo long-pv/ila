@@ -15,6 +15,11 @@
  */
 
 get_header();
+
+$lang = '';
+if (LANG == 'en') {
+    $lang = '_en';
+}
 ?>
 
 
@@ -197,7 +202,7 @@ get_header();
                                                         <script>
                                                             const options_3_6_years_old = [
                                                                 <?php
-                                                                $s3_6_years_old = get_field('3_6_years_old', 'option') ?? [];
+                                                                $s3_6_years_old = get_field('3_6_years_old' . $lang, 'option') ?? [];
                                                                 if ($s3_6_years_old):
                                                                     foreach ($s3_6_years_old as $item):
                                                                         echo '{"title" : "' . $item['link']['title'] . '", "url" : "' . $item['link']['url'] . '"},';
@@ -208,7 +213,7 @@ get_header();
 
                                                             const options_6_11_years_old = [
                                                                 <?php
-                                                                $s6_11_years_old = get_field('6_11_years_old', 'option') ?? [];
+                                                                $s6_11_years_old = get_field('6_11_years_old' . $lang, 'option') ?? [];
                                                                 if ($s6_11_years_old):
                                                                     foreach ($s6_11_years_old as $item):
                                                                         echo '{"title" : "' . $item['link']['title'] . '", "url" : "' . $item['link']['url'] . '"},';
@@ -219,7 +224,7 @@ get_header();
 
                                                             const options_11_16_years_old = [
                                                                 <?php
-                                                                $s11_16_years_old = get_field('11_16_years_old', 'option') ?? [];
+                                                                $s11_16_years_old = get_field('11_16_years_old' . $lang, 'option') ?? [];
                                                                 if ($s11_16_years_old):
                                                                     foreach ($s11_16_years_old as $item):
                                                                         echo '{"title" : "' . $item['link']['title'] . '", "url" : "' . $item['link']['url'] . '"},';
@@ -230,7 +235,7 @@ get_header();
 
                                                             const options_working_people = [
                                                                 <?php
-                                                                $working_people = get_field('working_people', 'option') ?? [];
+                                                                $working_people = get_field('working_people' . $lang, 'option') ?? [];
                                                                 if ($working_people):
                                                                     foreach ($working_people as $item):
                                                                         echo '{"title" : "' . $item['link']['title'] . '", "url" : "' . $item['link']['url'] . '"},';

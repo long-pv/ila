@@ -15,6 +15,11 @@
  */
 
 get_header();
+
+$lang = '';
+if (LANG == 'en') {
+    $lang = '_en';
+}
 ?>
 
 <div id="content" class="site-content">
@@ -22,7 +27,7 @@ get_header();
         <div class="archive-post">
 
             <?php
-            $menu_items = get_field('menu_item', 'option') ?? []; // 'option' là theme setting
+            $menu_items = get_field('menu_item' . $lang, 'option') ?? []; // 'option' là theme setting
             if (!empty($menu_items)): ?>
                 <section class="section-menu-category">
                     <div class="container">
@@ -146,7 +151,7 @@ get_header();
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <?php
-                                                    $popular_posts = get_field('popular_posts', 'option') ?? []; // array of post IDs
+                                                    $popular_posts = get_field('popular_posts' . $lang, 'option') ?? []; // array of post IDs
                                                     $popular_posts = array_slice($popular_posts, 0, 5); // chỉ lấy tối đa 5 bài
                                                     ?>
 

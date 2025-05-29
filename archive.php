@@ -9,12 +9,17 @@
  */
 
 get_header();
+
+$lang = '';
+if (LANG == 'en') {
+	$lang = '_en';
+}
 ?>
 
 <div id="content" class="site-content">
 	<main class="archive-template archive-default news-event">
 		<?php
-		$menu_items = get_field('menu_item', 'option') ?? []; // 'option' là theme setting
+		$menu_items = get_field('menu_item' . $lang, 'option') ?? []; // 'option' là theme setting
 		if (!empty($menu_items)): ?>
 			<section class="section-menu-category">
 				<div class="container">

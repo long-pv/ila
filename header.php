@@ -107,11 +107,18 @@
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
 
+	<?php
+	$lang = '';
+	if (LANG == 'en') {
+		$lang = '_en';
+	}
 
+	$logo = get_field('logo', 'option') ?: THEME_URI . '/assets/img_new/logo.webp';
+	?>
 	<header class="main-header">
 
 		<?php
-		$header_top = get_field('header_top', 'option') ?: [];
+		$header_top = get_field('header_top' . $lang, 'option') ?: [];
 		?>
 		<div class="nav-header-top">
 			<div class="container">
@@ -148,10 +155,9 @@
 					<div class="row">
 						<div class="col-6">
 							<div class="logo-mobile">
-								<a href="https://ila.edu.vn/" class="custom-logo-link" rel="home"
-									aria-current="page"><img width="250" height="107"
-										src="<?php echo THEME_URI . '/assets/'; ?>images/logo-ila-30-nam.jpg"
-										class="custom-logo" alt="logo ila 30 năm" decoding="async" sizes="100vw" /></a>
+								<a href="https://ila.edu.vn/" class="custom-logo-link" rel="home" aria-current="page">
+									<img width="250" height="107" src="<?php echo $logo; ?>" class="custom-logo" alt="logo ila 30 năm" decoding="async" sizes="100vw" />
+								</a>
 							</div>
 						</div>
 
@@ -166,325 +172,55 @@
 				<div class="navbar-menu">
 					<div class="menu-icon-close"><i class="fa-regular fa-xmark"></i></div>
 					<a href="<?php echo home_url(); ?>" class="custom-logo-link" rel="home" aria-current="page">
-						<img width="250" height="107"
-							src="<?php echo THEME_URI . '/assets/'; ?>img_new/logo.webp" class="custom-logo"
-							alt="logo ila 30 năm" decoding="async" sizes="100vw" />
+						<img width="250" height="107" src="<?php echo $logo; ?>" class="custom-logo" alt="logo ila 30 năm" decoding="async" sizes="100vw" />
 					</a>
+
 					<?php
-					$header_setting = get_field('header_setting', 'option') ?: [];
+					$menu_settings = get_field('menu_setting' . $lang, 'option') ?: [];
+
+					foreach ($menu_settings as $index => $menu) {
+						$link = $menu['link'] ?? null;
+						$has_sub_menu = $menu['sub_menu'] === 'yes';
+
+						if (!$link || !$link['title'] || !$link['url']) {
+							continue;
+						}
+
+						if (!$has_sub_menu) {
+							// Menu không có submenu
+							echo '<a class="" href="' . $link['url'] . '">' . $link['title'] . '</a>';
+						} else {
+							// Menu có submenu: xử lý 3 cột
+							echo '<div class="navbar-dropdown-item dropdown-item-' . $index . '">';
+							echo '<button class="dropbtn">';
+							echo '<a class="" href="' . $link['url'] . '">' . $link['title'] . ' <i class="fa fa-angle-down"></i></a>';
+							echo '</button><button class="btn-dropdown-mb"><i class="fa fa-angle-down"></i></button>';
+
+							echo '<div class="dropdown-content">';
+							echo '<div class="container">';
+							echo '<div class="row">';
+
+							for ($i = 1; $i <= 3; $i++) {
+								$column_key = 'column_' . $i;
+								if (!empty($menu[$column_key])) {
+									echo '<div class="column">';
+									foreach ($menu[$column_key] as $col_item) {
+										$sub_link = $col_item['link'] ?? null;
+										if ($sub_link && $sub_link['title'] && $sub_link['url']) {
+											echo '<a class="" href="' . $sub_link['url'] . '">' . $sub_link['title'] . '</a>';
+										}
+									}
+									echo '</div>';
+								}
+							}
+
+							echo '</div>'; // .row
+							echo '</div>'; // .container
+							echo '</div>'; // .dropdown-content
+							echo '</div>'; // .navbar-dropdown-item
+						}
+					}
 					?>
-
-					<!-- giới thiệu -->
-					<?php if ($header_setting['about_page'] && $header_setting['about_page']['title'] && $header_setting['about_page']['url']): ?>
-						<a class="" href="<?php echo $header_setting['about_page']['url']; ?>">
-							<?php echo $header_setting['about_page']['title']; ?>
-						</a>
-					<?php endif; ?>
-
-					<!-- Chương trình học -->
-					<?php if ($header_setting['study_program'] && $header_setting['study_program']['title'] && $header_setting['study_program']['url']): ?>
-
-						<div class="navbar-dropdown-item dropdown-item-1">
-							<button class="dropbtn">
-								<a class="" href="<?php echo $header_setting['study_program']['url']; ?>"><?php echo $header_setting['study_program']['title']; ?> <i class="fa fa-angle-down"></i></a></button><button
-								class="btn-dropdown-mb"><i class="fa fa-angle-down"></i></button>
-
-							<div class="dropdown-content">
-								<div class="container">
-									<div class="row">
-										<!-- cột 1 -->
-										<?php
-										if ($header_setting['study_program_column_1']):
-										?>
-											<div class="column">
-												<?php foreach ($header_setting['study_program_column_1'] as $item): ?>
-													<a class="" href="<?php echo $item['item']['url'] ?: '#'; ?>">
-														<?php echo $item['item']['title'] ?: 'Link'; ?>
-													</a>
-												<?php endforeach; ?>
-											</div>
-										<?php
-										endif;
-										?>
-
-										<!-- cột 2 -->
-										<?php
-										if ($header_setting['study_program_column_2']):
-										?>
-											<div class="column">
-												<?php foreach ($header_setting['study_program_column_2'] as $item): ?>
-													<a class="" href="<?php echo $item['item']['url'] ?: '#'; ?>">
-														<?php echo $item['item']['title'] ?: 'Link'; ?>
-													</a>
-												<?php endforeach; ?>
-											</div>
-										<?php
-										endif;
-										?>
-
-										<!-- cột 3 -->
-										<?php
-										if ($header_setting['study_program_column_3']):
-										?>
-											<div class="column">
-												<?php foreach ($header_setting['study_program_column_3'] as $item): ?>
-													<a class="" href="<?php echo $item['item']['url'] ?: '#'; ?>">
-														<?php echo $item['item']['title'] ?: 'Link'; ?>
-													</a>
-												<?php endforeach; ?>
-											</div>
-										<?php
-										endif;
-										?>
-									</div>
-								</div>
-							</div>
-						</div>
-					<?php endif; ?>
-
-					<!-- Cơ sở vật chất -->
-					<?php if ($header_setting['facilities'] && $header_setting['facilities']['title'] && $header_setting['facilities']['url']): ?>
-						<a class="" href="<?php echo $header_setting['facilities']['url']; ?>">
-							<?php echo $header_setting['facilities']['title']; ?>
-						</a>
-					<?php endif; ?>
-
-					<!-- Giáo viên -->
-					<?php if ($header_setting['teacher'] && $header_setting['teacher']['title'] && $header_setting['teacher']['url']): ?>
-						<a class="" href="<?php echo $header_setting['teacher']['url']; ?>">
-							<?php echo $header_setting['teacher']['title']; ?>
-						</a>
-					<?php endif; ?>
-
-					<!-- Trung tâm -->
-					<?php if ($header_setting['center'] && $header_setting['center']['title'] && $header_setting['center']['url']): ?>
-						<a class="" href="<?php echo $header_setting['center']['url']; ?>">
-							<?php echo $header_setting['center']['title']; ?>
-						</a>
-					<?php endif; ?>
-					<!-- <div class="navbar-dropdown-item dropdown-item-2 centers-style">
-						<button class="dropbtn">
-							<a class="centers-style" href="/trung-tam-dao-tao">Trung tâm <i
-									class="fa fa-angle-down"></i></a></button><button class="btn-dropdown-mb"><i
-								class="fa fa-angle-down"></i></button>
-						<div class="dropdown-content">
-							<div class="container">
-								<div class="row">
-									<div class="column">
-										<a class="city city-hcm" href="/trung-tam-dao-tao?city=60">HỒ CHÍ MINH</a><a
-											class=""
-											href="/trung-tam-dao-tao?city=60&district=1&center=ila-nguyen-trai">ILA
-											Nguyễn Trãi</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=2&center=ila-tran-nao">ILA Trần
-											Não</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=1&center=ila-mac-dinh-chi">ILA Mạc
-											Đĩnh Chi</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=5&center=ila-hung-vuong">ILA Hùng
-											Vương</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=8&center=ila-ta-quang-buu">ILA Tạ
-											Quang Bửu</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=6&center=ila-phu-lam">ILA Phú
-											Lâm</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=6&center=ila-vo-van-kiet">ILA Võ
-											Văn Kiệt</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=7&center=ila-him-lam">ILA Him
-											Lam</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=7&center=ila-huynh-tan-phat">ILA
-											Huỳnh Tấn Phát</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=7&center=ila-phu-my-hung">ILA Phú
-											Mỹ Hưng</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=9&center=ila-le-van-viet">ILA Lê
-											Văn Việt</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=10&center=ila-su-van-hanh">ILA Sư
-											Vạn Hạnh</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=12&center=ila-nguyen-anh-thu">ILA
-											Nguyễn Ảnh Thủ</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=13&center=ila-cong-hoa">ILA Cộng
-											Hòa</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=12&center=ila-phan-van-hon">ILA
-											Phan Văn Hớn</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=13&center=ila-hoang-van-thu">ILA
-											Hoàng Văn Thụ</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=14&center=ila-phan-xich-long">ILA
-											Phan Xích Long</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=14&center=ila-hong-ha">ILA Hồng
-											Hà</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=15&center=ila-bat-nan">ILA Đảo Kim
-											Cương</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=15&center=ila-vincom-thu-duc">ILA
-											Vincom Thủ Đức</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=15&center=ila-nguyen-duy-trinh">ILA
-											Nguyễn Duy Trinh</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=15&center=ila-pham-van-dong">ILA
-											Phạm Văn Đồng</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=15&center=ila-metropole">ILA
-											Metropole</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=16&center=ila-go-vap">ILA Gò
-											Vấp</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=16&center=ila-quang-trung">ILA
-											Quang Trung</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=17&center=ila-pham-hung">ILA Phạm
-											Hùng</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=18&center=ila-hoa-binh">ILA Hòa
-											Bình</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=18&center=ila-thoai-ngoc-hau">ILA
-											Thoại Ngọc Hầu</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=18&center=ila-tan-phu">ILA Tân
-											Phú</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=20&center=ila-nguyen-xi">ILA
-											Nguyễn Xí</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=20&center=ila-nguyen-huu-canh">ILA
-											Nguyễn Hữu Cảnh</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=19&center=ila-binh-tan">ILA Bình
-											Tân</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=21&center=ila-hoc-mon">ILA Hóc
-											Môn</a><a class=""
-											href="/trung-tam-dao-tao?city=60&district=4&center=ila-ben-van-don">ILA Bến
-											Vân Đồn</a>
-									</div>
-									<div class="column">
-										<a class="city" href="/trung-tam-dao-tao?city=30">HÀ NỘI</a><a class=""
-											href="/trung-tam-dao-tao?city=30&district=1&center=ila-aeon-long-bien">ILA
-											Aeon Long Biên</a><a class=""
-											href="/trung-tam-dao-tao?city=30&district=1&center=ila-long-bien">ILA Long
-											Biên</a><a class=""
-											href="/trung-tam-dao-tao?city=30&district=2&center=ila-tay-son">ILA Tây
-											Sơn</a><a class=""
-											href="/trung-tam-dao-tao?city=30&district=3&center=ila-times-city">ILA Times
-											City</a><a class=""
-											href="/trung-tam-dao-tao?city=30&district=4&center=ila-pho-hue">ILA Phố
-											Huế</a><a class=""
-											href="/trung-tam-dao-tao?city=30&district=5&center=ila-my-dinh">ILA Mỹ
-											Đình</a><a class=""
-											href="/trung-tam-dao-tao?city=30&district=6&center=ila-trung-hoa-nhan-chinh">ILA
-											Trung Hòa Nhân Chính</a><a class="city"
-											href="/trung-tam-dao-tao?city=65">CẦN THƠ</a><a class=""
-											href="/trung-tam-dao-tao?city=65&district=6&center=ila-tay-do">ILA Tây
-											Đô</a><a class=""
-											href="/trung-tam-dao-tao?city=65&district=1&center=ila-vincom-xuan-khanh">ILA
-											Vincom Xuân Khánh</a>
-									</div>
-									<div class="column">
-										<a class="city" href="/trung-tam-dao-tao?city=68">KIÊN GIANG</a><a class=""
-											href="/trung-tam-dao-tao?city=68&district=1&center=ila-rach-gia">ILA Rạch
-											Giá</a><a class="city" href="/trung-tam-dao-tao?city=61">BÌNH DƯƠNG</a><a
-											class=""
-											href="/trung-tam-dao-tao?city=61&district=1&center=ila-thu-dau-mot">ILA Thủ
-											Dầu Một</a><a class=""
-											href="/trung-tam-dao-tao?city=61&district=2&center=ila-aeon-binh-duong">ILA
-											Aeon Bình Dương</a><a class=""
-											href="/trung-tam-dao-tao?city=61&district=3&center=ila-di-an">ILA Dĩ
-											An</a><a class=""
-											href="/trung-tam-dao-tao?city=61&district=3&center=ila-di-an">ILA Vincom Dĩ
-											An</a><a class=""
-											href="/trung-tam-dao-tao?city=61&district=2&center=ila-lai-thieu">ILA Lái
-											Thiêu</a><a class="city" href="/trung-tam-dao-tao?city=39">ĐỒNG NAI</a><a
-											class=""
-											href="/trung-tam-dao-tao?city=39&district=1&center=ila-bien-hoa">ILA Hà Huy
-											Giáp - Biên Hòa</a><a class=""
-											href="/trung-tam-dao-tao?city=39&district=1&center=ila-dong-khoi-bien-hoa">ILA
-											Đồng Khởi - Biên Hòa</a><a class="city"
-											href="/trung-tam-dao-tao?city=72">VŨNG TÀU</a><a class=""
-											href="/trung-tam-dao-tao?city=72&district=1&center=ila-ba-ria">ILA Bà
-											Rịa</a><a class=""
-											href="/trung-tam-dao-tao?city=72&district=2&center=ila-vung-tau">ILA Vũng
-											Tàu</a>
-									</div>
-									<div class="column">
-										<a class="city" href="/trung-tam-dao-tao?city=79">KHÁNH HÒA</a><a class=""
-											href="/trung-tam-dao-tao?city=79&district=1&center=ila-nha-trang">ILA Nha
-											Trang</a><a class=""
-											href="/trung-tam-dao-tao?city=79&district=1&center=ila-nha-trang">ILA Thích
-											Quảng Đức - Nha Trang</a><a class="city"
-											href="/trung-tam-dao-tao?city=92">QUẢNG NAM</a><a class=""
-											href="/trung-tam-dao-tao?city=92&district=1&center=ila-hoi-an">ILA Hội
-											An</a><a class="city" href="/trung-tam-dao-tao?city=43">ĐÀ NẴNG</a><a
-											class=""
-											href="/trung-tam-dao-tao?city=43&district=1&center=ila-nguyen-van-linh-da-nang">ILA
-											Nguyễn Văn Linh</a><a class=""
-											href="/trung-tam-dao-tao?city=43&district=1&center=ila-nguyen-huu-tho-da-nang">ILA
-											Nguyễn Hữu Thọ</a><a class="city" href="/trung-tam-dao-tao?city=15">HẢI
-											PHÒNG</a><a class=""
-											href="/trung-tam-dao-tao?city=15&district=1&center=ila-hai-phong">ILA Hải
-											Phòng</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div> -->
-
-					<!-- Tin tức -->
-					<?php if ($header_setting['news'] && $header_setting['news']['title'] && $header_setting['news']['url']): ?>
-						<a class="" href="<?php echo $header_setting['news']['url']; ?>">
-							<?php echo $header_setting['news']['title']; ?>
-						</a>
-					<?php endif; ?>
-					<!-- <div class="navbar-dropdown-item dropdown-item-3">
-						<button class="dropbtn">
-							<a class="" href="https://ila.edu.vn/ilaverse">ILAVerse <i
-									class="fa fa-angle-down"></i></a></button><button class="btn-dropdown-mb"><i
-								class="fa fa-angle-down"></i></button>
-						<div class="dropdown-content">
-							<div class="container">
-								<div class="row">
-									<div class="column"><a class=""
-											href="https://ila.edu.vn/ilaverse/quy-light-up-the-future">Quỹ Light up the
-											future</a></div>
-								</div>
-							</div>
-						</div>
-					</div> -->
-
-					<!-- Tuyển dụng -->
-					<?php if ($header_setting['recruitment'] && $header_setting['recruitment']['title'] && $header_setting['recruitment']['url']): ?>
-						<a class="" href="<?php echo $header_setting['recruitment']['url']; ?>">
-							<?php echo $header_setting['recruitment']['title']; ?>
-						</a>
-					<?php endif; ?>
-
-					<!-- <div class="navbar-dropdown-item dropdown-item-4">
-						<button class="dropbtn">
-							<a class="" href="https://ila.edu.vn/co-hoi-nghe-nghiep">Tuyển dụng <i
-									class="fa fa-angle-down"></i></a></button><button class="btn-dropdown-mb"><i
-								class="fa fa-angle-down"></i></button>
-						<div class="dropdown-content">
-							<div class="container">
-								<div class="row">
-									<div class="column"><a class="" href="https://teachingenglish.ila.edu.vn/">Tuyển
-											dụng Giáo viên nước ngoài</a></div>
-									<div class="column"><a class="" href="https://career.ila.edu.vn/">Tuyển dụng nhân
-											viên</a></div>
-								</div>
-							</div>
-						</div>
-					</div> -->
-					<!-- <div class="navbar-dropdown-item ila-language dropdown-item-5">
-						<button class="dropbtn">
-							<img width="37" height="25" src="<?php echo THEME_URI . '/assets/'; ?>images/vi.png"
-								alt="Tiếng Việt" /> <i class="fa fa-angle-down"></i>
-						</button>
-						<div class="dropdown-content">
-							<div class="container">
-								<div class="row">
-									<div class="column">
-										<a class="lang-item lang-item-4 lang-item-vi current-lang lang-item-first"
-											href="https://ila.edu.vn/">
-											<img width="37" height="25"
-												src="<?php echo THEME_URI . '/assets/'; ?>images/vi.png"
-												alt="Tiếng Việt" />
-										</a>
-									</div>
-									<div class="column">
-										<a class="lang-item lang-item-7 lang-item-en" href="https://ila.edu.vn/en/">
-											<img width="37" height="28"
-												src="<?php echo THEME_URI . '/assets/'; ?>images/en_US.png"
-												alt="English" />
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div> -->
 
 					<?php
 					$current_lang = pll_current_language();
@@ -517,10 +253,12 @@
 
 
 					<!-- Đăng ký ngay -->
-					<?php if ($header_setting['sign_up_now'] && $header_setting['sign_up_now']['title'] && $header_setting['sign_up_now']['url']): ?>
+					<?php
+					$sign_up_now = get_field('sign_up_now' . $lang, 'option') ?? null;
+					if ($sign_up_now && $sign_up_now['title'] && $sign_up_now['url']): ?>
 						<button class="btn-register">
-							<a href="<?php echo $header_setting['sign_up_now']['url']; ?>">
-								<?php echo $header_setting['sign_up_now']['title']; ?>
+							<a href="<?php echo $sign_up_now['url']; ?>">
+								<?php echo $sign_up_now['title']; ?>
 							</a>
 						</button>
 					<?php endif; ?>
