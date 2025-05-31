@@ -27,7 +27,7 @@ if ($register_form && is_array($register_form)) {
 ?>
 
 <?php if ($should_show_form) :
-    $title = $register_form['title'] ?? 'ĐĂNG KÝ LỚP HỌC THỬ MIỄN PHÍ NGAY BÂY GIỜ!';
+    $title = $register_form['title'] ?? __('ĐĂNG KÝ LỚP HỌC THỬ MIỄN PHÍ NGAY BÂY GIỜ!', 'xemer_theme');;
     $form_content = $register_form['contact_form_7'] ?? '';
     $background = $register_form['background'] ?? 'https://ila.edu.vn/wp-content/uploads/2023/02/bg-course-section-6.png';
 ?>
@@ -203,13 +203,17 @@ if ($google_maps):
                 <div class="col-lg-3 col-md-6">
                     <div class="box-footer">
                         <div class="subscribe-form mobile">
-                            <h3 class="subscribe-form-title">Nhận ngay ưu đãi mới nhất tại ILA</h3>
+                            <h3 class="subscribe-form-title">
+                                <?php _e('Nhận ngay ưu đãi mới nhất tại ILA', 'xemer_theme'); ?>
+                            </h3>
                             <div class="emaillist" id="es_form_f1-n1">
                                 <?php echo get_field('get_offer_now' . $lang, 'option') ?? ''; ?>
                             </div>
                         </div>
 
-                        <h3 class="box-footer-title">Tiếng Anh cao cấp</h3>
+                        <h3 class="box-footer-title">
+                            <?php _e('Tiếng Anh cao cấp', 'xemer_theme'); ?>
+                        </h3>
                         <ul class="list-cate">
                             <?php
                             $advanced_english = get_field('footer_setting' . $lang . '_advanced_english', 'option') ?? [];
@@ -232,7 +236,9 @@ if ($google_maps):
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="box-footer">
-                        <h3 class="box-footer-title">Tiếng Anh tiêu chuẩn</h3>
+                        <h3 class="box-footer-title">
+                            <?php _e('Tiếng Anh tiêu chuẩn', 'xemer_theme'); ?>
+                        </h3>
                         <ul class="list-cate mb-36">
                             <?php
                             $standard_english = get_field('footer_setting' . $lang . '_standard_english', 'option') ?? [];
@@ -251,7 +257,9 @@ if ($google_maps):
                             endif;
                             ?>
                         </ul>
-                        <h3 class="box-footer-title">Luyện thi & Du học</h3>
+                        <h3 class="box-footer-title">
+                            <?php _e('Luyện thi & Du học', 'xemer_theme'); ?>
+                        </h3>
                         <ul class="list-cate">
                             <?php
                             $exam_preparation_study_abroad = get_field('footer_setting' . $lang . '_exam_preparation_study_abroad', 'option') ?? [];
@@ -274,7 +282,9 @@ if ($google_maps):
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="box-footer">
-                        <h3 class="box-footer-title">Tìm hiểu thêm</h3>
+                        <h3 class="box-footer-title">
+                            <?php _e('Tìm hiểu thêm', 'xemer_theme'); ?>
+                        </h3>
                         <ul class="list-cate mb-36">
                             <?php
                             $learn_more = get_field('footer_setting' . $lang . '_learn_more', 'option') ?? [];
@@ -294,7 +304,9 @@ if ($google_maps):
                             ?>
                         </ul>
                         <div class="subscribe-form desktop">
-                            <h3 class="subscribe-form-title">Nhận ngay ưu đãi mới nhất tại ILA</h3>
+                            <h3 class="subscribe-form-title">
+                                <?php _e('Nhận ngay ưu đãi mới nhất tại ILA', 'xemer_theme'); ?>
+                            </h3>
                             <div class="emaillist" id="es_form_f1-n2">
                                 <?php echo get_field('get_offer_now' . $lang, 'option') ?? ''; ?>
                             </div>
