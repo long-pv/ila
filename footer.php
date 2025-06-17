@@ -219,7 +219,7 @@ if ($google_maps):
                             $advanced_english = get_field('footer_setting' . $lang . '_advanced_english', 'option') ?? [];
                             if ($advanced_english):
                                 foreach ($advanced_english as $item):
-                                    if ($item['link']['url'] && $item['link']['title']):
+                                    if ($item && $item['link'] && $item['link']['url'] && $item['link']['title']):
                             ?>
                                         <li>
                                             <a href="<?php echo $item['link']['url']; ?>">
@@ -265,7 +265,7 @@ if ($google_maps):
                             $exam_preparation_study_abroad = get_field('footer_setting' . $lang . '_exam_preparation_study_abroad', 'option') ?? [];
                             if ($exam_preparation_study_abroad):
                                 foreach ($exam_preparation_study_abroad as $item):
-                                    if ($item['link']['url'] && $item['link']['title']):
+                                    if ($item && $item['link'] && $item['link']['url'] && $item['link']['title']):
                             ?>
                                         <li>
                                             <a href="<?php echo $item['link']['url']; ?>">
@@ -290,7 +290,7 @@ if ($google_maps):
                             $learn_more = get_field('footer_setting' . $lang . '_learn_more', 'option') ?? [];
                             if ($learn_more):
                                 foreach ($learn_more as $item):
-                                    if ($item['link']['url'] && $item['link']['title']):
+                                    if ($item && $item['link'] && $item['link']['url'] && $item['link']['title']):
                             ?>
                                         <li>
                                             <a href="<?php echo $item['link']['url']; ?>">
