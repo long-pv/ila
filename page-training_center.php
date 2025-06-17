@@ -30,7 +30,7 @@ get_header();
         $image_box = isset($box_content_section['image']) ? $box_content_section['image'] : [];
 
         if ($title_box || $content_box || !empty($url_maps) || !empty($image_box)):
-        ?>
+            ?>
             <section class="section-intro">
                 <div class="container">
                     <div class="box-wrapper">
@@ -50,7 +50,7 @@ get_header();
                                     <?php if (!empty($url_maps)): ?>
                                         <button class="find-center">
                                             <a target="_blank" href="<?php echo esc_url($url_maps); ?>">
-                                                TÌM TRUNG TÂM
+                                                <?php _e("TÌM TRUNG TÂM", "xemer_theme"); ?>
                                             </a>
                                         </button>
                                     <?php endif; ?>

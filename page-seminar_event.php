@@ -15,6 +15,10 @@
  */
 
 get_header();
+$lang = '';
+if (LANG == 'en') {
+    $lang = '_en';
+}
 ?>
 
 <div id="page">
@@ -23,7 +27,7 @@ get_header();
             <div class="archive-post">
 
                 <?php
-                $menu_items = get_field('menu_item', 'option') ?? []; // 'option' là theme setting
+                $menu_items = get_field('menu_item' . $lang, 'option') ?? []; // 'option' là theme setting
                 if (!empty($menu_items)): ?>
                     <section class="section-menu-category">
                         <div class="container">
@@ -61,7 +65,7 @@ get_header();
                                         $banner = get_field('banner');
                                         ?>
                                         <?php if ($banner): ?>
-                                            <header class="page-header" style="background: #1b3f94; width: 100%;">
+                                            <header class="page-header" style="background: #0075A9; width: 100%;">
                                                 <div class="archive-header-content">
                                                     <?php if (!empty($banner['title'])): ?>
                                                         <h1 class="page-title"><?php echo esc_html($banner['title']); ?></h1>
@@ -120,7 +124,7 @@ get_header();
                                                             </div>
                                                             <div class="event-button">
                                                                 <button class="btn-register" data-id="<?php echo $button_id; ?>">
-                                                                    <a href="<?php echo $permalink; ?>">Đăng ký ngay</a>
+                                                                    <a href="<?php echo $permalink; ?>"> <?php _e("Đăng ký ngay", "xemer_theme"); ?> </a>
                                                                 </button>
                                                             </div>
                                                         </div>
@@ -148,7 +152,7 @@ get_header();
                                                                     </div>
                                                                     <div class="event-button">
                                                                         <button class="btn-register" data-id="<?php echo $button_id; ?>">
-                                                                            <a href="<?php echo $permalink; ?>">Đăng ký ngay</a>
+                                                                            <a href="<?php echo $permalink; ?>"><?php _e("Đăng ký ngay", "xemer_theme"); ?></a>
                                                                         </button>
                                                                     </div>
                                                                 </div>
@@ -208,7 +212,7 @@ get_header();
                                                                 </div>
                                                                 <div class="event-button">
                                                                     <button class="btn-register" data-id="<?php echo $event_id; ?>">
-                                                                        <a href="<?php echo $permalink; ?>">Đăng ký ngay</a>
+                                                                        <a href="<?php echo $permalink; ?>"><?php _e("Đăng ký ngay", "xemer_theme"); ?></a>
                                                                     </button>
                                                                 </div>
                                                             </div>

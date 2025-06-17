@@ -9,6 +9,11 @@
  */
 
 get_header();
+
+$lang = '';
+if (LANG == 'en') {
+    $lang = '_en';
+}
 ?>
 
 <!-- Content Start -->
@@ -16,7 +21,7 @@ get_header();
 <div id="content" class="site-content">
     <main class="single-detail-main single-template">
         <?php
-        $menu_items = get_field('menu_item', 'option') ?? []; // 'option' là theme setting
+        $menu_items = get_field('menu_item' . $lang, 'option') ?? []; // 'option' là theme setting
         if (!empty($menu_items)): ?>
             <section class="section-menu-category">
                 <div class="container">
@@ -58,7 +63,7 @@ get_header();
                                         }
                                         ?>
 
-                                        <h3 class="share-title">Chia sẻ bài viết</h3>
+                                        <h3 class="share-title"> <?php _e("Chia sẻ bài viết", "xemer_theme"); ?> </h3>
                                         <?php
                                         $post_url = get_permalink();
                                         $post_title = get_the_title();
@@ -143,8 +148,8 @@ get_header();
 
                                         if ($related_posts->have_posts()):
                                         ?>
-                                            <div class="related-post">
-                                                <h2>Bài viết liên quan</h2>
+                                            <div class="related-post">   
+                                                <h2> <?php _e("Bài viết liên quan", "xemer_theme"); ?> </h2>
                                                 <?php while ($related_posts->have_posts()):
                                                     $related_posts->the_post(); ?>
                                                     <div class="post-item">
@@ -175,7 +180,7 @@ get_header();
                 </section>
                 <!--  -->
                 <?php
-                $register_form = get_field('register_for_trial_class', 'option');
+                $register_form = get_field('register_for_trial_class' . $lang, 'option');
                 if ($register_form && is_array($register_form)) :
                     $title = $register_form['title'] ?? 'ĐĂNG KÝ LỚP HỌC THỬ MIỄN PHÍ NGAY BÂY GIỜ!';
                     $form_content = $register_form['contact_form_7'] ?? '';

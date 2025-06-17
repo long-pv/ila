@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Xemer Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-08 15:54+0000\n"
-"PO-Revision-Date: 2025-05-29 16:40+0000\n"
+"PO-Revision-Date: 2025-05-29 16:32+0000\n"
 "Last-Translator: \n"
 "Language-Team: Vietnamese\n"
 "Language: vi\n"
@@ -57,10 +57,6 @@ msgstr ""
 msgid "Chia sẻ bài viết"
 msgstr ""
 
-#: page-home.php:397
-msgid "Chưa phân loại"
-msgstr ""
-
 #. Name of the template
 #: page-study_program.php:3
 msgid "Chương Trình Học"
@@ -73,10 +69,6 @@ msgstr ""
 #. Name of the template
 #: page-facilities.php:3
 msgid "Cơ Sở Vật Chất"
-msgstr ""
-
-#: page-about_us.php:229
-msgid "DẤU CHÂN"
 msgstr ""
 
 #. Name of the template
@@ -114,12 +106,11 @@ msgstr ""
 msgid "longxemer"
 msgstr ""
 
-#: page-multimedia.php:191 page-home.php:513 page-home.php:538
-#: single-video_media.php:108 single-video_media.php:185
+#: page-multimedia.php:191
 msgid "MULTIMEDIA"
 msgstr ""
 
-#: page-multimedia.php:130 single-video_media.php:63
+#: page-multimedia.php:130
 msgid "Multimedia"
 msgstr ""
 
@@ -132,10 +123,6 @@ msgstr ""
 msgid "Người đi làm"
 msgstr ""
 
-#: page-about_us.php:466
-msgid "Nội quy học tập"
-msgstr ""
-
 #: functions.php:62
 msgid "Primary"
 msgstr ""
@@ -146,10 +133,6 @@ msgstr ""
 
 #. Description of the theme
 msgid "Thiết kế website WordPress chuyên nghiệp, chuẩn SEO, tối ưu UX/UI."
-msgstr ""
-
-#: page-about_us.php:65
-msgid "Thu gọn"
 msgstr ""
 
 #. Name of the template
@@ -194,10 +177,6 @@ msgstr ""
 msgid "Tư vấn du học"
 msgstr ""
 
-#: page-home.php:701
-msgid "Vui lòng chọn chương trình học."
-msgstr ""
-
 #: page-recruitment_study_abroad.php:62 page-home.php:264
 #: page-study_program.php:272
 msgid "Xem thêm"
@@ -225,14 +204,6 @@ msgstr ""
 #: page-seminar_event.php:215 page-study_solutions_details.php:212
 #: page-study_solutions_details.php:283
 msgid "Đăng ký ngay"
-msgstr ""
-
-#: page-about_us.php:229
-msgid "ĐẦU TIÊN"
-msgstr ""
-
-#: page-about_us.php:62
-msgid "Đọc thêm"
 msgstr ""
 
 #: page-home.php:187

@@ -10,22 +10,26 @@
 		transform: rotate(0) scale(1) skew(1deg);
 		opacity: 0.2;
 	}
+
 	100% {
 		-webkit-transform: rotate(0) scale(0.7) skew(1deg);
 		transform: rotate(0) scale(0.7) skew(1deg);
 		opacity: 0.2;
 	}
 }
+
 main.tearchers {
 	.tearchers__section-video {
 		position: relative;
 		padding: 24px 0;
+
 		@media screen and (max-width: 991px) {
 			padding: 12px 0;
 		}
 
 		.container {
 			position: relative;
+
 			#banner-video {
 				width: 100%;
 				height: auto;
@@ -33,16 +37,20 @@ main.tearchers {
 				max-height: 560px;
 				object-fit: cover;
 				display: block;
+
 				@media screen and (max-width: 1024px) {
 					//opacity: 0.6;
 					height: 200px;
 				}
+
 				@media screen and (min-width: 768px) and (max-width: 991px) {
 					height: 370px;
 				}
+
 				@media screen and (width: 1024px) {
 					height: 470px;
 				}
+
 				@media screen and (max-width: 767px) {
 					border-radius: 15px;
 				}
@@ -84,14 +92,17 @@ main.tearchers {
 						font-size: 34px;
 						margin-bottom: 15px;
 						line-height: 1.25;
+
 						@media screen and (min-width: 768px) {
-							text-shadow: 2px 5px 5px #2b378b;
+							text-shadow: 2px 5px 5px #0075A9;
 						}
+
 						@media screen and (max-width: 767px) {
 							font-size: 22px;
 							line-height: 1.25;
 							margin-bottom: 10px;
 							color: #000 !important;
+
 							span {
 								color: #000 !important;
 							}
@@ -102,16 +113,20 @@ main.tearchers {
 						text-transform: none;
 						font-size: 22px;
 						font-family: "Montserrat SemiBold";
+
 						@media screen and (min-width: 768px) {
-							text-shadow: 2px 5px 5px #2b378b;
+							text-shadow: 2px 5px 5px #0075A9;
 						}
+
 						@media screen and (max-width: 767px) {
 							font-size: 14px;
 							color: #000 !important;
+
 							span {
 								color: #000 !important;
 							}
 						}
+
 						a {
 							display: inline-block;
 							text-decoration: none;
@@ -138,7 +153,7 @@ main.tearchers {
 			}
 		}
 
-		> .container {
+		>.container {
 			@media screen and (max-width: 767px) {
 				display: grid;
 
@@ -170,38 +185,38 @@ main.tearchers {
 									a {
 										color: #fff;
 									}
+
 									a:first-child {
 										@media screen and (max-width: 767px) {
 											order: 2;
 											text-transform: uppercase;
 										}
 									}
+
 									a:last-child {
 										@media screen and (max-width: 767px) {
 											display: block;
 											margin-left: 0 !important;
 											margin-bottom: 10px;
+
 											img {
 												width: 60px;
 												height: 60px;
 												padding: 10px;
-												border: 0.5px solid
-													rgba(255, 255, 255, 0.65);
+												border: 0.5px solid rgba(255, 255, 255, 0.65);
 												border-radius: 50%;
 											}
+
 											&:before {
 												content: "";
 												position: absolute;
 												background-color: #fff;
 												border-radius: 100% !important;
 												border: 2px solid transparent;
-												-webkit-animation: icon-bound-fill
-													2.3s infinite ease-in-out;
-												animation: icon-bound-fill 2.3s
-													infinite ease-in-out;
+												-webkit-animation: icon-bound-fill 2.3s infinite ease-in-out;
+												animation: icon-bound-fill 2.3s infinite ease-in-out;
 												transition: all 0.5s;
-												-webkit-transform-origin: 50%
-													50%;
+												-webkit-transform-origin: 50% 50%;
 												-ms-transform-origin: 50% 50%;
 												transform-origin: 50% 50%;
 												height: 60px;
@@ -241,16 +256,20 @@ main.tearchers {
 			left: 0;
 			right: 0;
 			text-align: left;
+
 			@media screen and (min-width: 1024px) and (max-width: 1180px) {
 				max-width: 400px;
 			}
+
 			@media screen and (min-width: 768px) and (max-width: 991px) {
 				max-width: 300px;
 			}
+
 			.container {
 				@media screen and (min-width: 1500px) {
 					margin-left: 50px;
 				}
+
 				@media screen and (min-width: 1600px) {
 					margin-left: 100px;
 				}
@@ -329,13 +348,11 @@ main.tearchers {
 				position: relative;
 				padding: 55px 0 30px 0;
 				top: 0;
-				background: linear-gradient(
-					180deg,
-					rgba(255, 255, 255, 0) 0%,
-					#ffffff 13.02%,
-					#ffffff 70.31%,
-					#ffffff 100%
-				);
+				background: linear-gradient(180deg,
+						rgba(255, 255, 255, 0) 0%,
+						#ffffff 13.02%,
+						#ffffff 70.31%,
+						#ffffff 100%);
 				margin-top: -135px;
 
 				.container {
@@ -362,6 +379,7 @@ main.tearchers {
 								min-height: 560px;
 								max-height: 560px;
 							}
+
 							@media screen and (min-width: 1400px) {
 								margin-top: -200px;
 							}
@@ -516,18 +534,22 @@ main.tearchers {
 								}
 							}
 						}
+
 						.box-item-1 {
 							.box-content {
 								h3 {
 									color: #fff;
 									font-size: 40px;
 									font-family: "Montserrat Bold";
+
 									@media screen and (max-width: 1024px) {
 										font-size: 28px;
 									}
+
 									&:first-of-type {
 										font-size: 24px;
 										margin-bottom: 20px;
+
 										@media screen and (max-width: 1024px) {
 											font-size: 18px;
 											margin-bottom: 10px;
@@ -536,8 +558,10 @@ main.tearchers {
 								}
 							}
 						}
+
 						.box-item.box-item-2 {
 							background-color: transparent;
+
 							.box-thumb {
 								img {
 									width: 100%;
@@ -624,6 +648,7 @@ main.tearchers {
 			}
 		}
 	}
+
 	.section-list-teacher {
 		padding: 24px 0;
 
@@ -691,6 +716,7 @@ main.tearchers {
 						visibility: visible;
 						opacity: 1;
 					}
+
 					.btn-viewmore {
 						display: block;
 						font-family: "Montserrat Bold";
@@ -703,15 +729,18 @@ main.tearchers {
 							font-size: 16px;
 						}
 					}
+
 					h3 {
 						font-family: "Montserrat Bold";
 						color: #ffffff;
 						font-size: 22px;
 						line-height: 24px;
+
 						@media screen and (min-width: 768px) and (max-width: 1024px) {
 							font-size: 18px;
 						}
 					}
+
 					a {
 						display: block;
 						font-family: "Montserrat Bold";
@@ -731,9 +760,11 @@ main.tearchers {
 						font-size: 16px;
 						line-height: 24px;
 					}
+
 					p:last-child {
 						margin-bottom: 0;
 					}
+
 					// .popup-profile {
 					//     display: none;
 					// }
@@ -764,7 +795,7 @@ main.tearchers {
 					height: 40px;
 					line-height: 35px;
 					background-color: #fff;
-					color: #2b378b;
+					color: #0075A9;
 					font-size: 35px;
 					border-radius: 50%;
 					display: flex;
@@ -773,7 +804,7 @@ main.tearchers {
 					box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.5);
 
 					&:hover {
-						background-color: #2b378b;
+						background-color: #0075A9;
 						color: #fff;
 					}
 
@@ -810,13 +841,14 @@ main.tearchers {
 
 				.owl-dot.active {
 					span {
-						background: #c60c30;
+						background: #F32735;
 						opacity: 1;
 					}
 				}
 			}
 		}
 	}
+
 	// -----Popup profile-----//
 	.popup-profile {
 		display: none;
@@ -869,9 +901,11 @@ main.tearchers {
 				overflow-x: hidden;
 				overflow-y: scroll;
 				padding: 50px;
+
 				@media screen and (max-width: 767px) {
 					padding: 50px 10px;
 				}
+
 				/* Firefox */
 				* {
 					scrollbar-width: auto;
@@ -892,10 +926,12 @@ main.tearchers {
 					border-radius: 10px;
 					border: 3px solid transparent;
 				}
+
 				.teacher-image {
 					width: 300px;
 					float: right;
 					padding-left: 20px;
+
 					@media screen and (max-width: 767px) {
 						width: 100%;
 						float: none;
@@ -903,14 +939,16 @@ main.tearchers {
 						margin-bottom: 20px;
 					}
 				}
+
 				h3 {
 					font-size: 20px;
 					color: #fff;
 					font-family: "Montserrat Bold";
 				}
+
 				// .position {
 				//     font-size: 16px;
-				//     color: #2b378b;
+				//     color: #0075A9;
 				//     font-family: "Montserrat SemiBold";
 				//     @media screen and (max-width: 767px) {
 				//         margin-bottom: 8px;
@@ -920,15 +958,18 @@ main.tearchers {
 					font-size: 16px;
 					color: #fff;
 					font-family: "Montserrat Medium";
+
 					@media screen and (max-width: 767px) {
 						margin-bottom: 8px;
 					}
 				}
+
 				img.alignright {
 					position: relative;
 					top: -60px;
 					right: -50px;
 					margin-left: -20px;
+
 					@media screen and (max-width: 767px) {
 						position: static;
 						margin-bottom: 10px;
@@ -937,6 +978,7 @@ main.tearchers {
 						float: right;
 					}
 				}
+
 				// img {
 				//     width: 100%;
 				//     height: auto;
@@ -944,11 +986,14 @@ main.tearchers {
 			}
 		}
 	}
+
 	.section-blog {
 		padding-bottom: 24px;
+
 		@media screen and (max-width: 767px) {
 			padding-bottom: 12px;
 		}
+
 		.container {
 			br {
 				display: none;
@@ -980,6 +1025,7 @@ main.tearchers {
 					}
 				}
 			}
+
 			.quote-heading {
 				color: #fff;
 				font-size: 16px;
@@ -1048,7 +1094,7 @@ main.tearchers {
 						margin: 10px 0;
 
 						a {
-							color: #2b378b;
+							color: #0075A9;
 							font-size: 14px;
 							line-height: 22px;
 							font-family: "Montserrat Medium";
@@ -1143,8 +1189,10 @@ main.tearchers {
 			}
 		}
 	}
+
 	.section-teacher {
 		padding: 0 0 24px;
+
 		.container {
 			.title-heading {
 				display: flex;
@@ -1174,20 +1222,26 @@ main.tearchers {
 				}
 			}
 		}
+
 		.box-teacher {
 			margin-bottom: 24px;
+
 			@media screen and (max-width: 767px) {
 				margin-bottom: 18px;
 			}
+
 			.box-image {
 				margin-bottom: 10px;
 				height: 340px;
+
 				@media screen and (max-width: 1024px) {
 					height: 280px;
 				}
+
 				@media screen and (max-width: 767px) {
 					height: 200px;
 				}
+
 				img {
 					width: 100%;
 					height: 100%;
@@ -1202,6 +1256,7 @@ main.tearchers {
 					font-size: 22px;
 					line-height: 24px;
 					margin-bottom: 0;
+
 					@media screen and (max-width: 1024px) {
 						font-size: 18px;
 					}
@@ -1217,8 +1272,10 @@ main.tearchers {
 			}
 		}
 	}
+
 	.section-banner-slider {
 		padding: 0 0 24px;
+
 		.banner-slider-teacher {
 			.owl-stage-outer {
 				.owl-stage {
@@ -1232,8 +1289,10 @@ main.tearchers {
 					}
 				}
 			}
+
 			.owl-nav {
 				margin-top: 0;
+
 				button {
 					position: absolute;
 					top: 40%;
@@ -1241,7 +1300,7 @@ main.tearchers {
 					height: 40px;
 					line-height: 30px;
 					background-color: #fff;
-					color: #2b378b;
+					color: #0075A9;
 					font-size: 40px;
 					border-radius: 50%;
 					display: flex;
@@ -1249,9 +1308,11 @@ main.tearchers {
 					text-align: center;
 					box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.5);
 				}
+
 				.owl-next {
 					right: -25px;
 				}
+
 				.owl-prev {
 					left: -25px;
 				}

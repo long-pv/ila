@@ -120,7 +120,7 @@ main.page-course-jumpstart {
 						line-height: 1.25;
 
 						@media screen and (min-width: 768px) {
-							text-shadow: 2px 5px 5px #2b378b;
+							text-shadow: 2px 5px 5px #0075A9;
 						}
 
 						@media screen and (max-width: 767px) {
@@ -140,7 +140,7 @@ main.page-course-jumpstart {
 						font-family: "Montserrat SemiBold";
 
 						@media screen and (min-width: 768px) {
-							text-shadow: 2px 5px 5px #2b378b;
+							text-shadow: 2px 5px 5px #0075A9;
 						}
 
 						@media screen and (max-width: 767px) {
@@ -176,7 +176,7 @@ main.page-course-jumpstart {
 			}
 		}
 
-		> .container {
+		>.container {
 			@media screen and (max-width: 767px) {
 				display: grid;
 
@@ -226,8 +226,7 @@ main.page-course-jumpstart {
 												width: 60px;
 												height: 60px;
 												padding: 10px;
-												border: 0.5px solid
-													rgba(255, 255, 255, 0.65);
+												border: 0.5px solid rgba(255, 255, 255, 0.65);
 												border-radius: 50%;
 											}
 
@@ -237,13 +236,10 @@ main.page-course-jumpstart {
 												background-color: #fff;
 												border-radius: 100% !important;
 												border: 2px solid transparent;
-												-webkit-animation: icon-bound-fill
-													2.3s infinite ease-in-out;
-												animation: icon-bound-fill 2.3s
-													infinite ease-in-out;
+												-webkit-animation: icon-bound-fill 2.3s infinite ease-in-out;
+												animation: icon-bound-fill 2.3s infinite ease-in-out;
 												transition: all 0.5s;
-												-webkit-transform-origin: 50%
-													50%;
+												-webkit-transform-origin: 50% 50%;
 												-ms-transform-origin: 50% 50%;
 												transform-origin: 50% 50%;
 												height: 60px;
@@ -287,13 +283,11 @@ main.page-course-jumpstart {
 				top: 0;
 				text-align: center;
 				padding: 55px 0 30px 0;
-				background: linear-gradient(
-					180deg,
-					rgba(255, 255, 255, 0) 0%,
-					#ffffff 13.02%,
-					#ffffff 70.31%,
-					#ffffff 100%
-				);
+				background: linear-gradient(180deg,
+						rgba(255, 255, 255, 0) 0%,
+						#ffffff 13.02%,
+						#ffffff 70.31%,
+						#ffffff 100%);
 				margin-top: -115px;
 			}
 
@@ -468,13 +462,11 @@ main.page-course-jumpstart {
 				position: relative;
 				padding: 55px 0 30px 0;
 				top: 0;
-				background: linear-gradient(
-					180deg,
-					rgba(255, 255, 255, 0) 0%,
-					#ffffff 13.02%,
-					#ffffff 70.31%,
-					#ffffff 100%
-				);
+				background: linear-gradient(180deg,
+						rgba(255, 255, 255, 0) 0%,
+						#ffffff 13.02%,
+						#ffffff 70.31%,
+						#ffffff 100%);
 				margin-top: -135px;
 
 				.container {
@@ -996,11 +988,9 @@ main.page-course-jumpstart {
 				height: 100%;
 				width: 100%;
 				position: absolute;
-				background: linear-gradient(
-					to right,
-					rgba(0, 0, 0, 0),
-					rgba(0, 0, 0, 0.5)
-				);
+				background: linear-gradient(to right,
+						rgba(0, 0, 0, 0),
+						rgba(0, 0, 0, 0.5));
 				z-index: 1;
 
 				@media screen and (min-width: 768px) {
@@ -1112,7 +1102,7 @@ main.page-course-jumpstart {
 		}
 
 		@media screen and (max-width: 767px) {
-			> .container {
+			>.container {
 				padding: 0;
 			}
 
@@ -1188,13 +1178,11 @@ main.page-course-jumpstart {
 				position: relative;
 				padding: 55px 0 0 0;
 				top: 0;
-				background: linear-gradient(
-					180deg,
-					rgba(255, 255, 255, 0) 0%,
-					#ffffff 13.02%,
-					#ffffff 70.31%,
-					#ffffff 100%
-				);
+				background: linear-gradient(180deg,
+						rgba(255, 255, 255, 0) 0%,
+						#ffffff 13.02%,
+						#ffffff 70.31%,
+						#ffffff 100%);
 				margin-top: -135px;
 			}
 
@@ -1229,11 +1217,14 @@ main.page-course-jumpstart {
 							margin-bottom: 12px;
 							max-width: 100%;
 						}
+
 						@media screen and (max-width: 767px) {
 							font-size: 20px;
+
 							br {
 								display: none;
 							}
+
 							span {
 								color: #000 !important;
 							}
@@ -1342,13 +1333,13 @@ main.page-course-jumpstart {
 
 					a {
 						text-decoration: none;
-						color: #2b378b;
+						color: #0075A9;
 						font-size: 16px;
 						line-height: 26px;
 						font-family: "Montserrat Medium";
 
 						i {
-							color: #c60c30;
+							color: #F32735;
 							margin-left: 10px;
 						}
 
@@ -1631,7 +1622,7 @@ main.page-course-jumpstart {
 							font-family: "Montserrat Medium";
 							font-size: 14px;
 							line-height: 22px;
-							color: #2b378b;
+							color: #0075A9;
 							text-decoration: none;
 							padding-left: 16px;
 
@@ -1715,13 +1706,13 @@ main.page-course-jumpstart {
 
 					a {
 						text-decoration: none;
-						color: #2b378b;
+						color: #0075A9;
 						font-size: 16px;
 						line-height: 26px;
 						font-family: "Montserrat Medium";
 
 						i {
-							color: #c60c30;
+							color: #F32735;
 							margin-left: 10px;
 						}
 
@@ -1787,6 +1778,7 @@ main.page-course-jumpstart {
 						font-size: 14px;
 						line-height: 24px;
 					}
+
 					p:last-child {
 						margin-bottom: 0;
 					}
@@ -1818,7 +1810,7 @@ main.page-course-jumpstart {
 
 				.owl-dot.active {
 					span {
-						background: #c60c30;
+						background: #F32735;
 						opacity: 1;
 					}
 				}
@@ -1925,17 +1917,16 @@ main.page-course-jumpstart {
 				@media screen and (min-width: 1280px) {
 					top: 5%;
 				}
+
 				@media screen and (max-width: 767px) {
 					position: relative;
 					padding: 55px 0 30px 0;
 					top: 0;
-					background: linear-gradient(
-						180deg,
-						rgba(255, 255, 255, 0) 0%,
-						#ffffff 13.02%,
-						#ffffff 70.31%,
-						#ffffff 100%
-					);
+					background: linear-gradient(180deg,
+							rgba(255, 255, 255, 0) 0%,
+							#ffffff 13.02%,
+							#ffffff 70.31%,
+							#ffffff 100%);
 					margin-top: -80px;
 				}
 
@@ -1978,6 +1969,7 @@ main.page-course-jumpstart {
 				}
 			}
 		}
+
 		.section-6 {
 			.box-course-update-2 {
 				.banner-content {
@@ -1998,6 +1990,7 @@ main.page-course-jumpstart {
 				@media screen and (max-width: 767px) {
 					margin-top: -80px;
 				}
+
 				.container {
 					.banner-content-main {
 						@media screen and (min-width: 768px) {
@@ -2029,6 +2022,7 @@ main.page-course-jumpstart {
 				}
 			}
 		}
+
 		.section-4 {
 			.box-main {
 				.container {
@@ -2041,16 +2035,15 @@ main.page-course-jumpstart {
 									height: 65%;
 									width: 100%;
 									position: absolute;
-									background: linear-gradient(
-										to top,
-										rgba(0, 0, 0, 0),
-										rgba(225, 225, 225, 1)
-									);
+									background: linear-gradient(to top,
+											rgba(0, 0, 0, 0),
+											rgba(225, 225, 225, 1));
 									z-index: 1;
 									top: 0;
 									left: 0;
 									right: 0;
 								}
+
 								.box-content {
 									z-index: 99;
 								}
@@ -2076,6 +2069,7 @@ main.page-course-jumpstart {
 				}
 			}
 		}
+
 		.section-7 {
 			.banner-content {
 				@media screen and (max-width: 767px) {
