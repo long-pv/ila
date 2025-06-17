@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Xemer Theme\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-08 15:54+0000\n"
-"PO-Revision-Date: 2025-05-08 15:55+0000\n"
+"PO-Revision-Date: 2025-05-31 14:52+0000\n"
 "Last-Translator: \n"
 "Language-Team: English (United States)\n"
 "Language: en_US\n"
@@ -12,11 +12,86 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.7.2; wp-6.8.1\n"
+"X-Loco-Version: 2.8.0; wp-6.8.1; php-8.2.28\n"
 "X-Domain: xemer_theme"
 
-#: functions.php:130
+#: page-study_solutions.php:152 page-study_solutions.php:203
+msgid " Xem thêm"
+msgstr "View more"
+
+#: page-recruitment_study_abroad.php:196
+msgid " Xem tất cả"
+msgstr "View all"
+
+#: page-home.php:190
+msgid "11-16 tuổi"
+msgstr "Teen learners (11-16yrs)"
+
+#: page-home.php:188
+msgid "3-6 tuổi"
+msgstr "Young learners (3-6yrs)"
+
+#: page-home.php:189
+msgid "6-11 tuổi"
+msgstr "Junior learners (6-11yrs)"
+
+#: functions.php:139
 msgid "Add widgets here."
+msgstr ""
+
+#: page-recruitment_study_abroad.php:265 page-study_program.php:431
+#: single.php:152
+msgid "Bài viết liên quan"
+msgstr ""
+
+#: page-news.php:171
+msgid "Bài viết phổ biến"
+msgstr ""
+
+#. Name of the template
+#: page-study_solutions_details.php:3
+msgid "Chi tiết giải pháp du học"
+msgstr ""
+
+#: single.php:66
+msgid "Chia sẻ bài viết"
+msgstr ""
+
+#: page-home.php:397
+msgid "Chưa phân loại"
+msgstr ""
+
+#. Name of the template
+#: page-study_program.php:3
+msgid "Chương Trình Học"
+msgstr "Programme"
+
+#: page-home.php:255
+msgid "Chương trình học"
+msgstr "Programme"
+
+#. Name of the template
+#: page-facilities.php:3
+msgid "Cơ Sở Vật Chất"
+msgstr ""
+
+#: page-about_us.php:229
+msgid "DẤU CHÂN"
+msgstr ""
+
+#. Name of the template
+#: page-study_solutions.php:3
+msgid "Giải pháp du học"
+msgstr ""
+
+#. Name of the template
+#: page-about_us.php:3
+msgid "Giới Thiệu"
+msgstr ""
+
+#. Name of the template
+#: page-outstanding_students.php:3
+msgid "Gương mặt xuất sắc"
 msgstr ""
 
 #. URI of the theme
@@ -27,15 +102,53 @@ msgstr ""
 msgid "https://tramkienthuc.net/"
 msgstr ""
 
+#: page-home.php:312
+msgid "Khám phá"
+msgstr "Discover"
+
+#: page-home.php:625
+msgid "Không gian học tập <br> chuẩn quốc tế tại ILA"
+msgstr ""
+
 #. Author of the theme
 msgid "longxemer"
 msgstr ""
 
-#: functions.php:53
+#: footer.php:261
+msgid "Luyện thi & Du học"
+msgstr "Exam Prep & Overseas Study"
+
+#: page-multimedia.php:191 page-home.php:513 page-home.php:538
+#: single-video_media.php:108 single-video_media.php:185
+msgid "MULTIMEDIA"
+msgstr ""
+
+#: page-multimedia.php:130 single-video_media.php:63
+msgid "Multimedia"
+msgstr ""
+
+#. Name of the template
+#: page-multimedia.php:3
+msgid "Multimedia (video)"
+msgstr ""
+
+#: page-home.php:191
+msgid "Người đi làm"
+msgstr "Adult"
+
+#: footer.php:207 footer.php:308
+msgid "Nhận ngay ưu đãi mới nhất tại ILA"
+msgstr "Receive the latest updates from ILA"
+
+#: page-about_us.php:466
+msgid "Nội quy học tập"
+msgstr ""
+
+#: functions.php:62
 msgid "Primary"
 msgstr ""
 
-#: functions.php:128
+#: functions.php:137
 msgid "Sidebar"
 msgstr ""
 
@@ -43,6 +156,114 @@ msgstr ""
 msgid "Thiết kế website WordPress chuyên nghiệp, chuẩn SEO, tối ưu UX/UI."
 msgstr ""
 
+#: page-about_us.php:65
+msgid "Thu gọn"
+msgstr ""
+
+#. Name of the template
+#: page-news.php:3
+msgid "Tin Tức"
+msgstr ""
+
+#. Name of the template
+#: page-news-bk.php:3
+msgid "Tin Tức Bk"
+msgstr ""
+
+#. Name of the template
+#: page-seminar_event.php:3
+msgid "Tin tức hội thảo - sự kiện"
+msgstr ""
+
+#: page-study_solutions_details.php:280
+msgid "TIPS DU HỌC"
+msgstr ""
+
+#: page-study_solutions_details.php:319 page-study_solutions_details.php:348
+msgid "Tips du học"
+msgstr ""
+
+#: footer.php:215
+msgid "Tiếng Anh cao cấp"
+msgstr "Premium English Programmes"
+
+#: footer.php:240
+msgid "Tiếng Anh tiêu chuẩn"
+msgstr "Standard English Program"
+
+#. Name of the template
+#: page-home.php:3 single-video_media.php:59
+msgid "Trang chủ"
+msgstr ""
+
+#. Name of the template
+#: page-training_center.php:3
+msgid "Trung tâm đào tạo"
+msgstr ""
+
+#: page-training_center.php:53
+msgid "TÌM TRUNG TÂM"
+msgstr ""
+
+#: footer.php:286
+msgid "Tìm hiểu thêm"
+msgstr "References"
+
+#. Name of the template
+#: page-recruitment_study_abroad.php:3
+msgid "Tư vấn du học"
+msgstr ""
+
+#: page-home.php:701
+msgid "Vui lòng chọn chương trình học."
+msgstr "Please select a study program."
+
+#: page-recruitment_study_abroad.php:62 page-home.php:264
+#: page-study_program.php:272
+msgid "Xem thêm"
+msgstr "View more"
+
+#: page-home.php:371 page-home.php:579 page-study_program.php:345
+#: page-study_program.php:495 page-news.php:284 page-news.php:441
+msgid "Xem tất cả"
+msgstr "View all"
+
+#: page-home.php:122
+msgid "XEM VIDEO"
+msgstr "WATCH VIDEO"
+
+#: page-facilities.php:50 page-teachers.php:51 page-study_program.php:55
+#: page-news.php:251
+msgid "Xem video"
+msgstr "Watch video"
+
 #. Name of the theme
 msgid "Xemer Theme"
+msgstr ""
+
+#: footer.php:30
+msgid "ĐĂNG KÝ LỚP HỌC THỬ MIỄN PHÍ NGAY BÂY GIỜ!"
+msgstr ""
+
+#: page-seminar_event.php:127 page-seminar_event.php:155
+#: page-seminar_event.php:215 page-study_solutions_details.php:212
+#: page-study_solutions_details.php:283
+msgid "Đăng ký ngay"
+msgstr ""
+
+#: page-about_us.php:229
+msgid "ĐẦU TIÊN"
+msgstr ""
+
+#: page-about_us.php:62
+msgid "Đọc thêm"
+msgstr ""
+
+#: page-home.php:187
+msgid "Độ tuổi"
+msgstr "Student Age"
+
+#. Name of the template
+#: page-teachers.php:3
+msgid "Đội Ngũ Giáo Viên"
 msgstr ""
