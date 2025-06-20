@@ -15,6 +15,11 @@
  */
 
 get_header();
+
+$lang = '';
+if (LANG == 'en') {
+    $lang = '_en';
+}
 ?>
 
 
@@ -114,7 +119,7 @@ get_header();
                                                                                                     href="<?php echo $item['youtube_url']; ?>">
                                                                                                     <div>
                                                                                                         <div>
-                                                                                                            XEM VIDEO
+                                                                                                             <?php _e("XEM VIDEO", "xemer_theme") ?>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </a>
@@ -179,11 +184,11 @@ get_header();
                                                                 width="24" height="24">
                                                         </div>
                                                         <select name="your_course" id="your_course">
-                                                            <option selected="" value="0">Độ tuổi</option>
-                                                            <option value="3_6_years_old">3-6 tuổi</option>
-                                                            <option value="6_11_years_old">6-11 tuổi</option>
-                                                            <option value="11_16_years_old">11-16 tuổi</option>
-                                                            <option value="working_people">Người đi làm</option>
+                                                            <option selected="" value="0"> <?php _e("Độ tuổi", "xemer_theme"); ?></option>
+                                                            <option value="3_6_years_old"> <?php _e("3-6 tuổi", "xemer_theme"); ?> </option>
+                                                            <option value="6_11_years_old"> <?php _e("6-11 tuổi", "xemer_theme"); ?> </option>
+                                                            <option value="11_16_years_old"> <?php _e("11-16 tuổi", "xemer_theme"); ?> </option>
+                                                            <option value="working_people"> <?php _e("Người đi làm", "xemer_theme"); ?> </option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -197,7 +202,7 @@ get_header();
                                                         <script>
                                                             const options_3_6_years_old = [
                                                                 <?php
-                                                                $s3_6_years_old = get_field('3_6_years_old', 'option') ?? [];
+                                                                $s3_6_years_old = get_field('3_6_years_old' . $lang, 'option') ?? [];
                                                                 if ($s3_6_years_old):
                                                                     foreach ($s3_6_years_old as $item):
                                                                         echo '{"title" : "' . $item['link']['title'] . '", "url" : "' . $item['link']['url'] . '"},';
@@ -208,7 +213,7 @@ get_header();
 
                                                             const options_6_11_years_old = [
                                                                 <?php
-                                                                $s6_11_years_old = get_field('6_11_years_old', 'option') ?? [];
+                                                                $s6_11_years_old = get_field('6_11_years_old' . $lang, 'option') ?? [];
                                                                 if ($s6_11_years_old):
                                                                     foreach ($s6_11_years_old as $item):
                                                                         echo '{"title" : "' . $item['link']['title'] . '", "url" : "' . $item['link']['url'] . '"},';
@@ -219,7 +224,7 @@ get_header();
 
                                                             const options_11_16_years_old = [
                                                                 <?php
-                                                                $s11_16_years_old = get_field('11_16_years_old', 'option') ?? [];
+                                                                $s11_16_years_old = get_field('11_16_years_old' . $lang, 'option') ?? [];
                                                                 if ($s11_16_years_old):
                                                                     foreach ($s11_16_years_old as $item):
                                                                         echo '{"title" : "' . $item['link']['title'] . '", "url" : "' . $item['link']['url'] . '"},';
@@ -230,7 +235,7 @@ get_header();
 
                                                             const options_working_people = [
                                                                 <?php
-                                                                $working_people = get_field('working_people', 'option') ?? [];
+                                                                $working_people = get_field('working_people' . $lang, 'option') ?? [];
                                                                 if ($working_people):
                                                                     foreach ($working_people as $item):
                                                                         echo '{"title" : "' . $item['link']['title'] . '", "url" : "' . $item['link']['url'] . '"},';
@@ -247,7 +252,7 @@ get_header();
 
                                                         <select name="your_option" id="your_option">
                                                             <option selected="" value="0">
-                                                                Chương trình học
+                                                            <?php _e("Chương trình học", "xemer_theme"); ?> 
                                                             </option>
 
                                                             <!-- các option ở jquery hãy thêm vào đây và xóa đi tương ứng theo lựa chọn -->
@@ -256,7 +261,7 @@ get_header();
                                                 </div>
                                                 <div class="col-md-4 col-lg-3 col-xl-3">
                                                     <button class="btn-change-option">
-                                                        <a href="#">Xem thêm</a>
+                                                        <a href="#"><?php _e("Xem thêm", "xemer_theme") ?> </a>
                                                     </button>
                                                 </div>
                                             </div>
@@ -304,7 +309,7 @@ get_header();
                                                                 </span>
                                                                 <a class="button-text" href="<?php echo $item['link']; ?>">
                                                                     <span>
-                                                                        Khám phá
+                                                                    <?php _e("Khám phá", "xemer_theme") ?>
                                                                     </span>
                                                                 </a>
                                                             </button>
@@ -363,7 +368,7 @@ get_header();
                                     </h2>
                                     <button>
                                         <a href="<?php echo $news['view_all'] ?? '#'; ?>">
-                                            Xem tất cả <i class="fa-regular fa-arrow-right"></i>
+                                        <?php _e("Xem tất cả", "xemer_theme") ?>  <i class="fa-regular fa-arrow-right"></i>
                                         </a>
                                     </button>
                                 </div>
@@ -389,7 +394,7 @@ get_header();
                                 $thumb_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
                                 $category  = get_the_category();
                                 $category_link = !empty($category) ? get_category_link($category[0]->term_id) : '#';
-                                $category_name = !empty($category) ? $category[0]->name : 'Chưa phân loại';
+                                $category_name = !empty($category) ? $category[0]->name : _e("Chưa phân loại","xemer_theme");
                             ?>
                                 <?php if ($i == 0): ?>
                                     <!-- Bài viết chính bên trái -->
@@ -460,7 +465,7 @@ get_header();
                                         <div class="col-md-4 col-xl-5">
                                             <div class="tile-multimedia" data-aos="fade-up" data-aos-delay="50"
                                                 data-aos-duration="800">
-                                                <h2><a href=" <?php echo $multimedia['view_all'] ?? '#'; ?>">
+                                                <h2><a href="<?php echo $multimedia['view_all'] ?? '#'; ?>">
                                                         <?php echo $multimedia['title'] ?? ''; ?>
                                                     </a></h2>
                                             </div>
@@ -471,9 +476,6 @@ get_header();
                         </div>
 
                         <?php
-                        // Lấy URL trang danh sách video từ ACF Options
-                        $page_all_video = get_field('page_all_video', 'option') ?? '#';
-
                         // Query các bài viết từ post_type video_media
                         $args = array(
                             'post_type' => 'video_media',
@@ -488,7 +490,7 @@ get_header();
                                     $count = 0;
                                     while ($query->have_posts()) : $query->the_post();
                                         $thumb_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
-                                        $video_url = get_field('video_url'); // bạn cần lưu video YouTube URL vào field này
+                                        $video_url = get_field('link_youtube');
                                         $video_title = get_the_title();
                                         $video_permalink = get_permalink();
                                     ?>
@@ -507,8 +509,8 @@ get_header();
                                                     </div>
                                                     <div class="video-archive">
                                                         <span>
-                                                            <a href="<?php echo esc_url($page_all_video); ?>">
-                                                                MULTIMEDIA
+                                                            <a href="<?php echo $multimedia['view_all'] ?? '#'; ?>">
+                                                            <?php _e("MULTIMEDIA","xemer_theme"); ?>
                                                             </a>
                                                         </span>
                                                     </div>
@@ -533,7 +535,7 @@ get_header();
                                                                     </div>
                                                                     <div class="video-archive">
                                                                         <span>
-                                                                            <a href="<?php echo esc_url($page_all_video); ?>">MULTIMEDIA</a>
+                                                                            <a href="<?php echo $multimedia['view_all'] ?? '#'; ?>"> <?php _e("MULTIMEDIA","xemer_theme"); ?> </a>
                                                                         </span>
                                                                     </div>
                                                                 </div>
@@ -574,7 +576,7 @@ get_header();
                                     <h2><?php echo esc_html($title); ?></h2>
                                     <button>
                                         <a href="<?php echo esc_url($view_all); ?>">
-                                            Xem tất cả <i class="fa-regular fa-arrow-right"></i>
+                                        <?php _e("Xem tất cả", "xemer_theme") ?> <i class="fa-regular fa-arrow-right"></i>
                                         </a>
                                     </button>
                                 </div>
@@ -620,7 +622,7 @@ get_header();
             <?php
             $learning_space = get_field('learning_space');
             $gallery = $learning_space['gallery'] ?? [];
-            $title = $learning_space['title'] ?? 'Không gian học tập <br> chuẩn quốc tế tại ILA';
+            $title = $learning_space['title'] ?? _e('Không gian học tập <br> chuẩn quốc tế tại ILA', "xemer_theme");
             ?>
             <section id="section-6" class="section-space-powers">
                 <div class="container">
@@ -696,8 +698,9 @@ get_footer();
             if (url && url !== '0') {
                 window.location.href = url;
             } else {
-                alert('Vui lòng chọn chương trình học.');
+                alert('<?php _e("Vui lòng chọn chương trình học.","xemer_theme"); ?>');
             }
+           
         });
     });
 </script>

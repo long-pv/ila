@@ -11,7 +11,7 @@ body {
 	}
 
 	.mfp-close {
-		color: #2b378b !important;
+		color: #0075A9 !important;
 	}
 }
 
@@ -28,7 +28,7 @@ body {
 main {
 	button.discover {
 		border: none;
-		background: #2b378b;
+		background: #0075A9;
 		border-radius: 50px;
 		width: 190px;
 		padding: 0;
@@ -40,7 +40,7 @@ main {
 			content: "";
 			height: 450px;
 			width: 450px;
-			background: #c60c30;
+			background: #F32735;
 			border-radius: 50%;
 			position: absolute;
 			top: 50%;
@@ -85,7 +85,7 @@ main {
 				content: "";
 				width: 10px;
 				height: 10px;
-				background: #c60c30;
+				background: #F32735;
 				position: absolute;
 				border-radius: 50%;
 				right: 30px;
@@ -243,7 +243,7 @@ main {
 			}
 		}
 
-		> .container {
+		>.container {
 			@media screen and (max-width: 767px) {
 				display: grid;
 
@@ -391,6 +391,7 @@ main {
 			@media screen and (max-width: 1024px) {
 				order: 1;
 			}
+
 			@media screen and (min-width: 1200px) and (max-width: 1550px) {
 				height: 780px;
 				object-fit: cover;
@@ -421,13 +422,11 @@ main {
 				top: 0;
 				right: 0;
 				padding: 40px 0 30px 0;
-				background: linear-gradient(
-					180deg,
-					rgba(255, 255, 255, 0) 0%,
-					#ffffff 7.02%,
-					#ffffff 83.31%,
-					#ffffff 100%
-				);
+				background: linear-gradient(180deg,
+						rgba(255, 255, 255, 0) 0%,
+						#ffffff 7.02%,
+						#ffffff 83.31%,
+						#ffffff 100%);
 				margin-top: -90px;
 				transform: translate(0);
 			}
@@ -506,7 +505,7 @@ main {
 							font-family: "Montserrat Medium";
 							text-decoration: none;
 							padding: 10px 30px;
-							background: #2b378b;
+							background: #0075A9;
 							border-radius: 5px;
 						}
 					}
@@ -537,6 +536,7 @@ main {
 							}
 						}
 					}
+
 					h1 {
 						@media screen and (max-width: 767px) {
 							font-size: 22px;
@@ -563,9 +563,11 @@ main {
 			}
 		}
 	}
+
 	#section-timeline {
 		.row {
 			@media screen and (min-width: 1200px) and (max-width: 1600px) {
+
 				.col-xl-2,
 				.col-xl-10 {
 					width: 100%;
@@ -573,6 +575,7 @@ main {
 			}
 		}
 	}
+
 	.section-timeline {
 		padding: 50px 0;
 		position: relative;
@@ -587,11 +590,13 @@ main {
 
 			.row {
 				@media screen and (min-width: 1200px) and (max-width: 1600px) {
+
 					.col-xl-2,
 					.col-xl-10 {
 						width: 100%;
 					}
 				}
+
 				.col-lg-3 {
 					.content-timeline {
 						@media screen and (max-width: 991px) {
@@ -659,13 +664,11 @@ main {
 				right: 0;
 				text-align: left;
 				padding: 40px 0 30px 0;
-				background: linear-gradient(
-					180deg,
-					rgba(255, 255, 255, 0) 0%,
-					#ffffff 7.02%,
-					#ffffff 83.31%,
-					#ffffff 100%
-				);
+				background: linear-gradient(180deg,
+						rgba(255, 255, 255, 0) 0%,
+						#ffffff 7.02%,
+						#ffffff 83.31%,
+						#ffffff 100%);
 				margin-top: -20px;
 				transform: translate(0);
 			}
@@ -680,6 +683,7 @@ main {
 						h2 {
 							color: #000 !important;
 							line-height: 1.25;
+
 							span {
 								color: #000 !important;
 							}
@@ -687,6 +691,7 @@ main {
 
 						p {
 							color: #000 !important;
+
 							span {
 								color: #000 !important;
 							}
@@ -915,8 +920,7 @@ main {
 
 													&:hover {
 														transform: scale(1.2);
-														transition: transform
-															0.3s ease-out;
+														transition: transform 0.3s ease-out;
 													}
 												}
 											}
@@ -1036,6 +1040,7 @@ main {
 					}
 
 					.col-sm-4 {
+
 						.box-right,
 						.box-left,
 						.box-middle {
@@ -1069,9 +1074,11 @@ main {
 									width: auto;
 									height: 90px;
 									object-fit: contain;
+
 									@media screen and (max-width: 767px) {
 										height: auto;
 									}
+
 									&:hover {
 										transform: scale(1.2);
 										transition: transform 0.3s ease-out;
@@ -1135,13 +1142,11 @@ main {
 				right: 0;
 				text-align: left;
 				padding: 40px 0 30px 0;
-				background: linear-gradient(
-					180deg,
-					rgba(255, 255, 255, 0) 0%,
-					#ffffff 7.02%,
-					#ffffff 83.31%,
-					#ffffff 100%
-				);
+				background: linear-gradient(180deg,
+						rgba(255, 255, 255, 0) 0%,
+						#ffffff 7.02%,
+						#ffffff 83.31%,
+						#ffffff 100%);
 				margin-top: -90px;
 				transform: translate(0);
 			}
@@ -1584,6 +1589,7 @@ main {
 							@media screen and (max-width: 991px) {
 								padding: 0;
 							}
+
 							//
 							// background-color: transparent;
 							// background-position: center center;
@@ -2106,6 +2112,7 @@ main {
 												font-size: 18px;
 												color: #000;
 												font-family: "Montserrat Bold";
+
 												@media screen and (max-width: 767px) {
 													font-size: 16px;
 												}
@@ -2150,6 +2157,7 @@ main {
 														color: #2f4094;
 														font-family: "Montserrat Bold";
 														margin: 0;
+
 														@media screen and (max-width: 767px) {
 															font-size: 16px;
 														}
@@ -2221,6 +2229,7 @@ main {
 											font-size: 14px;
 											color: #fff;
 											font-family: "Montserrat Medium";
+
 											@media screen and (min-width: 1200px) and (max-width: 1366px) {
 												font-size: 12px;
 											}
@@ -2228,6 +2237,7 @@ main {
 											span {
 												font-size: 20px;
 												font-family: "Montserrat Bold";
+
 												@media screen and (min-width: 1200px) and (max-width: 1366px) {
 													font-size: 18px;
 												}
@@ -2420,6 +2430,7 @@ main {
 												@media screen and (max-width: 767px) {
 													font-size: 16px;
 													font-family: "Montserrat Bold";
+
 													span {
 														font-family: "Montserrat Bold";
 													}
@@ -2707,8 +2718,10 @@ main {
 													color: #2f4094;
 													font-family: "Montserrat Bold";
 												}
+
 												@media screen and (max-width: 767px) {
 													font-size: 16px;
+
 													span {
 														font-size: 16px;
 													}
@@ -2808,38 +2821,29 @@ main {
 											.row {
 												.col-md-4 {
 													&:nth-child(1) {
-														border-bottom: 1px solid
-															#efefef;
+														border-bottom: 1px solid #efefef;
 													}
 
 													&:nth-child(2) {
-														border-left: 1px solid
-															#efefef;
-														border-right: 1px solid
-															#efefef;
-														border-bottom: 1px solid
-															#efefef;
+														border-left: 1px solid #efefef;
+														border-right: 1px solid #efefef;
+														border-bottom: 1px solid #efefef;
 													}
 
 													&:nth-child(3) {
-														border-bottom: 1px solid
-															#efefef;
+														border-bottom: 1px solid #efefef;
 													}
 
 													&:nth-child(4) {
 														@media screen and (max-width: 767px) {
-															border-left: 1px
-																solid #efefef;
-															border-bottom: 1px
-																solid #efefef;
+															border-left: 1px solid #efefef;
+															border-bottom: 1px solid #efefef;
 														}
 													}
 
 													&:nth-child(5) {
-														border-left: 1px solid
-															#efefef;
-														border-right: 1px solid
-															#efefef;
+														border-left: 1px solid #efefef;
+														border-right: 1px solid #efefef;
 													}
 												}
 											}
@@ -2852,6 +2856,7 @@ main {
 													font-size: 18px;
 													font-family: "Montserrat Bold";
 													margin-bottom: 4px;
+
 													@media screen and (max-width: 767px) {
 														font-size: 16px;
 													}
@@ -2862,6 +2867,7 @@ main {
 													margin-bottom: 0;
 													font-size: 18px;
 													font-family: "Montserrat Regular";
+
 													@media screen and (max-width: 767px) {
 														font-size: 16px;
 													}
@@ -2994,6 +3000,7 @@ main {
 			@media screen and (min-width: 1280px) and (max-width: 1560px) {
 				max-width: 1366px !important;
 			}
+
 			@media screen and (max-width: 767px) {
 				margin: 0;
 			}
@@ -3067,21 +3074,17 @@ main {
 
 	.h--timeline-dates::before {
 		left: 0;
-		background: linear-gradient(
-			to right,
-			hsl(0, 0%, 100%),
-			hsla(0, 0%, 100%, 0)
-		);
+		background: linear-gradient(to right,
+				hsl(0, 0%, 100%),
+				hsla(0, 0%, 100%, 0));
 		width: 60px;
 	}
 
 	.h--timeline-dates::after {
 		right: 0;
-		background: linear-gradient(
-			to left,
-			hsl(0, 0%, 100%),
-			hsla(0, 0%, 100%, 0)
-		);
+		background: linear-gradient(to left,
+				hsl(0, 0%, 100%),
+				hsla(0, 0%, 100%, 0));
 		width: 20px;
 	}
 
@@ -3453,18 +3456,20 @@ main {
 
 	/**/
 }
+
 .h--timeline-line li .h--timeline-date.h--timeline-date--selected {
 	pointer-events: none;
 }
 
 .h--timeline-line li .h--timeline-date.h--timeline-date--selected::after {
 	background-color: #f7f7f7;
-	border-color: #c60c30;
+	border-color: #F32735;
 }
 
 .h--timeline-line li .h--timeline-date.h--timeline-date--selected::before {
-	background-color: #c60c30;
+	background-color: #F32735;
 }
+
 #form-submit-register.section-footer {
 	margin-top: 0;
 }

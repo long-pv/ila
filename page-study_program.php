@@ -33,12 +33,12 @@ get_header();
             <section class="section-1">
                 <div class="container">
                     <?php // if ($video_url): 
-                    ?>
+                        ?>
                     <video id="banner-video" autoplay loop muted playsinline oncontextmenu="return false;" preload="auto">
                         <source src="<?php echo $video_url; ?>" type="video/mp4" />
                     </video>
                     <?php //endif; 
-                    ?>
+                        ?>
 
                     <div class="banner-content">
                         <div class="container">
@@ -51,7 +51,8 @@ get_header();
 
                                 <?php if ($youtube_link): ?>
                                     <p>
-                                        <a class="open-popup" href="<?php echo $youtube_link; ?>">Xem video</a>
+                                        <a class="open-popup" href="<?php echo $youtube_link; ?>">
+                                            <?php _e("Xem video", "xemer_theme"); ?></a>
 
                                         <a class="open-popup" href="<?php echo $youtube_link; ?>" style="margin-left: 10px">
                                             <img width="65" height="64"
@@ -268,7 +269,7 @@ get_header();
                                     <p>
                                         <button class="discover">
                                             <a href="<?php echo $link_box; ?>" target="_blank" rel="noopener">
-                                                Xem thêm
+                                                <?php _e("Xem thêm", "xemer_theme"); ?>
                                             </a>
                                         </button>
                                     </p>
@@ -341,7 +342,7 @@ get_header();
                                         <h2><?php echo $title ?></h2>
                                     <?php endif; ?>
                                     <button>
-                                        <a href="<?php echo $link; ?>">Xem tất cả <i
+                                        <a href="<?php echo $link; ?>"> <?php _e("Xem tất cả", "xemer_theme"); ?> <i
                                                 class="fa-regular fa-arrow-right"></i></a>
                                     </button>
                                 </div>
@@ -365,7 +366,7 @@ get_header();
                                 $thumb = get_the_post_thumbnail_url($post_obj, 'full');
                                 $title = get_the_title($post_obj);
                                 $link = get_permalink($post_obj);
-                            ?>
+                                ?>
                                 <div class="col-xl-7">
                                     <div class="box-video-top">
                                         <div class="video-item-lg">
@@ -395,7 +396,7 @@ get_header();
                                                         $thumb = get_the_post_thumbnail_url($post, 'medium');
                                                         $title = get_the_title($post);
                                                         $link = get_permalink($post);
-                                                    ?>
+                                                        ?>
                                                         <div class="col-xl-4 col-12">
                                                             <div class="video-item">
                                                                 <div class="box-video">
@@ -427,7 +428,7 @@ get_header();
                             <div class="col-xl-5">
                                 <div class="related-post">
                                     <div class="row">
-                                        <h3 class="related-title">Bài viết liên quan</h3>
+                                        <h3 class="related-title"> <?php _e("Bài viết liên quan", "xemer_theme"); ?> </h3>
                                         <?php foreach ($releated_posts as $post_item): ?>
                                             <?php
                                             $post_id = is_array($post_item) ? $post_item['ID'] : $post_item;
@@ -438,7 +439,7 @@ get_header();
                                                 $link = get_permalink($post);
                                                 $categories = get_the_category($post_id);
                                                 $cat_name = $categories[0]->name ?? '';
-                                            ?>
+                                                ?>
                                                 <div class="col-md-6 col-xl-12">
                                                     <div class="post-item">
                                                         <div class="thumb-img">
@@ -491,7 +492,8 @@ get_header();
 
                                 <button>
                                     <a href="<?php echo esc_url($link); ?>">
-                                        Xem tất cả <i class="fa-regular fa-arrow-right"></i>
+                                        <?php _e("Xem tất cả", "xemer_theme"); ?>
+                                        <i class="fa-regular fa-arrow-right"></i>
                                     </a>
                                 </button>
 
@@ -505,7 +507,7 @@ get_header();
                             $student_link = get_permalink($post_student->ID);
                             $student_center = get_field('school_name', $post_student->ID);
                             $student_achievement = get_field('achievement', $post_student->ID);
-                        ?>
+                            ?>
                             <div class="hall-item">
                                 <div class="hall-image">
                                     <?php if ($student_image): ?>

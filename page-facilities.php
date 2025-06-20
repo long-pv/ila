@@ -47,7 +47,7 @@ get_header();
 
                                 <?php if ($youtube_link): ?>
                                     <p>
-                                        <a class="open-popup" href="<?php echo $youtube_link; ?>">Xem video</a>
+                                        <a class="open-popup" href="<?php echo $youtube_link; ?>"><?php _e("Xem video", "xemer_theme"); ?> </a>
 
                                         <a class="open-popup" href="<?php echo $youtube_link; ?>" style="margin-left: 10px">
                                             <img width="65" height="64"

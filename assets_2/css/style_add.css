@@ -575,13 +575,13 @@ div#ez-toc-container {
 .site .a2a_kit.addtoany_list a:focus,
 .addtoany_list a:hover,
 .widget .addtoany_list a:hover {
-	border-color: #c60c30 !important;
+	border-color: #f32735 !important;
 }
 
 .site .a2a_kit.addtoany_list a:focus path,
 .addtoany_list a:hover path,
 .widget .addtoany_list a:hover path {
-	fill: #c60c30 !important;
+	fill: #f32735 !important;
 }
 
 .rll-youtube-player {

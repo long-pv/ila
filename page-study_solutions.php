@@ -15,11 +15,16 @@
  */
 
 get_header();
+
+$lang = '';
+if (LANG == 'en') {
+    $lang = '_en';
+}
 ?>
 <div id="page">
     <div id="content" class="site-content">
 
-        <section class="section-main-osc" id="section-1" style="background-color: #1b3f94">
+        <section class="section-main-osc" id="section-1" style="background-color: #0075A9">
             <div class="row">
                 <?php
                 $banner = get_field('banner');
@@ -66,7 +71,7 @@ get_header();
                         </div>
                         <div class="img-pattern">
                             <img width="1794" height="603"
-                                src="/wp-content/uploads/2024/04/background-pattern-product-list-new.png"
+                                src="https://iladuhoc.edu.vn/wp-content/uploads/2024/04/background-pattern-product-list-new.png"
                                 alt="background pattern product list">
                         </div>
                     </div>
@@ -144,7 +149,7 @@ get_header();
                                                 <h2><?php echo $title; ?></h2>
                                                 <p><?php echo $description; ?></p>
                                                 <div class="course-button">
-                                                    <button class="btn-register"><a href="<?php echo $link ?: '#'; ?>">Xem thêm</a></button>
+                                                    <button class="btn-register"><a href="<?php echo $link ?: '#'; ?>"><?php _e(" Xem thêm", "xemer_theme"); ?></a></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -195,7 +200,7 @@ get_header();
                                                         <?php if (!empty($item['link'])): ?>
                                                             <div class="course-button">
                                                                 <button class="btn-register">
-                                                                    <a href="<?php echo esc_url($item['link']); ?>">Xem thêm</a>
+                                                                    <a href="<?php echo esc_url($item['link']); ?>"><?php _e(" Xem thêm", "xemer_theme"); ?></a>
                                                                 </button>
                                                             </div>
                                                         <?php endif; ?>
@@ -216,7 +221,7 @@ get_header();
 </div>
 
 <?php
-$sign_up_for_consultation = get_field('sign_up_for_consultation', 'option') ?? null;
+$sign_up_for_consultation = get_field('sign_up_for_consultation' . $lang, 'option') ?? null;
 if ($sign_up_for_consultation):
     $bg = $sign_up_for_consultation['background'] ?? '';
     $title = $sign_up_for_consultation['title'] ?? '';

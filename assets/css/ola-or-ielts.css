@@ -1,1395 +1,1936 @@
 @keyframes icon-bound-fill {
-  0% {
-    -webkit-transform: rotate(0) scale(0.7) skew(1deg);
-    transform: rotate(0) scale(0.7) skew(1deg);
-    opacity: 0.2; }
-  50% {
-    -webkit-transform: rotate(0) scale(1) skew(1deg);
-    transform: rotate(0) scale(1) skew(1deg);
-    opacity: 0.2; }
-  100% {
-    -webkit-transform: rotate(0) scale(0.7) skew(1deg);
-    transform: rotate(0) scale(0.7) skew(1deg);
-    opacity: 0.2; } }
+	0% {
+		-webkit-transform: rotate(0) scale(0.7) skew(1deg);
+		transform: rotate(0) scale(0.7) skew(1deg);
+		opacity: 0.2;
+	}
+	50% {
+		-webkit-transform: rotate(0) scale(1) skew(1deg);
+		transform: rotate(0) scale(1) skew(1deg);
+		opacity: 0.2;
+	}
+	100% {
+		-webkit-transform: rotate(0) scale(0.7) skew(1deg);
+		transform: rotate(0) scale(0.7) skew(1deg);
+		opacity: 0.2;
+	}
+}
 main.page-course-ola-ielts button.discover {
-  width: auto;
-  font-family: "Montserrat SemiBold", sans-serif;
-  text-transform: none;
-  font-size: 14px;
-  line-height: 14px; }
-  @media screen and (max-width: 1024px) {
-    main.page-course-ola-ielts button.discover a {
-      padding: 10px 30px 10px 15px;
-      font-size: 10px;
-      line-height: 1; } }
+	width: auto;
+	font-family: "Montserrat SemiBold", sans-serif;
+	text-transform: none;
+	font-size: 14px;
+	line-height: 14px;
+}
 @media screen and (max-width: 1024px) {
-  main.page-course-ola-ielts p {
-    font-size: 16px; }
-  main.page-course-ola-ielts h2 {
-    font-size: 30px; } }
+	main.page-course-ola-ielts button.discover a {
+		padding: 10px 30px 10px 15px;
+		font-size: 10px;
+		line-height: 1;
+	}
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts p {
+		font-size: 16px;
+	}
+	main.page-course-ola-ielts h2 {
+		font-size: 30px;
+	}
+}
 @media screen and (max-width: 767px) {
-  main.page-course-ola-ielts h2 {
-    font-size: 20px; } }
+	main.page-course-ola-ielts h2 {
+		font-size: 20px;
+	}
+}
 main.page-course-ola-ielts table {
-  border-collapse: separate !important;
-  font-family: "Montserrat SemiBold";
-  font-size: 18px;
-  border-spacing: 10px; }
-  @media screen and (max-width: 1024px) {
-    main.page-course-ola-ielts table {
-      font-size: 16px; } }
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-    main.page-course-ola-ielts table {
-      font-size: 12px; } }
-  main.page-course-ola-ielts table td {
-    background-color: #242021;
-    color: #fff;
-    padding: 0.5em;
-    border: 0; }
-  main.page-course-ola-ielts table tr:first-child td {
-    background-color: transparent; }
+	border-collapse: separate !important;
+	font-family: "Montserrat SemiBold";
+	font-size: 18px;
+	border-spacing: 10px;
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts table {
+		font-size: 16px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts table {
+		font-size: 12px;
+	}
+}
+main.page-course-ola-ielts table td {
+	background-color: #242021;
+	color: #fff;
+	padding: 0.5em;
+	border: 0;
+}
+main.page-course-ola-ielts table tr:first-child td {
+	background-color: transparent;
+}
 main.page-course-ola-ielts .section-1 {
-  position: relative;
-  padding: 50px 0; }
-  @media screen and (max-width: 991px) {
-    main.page-course-ola-ielts .section-1 {
-      padding: 30px 0; } }
-  main.page-course-ola-ielts .section-1 .container {
-    position: relative; }
-    main.page-course-ola-ielts .section-1 .container #banner-video {
-      width: 100%;
-      height: auto;
-      border-radius: 35px;
-      max-height: 560px;
-      object-fit: cover;
-      display: block; }
-      @media screen and (max-width: 1024px) {
-        main.page-course-ola-ielts .section-1 .container #banner-video {
-          height: 200px; } }
-      @media screen and (min-width: 768px) and (max-width: 991px) {
-        main.page-course-ola-ielts .section-1 .container #banner-video {
-          height: 370px; } }
-      @media screen and (width: 1024px) {
-        main.page-course-ola-ielts .section-1 .container #banner-video {
-          height: 470px; } }
-      @media screen and (max-width: 767px) {
-        main.page-course-ola-ielts .section-1 .container #banner-video {
-          border-radius: 15px; } }
-  main.page-course-ola-ielts .section-1 .img-background {
-    width: 100%;
-    height: auto; }
-    @media screen and (min-width: 1280px) {
-      main.page-course-ola-ielts .section-1 .img-background {
-        max-height: 900px;
-        object-fit: cover; } }
-  main.page-course-ola-ielts .section-1 .banner-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-    @media screen and (min-width: 768px) {
-      main.page-course-ola-ielts .section-1 .banner-content {
-        width: auto;
-        top: 10%;
-        left: 5%;
-        transform: translate(0); } }
-    main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main {
-      max-width: 600px;
-      padding: 0;
-      margin: 0 auto 0 0;
-      text-align: left; }
-      main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main h1 {
-        font-family: "Montserrat Bold";
-        font-size: 34px;
-        margin-bottom: 15px;
-        line-height: 1.25; }
-        @media screen and (min-width: 768px) {
-          main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main h1 {
-            text-shadow: 2px 5px 5px #2b378b; } }
-        @media screen and (max-width: 767px) {
-          main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main h1 {
-            font-size: 22px;
-            line-height: 1.25;
-            margin-bottom: 10px; }
-            main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main h1 span {
-              color: #000 !important; } }
-      main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main p {
-        text-transform: none;
-        font-size: 22px;
-        font-family: "Montserrat SemiBold"; }
-        @media screen and (min-width: 768px) {
-          main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main p {
-            text-shadow: 2px 5px 5px #2b378b; } }
-        @media screen and (max-width: 767px) {
-          main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main p {
-            font-size: 14px; }
-            main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main p span {
-              color: #000 !important; } }
-        main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main p a {
-          text-decoration: none;
-          color: #fff; }
-          main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main p a:hover {
-            text-decoration: underline; }
-        main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main p img {
-          width: 32px;
-          height: 32px; }
-  @media screen and (max-width: 767px) {
-    main.page-course-ola-ielts .section-1 > .container {
-      display: grid; }
-      main.page-course-ola-ielts .section-1 > .container video {
-        order: 2; }
-      main.page-course-ola-ielts .section-1 > .container .banner-content {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: translate(0);
-        padding-top: 12px; }
-        main.page-course-ola-ielts .section-1 > .container .banner-content .container .banner-content-main {
-          max-width: 100%;
-          text-align: center; } }
-      @media screen and (max-width: 767px) and (max-width: 767px) {
-        main.page-course-ola-ielts .section-1 > .container .banner-content .container .banner-content-main p {
-          color: #fff;
-          position: absolute;
-          top: 140px;
-          left: 50%;
-          transform: translate(-50%, 0);
-          display: grid; }
-          main.page-course-ola-ielts .section-1 > .container .banner-content .container .banner-content-main p a {
-            color: #fff; } }
+	position: relative;
+	padding: 50px 0;
+}
+@media screen and (max-width: 991px) {
+	main.page-course-ola-ielts .section-1 {
+		padding: 30px 0;
+	}
+}
+main.page-course-ola-ielts .section-1 .container {
+	position: relative;
+}
+main.page-course-ola-ielts .section-1 .container #banner-video {
+	width: 100%;
+	height: auto;
+	border-radius: 35px;
+	max-height: 560px;
+	object-fit: cover;
+	display: block;
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-1 .container #banner-video {
+		height: 200px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-1 .container #banner-video {
+		height: 370px;
+	}
+}
+@media screen and (width: 1024px) {
+	main.page-course-ola-ielts .section-1 .container #banner-video {
+		height: 470px;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-1 .container #banner-video {
+		border-radius: 15px;
+	}
+}
+main.page-course-ola-ielts .section-1 .img-background {
+	width: 100%;
+	height: auto;
+}
+@media screen and (min-width: 1280px) {
+	main.page-course-ola-ielts .section-1 .img-background {
+		max-height: 900px;
+		object-fit: cover;
+	}
+}
+main.page-course-ola-ielts .section-1 .banner-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 768px) {
+	main.page-course-ola-ielts .section-1 .banner-content {
+		width: auto;
+		top: 10%;
+		left: 5%;
+		transform: translate(0);
+	}
+}
+main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main {
+	max-width: 600px;
+	padding: 0;
+	margin: 0 auto 0 0;
+	text-align: left;
+}
+main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main h1 {
+	font-family: "Montserrat Bold";
+	font-size: 34px;
+	margin-bottom: 15px;
+	line-height: 1.25;
+}
+@media screen and (min-width: 768px) {
+	main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main h1 {
+		text-shadow: 2px 5px 5px #0075a9;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main h1 {
+		font-size: 22px;
+		line-height: 1.25;
+		margin-bottom: 10px;
+	}
+	main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main h1 span {
+		color: #000 !important;
+	}
+}
+main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main p {
+	text-transform: none;
+	font-size: 22px;
+	font-family: "Montserrat SemiBold";
+}
+@media screen and (min-width: 768px) {
+	main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main p {
+		text-shadow: 2px 5px 5px #0075a9;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main p {
+		font-size: 14px;
+	}
+	main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main p span {
+		color: #000 !important;
+	}
+}
+main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main p a {
+	text-decoration: none;
+	color: #fff;
+}
+main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main p a:hover {
+	text-decoration: underline;
+}
+main.page-course-ola-ielts .section-1 .banner-content .container .banner-content-main p img {
+	width: 32px;
+	height: 32px;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-1 > .container {
+		display: grid;
+	}
+	main.page-course-ola-ielts .section-1 > .container video {
+		order: 2;
+	}
+	main.page-course-ola-ielts .section-1 > .container .banner-content {
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: translate(0);
+		padding-top: 12px;
+	}
+	main.page-course-ola-ielts .section-1 > .container .banner-content .container .banner-content-main {
+		max-width: 100%;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+	main.page-course-ola-ielts .section-1 > .container .banner-content .container .banner-content-main p {
+		color: #fff;
+		position: absolute;
+		top: 140px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		display: grid;
+	}
+	main.page-course-ola-ielts .section-1 > .container .banner-content .container .banner-content-main p a {
+		color: #fff;
+	}
+}
 
-  @media screen and (max-width: 767px) and (max-width: 767px) and (max-width: 767px) {
-    main.page-course-ola-ielts .section-1 > .container .banner-content .container .banner-content-main p a:first-child {
-      order: 2;
-      text-transform: uppercase; } }
-  @media screen and (max-width: 767px) and (max-width: 767px) and (max-width: 767px) {
-    main.page-course-ola-ielts .section-1 > .container .banner-content .container .banner-content-main p a:last-child {
-      display: block;
-      margin-left: 0 !important;
-      margin-bottom: 10px; }
-      main.page-course-ola-ielts .section-1 > .container .banner-content .container .banner-content-main p a:last-child img {
-        width: 60px;
-        height: 60px;
-        padding: 10px;
-        border: 0.5px solid rgba(255, 255, 255, 0.65);
-        border-radius: 50%; }
-      main.page-course-ola-ielts .section-1 > .container .banner-content .container .banner-content-main p a:last-child:before {
-        content: "";
-        position: absolute;
-        background-color: #fff;
-        border-radius: 100% !important;
-        border: 2px solid transparent;
-        -webkit-animation: icon-bound-fill 2.3s infinite ease-in-out;
-        animation: icon-bound-fill 2.3s infinite ease-in-out;
-        transition: all 0.5s;
-        -webkit-transform-origin: 50% 50%;
-        -ms-transform-origin: 50% 50%;
-        transform-origin: 50% 50%;
-        height: 60px;
-        width: 60px; } }
+@media screen and (max-width: 767px) and (max-width: 767px) and (max-width: 767px) {
+	main.page-course-ola-ielts .section-1 > .container .banner-content .container .banner-content-main p a:first-child {
+		order: 2;
+		text-transform: uppercase;
+	}
+}
+@media screen and (max-width: 767px) and (max-width: 767px) and (max-width: 767px) {
+	main.page-course-ola-ielts .section-1 > .container .banner-content .container .banner-content-main p a:last-child {
+		display: block;
+		margin-left: 0 !important;
+		margin-bottom: 10px;
+	}
+	main.page-course-ola-ielts .section-1 > .container .banner-content .container .banner-content-main p a:last-child img {
+		width: 60px;
+		height: 60px;
+		padding: 10px;
+		border: 0.5px solid rgba(255, 255, 255, 0.65);
+		border-radius: 50%;
+	}
+	main.page-course-ola-ielts .section-1 > .container .banner-content .container .banner-content-main p a:last-child:before {
+		content: "";
+		position: absolute;
+		background-color: #fff;
+		border-radius: 100% !important;
+		border: 2px solid transparent;
+		-webkit-animation: icon-bound-fill 2.3s infinite ease-in-out;
+		animation: icon-bound-fill 2.3s infinite ease-in-out;
+		transition: all 0.5s;
+		-webkit-transform-origin: 50% 50%;
+		-ms-transform-origin: 50% 50%;
+		transform-origin: 50% 50%;
+		height: 60px;
+		width: 60px;
+	}
+}
 
 main.page-course-ola-ielts .section-2 {
-  position: relative; }
-  main.page-course-ola-ielts .section-2 .img-background {
-    width: 100%;
-    height: auto; }
-  main.page-course-ola-ielts .section-2 .banner-content {
-    position: absolute;
-    top: 15%;
-    width: 100%;
-    z-index: 99; }
-    @media screen and (min-width: 768px) and (max-width: 991px) {
-      main.page-course-ola-ielts .section-2 .banner-content {
-        top: 12%; } }
-    @media screen and (max-width: 767px) {
-      main.page-course-ola-ielts .section-2 .banner-content {
-        position: relative;
-        top: 0;
-        text-align: center;
-        padding: 30px 0 30px 0;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 13.02%, #ffffff 70.31%, #ffffff 100%);
-        margin-top: -115px; } }
-    main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main {
-      max-width: 630px;
-      margin: 0 0 0 auto;
-      text-align: left; }
-      @media screen and (max-width: 991px) {
-        main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main img {
-          width: 90px; } }
-      @media screen and (width: 1024px) {
-        main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main {
-          max-width: 500px; } }
-      @media screen and (min-width: 768px) and (max-width: 991px) {
-        main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main {
-          max-width: 390px; } }
-      main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h2,
-      main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h1 {
-        font-family: "Montserrat Bold";
-        font-size: 36px;
-        line-height: 1.25;
-        margin-bottom: 15px; }
-        @media screen and (max-width: 1024px) {
-          main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h2,
-          main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h1 {
-            font-size: 30px;
-            margin-bottom: 12px; }
-            main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h2 br,
-            main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h1 br {
-              display: none; } }
-        @media screen and (max-width: 767px) {
-          main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h2,
-          main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h1 {
-            font-size: 22px; }
-            main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h2 span,
-            main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h1 span {
-              color: #000 !important; } }
-      main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h2 {
-        font-size: 30px; }
-        @media screen and (max-width: 1024px) {
-          main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h2 {
-            font-size: 24px; } }
-        @media screen and (max-width: 767px) {
-          main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h2 {
-            font-size: 20px; }
-            main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h2 span {
-              color: #000 !important; } }
-      main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main p {
-        font-family: "Montserrat Regular";
-        font-size: 18px;
-        line-height: 25px; }
-        @media screen and (max-width: 1024px) {
-          main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main p {
-            font-size: 16px;
-            line-height: 1.5; } }
-        @media screen and (min-width: 768px) and (max-width: 991px) {
-          main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main p {
-            font-size: 12px; } }
-        @media screen and (max-width: 767px) {
-          main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main p span {
-            color: #000 !important; } }
-main.page-course-ola-ielts .section-3 {
-  position: relative; }
-  main.page-course-ola-ielts .section-3 img {
-    width: 100%; }
-  main.page-course-ola-ielts .section-3 .banner-content {
-    position: absolute;
-    top: 8%;
-    left: 0;
-    right: 0;
-    text-align: left; }
-    @media screen and (min-width: 1024px) {
-      main.page-course-ola-ielts .section-3 .banner-content .banner-content-main {
-        max-width: 670px; } }
-    @media screen and (min-width: 768px) and (max-width: 991px) {
-      main.page-course-ola-ielts .section-3 .banner-content .banner-content-main {
-        max-width: 600px; } }
-    main.page-course-ola-ielts .section-3 .banner-content .banner-content-main h2 {
-      font-family: "Montserrat Bold";
-      font-size: 36px; }
-      @media screen and (max-width: 1024px) {
-        main.page-course-ola-ielts .section-3 .banner-content .banner-content-main h2 {
-          font-size: 30px; } }
-      @media screen and (max-width: 767px) {
-        main.page-course-ola-ielts .section-3 .banner-content .banner-content-main h2 {
-          font-size: 20px;
-          color: #000 !important; }
-          main.page-course-ola-ielts .section-3 .banner-content .banner-content-main h2 span {
-            color: #000 !important; } }
-    main.page-course-ola-ielts .section-3 .banner-content .banner-content-main p {
-      font-size: 18px;
-      font-family: "Montserrat Regular"; }
-      @media screen and (max-width: 1024px) {
-        main.page-course-ola-ielts .section-3 .banner-content .banner-content-main p {
-          font-size: 12px; } }
-      @media screen and (max-width: 767px) {
-        main.page-course-ola-ielts .section-3 .banner-content .banner-content-main p {
-          color: #000 !important; }
-          main.page-course-ola-ielts .section-3 .banner-content .banner-content-main p span {
-            color: #000 !important; } }
-  @media screen and (max-width: 767px) {
-    main.page-course-ola-ielts .section-3 .banner-content {
-      position: relative;
-      padding: 30px 0;
-      top: 0;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 13.02%, #ffffff 70.31%, #ffffff 100%);
-      margin-top: -40px; }
-      main.page-course-ola-ielts .section-3 .banner-content br {
-        display: none; }
-      main.page-course-ola-ielts .section-3 .banner-content .container .banner-content-main {
-        max-width: 100%; } }
-@media screen and (min-width: 1180px) {
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top {
-    margin-top: -300px; } }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top {
-    margin-top: -100px; } }
+	position: relative;
+}
+main.page-course-ola-ielts .section-2 .img-background {
+	width: 100%;
+	height: auto;
+}
+main.page-course-ola-ielts .section-2 .banner-content {
+	position: absolute;
+	top: 15%;
+	width: 100%;
+	z-index: 99;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-2 .banner-content {
+		top: 12%;
+	}
+}
 @media screen and (max-width: 767px) {
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top {
-    margin-top: 0; } }
+	main.page-course-ola-ielts .section-2 .banner-content {
+		position: relative;
+		top: 0;
+		text-align: center;
+		padding: 30px 0 30px 0;
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 13.02%, #ffffff 70.31%, #ffffff 100%);
+		margin-top: -115px;
+	}
+}
+main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main {
+	max-width: 630px;
+	margin: 0 0 0 auto;
+	text-align: left;
+}
+@media screen and (max-width: 991px) {
+	main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main img {
+		width: 90px;
+	}
+}
+@media screen and (width: 1024px) {
+	main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main {
+		max-width: 500px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main {
+		max-width: 390px;
+	}
+}
+main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h2,
+main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h1 {
+	font-family: "Montserrat Bold";
+	font-size: 36px;
+	line-height: 1.25;
+	margin-bottom: 15px;
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h2,
+	main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h1 {
+		font-size: 30px;
+		margin-bottom: 12px;
+	}
+	main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h2 br,
+	main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h1 br {
+		display: none;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h2,
+	main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h1 {
+		font-size: 22px;
+	}
+	main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h2 span,
+	main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h1 span {
+		color: #000 !important;
+	}
+}
+main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h2 {
+	font-size: 30px;
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h2 {
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h2 {
+		font-size: 20px;
+	}
+	main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h2 span {
+		color: #000 !important;
+	}
+}
+main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main p {
+	font-family: "Montserrat Regular";
+	font-size: 18px;
+	line-height: 25px;
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main p {
+		font-size: 16px;
+		line-height: 1.5;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main p {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main p span {
+		color: #000 !important;
+	}
+}
+main.page-course-ola-ielts .section-3 {
+	position: relative;
+}
+main.page-course-ola-ielts .section-3 img {
+	width: 100%;
+}
+main.page-course-ola-ielts .section-3 .banner-content {
+	position: absolute;
+	top: 8%;
+	left: 0;
+	right: 0;
+	text-align: left;
+}
+@media screen and (min-width: 1024px) {
+	main.page-course-ola-ielts .section-3 .banner-content .banner-content-main {
+		max-width: 670px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-3 .banner-content .banner-content-main {
+		max-width: 600px;
+	}
+}
+main.page-course-ola-ielts .section-3 .banner-content .banner-content-main h2 {
+	font-family: "Montserrat Bold";
+	font-size: 36px;
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-3 .banner-content .banner-content-main h2 {
+		font-size: 30px;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-3 .banner-content .banner-content-main h2 {
+		font-size: 20px;
+		color: #000 !important;
+	}
+	main.page-course-ola-ielts .section-3 .banner-content .banner-content-main h2 span {
+		color: #000 !important;
+	}
+}
+main.page-course-ola-ielts .section-3 .banner-content .banner-content-main p {
+	font-size: 18px;
+	font-family: "Montserrat Regular";
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-3 .banner-content .banner-content-main p {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-3 .banner-content .banner-content-main p {
+		color: #000 !important;
+	}
+	main.page-course-ola-ielts .section-3 .banner-content .banner-content-main p span {
+		color: #000 !important;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-3 .banner-content {
+		position: relative;
+		padding: 30px 0;
+		top: 0;
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 13.02%, #ffffff 70.31%, #ffffff 100%);
+		margin-top: -40px;
+	}
+	main.page-course-ola-ielts .section-3 .banner-content br {
+		display: none;
+	}
+	main.page-course-ola-ielts .section-3 .banner-content .container .banner-content-main {
+		max-width: 100%;
+	}
+}
+@media screen and (min-width: 1180px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top {
+		margin-top: -300px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top {
+		margin-top: -100px;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top {
+		margin-top: 0;
+	}
+}
 main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item {
-  border-radius: 35px;
-  position: relative; }
-  @media screen and (min-width: 1180px) {
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item {
-      min-height: 762px;
-      max-height: 762px; } }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item {
-      min-height: 600px;
-      max-height: 600px; } }
-  @media screen and (max-width: 767px) {
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item {
-      margin-bottom: 12px;
-      border-radius: 37px; } }
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-thumb img {
-    width: 100%;
-    height: auto; }
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content {
-    max-width: 530px;
-    padding: 50px 0 100px 0;
-    margin: 0 auto 0 50px;
-    text-align: left; }
-    @media screen and (max-width: 1024px) {
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content {
-        padding: 30px 0;
-        margin: 0 15px 0 15px; } }
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content h2 {
-      color: #000;
-      font-family: "Montserrat SemiBold";
-      margin-bottom: 15px;
-      font-size: 36px; }
-      @media screen and (max-width: 1024px) {
-        main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content h2 {
-          font-size: 30px; } }
-      @media screen and (max-width: 767px) {
-        main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content h2 {
-          font-size: 20px;
-          margin-bottom: 12px; }
-          main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content h2 span {
-            font-size: 20px !important; } }
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content ul {
-      padding-left: 2.3rem; }
-      @media screen and (max-width: 767px) {
-        main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content ul {
-          padding-left: 1.4rem; } }
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content li {
-      color: #fff;
-      font-size: 30px;
-      font-family: "Montserrat SemiBold"; }
-      @media screen and (max-width: 1024px) {
-        main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content li {
-          font-size: 24px; } }
-      @media screen and (max-width: 991px) {
-        main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content li {
-          font-size: 16px; }
-          main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content li span {
-            font-size: 16px !important; } }
-      @media screen and (min-width: 768px) and (max-width: 991px) {
-        main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content li {
-          font-size: 12px; }
-          main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content li span {
-            font-size: 12px !important; } }
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content p {
-      font-family: "Montserrat Regular";
-      margin-bottom: 10px;
-      font-size: 18px;
-      color: #fff;
-      line-height: 1.5; }
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content p span {
-        line-height: 1.5; }
-      @media screen and (max-width: 1024px) {
-        main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content p {
-          font-size: 16px; }
-          main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content p span {
-            font-size: 16px !important; } }
-      @media screen and (min-width: 768px) and (max-width: 991px) {
-        main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content p {
-          font-size: 12px; }
-          main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content p span {
-            font-size: 12px !important; } }
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content .learn-more-popup a {
-      text-decoration: none;
-      color: #fff;
-      font-family: "Montserrat SemiBold";
-      font-size: 24px;
-      display: inline-block; }
-      @media screen and (max-width: 767px) {
-        main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content .learn-more-popup a {
-          font-size: 14px; } }
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content .learn-more-popup a:hover {
-        text-decoration: underline; }
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content .learn-more-popup a i {
-        position: relative;
-        top: 2px;
-        margin-left: 10px; }
+	border-radius: 35px;
+	position: relative;
+}
+@media screen and (min-width: 1180px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item {
+		min-height: 762px;
+		max-height: 762px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item {
+		min-height: 600px;
+		max-height: 600px;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item {
+		margin-bottom: 12px;
+		border-radius: 37px;
+	}
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-thumb img {
+	width: 100%;
+	height: auto;
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content {
+	max-width: 530px;
+	padding: 50px 0 100px 0;
+	margin: 0 auto 0 50px;
+	text-align: left;
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content {
+		padding: 30px 0;
+		margin: 0 15px 0 15px;
+	}
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content h2 {
+	color: #000;
+	font-family: "Montserrat SemiBold";
+	margin-bottom: 15px;
+	font-size: 36px;
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content h2 {
+		font-size: 30px;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content h2 {
+		font-size: 20px;
+		margin-bottom: 12px;
+	}
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content h2 span {
+		font-size: 20px !important;
+	}
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content ul {
+	padding-left: 2.3rem;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content ul {
+		padding-left: 1.4rem;
+	}
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content li {
+	color: #fff;
+	font-size: 30px;
+	font-family: "Montserrat SemiBold";
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content li {
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 991px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content li {
+		font-size: 16px;
+	}
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content li span {
+		font-size: 16px !important;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content li {
+		font-size: 12px;
+	}
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content li span {
+		font-size: 12px !important;
+	}
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content p {
+	font-family: "Montserrat Regular";
+	margin-bottom: 10px;
+	font-size: 18px;
+	color: #fff;
+	line-height: 1.5;
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content p span {
+	line-height: 1.5;
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content p {
+		font-size: 16px;
+	}
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content p span {
+		font-size: 16px !important;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content p {
+		font-size: 12px;
+	}
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content p span {
+		font-size: 12px !important;
+	}
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content .learn-more-popup a {
+	text-decoration: none;
+	color: #fff;
+	font-family: "Montserrat SemiBold";
+	font-size: 24px;
+	display: inline-block;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content .learn-more-popup a {
+		font-size: 14px;
+	}
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content .learn-more-popup a:hover {
+	text-decoration: underline;
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item .box-content .learn-more-popup a i {
+	position: relative;
+	top: 2px;
+	margin-left: 10px;
+}
 main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 {
-  background-color: transparent; }
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-thumb img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 35px; }
-    @media screen and (min-width: 1180px) {
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-thumb img {
-        min-height: 762px;
-        max-height: 762px; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-thumb img {
-        min-height: 600px;
-        max-height: 600px; } }
-    @media screen and (max-width: 767px) {
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-thumb img {
-        height: 700px; } }
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content {
-    position: absolute;
-    top: 0;
-    max-width: 100%;
-    padding-right: 50px; }
-    @media screen and (max-width: 1024px) {
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content {
-        padding-right: 0; } }
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content h2 {
-      margin-bottom: 15px; }
-      @media screen and (max-width: 767px) {
-        main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content h2 {
-          margin-bottom: 12px;
-          font-size: 20px; }
-          main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content h2 span {
-            font-size: 20px !important; } }
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content ul {
-      padding-left: 1.4rem; }
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content li {
-      font-family: "Montserrat Regular";
-      color: #000;
-      font-size: 18px;
-      margin-bottom: 10px; }
-      @media screen and (max-width: 991px) {
-        main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content li {
-          font-size: 14px; } }
-      @media screen and (min-width: 768px) and (max-width: 991px) {
-        main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content li {
-          font-size: 12px; } }
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content p {
-      font-family: "Montserrat Regular";
-      margin-bottom: 0;
-      font-size: 18px;
-      color: #000;
-      line-height: 1.5; }
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content p span {
-        line-height: 1.5; }
-      @media screen and (max-width: 1024px) {
-        main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content p {
-          font-size: 16px; }
-          main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content p br {
-            display: none; }
-          main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content p span {
-            font-size: 16px !important; } }
-      @media screen and (min-width: 768px) and (max-width: 991px) {
-        main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content p {
-          font-size: 12px; }
-          main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content p span {
-            font-size: 12px !important; } }
+	background-color: transparent;
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-thumb img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 35px;
+}
+@media screen and (min-width: 1180px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-thumb img {
+		min-height: 762px;
+		max-height: 762px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-thumb img {
+		min-height: 600px;
+		max-height: 600px;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-thumb img {
+		height: 700px;
+	}
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content {
+	position: absolute;
+	top: 0;
+	max-width: 100%;
+	padding-right: 50px;
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content {
+		padding-right: 0;
+	}
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content h2 {
+	margin-bottom: 15px;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content h2 {
+		margin-bottom: 12px;
+		font-size: 20px;
+	}
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content h2 span {
+		font-size: 20px !important;
+	}
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content ul {
+	padding-left: 1.4rem;
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content li {
+	font-family: "Montserrat Regular";
+	color: #000;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+@media screen and (max-width: 991px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content li {
+		font-size: 14px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content li {
+		font-size: 12px;
+	}
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content p {
+	font-family: "Montserrat Regular";
+	margin-bottom: 0;
+	font-size: 18px;
+	color: #000;
+	line-height: 1.5;
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content p span {
+	line-height: 1.5;
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content p {
+		font-size: 16px;
+	}
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content p br {
+		display: none;
+	}
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content p span {
+		font-size: 16px !important;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content p {
+		font-size: 12px;
+	}
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-2-column .col-md-6 .box-item.box-item-2 .box-content p span {
+		font-size: 12px !important;
+	}
+}
 main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item,
 main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item {
-  border-radius: 35px;
-  position: relative;
-  margin-top: 24px;
-  padding: 40px 20px;
-  height: calc(100% - 24px);
-  min-height: 322px; }
-  @media screen and (max-width: 1024px) {
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item,
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item {
-      min-height: auto; } }
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content h2,
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-content h2 {
-    color: #000;
-    font-family: "Montserrat SemiBold";
-    margin-bottom: 20px;
-    font-size: 28px; }
-    @media screen and (max-width: 767px) {
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content h2,
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-content h2 {
-        font-size: 20px; }
-        main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content h2 span,
-        main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-content h2 span {
-          font-size: 20px !important; } }
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content ul,
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-content ul {
-    padding-left: 20px; }
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content li,
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-content li {
-    color: #fff;
-    font-size: 16px;
-    font-family: "Montserrat Regular"; }
-    @media screen and (max-width: 767px) {
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content li span,
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-content li span {
-        font-size: 16px !important; } }
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content p,
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-content p {
-    font-family: "Montserrat Regular";
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #fff; }
-    @media screen and (min-width: 768px) and (max-width: 991px) {
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content p,
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-content p {
-        font-size: 12px; } }
-    @media screen and (max-width: 767px) {
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content p span,
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-content p span {
-        font-size: 16px !important; } }
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-image-thumbnail,
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-image-thumbnail {
-    position: absolute;
-    right: -50px;
-    width: 50%; }
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-image-thumbnail img,
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-image-thumbnail img {
-      width: 100%;
-      height: auto; }
+	border-radius: 35px;
+	position: relative;
+	margin-top: 24px;
+	padding: 40px 20px;
+	height: calc(100% - 24px);
+	min-height: 322px;
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item,
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item {
+		min-height: auto;
+	}
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content h2,
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-content h2 {
+	color: #000;
+	font-family: "Montserrat SemiBold";
+	margin-bottom: 20px;
+	font-size: 28px;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content h2,
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-content h2 {
+		font-size: 20px;
+	}
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content h2 span,
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-content h2 span {
+		font-size: 20px !important;
+	}
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content ul,
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-content ul {
+	padding-left: 20px;
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content li,
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-content li {
+	color: #fff;
+	font-size: 16px;
+	font-family: "Montserrat Regular";
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content li span,
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-content li span {
+		font-size: 16px !important;
+	}
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content p,
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-content p {
+	font-family: "Montserrat Regular";
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: #fff;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content p,
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-content p {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content p span,
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-content p span {
+		font-size: 16px !important;
+	}
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-image-thumbnail,
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-image-thumbnail {
+	position: absolute;
+	right: -50px;
+	width: 50%;
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-image-thumbnail img,
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item .box-image-thumbnail img {
+	width: 100%;
+	height: auto;
+}
 main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item:has(.box-image-thumbnail),
 main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item:has(.box-image-thumbnail) {
-  border-radius: 35px;
-  position: relative;
-  margin-top: 24px;
-  padding: 40px 20px 60px 20px;
-  height: calc(100% - 24px);
-  min-height: 322px; }
-  @media screen and (max-width: 1024px) {
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item:has(.box-image-thumbnail),
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item:has(.box-image-thumbnail) {
-      min-height: auto; } }
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item:has(.box-image-thumbnail) .box-content p,
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item:has(.box-image-thumbnail) .box-content ul,
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item:has(.box-image-thumbnail) .box-content p,
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item:has(.box-image-thumbnail) .box-content ul {
-    max-width: 240px; }
-    @media screen and (max-width: 767px) {
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item:has(.box-image-thumbnail) .box-content p,
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item:has(.box-image-thumbnail) .box-content ul,
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item:has(.box-image-thumbnail) .box-content p,
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item:has(.box-image-thumbnail) .box-content ul {
-        position: relative;
-        z-index: 99; } }
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item:has(.box-image-thumbnail) .box-image-thumbnail,
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item:has(.box-image-thumbnail) .box-image-thumbnail {
-    position: absolute;
-    right: -25px;
-    width: 40%;
-    bottom: 0; }
-    @media screen and (max-width: 767px) {
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item:has(.box-image-thumbnail) .box-image-thumbnail,
-      main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item:has(.box-image-thumbnail) .box-image-thumbnail {
-        right: 0;
-        text-align: right; } }
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item:has(.box-image-thumbnail) .box-image-thumbnail img,
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item:has(.box-image-thumbnail) .box-image-thumbnail img {
-      width: 100%;
-      height: auto; }
-      @media screen and (max-width: 767px) {
-        main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item:has(.box-image-thumbnail) .box-image-thumbnail img,
-        main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item:has(.box-image-thumbnail) .box-image-thumbnail img {
-          width: 90%; } }
+	border-radius: 35px;
+	position: relative;
+	margin-top: 24px;
+	padding: 40px 20px 60px 20px;
+	height: calc(100% - 24px);
+	min-height: 322px;
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item:has(.box-image-thumbnail),
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item:has(.box-image-thumbnail) {
+		min-height: auto;
+	}
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item:has(.box-image-thumbnail) .box-content p,
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item:has(.box-image-thumbnail) .box-content ul,
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item:has(.box-image-thumbnail) .box-content p,
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item:has(.box-image-thumbnail) .box-content ul {
+	max-width: 240px;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item:has(.box-image-thumbnail) .box-content p,
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item:has(.box-image-thumbnail) .box-content ul,
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item:has(.box-image-thumbnail) .box-content p,
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item:has(.box-image-thumbnail) .box-content ul {
+		position: relative;
+		z-index: 99;
+	}
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item:has(.box-image-thumbnail) .box-image-thumbnail,
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item:has(.box-image-thumbnail) .box-image-thumbnail {
+	position: absolute;
+	right: -25px;
+	width: 40%;
+	bottom: 0;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item:has(.box-image-thumbnail) .box-image-thumbnail,
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item:has(.box-image-thumbnail) .box-image-thumbnail {
+		right: 0;
+		text-align: right;
+	}
+}
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item:has(.box-image-thumbnail) .box-image-thumbnail img,
+main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item:has(.box-image-thumbnail) .box-image-thumbnail img {
+	width: 100%;
+	height: auto;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item:has(.box-image-thumbnail) .box-image-thumbnail img,
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3 .box-item:has(.box-image-thumbnail) .box-image-thumbnail img {
+		width: 90%;
+	}
+}
 @media screen and (min-width: 768px) {
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4:nth-child(1) .box-item .box-image-thumbnail,
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3:nth-child(1) .box-item .box-image-thumbnail {
-    width: 30%; } }
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4:nth-child(1) .box-item .box-image-thumbnail,
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3:nth-child(1) .box-item .box-image-thumbnail {
+		width: 30%;
+	}
+}
 @media screen and (min-width: 768px) {
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4:nth-child(2) .box-item .box-image-thumbnail,
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3:nth-child(2) .box-item .box-image-thumbnail {
-    width: 40%; } }
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4:nth-child(2) .box-item .box-image-thumbnail,
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3:nth-child(2) .box-item .box-image-thumbnail {
+		width: 40%;
+	}
+}
 @media screen and (min-width: 768px) {
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4:nth-child(3) .box-item .box-image-thumbnail,
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3:nth-child(3) .box-item .box-image-thumbnail {
-    width: 50%; } }
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4:nth-child(3) .box-item .box-image-thumbnail,
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3:nth-child(3) .box-item .box-image-thumbnail {
+		width: 50%;
+	}
+}
 @media screen and (min-width: 768px) {
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4:nth-child(4) .box-item .box-image-thumbnail,
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3:nth-child(4) .box-item .box-image-thumbnail {
-    width: 45%; } }
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4:nth-child(4) .box-item .box-image-thumbnail,
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3:nth-child(4) .box-item .box-image-thumbnail {
+		width: 45%;
+	}
+}
 main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4:nth-child(5) .box-item .box-image-thumbnail,
 main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3:nth-child(5) .box-item .box-image-thumbnail {
-  right: 0; }
-  @media screen and (min-width: 768px) {
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4:nth-child(5) .box-item .box-image-thumbnail,
-    main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3:nth-child(5) .box-item .box-image-thumbnail {
-      width: 45%; } }
+	right: 0;
+}
+@media screen and (min-width: 768px) {
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4:nth-child(5) .box-item .box-image-thumbnail,
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-3:nth-child(5) .box-item .box-image-thumbnail {
+		width: 45%;
+	}
+}
 @media screen and (max-width: 767px) {
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4:first-child .box-item,
-  main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4:first-child .box-item:has(.box-image-thumbnail) {
-    margin-top: 0; } }
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4:first-child .box-item,
+	main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4:first-child .box-item:has(.box-image-thumbnail) {
+		margin-top: 0;
+	}
+}
 main.page-course-ola-ielts .section-5 {
-  padding: 24px 0; }
-  main.page-course-ola-ielts .section-5.clone {
-    padding: 0 0 24px 0; }
-  @media screen and (max-width: 767px) {
-    main.page-course-ola-ielts .section-5 .container {
-      padding: 0; } }
-  main.page-course-ola-ielts .section-5 .box-course-none-background {
-    border-radius: 35px; }
-    @media screen and (max-width: 767px) {
-      main.page-course-ola-ielts .section-5 .box-course-none-background {
-        border-radius: 0; } }
-    main.page-course-ola-ielts .section-5 .box-course-none-background .img-background {
-      border-radius: 35px;
-      width: 100%; }
-      @media screen and (max-width: 767px) {
-        main.page-course-ola-ielts .section-5 .box-course-none-background .img-background {
-          border-radius: 0; } }
-    main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content h2 {
-      font-family: "Montserrat SemiBold";
-      margin-bottom: 15px;
-      color: #fff;
-      font-size: 36px;
-      line-height: 1.25; }
-      @media screen and (max-width: 1024px) {
-        main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content h2 {
-          font-size: 30px;
-          margin-bottom: 12px; }
-          main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content h2 br {
-            display: none; } }
-      @media screen and (max-width: 767px) {
-        main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content h2 {
-          color: #000;
-          font-size: 20px; }
-          main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content h2 span {
-            color: #000 !important; } }
-    main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content p {
-      color: #fff;
-      font-size: 18px;
-      font-family: "Montserrat Regular"; }
-      @media screen and (max-width: 1024px) {
-        main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content p {
-          text-align: left;
-          font-size: 16px; } }
-      @media screen and (min-width: 768px) and (max-width: 991px) {
-        main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content p {
-          font-size: 12px; } }
-      @media screen and (max-width: 767px) {
-        main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content p {
-          color: #000; }
-          main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content p span {
-            color: #000 !important; } }
-    main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content ul {
-      padding-left: 16px; }
-      main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content ul li {
-        font-family: "Montserrat Regular";
-        font-size: 18px;
-        margin-bottom: 15px;
-        color: #fff; }
-        @media screen and (max-width: 1024px) {
-          main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content ul li {
-            text-align: left;
-            font-size: 16px; } }
-        @media screen and (min-width: 768px) and (max-width: 991px) {
-          main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content ul li {
-            font-size: 12px;
-            margin-bottom: 5px; } }
-        @media screen and (max-width: 767px) {
-          main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content ul li {
-            color: #000; }
-            main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content ul li span {
-              color: #000 !important; } }
-  main.page-course-ola-ielts .section-5 .box-course-background {
-    border-radius: 35px; }
-    @media screen and (max-width: 767px) {
-      main.page-course-ola-ielts .section-5 .box-course-background {
-        border-radius: 0; } }
-    main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content {
-      position: relative;
-      max-width: 100%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      padding: 0 50px; }
-      @media screen and (max-width: 1024px) {
-        main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content {
-          padding: 30px; } }
-      main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content h2 {
-        margin-bottom: 15px;
-        color: #fff;
-        font-family: "Montserrat Bold"; }
-        @media screen and (min-width: 768px) and (max-width: 991px) {
-          main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content h2 {
-            margin-bottom: 12px; } }
-        @media screen and (max-width: 767px) {
-          main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content h2 {
-            font-size: 20px; } }
-      main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content p {
-        color: #fff;
-        font-size: 18px;
-        font-family: "Montserrat Regular"; }
-        @media screen and (max-width: 1024px) {
-          main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content p {
-            text-align: left;
-            font-size: 16px; } }
-        @media screen and (min-width: 768px) and (max-width: 991px) {
-          main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content p {
-            font-size: 12px; } }
-      main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content ul {
-        padding-left: 16px; }
-        main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content ul li {
-          font-family: "Montserrat Regular";
-          font-size: 18px;
-          margin-bottom: 15px;
-          color: #fff; }
-          @media screen and (max-width: 1024px) {
-            main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content ul li {
-              text-align: left;
-              font-size: 16px; } }
-          @media screen and (min-width: 768px) and (max-width: 991px) {
-            main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content ul li {
-              font-size: 12px;
-              margin-bottom: 5px; } }
-    @media screen and (min-width: 768px) {
-      main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 img.img-background {
-        width: 100%;
-        height: 100%;
-        border-top-right-radius: 35px;
-        border-bottom-right-radius: 35px; } }
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-      main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 img.img-background {
-        object-fit: cover; } }
-    @media screen and (max-width: 767px) {
-      main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 img.img-background {
-        border-radius: 0;
-        width: 100%; } }
-  @media screen and (max-width: 1180px) {
-    main.page-course-ola-ielts .section-5 .box-course-update-2 {
-      display: grid; } }
-  main.page-course-ola-ielts .section-5 .box-course-update-2 .banner-content {
-    max-width: 510px;
-    right: 3%; }
-    @media screen and (max-width: 1180px) {
-      main.page-course-ola-ielts .section-5 .box-course-update-2 .banner-content {
-        right: 0;
-        max-width: 100%; } }
-main.page-course-ola-ielts .section-6 {
-  position: relative;
-  padding-bottom: 24px; }
-  @media screen and (max-width: 767px) {
-    main.page-course-ola-ielts .section-6 {
-      padding-bottom: 0; } }
-  main.page-course-ola-ielts .section-6 .container {
-    position: relative; }
-  main.page-course-ola-ielts .section-6 .box-course-update-2 {
-    position: relative; }
-    main.page-course-ola-ielts .section-6 .box-course-update-2:before {
-      bottom: 0;
-      content: "";
-      display: block;
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
-      z-index: 1; }
-      @media screen and (min-width: 768px) {
-        main.page-course-ola-ielts .section-6 .box-course-update-2:before {
-          border-radius: 35px; } }
-      @media screen and (max-width: 767px) {
-        main.page-course-ola-ielts .section-6 .box-course-update-2:before {
-          display: none; } }
-  main.page-course-ola-ielts .section-6 img {
-    width: 100%;
-    height: auto; }
-    @media screen and (min-width: 768px) {
-      main.page-course-ola-ielts .section-6 img {
-        border-radius: 35px; } }
-    @media screen and (min-width: 768px) and (max-width: 991px) {
-      main.page-course-ola-ielts .section-6 img {
-        height: 370px;
-        object-fit: cover; } }
-  main.page-course-ola-ielts .section-6 .banner-content {
-    position: absolute;
-    top: 50%;
-    right: 3%;
-    transform: translate(0, -50%);
-    max-width: 400px;
-    color: #fff;
-    z-index: 99; }
-    @media screen and (max-width: 767px) {
-      main.page-course-ola-ielts .section-6 .banner-content {
-        color: #000;
-        max-width: 100%;
-        position: relative;
-        top: 0;
-        right: 0;
-        transform: translate(0); } }
-    @media screen and (min-width: 768px) and (max-width: 991px) {
-      main.page-course-ola-ielts .section-6 .banner-content {
-        right: 3%;
-        max-width: 350px; } }
-    main.page-course-ola-ielts .section-6 .banner-content h2 {
-      font-family: "Montserrat Bold";
-      margin-bottom: 15px;
-      color: #fff; }
-      @media screen and (max-width: 767px) {
-        main.page-course-ola-ielts .section-6 .banner-content h2 {
-          color: #000;
-          font-size: 20px; } }
-      @media screen and (min-width: 768px) and (max-width: 991px) {
-        main.page-course-ola-ielts .section-6 .banner-content h2 {
-          margin-bottom: 12px; } }
-    main.page-course-ola-ielts .section-6 .banner-content p {
-      font-family: "Montserrat Regular";
-      font-size: 16px;
-      margin-bottom: 15px;
-      color: #fff; }
-      @media screen and (max-width: 767px) {
-        main.page-course-ola-ielts .section-6 .banner-content p {
-          color: #000; } }
-      @media screen and (min-width: 768px) and (max-width: 991px) {
-        main.page-course-ola-ielts .section-6 .banner-content p {
-          font-size: 12px; } }
-    main.page-course-ola-ielts .section-6 .banner-content ul {
-      padding-left: 16px; }
-      @media screen and (max-width: 1024px) {
-        main.page-course-ola-ielts .section-6 .banner-content ul {
-          text-align: left;
-          margin-bottom: 0; } }
-      main.page-course-ola-ielts .section-6 .banner-content ul li {
-        font-family: "Montserrat Regular";
-        font-size: 16px;
-        margin-bottom: 15px;
-        color: #fff; }
-        @media screen and (max-width: 767px) {
-          main.page-course-ola-ielts .section-6 .banner-content ul li {
-            color: #000; } }
-        @media screen and (min-width: 768px) and (max-width: 991px) {
-          main.page-course-ola-ielts .section-6 .banner-content ul li {
-            font-size: 12px; } }
-  @media screen and (max-width: 767px) {
-    main.page-course-ola-ielts .section-6 > .container {
-      padding: 0; }
-    main.page-course-ola-ielts .section-6 .box-course-update-2 {
-      display: grid; }
-      main.page-course-ola-ielts .section-6 .box-course-update-2 img.img-background {
-        order: 2; }
-      main.page-course-ola-ielts .section-6 .box-course-update-2 .banner-content {
-        position: relative;
-        padding: 24px;
-        margin-left: 12px;
-        background-color: #fff;
-        border-top-left-radius: 25px;
-        border-bottom-left-radius: 25px;
-        margin-bottom: -40px; }
-        main.page-course-ola-ielts .section-6 .box-course-update-2 .banner-content br {
-          display: none; }
-        main.page-course-ola-ielts .section-6 .box-course-update-2 .banner-content .container {
-          padding: 0; }
-          main.page-course-ola-ielts .section-6 .box-course-update-2 .banner-content .container .banner-content-main {
-            max-width: 100%; }
-            main.page-course-ola-ielts .section-6 .box-course-update-2 .banner-content .container .banner-content-main p {
-              margin-bottom: 0; } }
-main.page-course-ola-ielts .section-6-padding {
-  padding-top: 24px; }
-main.page-course-ola-ielts .section-7 {
-  position: relative; }
-  main.page-course-ola-ielts .section-7.section-7-padding {
-    padding-top: 24px; }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    main.page-course-ola-ielts .section-7 {
-      padding-top: 24px; } }
-  main.page-course-ola-ielts .section-7 .img-background {
-    width: 100%;
-    height: auto; }
-  @media screen and (min-width: 768px) {
-    main.page-course-ola-ielts .section-7 .banner-content {
-      position: absolute;
-      top: 15%;
-      right: 0;
-      left: 0;
-      width: auto;
-      z-index: 99; }
-      main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main {
-        max-width: 600px; } }
-  @media screen and (min-width: 1600px) {
-    main.page-course-ola-ielts .section-7 .banner-content {
-      left: 12%; } }
-  @media screen and (max-width: 767px) {
-    main.page-course-ola-ielts .section-7 .banner-content {
-      position: relative;
-      padding: 30px 0 0 0;
-      top: 0;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 13.02%, #ffffff 70.31%, #ffffff 100%);
-      margin-top: -115px; } }
-  main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main {
-    max-width: 630px;
-    margin-left: auto; }
-    @media screen and (max-width: 767px) {
-      main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main {
-        max-width: 100%;
-        margin-top: 30px;
-        margin-left: 0; } }
-    @media screen and (min-width: 1024px) and (max-width: 1600px) {
-      main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main {
-        max-width: 500px; } }
-    @media screen and (min-width: 768px) and (max-width: 991px) {
-      main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main {
-        max-width: 400px; } }
-    main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main h2 {
-      font-size: 36px;
-      text-transform: none;
-      font-family: "Montserrat Bold";
-      line-height: 1.25;
-      margin-bottom: 15px; }
-      @media screen and (max-width: 1024px) {
-        main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main h2 {
-          font-size: 26px;
-          margin-bottom: 12px;
-          max-width: 100%; }
-          main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main h2 br {
-            display: none; } }
-      @media screen and (max-width: 767px) {
-        main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main h2 {
-          font-size: 20px; } }
-    main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main p {
-      font-family: "Montserrat Regular";
-      font-size: 18px;
-      line-height: 25px;
-      color: #000000; }
-      @media screen and (max-width: 1024px) {
-        main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main p {
-          font-size: 16px;
-          line-height: 1.5; } }
-      @media screen and (min-width: 768px) and (max-width: 991px) {
-        main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main p {
-          font-size: 12px; } }
-main.page-course-ola-ielts .section-8 {
-  padding: 24px 0; }
-  @media screen and (min-width: 320px) and (max-width: 1200px) {
-    main.page-course-ola-ielts .section-8 {
-      padding: 12px 0; } }
-  main.page-course-ola-ielts .section-8 .container .main-blog {
-    padding: 30px 0 15px 0; }
-    main.page-course-ola-ielts .section-8 .container .main-blog span {
-      color: #fff;
-      font-size: 16px;
-      line-height: 1.25;
-      font-family: "Montserrat Regular";
-      background-color: #000066;
-      display: block;
-      padding: 10px; }
-      @media screen and (min-width: 768px) and (max-width: 991px) {
-        main.page-course-ola-ielts .section-8 .container .main-blog span {
-          font-size: 12px; } }
-  main.page-course-ola-ielts .section-8 .container .title-blog {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin-bottom: 15px; }
-    @media screen and (max-width: 576px) {
-      main.page-course-ola-ielts .section-8 .container .title-blog {
-        justify-content: space-between; } }
-    main.page-course-ola-ielts .section-8 .container .title-blog h2 {
-      text-transform: uppercase;
-      color: #000066;
-      font-size: 36px;
-      line-height: 56px;
-      font-family: "Montserrat Bold", sans-serif;
-      margin-bottom: 0; }
-      @media screen and (max-width: 767px) {
-        main.page-course-ola-ielts .section-8 .container .title-blog h2 {
-          font-size: 20px;
-          line-height: 1.25;
-          max-width: 200px; } }
-    main.page-course-ola-ielts .section-8 .container .title-blog button {
-      background: none;
-      border: none;
-      outline: none;
-      margin-left: 30px; }
-      @media screen and (max-width: 767px) {
-        main.page-course-ola-ielts .section-8 .container .title-blog button {
-          margin-left: 0;
-          padding: 0; } }
-      main.page-course-ola-ielts .section-8 .container .title-blog button a {
-        text-decoration: none;
-        color: #2b378b;
-        font-size: 16px;
-        line-height: 26px;
-        font-family: "Montserrat Medium"; }
-        main.page-course-ola-ielts .section-8 .container .title-blog button a i {
-          color: #c60c30;
-          margin-left: 10px; }
-        main.page-course-ola-ielts .section-8 .container .title-blog button a:hover {
-          text-decoration: underline; }
-  main.page-course-ola-ielts .section-8 .container .box-video-top {
-    margin-bottom: 40px; }
-    @media screen and (min-width: 768px) and (max-width: 1180px) {
-      main.page-course-ola-ielts .section-8 .container .box-video-top {
-        width: 50%;
-        float: left; } }
-    main.page-course-ola-ielts .section-8 .container .box-video-top a {
-      text-decoration: none;
-      display: block; }
-    @media screen and (max-width: 767px) {
-      main.page-course-ola-ielts .section-8 .container .box-video-top {
-        margin-bottom: 0; } }
-    @media screen and (max-width: 767px) {
-      main.page-course-ola-ielts .section-8 .container .box-video-top .video-item-lg {
-        margin-bottom: 20px; } }
-    main.page-course-ola-ielts .section-8 .container .box-video-top .video-item-lg .box-video {
-      overflow: hidden;
-      margin-bottom: 15px; }
-      @media screen and (max-width: 767px) {
-        main.page-course-ola-ielts .section-8 .container .box-video-top .video-item-lg .box-video {
-          height: auto; } }
-      main.page-course-ola-ielts .section-8 .container .box-video-top .video-item-lg .box-video img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
-    main.page-course-ola-ielts .section-8 .container .box-video-top .video-item-lg .box-description .title {
-      color: #000000;
-      font-family: "Montserrat SemiBold", sans-serif;
-      font-size: 24px;
-      line-height: 36px;
-      margin-bottom: 0; }
-      @media screen and (min-width: 320px) and (max-width: 991px) {
-        main.page-course-ola-ielts .section-8 .container .box-video-top .video-item-lg .box-description .title {
-          font-size: 16px;
-          line-height: 25px; } }
-      main.page-course-ola-ielts .section-8 .container .box-video-top .video-item-lg .box-description .title a {
-        color: #000000;
-        display: block; }
-        main.page-course-ola-ielts .section-8 .container .box-video-top .video-item-lg .box-description .title a:hover {
-          text-decoration: underline; }
-    main.page-course-ola-ielts .section-8 .container .box-video-top .video-item-lg .box-description p {
-      font-size: 14px;
-      line-height: 22px;
-      color: #000000;
-      margin-bottom: 0;
-      font-family: "Montserrat Medium", sans-serif; }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    main.page-course-ola-ielts .section-8 .container .box-video-bottom {
-      margin-bottom: 30px; } }
-  @media screen and (min-width: 768px) and (max-width: 1180px) {
-    main.page-course-ola-ielts .section-8 .container .box-video-bottom {
-      width: 48%;
-      float: right; } }
-  main.page-course-ola-ielts .section-8 .container .box-video-bottom a {
-    text-decoration: none;
-    display: block; }
-  @media screen and (max-width: 767px) {
-    main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item {
-      margin-bottom: 20px; } }
-  main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-video {
-    height: 124px;
-    margin-bottom: 15px;
-    overflow: hidden; }
-    @media screen and (max-width: 767px) {
-      main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-video {
-        height: auto;
-        max-height: 160px;
-        min-height: 140px; } }
-    @media screen and (min-width: 768px) and (max-width: 1180px) {
-      main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-video {
-        width: 40%;
-        float: left;
-        height: auto; } }
-    main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-video img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-      @media screen and (min-width: 768px) and (max-width: 1180px) {
-        main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-video img {
-          height: 100px; } }
-  @media screen and (min-width: 768px) and (max-width: 1180px) {
-    main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-description {
-      width: 58%;
-      float: right; } }
-  main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-description .title {
-    color: #000000;
-    font-family: "Montserrat SemiBold", sans-serif;
-    font-size: 18px;
-    line-height: 25px;
-    margin-bottom: 0; }
-    @media screen and (min-width: 320px) and (max-width: 991px) {
-      main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-description .title {
-        font-size: 16px; } }
-    main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-description .title a {
-      color: #000000; }
-      main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-description .title a:hover {
-        text-decoration: underline; }
-  main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-description p {
-    font-size: 14px;
-    line-height: 22px;
-    color: #000000;
-    margin-bottom: 0;
-    font-family: "Montserrat Medium", sans-serif; }
-  main.page-course-ola-ielts .section-8 .container .box-video-bottom .owl-carousel .owl-stage {
-    padding-left: 0 !important; }
-  main.page-course-ola-ielts .section-8 .container .box-video-bottom .owl-theme .owl-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    left: 0;
-    right: 0; }
-    main.page-course-ola-ielts .section-8 .container .box-video-bottom .owl-theme .owl-nav .owl-next,
-    main.page-course-ola-ielts .section-8 .container .box-video-bottom .owl-theme .owl-nav .owl-prev {
-      position: absolute;
-      top: 25%;
-      z-index: 999;
-      width: 25px;
-      height: 25px;
-      background: #fff;
-      border-radius: 50%;
-      text-align: center;
-      margin: 0; }
-      main.page-course-ola-ielts .section-8 .container .box-video-bottom .owl-theme .owl-nav .owl-next span,
-      main.page-course-ola-ielts .section-8 .container .box-video-bottom .owl-theme .owl-nav .owl-prev span {
-        font-size: 25px;
-        line-height: 20px;
-        color: #000; }
-    main.page-course-ola-ielts .section-8 .container .box-video-bottom .owl-theme .owl-nav .owl-prev {
-      left: 0; }
-    main.page-course-ola-ielts .section-8 .container .box-video-bottom .owl-theme .owl-nav .owl-next {
-      right: 0; }
-  main.page-course-ola-ielts .section-8 .container .related-post .related-title {
-    font-family: "Montserrat Bold";
-    font-size: 32px;
-    line-height: 38px;
-    color: #000000;
-    margin-bottom: 15px; }
-    @media screen and (max-width: 767px) {
-      main.page-course-ola-ielts .section-8 .container .related-post .related-title {
-        font-size: 24px;
-        line-height: 30px; } }
-  main.page-course-ola-ielts .section-8 .container .related-post .post-item {
-    display: flex;
-    height: 124px;
-    margin-bottom: 15px; }
-    @media screen and (max-width: 767px) {
-      main.page-course-ola-ielts .section-8 .container .related-post .post-item {
-        height: auto; } }
-    @media screen and (min-width: 768px) and (max-width: 991px) {
-      main.page-course-ola-ielts .section-8 .container .related-post .post-item {
-        height: 130px; } }
-    main.page-course-ola-ielts .section-8 .container .related-post .post-item .thumb-img {
-      width: 170px;
-      min-width: 170px; }
-      @media screen and (max-width: 991px) {
-        main.page-course-ola-ielts .section-8 .container .related-post .post-item .thumb-img {
-          width: 140px;
-          min-width: 140px; } }
-      main.page-course-ola-ielts .section-8 .container .related-post .post-item .thumb-img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 5px; }
-    main.page-course-ola-ielts .section-8 .container .related-post .post-item .post-content {
-      flex: 1;
-      margin-left: 24px; }
-      main.page-course-ola-ielts .section-8 .container .related-post .post-item .post-content .post-title {
-        font-family: "Montserrat SemiBold";
-        font-size: 18px;
-        line-height: 25px;
-        color: #000000; }
-        @media screen and (max-width: 991px) {
-          main.page-course-ola-ielts .section-8 .container .related-post .post-item .post-content .post-title {
-            margin-bottom: 15px;
-            font-size: 16px; } }
-        main.page-course-ola-ielts .section-8 .container .related-post .post-item .post-content .post-title a {
-          text-decoration: none;
-          color: #000000; }
-          main.page-course-ola-ielts .section-8 .container .related-post .post-item .post-content .post-title a:hover {
-            text-decoration: underline; }
-      main.page-course-ola-ielts .section-8 .container .related-post .post-item .post-content .category-name {
-        position: relative;
-        display: block;
-        font-family: "Montserrat Medium";
-        font-size: 14px;
-        line-height: 22px;
-        color: #2b378b;
-        text-decoration: none;
-        padding-left: 16px; }
-        main.page-course-ola-ielts .section-8 .container .related-post .post-item .post-content .category-name:hover {
-          text-decoration: underline; }
-        main.page-course-ola-ielts .section-8 .container .related-post .post-item .post-content .category-name::before {
-          content: "";
-          position: absolute;
-          top: 7px;
-          left: 0;
-          width: 8px;
-          height: 8px;
-          border-radius: 50%;
-          background-color: #fdb510; }
-  main.page-course-ola-ielts .section-8 .container .related-post .row .col-12:last-child .post-item {
-    margin-bottom: 0; }
-main.page-course-ola-ielts #section-5.section-hall-of-greatness {
-  padding-bottom: 50px; }
-  @media screen and (max-width: 767px) {
-    main.page-course-ola-ielts #section-5.section-hall-of-greatness {
-      padding-bottom: 24px; } }
-  main.page-course-ola-ielts #section-5.section-hall-of-greatness .container .title-blog {
-    display: flex;
-    align-items: center;
-    padding-bottom: 30px; }
-    @media screen and (max-width: 576px) {
-      main.page-course-ola-ielts #section-5.section-hall-of-greatness .container .title-blog {
-        justify-content: space-between; } }
-    main.page-course-ola-ielts #section-5.section-hall-of-greatness .container .title-blog h2 {
-      text-transform: uppercase;
-      color: #000066;
-      font-size: 36px;
-      line-height: 56px;
-      font-family: "Montserrat Bold", sans-serif;
-      margin-bottom: 0; }
-      @media screen and (max-width: 767px) {
-        main.page-course-ola-ielts #section-5.section-hall-of-greatness .container .title-blog h2 {
-          font-size: 20px;
-          line-height: 1.25;
-          max-width: 250px; } }
-      @media screen and (max-width: 375px) {
-        main.page-course-ola-ielts #section-5.section-hall-of-greatness .container .title-blog h2 {
-          font-size: 18px; } }
-    main.page-course-ola-ielts #section-5.section-hall-of-greatness .container .title-blog button {
-      background: none;
-      border: none;
-      outline: none;
-      margin-left: 30px; }
-      @media screen and (max-width: 576px) {
-        main.page-course-ola-ielts #section-5.section-hall-of-greatness .container .title-blog button {
-          margin-left: 0;
-          padding: 0; } }
-      main.page-course-ola-ielts #section-5.section-hall-of-greatness .container .title-blog button a {
-        text-decoration: none;
-        color: #2b378b;
-        font-size: 16px;
-        line-height: 26px;
-        font-family: "Montserrat Medium"; }
-        main.page-course-ola-ielts #section-5.section-hall-of-greatness .container .title-blog button a i {
-          color: #c60c30;
-          margin-left: 10px; }
-        main.page-course-ola-ielts #section-5.section-hall-of-greatness .container .title-blog button a:hover {
-          text-decoration: underline; }
-  main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .hall-item {
-    position: relative;
-    border-radius: 25px; }
-    main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .hall-item .hall-image img {
-      max-height: 530px;
-      min-height: 530px;
-      object-fit: cover;
-      border-radius: 25px; }
-    main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .hall-item .hall-content {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(42, 51, 143, 0.9);
-      backdrop-filter: blur(4px);
-      text-align: center;
-      padding: 30px 15px;
-      visibility: hidden;
-      opacity: 0;
-      transition: visibility 0s, opacity 0.2s linear;
-      border-bottom-left-radius: 25px;
-      border-bottom-right-radius: 25px; }
-      @media screen and (max-width: 1024px) {
-        main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .hall-item .hall-content {
-          padding: 20px;
-          visibility: visible;
-          opacity: 1; } }
-      main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .hall-item .hall-content a {
-        display: block;
-        font-family: "Montserrat Bold";
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 22px;
-        line-height: 24px; }
-        @media screen and (min-width: 768px) and (max-width: 1024px) {
-          main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .hall-item .hall-content a {
-            font-size: 18px; } }
-      main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .hall-item .hall-content p {
-        font-family: "Montserrat Regular";
-        color: #fff;
-        font-size: 14px;
-        line-height: 24px; }
-      main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .hall-item .hall-content p:last-child {
-        margin-bottom: 0; }
-    main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .hall-item:hover {
-      cursor: pointer; }
-      @media screen and (min-width: 1280px) {
-        main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .hall-item:hover .hall-content {
-          visibility: visible;
-          opacity: 1; } }
-  main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .owl-dots {
-    margin-top: 50px; }
-    main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .owl-dots .owl-dot span {
-      width: 15px;
-      height: 15px;
-      background: #d9d9d9;
-      margin: 5px; }
-    main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .owl-dots .owl-dot.active span {
-      background: #c60c30;
-      opacity: 1; }
+	padding: 24px 0;
+}
+main.page-course-ola-ielts .section-5.clone {
+	padding: 0 0 24px 0;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-5 .container {
+		padding: 0;
+	}
+}
+main.page-course-ola-ielts .section-5 .box-course-none-background {
+	border-radius: 35px;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-5 .box-course-none-background {
+		border-radius: 0;
+	}
+}
+main.page-course-ola-ielts .section-5 .box-course-none-background .img-background {
+	border-radius: 35px;
+	width: 100%;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-5 .box-course-none-background .img-background {
+		border-radius: 0;
+	}
+}
+main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content h2 {
+	font-family: "Montserrat SemiBold";
+	margin-bottom: 15px;
+	color: #fff;
+	font-size: 36px;
+	line-height: 1.25;
+}
 @media screen and (max-width: 1024px) {
-  main.page-course-ola-ielts:not(.section-1) .section-2 .banner-content .container .banner-content-main h2,
-  main.page-course-ola-ielts:not(.section-1) .section-2 .banner-content .container .banner-content-main h1 {
-    font-size: 24px;
-    margin-bottom: 12px; }
-    main.page-course-ola-ielts:not(.section-1) .section-2 .banner-content .container .banner-content-main h2 br,
-    main.page-course-ola-ielts:not(.section-1) .section-2 .banner-content .container .banner-content-main h1 br {
-      display: none; } }
+	main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content h2 {
+		font-size: 30px;
+		margin-bottom: 12px;
+	}
+	main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content h2 br {
+		display: none;
+	}
+}
 @media screen and (max-width: 767px) {
-  main.page-course-ola-ielts:not(.section-1) .section-2 .banner-content .container .banner-content-main h2,
-  main.page-course-ola-ielts:not(.section-1) .section-2 .banner-content .container .banner-content-main h1 {
-    font-size: 20px; }
-    main.page-course-ola-ielts:not(.section-1) .section-2 .banner-content .container .banner-content-main h2 span,
-    main.page-course-ola-ielts:not(.section-1) .section-2 .banner-content .container .banner-content-main h1 span {
-      color: #000 !important; } }
+	main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content h2 {
+		color: #000;
+		font-size: 20px;
+	}
+	main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content h2 span {
+		color: #000 !important;
+	}
+}
+main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content p {
+	color: #fff;
+	font-size: 18px;
+	font-family: "Montserrat Regular";
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content p {
+		text-align: left;
+		font-size: 16px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content p {
+		font-size: 12px;
+	}
+}
 @media screen and (max-width: 767px) {
-  main.page-course-ola-ielts:not(.section-1) .section-2 .banner-content .container .banner-content-main h1 {
-    font-size: 22px; } }
+	main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content p {
+		color: #000;
+	}
+	main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content p span {
+		color: #000 !important;
+	}
+}
+main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content ul {
+	padding-left: 16px;
+}
+main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content ul li {
+	font-family: "Montserrat Regular";
+	font-size: 18px;
+	margin-bottom: 15px;
+	color: #fff;
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content ul li {
+		text-align: left;
+		font-size: 16px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content ul li {
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content ul li {
+		color: #000;
+	}
+	main.page-course-ola-ielts .section-5 .box-course-none-background .banner-content ul li span {
+		color: #000 !important;
+	}
+}
+main.page-course-ola-ielts .section-5 .box-course-background {
+	border-radius: 35px;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-5 .box-course-background {
+		border-radius: 0;
+	}
+}
+main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content {
+	position: relative;
+	max-width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0 50px;
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content {
+		padding: 30px;
+	}
+}
+main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content h2 {
+	margin-bottom: 15px;
+	color: #fff;
+	font-family: "Montserrat Bold";
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content h2 {
+		margin-bottom: 12px;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content h2 {
+		font-size: 20px;
+	}
+}
+main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content p {
+	color: #fff;
+	font-size: 18px;
+	font-family: "Montserrat Regular";
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content p {
+		text-align: left;
+		font-size: 16px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content p {
+		font-size: 12px;
+	}
+}
+main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content ul {
+	padding-left: 16px;
+}
+main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content ul li {
+	font-family: "Montserrat Regular";
+	font-size: 18px;
+	margin-bottom: 15px;
+	color: #fff;
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content ul li {
+		text-align: left;
+		font-size: 16px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 .banner-content ul li {
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+}
+@media screen and (min-width: 768px) {
+	main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 img.img-background {
+		width: 100%;
+		height: 100%;
+		border-top-right-radius: 35px;
+		border-bottom-right-radius: 35px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 img.img-background {
+		object-fit: cover;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-5 .box-course-background .row .col-md-6 img.img-background {
+		border-radius: 0;
+		width: 100%;
+	}
+}
+@media screen and (max-width: 1180px) {
+	main.page-course-ola-ielts .section-5 .box-course-update-2 {
+		display: grid;
+	}
+}
+main.page-course-ola-ielts .section-5 .box-course-update-2 .banner-content {
+	max-width: 510px;
+	right: 3%;
+}
+@media screen and (max-width: 1180px) {
+	main.page-course-ola-ielts .section-5 .box-course-update-2 .banner-content {
+		right: 0;
+		max-width: 100%;
+	}
+}
+main.page-course-ola-ielts .section-6 {
+	position: relative;
+	padding-bottom: 24px;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-6 {
+		padding-bottom: 0;
+	}
+}
+main.page-course-ola-ielts .section-6 .container {
+	position: relative;
+}
+main.page-course-ola-ielts .section-6 .box-course-update-2 {
+	position: relative;
+}
+main.page-course-ola-ielts .section-6 .box-course-update-2:before {
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+	z-index: 1;
+}
+@media screen and (min-width: 768px) {
+	main.page-course-ola-ielts .section-6 .box-course-update-2:before {
+		border-radius: 35px;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-6 .box-course-update-2:before {
+		display: none;
+	}
+}
+main.page-course-ola-ielts .section-6 img {
+	width: 100%;
+	height: auto;
+}
+@media screen and (min-width: 768px) {
+	main.page-course-ola-ielts .section-6 img {
+		border-radius: 35px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-6 img {
+		height: 370px;
+		object-fit: cover;
+	}
+}
+main.page-course-ola-ielts .section-6 .banner-content {
+	position: absolute;
+	top: 50%;
+	right: 3%;
+	transform: translate(0, -50%);
+	max-width: 400px;
+	color: #fff;
+	z-index: 99;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-6 .banner-content {
+		color: #000;
+		max-width: 100%;
+		position: relative;
+		top: 0;
+		right: 0;
+		transform: translate(0);
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-6 .banner-content {
+		right: 3%;
+		max-width: 350px;
+	}
+}
+main.page-course-ola-ielts .section-6 .banner-content h2 {
+	font-family: "Montserrat Bold";
+	margin-bottom: 15px;
+	color: #fff;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-6 .banner-content h2 {
+		color: #000;
+		font-size: 20px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-6 .banner-content h2 {
+		margin-bottom: 12px;
+	}
+}
+main.page-course-ola-ielts .section-6 .banner-content p {
+	font-family: "Montserrat Regular";
+	font-size: 16px;
+	margin-bottom: 15px;
+	color: #fff;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-6 .banner-content p {
+		color: #000;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-6 .banner-content p {
+		font-size: 12px;
+	}
+}
+main.page-course-ola-ielts .section-6 .banner-content ul {
+	padding-left: 16px;
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-6 .banner-content ul {
+		text-align: left;
+		margin-bottom: 0;
+	}
+}
+main.page-course-ola-ielts .section-6 .banner-content ul li {
+	font-family: "Montserrat Regular";
+	font-size: 16px;
+	margin-bottom: 15px;
+	color: #fff;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-6 .banner-content ul li {
+		color: #000;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-6 .banner-content ul li {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-6 > .container {
+		padding: 0;
+	}
+	main.page-course-ola-ielts .section-6 .box-course-update-2 {
+		display: grid;
+	}
+	main.page-course-ola-ielts .section-6 .box-course-update-2 img.img-background {
+		order: 2;
+	}
+	main.page-course-ola-ielts .section-6 .box-course-update-2 .banner-content {
+		position: relative;
+		padding: 24px;
+		margin-left: 12px;
+		background-color: #fff;
+		border-top-left-radius: 25px;
+		border-bottom-left-radius: 25px;
+		margin-bottom: -40px;
+	}
+	main.page-course-ola-ielts .section-6 .box-course-update-2 .banner-content br {
+		display: none;
+	}
+	main.page-course-ola-ielts .section-6 .box-course-update-2 .banner-content .container {
+		padding: 0;
+	}
+	main.page-course-ola-ielts .section-6 .box-course-update-2 .banner-content .container .banner-content-main {
+		max-width: 100%;
+	}
+	main.page-course-ola-ielts .section-6 .box-course-update-2 .banner-content .container .banner-content-main p {
+		margin-bottom: 0;
+	}
+}
+main.page-course-ola-ielts .section-6-padding {
+	padding-top: 24px;
+}
+main.page-course-ola-ielts .section-7 {
+	position: relative;
+}
+main.page-course-ola-ielts .section-7.section-7-padding {
+	padding-top: 24px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-7 {
+		padding-top: 24px;
+	}
+}
+main.page-course-ola-ielts .section-7 .img-background {
+	width: 100%;
+	height: auto;
+}
+@media screen and (min-width: 768px) {
+	main.page-course-ola-ielts .section-7 .banner-content {
+		position: absolute;
+		top: 15%;
+		right: 0;
+		left: 0;
+		width: auto;
+		z-index: 99;
+	}
+	main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main {
+		max-width: 600px;
+	}
+}
+@media screen and (min-width: 1600px) {
+	main.page-course-ola-ielts .section-7 .banner-content {
+		left: 12%;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-7 .banner-content {
+		position: relative;
+		padding: 30px 0 0 0;
+		top: 0;
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 13.02%, #ffffff 70.31%, #ffffff 100%);
+		margin-top: -115px;
+	}
+}
+main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main {
+	max-width: 630px;
+	margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main {
+		max-width: 100%;
+		margin-top: 30px;
+		margin-left: 0;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+	main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main {
+		max-width: 500px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main {
+		max-width: 400px;
+	}
+}
+main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main h2 {
+	font-size: 36px;
+	text-transform: none;
+	font-family: "Montserrat Bold";
+	line-height: 1.25;
+	margin-bottom: 15px;
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main h2 {
+		font-size: 26px;
+		margin-bottom: 12px;
+		max-width: 100%;
+	}
+	main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main h2 br {
+		display: none;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main h2 {
+		font-size: 20px;
+	}
+}
+main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main p {
+	font-family: "Montserrat Regular";
+	font-size: 18px;
+	line-height: 25px;
+	color: #000000;
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main p {
+		font-size: 16px;
+		line-height: 1.5;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-7 .banner-content .container .banner-content-main p {
+		font-size: 12px;
+	}
+}
+main.page-course-ola-ielts .section-8 {
+	padding: 24px 0;
+}
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+	main.page-course-ola-ielts .section-8 {
+		padding: 12px 0;
+	}
+}
+main.page-course-ola-ielts .section-8 .container .main-blog {
+	padding: 30px 0 15px 0;
+}
+main.page-course-ola-ielts .section-8 .container .main-blog span {
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.25;
+	font-family: "Montserrat Regular";
+	background-color: #000066;
+	display: block;
+	padding: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-8 .container .main-blog span {
+		font-size: 12px;
+	}
+}
+main.page-course-ola-ielts .section-8 .container .title-blog {
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin-bottom: 15px;
+}
+@media screen and (max-width: 576px) {
+	main.page-course-ola-ielts .section-8 .container .title-blog {
+		justify-content: space-between;
+	}
+}
+main.page-course-ola-ielts .section-8 .container .title-blog h2 {
+	text-transform: uppercase;
+	color: #000066;
+	font-size: 36px;
+	line-height: 56px;
+	font-family: "Montserrat Bold", sans-serif;
+	margin-bottom: 0;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-8 .container .title-blog h2 {
+		font-size: 20px;
+		line-height: 1.25;
+		max-width: 200px;
+	}
+}
+main.page-course-ola-ielts .section-8 .container .title-blog button {
+	background: none;
+	border: none;
+	outline: none;
+	margin-left: 30px;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-8 .container .title-blog button {
+		margin-left: 0;
+		padding: 0;
+	}
+}
+main.page-course-ola-ielts .section-8 .container .title-blog button a {
+	text-decoration: none;
+	color: #0075a9;
+	font-size: 16px;
+	line-height: 26px;
+	font-family: "Montserrat Medium";
+}
+main.page-course-ola-ielts .section-8 .container .title-blog button a i {
+	color: #f32735;
+	margin-left: 10px;
+}
+main.page-course-ola-ielts .section-8 .container .title-blog button a:hover {
+	text-decoration: underline;
+}
+main.page-course-ola-ielts .section-8 .container .box-video-top {
+	margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+	main.page-course-ola-ielts .section-8 .container .box-video-top {
+		width: 50%;
+		float: left;
+	}
+}
+main.page-course-ola-ielts .section-8 .container .box-video-top a {
+	text-decoration: none;
+	display: block;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-8 .container .box-video-top {
+		margin-bottom: 0;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-8 .container .box-video-top .video-item-lg {
+		margin-bottom: 20px;
+	}
+}
+main.page-course-ola-ielts .section-8 .container .box-video-top .video-item-lg .box-video {
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-8 .container .box-video-top .video-item-lg .box-video {
+		height: auto;
+	}
+}
+main.page-course-ola-ielts .section-8 .container .box-video-top .video-item-lg .box-video img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+main.page-course-ola-ielts .section-8 .container .box-video-top .video-item-lg .box-description .title {
+	color: #000000;
+	font-family: "Montserrat SemiBold", sans-serif;
+	font-size: 24px;
+	line-height: 36px;
+	margin-bottom: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-8 .container .box-video-top .video-item-lg .box-description .title {
+		font-size: 16px;
+		line-height: 25px;
+	}
+}
+main.page-course-ola-ielts .section-8 .container .box-video-top .video-item-lg .box-description .title a {
+	color: #000000;
+	display: block;
+}
+main.page-course-ola-ielts .section-8 .container .box-video-top .video-item-lg .box-description .title a:hover {
+	text-decoration: underline;
+}
+main.page-course-ola-ielts .section-8 .container .box-video-top .video-item-lg .box-description p {
+	font-size: 14px;
+	line-height: 22px;
+	color: #000000;
+	margin-bottom: 0;
+	font-family: "Montserrat Medium", sans-serif;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+	main.page-course-ola-ielts .section-8 .container .box-video-bottom {
+		margin-bottom: 30px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+	main.page-course-ola-ielts .section-8 .container .box-video-bottom {
+		width: 48%;
+		float: right;
+	}
+}
+main.page-course-ola-ielts .section-8 .container .box-video-bottom a {
+	text-decoration: none;
+	display: block;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item {
+		margin-bottom: 20px;
+	}
+}
+main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-video {
+	height: 124px;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-video {
+		height: auto;
+		max-height: 160px;
+		min-height: 140px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+	main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-video {
+		width: 40%;
+		float: left;
+		height: auto;
+	}
+}
+main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-video img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+	main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-video img {
+		height: 100px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+	main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-description {
+		width: 58%;
+		float: right;
+	}
+}
+main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-description .title {
+	color: #000000;
+	font-family: "Montserrat SemiBold", sans-serif;
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-description .title {
+		font-size: 16px;
+	}
+}
+main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-description .title a {
+	color: #000000;
+}
+main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-description .title a:hover {
+	text-decoration: underline;
+}
+main.page-course-ola-ielts .section-8 .container .box-video-bottom .video-item .box-description p {
+	font-size: 14px;
+	line-height: 22px;
+	color: #000000;
+	margin-bottom: 0;
+	font-family: "Montserrat Medium", sans-serif;
+}
+main.page-course-ola-ielts .section-8 .container .box-video-bottom .owl-carousel .owl-stage {
+	padding-left: 0 !important;
+}
+main.page-course-ola-ielts .section-8 .container .box-video-bottom .owl-theme .owl-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	left: 0;
+	right: 0;
+}
+main.page-course-ola-ielts .section-8 .container .box-video-bottom .owl-theme .owl-nav .owl-next,
+main.page-course-ola-ielts .section-8 .container .box-video-bottom .owl-theme .owl-nav .owl-prev {
+	position: absolute;
+	top: 25%;
+	z-index: 999;
+	width: 25px;
+	height: 25px;
+	background: #fff;
+	border-radius: 50%;
+	text-align: center;
+	margin: 0;
+}
+main.page-course-ola-ielts .section-8 .container .box-video-bottom .owl-theme .owl-nav .owl-next span,
+main.page-course-ola-ielts .section-8 .container .box-video-bottom .owl-theme .owl-nav .owl-prev span {
+	font-size: 25px;
+	line-height: 20px;
+	color: #000;
+}
+main.page-course-ola-ielts .section-8 .container .box-video-bottom .owl-theme .owl-nav .owl-prev {
+	left: 0;
+}
+main.page-course-ola-ielts .section-8 .container .box-video-bottom .owl-theme .owl-nav .owl-next {
+	right: 0;
+}
+main.page-course-ola-ielts .section-8 .container .related-post .related-title {
+	font-family: "Montserrat Bold";
+	font-size: 32px;
+	line-height: 38px;
+	color: #000000;
+	margin-bottom: 15px;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-8 .container .related-post .related-title {
+		font-size: 24px;
+		line-height: 30px;
+	}
+}
+main.page-course-ola-ielts .section-8 .container .related-post .post-item {
+	display: flex;
+	height: 124px;
+	margin-bottom: 15px;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts .section-8 .container .related-post .post-item {
+		height: auto;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	main.page-course-ola-ielts .section-8 .container .related-post .post-item {
+		height: 130px;
+	}
+}
+main.page-course-ola-ielts .section-8 .container .related-post .post-item .thumb-img {
+	width: 170px;
+	min-width: 170px;
+}
+@media screen and (max-width: 991px) {
+	main.page-course-ola-ielts .section-8 .container .related-post .post-item .thumb-img {
+		width: 140px;
+		min-width: 140px;
+	}
+}
+main.page-course-ola-ielts .section-8 .container .related-post .post-item .thumb-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+}
+main.page-course-ola-ielts .section-8 .container .related-post .post-item .post-content {
+	flex: 1;
+	margin-left: 24px;
+}
+main.page-course-ola-ielts .section-8 .container .related-post .post-item .post-content .post-title {
+	font-family: "Montserrat SemiBold";
+	font-size: 18px;
+	line-height: 25px;
+	color: #000000;
+}
+@media screen and (max-width: 991px) {
+	main.page-course-ola-ielts .section-8 .container .related-post .post-item .post-content .post-title {
+		margin-bottom: 15px;
+		font-size: 16px;
+	}
+}
+main.page-course-ola-ielts .section-8 .container .related-post .post-item .post-content .post-title a {
+	text-decoration: none;
+	color: #000000;
+}
+main.page-course-ola-ielts .section-8 .container .related-post .post-item .post-content .post-title a:hover {
+	text-decoration: underline;
+}
+main.page-course-ola-ielts .section-8 .container .related-post .post-item .post-content .category-name {
+	position: relative;
+	display: block;
+	font-family: "Montserrat Medium";
+	font-size: 14px;
+	line-height: 22px;
+	color: #0075a9;
+	text-decoration: none;
+	padding-left: 16px;
+}
+main.page-course-ola-ielts .section-8 .container .related-post .post-item .post-content .category-name:hover {
+	text-decoration: underline;
+}
+main.page-course-ola-ielts .section-8 .container .related-post .post-item .post-content .category-name::before {
+	content: "";
+	position: absolute;
+	top: 7px;
+	left: 0;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #fdb510;
+}
+main.page-course-ola-ielts .section-8 .container .related-post .row .col-12:last-child .post-item {
+	margin-bottom: 0;
+}
+main.page-course-ola-ielts #section-5.section-hall-of-greatness {
+	padding-bottom: 50px;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts #section-5.section-hall-of-greatness {
+		padding-bottom: 24px;
+	}
+}
+main.page-course-ola-ielts #section-5.section-hall-of-greatness .container .title-blog {
+	display: flex;
+	align-items: center;
+	padding-bottom: 30px;
+}
+@media screen and (max-width: 576px) {
+	main.page-course-ola-ielts #section-5.section-hall-of-greatness .container .title-blog {
+		justify-content: space-between;
+	}
+}
+main.page-course-ola-ielts #section-5.section-hall-of-greatness .container .title-blog h2 {
+	text-transform: uppercase;
+	color: #000066;
+	font-size: 36px;
+	line-height: 56px;
+	font-family: "Montserrat Bold", sans-serif;
+	margin-bottom: 0;
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts #section-5.section-hall-of-greatness .container .title-blog h2 {
+		font-size: 20px;
+		line-height: 1.25;
+		max-width: 250px;
+	}
+}
+@media screen and (max-width: 375px) {
+	main.page-course-ola-ielts #section-5.section-hall-of-greatness .container .title-blog h2 {
+		font-size: 18px;
+	}
+}
+main.page-course-ola-ielts #section-5.section-hall-of-greatness .container .title-blog button {
+	background: none;
+	border: none;
+	outline: none;
+	margin-left: 30px;
+}
+@media screen and (max-width: 576px) {
+	main.page-course-ola-ielts #section-5.section-hall-of-greatness .container .title-blog button {
+		margin-left: 0;
+		padding: 0;
+	}
+}
+main.page-course-ola-ielts #section-5.section-hall-of-greatness .container .title-blog button a {
+	text-decoration: none;
+	color: #0075a9;
+	font-size: 16px;
+	line-height: 26px;
+	font-family: "Montserrat Medium";
+}
+main.page-course-ola-ielts #section-5.section-hall-of-greatness .container .title-blog button a i {
+	color: #f32735;
+	margin-left: 10px;
+}
+main.page-course-ola-ielts #section-5.section-hall-of-greatness .container .title-blog button a:hover {
+	text-decoration: underline;
+}
+main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .hall-item {
+	position: relative;
+	border-radius: 25px;
+}
+main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .hall-item .hall-image img {
+	max-height: 530px;
+	min-height: 530px;
+	object-fit: cover;
+	border-radius: 25px;
+}
+main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .hall-item .hall-content {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(42, 51, 143, 0.9);
+	backdrop-filter: blur(4px);
+	text-align: center;
+	padding: 30px 15px;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.2s linear;
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .hall-item .hall-content {
+		padding: 20px;
+		visibility: visible;
+		opacity: 1;
+	}
+}
+main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .hall-item .hall-content a {
+	display: block;
+	font-family: "Montserrat Bold";
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 22px;
+	line-height: 24px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .hall-item .hall-content a {
+		font-size: 18px;
+	}
+}
+main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .hall-item .hall-content p {
+	font-family: "Montserrat Regular";
+	color: #fff;
+	font-size: 14px;
+	line-height: 24px;
+}
+main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .hall-item .hall-content p:last-child {
+	margin-bottom: 0;
+}
+main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .hall-item:hover {
+	cursor: pointer;
+}
+@media screen and (min-width: 1280px) {
+	main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .hall-item:hover .hall-content {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .owl-dots {
+	margin-top: 50px;
+}
+main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .owl-dots .owl-dot span {
+	width: 15px;
+	height: 15px;
+	background: #d9d9d9;
+	margin: 5px;
+}
+main.page-course-ola-ielts #section-5.section-hall-of-greatness .hall-owl-slider-course .owl-dots .owl-dot.active span {
+	background: #f32735;
+	opacity: 1;
+}
+@media screen and (max-width: 1024px) {
+	main.page-course-ola-ielts:not(.section-1) .section-2 .banner-content .container .banner-content-main h2,
+	main.page-course-ola-ielts:not(.section-1) .section-2 .banner-content .container .banner-content-main h1 {
+		font-size: 24px;
+		margin-bottom: 12px;
+	}
+	main.page-course-ola-ielts:not(.section-1) .section-2 .banner-content .container .banner-content-main h2 br,
+	main.page-course-ola-ielts:not(.section-1) .section-2 .banner-content .container .banner-content-main h1 br {
+		display: none;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts:not(.section-1) .section-2 .banner-content .container .banner-content-main h2,
+	main.page-course-ola-ielts:not(.section-1) .section-2 .banner-content .container .banner-content-main h1 {
+		font-size: 20px;
+	}
+	main.page-course-ola-ielts:not(.section-1) .section-2 .banner-content .container .banner-content-main h2 span,
+	main.page-course-ola-ielts:not(.section-1) .section-2 .banner-content .container .banner-content-main h1 span {
+		color: #000 !important;
+	}
+}
+@media screen and (max-width: 767px) {
+	main.page-course-ola-ielts:not(.section-1) .section-2 .banner-content .container .banner-content-main h1 {
+		font-size: 22px;
+	}
+}
 
 @media screen and (min-width: 1280px) and (max-width: 1366px) {
-  .page-id-4598 main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main,
-  .page-id-4661 main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main {
-    max-width: 500px; } }
+	.page-id-4598 main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main,
+	.page-id-4661 main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main {
+		max-width: 500px;
+	}
+}
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
-  .page-id-4598 main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main,
-  .page-id-4661 main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main {
-    max-width: 400px; } }
+	.page-id-4598 main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main,
+	.page-id-4661 main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main {
+		max-width: 400px;
+	}
+}
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  .page-id-4598 main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main,
-  .page-id-4661 main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main {
-    max-width: 330px; } }
+	.page-id-4598 main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main,
+	.page-id-4661 main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main {
+		max-width: 330px;
+	}
+}
 @media screen and (min-width: 768px) {
-  .page-id-4598 main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h1 br,
-  .page-id-4661 main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h1 br {
-    display: none; } }
+	.page-id-4598 main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h1 br,
+	.page-id-4661 main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h1 br {
+		display: none;
+	}
+}
 @media screen and (max-width: 767px) {
-  .page-id-4598 main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h1 br,
-  .page-id-4661 main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h1 br {
-    display: block; } }
+	.page-id-4598 main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h1 br,
+	.page-id-4661 main.page-course-ola-ielts .section-2 .banner-content .container .banner-content-main h1 br {
+		display: block;
+	}
+}
 @media screen and (min-width: 1400px) {
-  .page-id-4598 main.page-course-ola-ielts .section-2 .banner-content,
-  .page-id-4661 main.page-course-ola-ielts .section-2 .banner-content {
-    left: 5%; } }
+	.page-id-4598 main.page-course-ola-ielts .section-2 .banner-content,
+	.page-id-4661 main.page-course-ola-ielts .section-2 .banner-content {
+		left: 5%;
+	}
+}
 .page-id-4598 main.page-course-ola-ielts .section-3 .banner-content .banner-content-main,
 .page-id-4661 main.page-course-ola-ielts .section-3 .banner-content .banner-content-main {
-  margin: 0 0 0 auto; }
-  @media screen and (min-width: 1024px) {
-    .page-id-4598 main.page-course-ola-ielts .section-3 .banner-content .banner-content-main,
-    .page-id-4661 main.page-course-ola-ielts .section-3 .banner-content .banner-content-main {
-      max-width: 630px; } }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .page-id-4598 main.page-course-ola-ielts .section-3 .banner-content .banner-content-main,
-    .page-id-4661 main.page-course-ola-ielts .section-3 .banner-content .banner-content-main {
-      max-width: 430px; } }
+	margin: 0 0 0 auto;
+}
+@media screen and (min-width: 1024px) {
+	.page-id-4598 main.page-course-ola-ielts .section-3 .banner-content .banner-content-main,
+	.page-id-4661 main.page-course-ola-ielts .section-3 .banner-content .banner-content-main {
+		max-width: 630px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.page-id-4598 main.page-course-ola-ielts .section-3 .banner-content .banner-content-main,
+	.page-id-4661 main.page-course-ola-ielts .section-3 .banner-content .banner-content-main {
+		max-width: 430px;
+	}
+}
 .page-id-4598 main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content h2,
 .page-id-4661 main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content h2 {
-  font-size: 20px !important; }
+	font-size: 20px !important;
+}
 .page-id-4598 main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content p,
 .page-id-4661 main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content p {
-  font-size: 16px !important; }
+	font-size: 16px !important;
+}
 .page-id-4598 main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content ul li,
 .page-id-4661 main.page-course-ola-ielts .section-4 .box-main .container .box-main_top .row.list-5-column .col-xl-4 .box-item .box-content ul li {
-  font-size: 16px !important; }
+	font-size: 16px !important;
+}
 
 .page-id-3736 main.page-course-ola-ielts .section-6 .box-course-update-2::before,
 .page-id-4049 main.page-course-ola-ielts .section-6 .box-course-update-2::before {
-  display: none; }
+	display: none;
+}
 
 /*# sourceMappingURL=ola-or-ielts.css.map */

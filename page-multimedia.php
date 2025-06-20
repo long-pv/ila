@@ -15,13 +15,18 @@
  */
 
 get_header();
+
+$lang = '';
+if (LANG == 'en') {
+    $lang = '_en';
+}
 ?>
 
 <div id="content" class="site-content">
     <main class="archive-template archive-video">
         <div class="archive-post">
             <?php
-            $menu_items = get_field('menu_item', 'option') ?? []; // 'option' là theme setting
+            $menu_items = get_field('menu_item' . $lang, 'option') ?? []; // 'option' là theme setting
 
             //
             if (!empty($menu_items)): ?>
@@ -122,7 +127,7 @@ get_header();
                                                 </div>
                                                 <div class="video-time-publish">
                                                     <p>
-                                                        <a href="<?php echo $category_link; ?>">Multimedia</a>
+                                                        <a href="<?php echo $category_link; ?>"> <?php _e("Multimedia", "xemer_theme"); ?> </a>
                                                         <span><?php echo $published; ?> (GTM+7)</span>
                                                     </p>
                                                 </div>
@@ -183,7 +188,7 @@ get_header();
                                                     <span class="icon-time"><i class="fa-solid fa-timer"></i>
                                                         <?php echo $video_duration; ?></span>
                                                     <span class="category-link">
-                                                        <a href="<?php echo $category_link; ?>">MULTIMEDIA</a>
+                                                        <a href="<?php echo $category_link; ?>"><?php _e("MULTIMEDIA", "xemer_theme"); ?> </a>
                                                     </span>
                                                 </p>
                                             </div>

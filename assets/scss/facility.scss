@@ -10,6 +10,7 @@
 		transform: rotate(0) scale(1) skew(1deg);
 		opacity: 0.2;
 	}
+
 	100% {
 		-webkit-transform: rotate(0) scale(0.7) skew(1deg);
 		transform: rotate(0) scale(0.7) skew(1deg);
@@ -26,12 +27,14 @@ main.facility {
 	.section-1 {
 		position: relative;
 		padding: 24px 0;
+
 		@media screen and (max-width: 991px) {
 			padding: 12px 0;
 		}
 
 		.container {
 			position: relative;
+
 			#banner-video {
 				width: 100%;
 				height: auto;
@@ -39,16 +42,20 @@ main.facility {
 				max-height: 560px;
 				object-fit: cover;
 				display: block;
+
 				@media screen and (max-width: 1024px) {
 					//opacity: 0.6;
 					height: 200px;
 				}
+
 				@media screen and (min-width: 768px) and (max-width: 991px) {
 					height: 370px;
 				}
+
 				@media screen and (width: 1024px) {
 					height: 470px;
 				}
+
 				@media screen and (max-width: 767px) {
 					border-radius: 15px;
 				}
@@ -90,14 +97,17 @@ main.facility {
 						font-size: 34px;
 						margin-bottom: 15px;
 						line-height: 1.25;
+
 						@media screen and (min-width: 768px) {
-							text-shadow: 2px 5px 5px #2b378b;
+							text-shadow: 2px 5px 5px #0075A9;
 						}
+
 						@media screen and (max-width: 767px) {
 							font-size: 22px;
 							line-height: 1.25;
 							margin-bottom: 10px;
 							color: #000 !important;
+
 							span {
 								color: #000 !important;
 							}
@@ -108,16 +118,20 @@ main.facility {
 						text-transform: none;
 						font-size: 22px;
 						font-family: "Montserrat SemiBold";
+
 						@media screen and (min-width: 768px) {
-							text-shadow: 2px 5px 5px #2b378b;
+							text-shadow: 2px 5px 5px #0075A9;
 						}
+
 						@media screen and (max-width: 767px) {
 							font-size: 14px;
 							color: #000 !important;
+
 							span {
 								color: #000 !important;
 							}
 						}
+
 						a {
 							text-decoration: none;
 							color: #fff;
@@ -143,7 +157,7 @@ main.facility {
 			}
 		}
 
-		> .container {
+		>.container {
 			@media screen and (max-width: 767px) {
 				display: grid;
 
@@ -175,38 +189,38 @@ main.facility {
 									a {
 										color: #fff;
 									}
+
 									a:first-child {
 										@media screen and (max-width: 767px) {
 											order: 2;
 											text-transform: uppercase;
 										}
 									}
+
 									a:last-child {
 										@media screen and (max-width: 767px) {
 											display: block;
 											margin-left: 0 !important;
 											margin-bottom: 10px;
+
 											img {
 												width: 60px;
 												height: 60px;
 												padding: 10px;
-												border: 0.5px solid
-													rgba(255, 255, 255, 0.65);
+												border: 0.5px solid rgba(255, 255, 255, 0.65);
 												border-radius: 50%;
 											}
+
 											&:before {
 												content: "";
 												position: absolute;
 												background-color: #fff;
 												border-radius: 100% !important;
 												border: 2px solid transparent;
-												-webkit-animation: icon-bound-fill
-													2.3s infinite ease-in-out;
-												animation: icon-bound-fill 2.3s
-													infinite ease-in-out;
+												-webkit-animation: icon-bound-fill 2.3s infinite ease-in-out;
+												animation: icon-bound-fill 2.3s infinite ease-in-out;
 												transition: all 0.5s;
-												-webkit-transform-origin: 50%
-													50%;
+												-webkit-transform-origin: 50% 50%;
 												-ms-transform-origin: 50% 50%;
 												transform-origin: 50% 50%;
 												height: 60px;
@@ -238,9 +252,11 @@ main.facility {
 
 			//
 			z-index: 30;
+
 			@media screen and (max-width: 991px) {
 				height: auto;
 			}
+
 			@media screen and (max-width: 767px) {
 				-webkit-border-radius: 24px;
 				-moz-border-radius: 24px;
@@ -253,8 +269,10 @@ main.facility {
 
 			.row {
 				margin: 0;
+
 				.col-lg-6 {
 					padding: 0;
+
 					.box-content {
 						position: relative;
 						height: 100%;
@@ -262,12 +280,15 @@ main.facility {
 						padding: 130px 60px;
 						overflow: hidden;
 						z-index: 20;
+
 						@media screen and (max-width: 767px) {
 							padding: 60px 30px 30px;
 						}
+
 						@media screen and (min-width: 768px) and (max-width: 991px) {
 							padding: 110px 90px 30px;
 						}
+
 						h2 {
 							font-family: "Montserrat Bold";
 							font-size: 36px;
@@ -283,13 +304,16 @@ main.facility {
 									display: none;
 								}
 							}
+
 							@media screen and (max-width: 767px) {
 								font-size: 20px;
+
 								span {
 									color: #000 !important;
 								}
 							}
 						}
+
 						p {
 							font-family: "Montserrat Regular";
 							font-size: 18px;
@@ -301,6 +325,7 @@ main.facility {
 								line-height: 1.5;
 							}
 						}
+
 						.box-circle {
 							position: absolute;
 							width: 150px;
@@ -312,11 +337,13 @@ main.facility {
 							-moz-border-radius: 50%;
 							border-radius: 50%;
 							z-index: 10;
+
 							@media screen and (max-width: 767px) {
 								width: 100px;
 								height: 100px;
 							}
 						}
+
 						.box-rectangle {
 							position: absolute;
 							bottom: 0;
@@ -325,14 +352,17 @@ main.facility {
 							height: 150px;
 							background: #abd2c4;
 							mix-blend-mode: darken;
+
 							@media screen and (max-width: 991px) {
 								display: none;
 							}
 						}
 					}
+
 					.box-gallery {
 						height: 100%;
 						position: relative;
+
 						// img {
 						//     width: 100%;
 						//     height: 100%;
@@ -346,32 +376,41 @@ main.facility {
 							height: 150px;
 							background: #abd2c4;
 							mix-blend-mode: multiply;
+
 							@media screen and (max-width: 991px) {
 								display: none;
 							}
 						}
+
 						.row {
 							margin: 0;
+
 							.col-6 {
 								&.col-first {
 									padding-right: 5px;
 								}
+
 								padding: 0;
+
 								img {
 									width: 100%;
 									height: auto;
 									object-fit: cover;
 								}
+
 								.img-gallery-1 {
 									height: 395px;
 									margin-bottom: 5px;
 								}
+
 								.img-gallery-2 {
 									height: 210px;
 								}
+
 								.img-gallery-3 {
 									height: 210px;
 								}
+
 								.img-gallery-4 {
 									margin-top: 5px;
 									height: 395px;
@@ -387,9 +426,11 @@ main.facility {
 	.section-3 {
 		position: relative;
 		margin: 24px 0;
+
 		@media screen and (max-width: 767px) {
 			margin: 12px 0;
 		}
+
 		&::before {
 			bottom: 0;
 			content: "";
@@ -397,16 +438,16 @@ main.facility {
 			height: 100%;
 			width: 100%;
 			position: absolute;
-			background: linear-gradient(
-				to right,
-				rgba(0, 0, 0, 0),
-				rgba(0, 0, 0, 0.5)
-			);
+			background: linear-gradient(to right,
+					rgba(0, 0, 0, 0),
+					rgba(0, 0, 0, 0.5));
 			z-index: 1;
+
 			@media screen and (max-width: 991px) {
 				display: none;
 			}
 		}
+
 		.img-background {
 			width: 100%;
 			height: auto;
@@ -418,17 +459,21 @@ main.facility {
 			left: 6%;
 			width: 100%;
 			z-index: 99;
+
 			@media screen and (max-width: 991px) {
 				position: static;
 				margin-top: 24px;
 			}
+
 			@media screen and (max-width: 767px) {
 				margin-top: 12px;
 			}
+
 			@media screen and (width: 1024px) {
 				top: 0;
 				left: 0;
 			}
+
 			.container {
 				.box-main-content {
 					max-width: 650px;
@@ -438,13 +483,16 @@ main.facility {
 					-moz-border-radius: 24px;
 					border-radius: 24px;
 					padding: 90px;
+
 					@media screen and (max-width: 991px) {
 						max-width: 100%;
 						padding: 40px 90px;
 					}
+
 					@media screen and (max-width: 767px) {
 						padding: 30px;
 					}
+
 					@media screen and (width: 1024px) {
 						padding: 50px;
 					}
@@ -455,6 +503,7 @@ main.facility {
 						line-height: 1.25;
 						color: #ffffff;
 						margin-bottom: 24px;
+
 						@media screen and (max-width: 1024px) {
 							font-size: 30px;
 							margin-bottom: 12px;
@@ -464,8 +513,10 @@ main.facility {
 								display: none;
 							}
 						}
+
 						@media screen and (max-width: 767px) {
 							font-size: 20px;
+
 							span {
 								color: #000 !important;
 							}
@@ -477,9 +528,11 @@ main.facility {
 						font-size: 18px;
 						line-height: 25px;
 						color: #ffffff;
+
 						@media screen and (max-width: 991px) {
 							color: #000000;
 						}
+
 						@media screen and (max-width: 767px) {
 							font-size: 14px;
 							line-height: 1.5;
@@ -489,8 +542,10 @@ main.facility {
 			}
 		}
 	}
+
 	#section-6.section-space-powers {
 		position: relative;
+
 		.container {
 			.title-space {
 				position: absolute;
@@ -504,11 +559,13 @@ main.facility {
 				color: #000;
 				font-family: "Montserrat SemiBold", sans-serif;
 				z-index: 99;
+
 				@media screen and (min-width: 768px) {
 					br {
 						display: none;
 					}
 				}
+
 				@media screen and (max-width: 767px) {
 					font-size: 26px;
 				}
@@ -518,25 +575,30 @@ main.facility {
 		.space-owl-slider {
 			.space-item {
 				position: relative;
+
 				.space-image {
 					img {
 						max-height: 583px;
 						object-fit: cover;
 						min-height: 583px;
+
 						@media screen and (min-width: 1024px) and (max-width: 1500px) {
 							min-height: 520px;
 							max-height: 520px;
 						}
+
 						@media screen and (min-width: 768px) and (max-width: 992px) {
 							min-height: 400px;
 							max-height: 400px;
 						}
+
 						@media screen and (max-width: 767px) {
 							min-height: 300px;
 							max-height: 300px;
 						}
 					}
 				}
+
 				.space-content {
 					position: absolute;
 					bottom: 0;
@@ -602,6 +664,7 @@ main.facility {
 					}
 				}
 			}
+
 			.owl-nav {
 				display: flex;
 				align-items: center;
@@ -615,7 +678,7 @@ main.facility {
 					height: 40px;
 					line-height: 35px;
 					background-color: #fff;
-					color: #2b378b;
+					color: #0075A9;
 					font-size: 35px;
 					border-radius: 50%;
 					display: flex;
@@ -624,7 +687,7 @@ main.facility {
 					box-shadow: 0 0 4px 0 rgba(179, 179, 179, 0.5);
 
 					&:hover {
-						background-color: #2b378b;
+						background-color: #0075A9;
 						color: #fff;
 					}
 
@@ -646,6 +709,7 @@ main.facility {
 					visibility: hidden;
 				}
 			}
+
 			.owl-dots {
 				margin-top: 100px;
 
@@ -660,7 +724,7 @@ main.facility {
 
 				.owl-dot.active {
 					span {
-						background: #c60c30;
+						background: #F32735;
 						opacity: 1;
 					}
 				}
@@ -668,6 +732,7 @@ main.facility {
 		}
 	}
 }
+
 .location-area {
 	padding-top: 50px;
 }
