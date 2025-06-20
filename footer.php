@@ -32,15 +32,18 @@ if ($register_form && is_array($register_form)) {
     $background = $register_form['background'] ?? 'https://ila.edu.vn/wp-content/uploads/2023/02/bg-course-section-6.png';
 ?>
     <section class="section-footer" id="form-submit-register" style="background-image: url(<?php echo $background; ?>);">
+        <img width="390" height="630" class="img-background-mb" src="https://ila.edu.vn/wp-content/uploads/2023/02/bg-course-section-6-mb.png" alt="">
         <div class="form-content">
             <div class="container">
-                <div class="form-register">
-                    <h3 class="form-title"><?php echo $title; ?></h3>
-                    <?php
-                    if (!empty($form_content)) {
-                        echo $form_content;
-                    }
-                    ?>
+                <div class="form-register-custom">
+                    <div class="form-register">
+                        <h3 class="form-title"><?php echo $title; ?></h3>
+                        <?php
+                        if (!empty($form_content)) {
+                            echo $form_content;
+                        }
+                        ?>
+                    </div>
                 </div>
             </div>
         </div>
@@ -49,6 +52,17 @@ if ($register_form && is_array($register_form)) {
 
 
 <style>
+    @media (max-width: 767px) {
+        .form-register-custom {
+            padding-bottom: 30px;
+        }
+    }
+
+    .main-header .nav-main-menu .navbar-menu {
+        max-height: 100vh !important;
+        overflow-y: auto !important;
+    }
+
     #form-submit-register .wpcf7-form p {
         margin: 0px;
     }
@@ -204,7 +218,7 @@ if ($google_maps):
                     <div class="box-footer">
                         <div class="subscribe-form mobile">
                             <h3 class="subscribe-form-title">
-                                <?php _e('Nhận ngay ưu đãi mới nhất tại ILA', 'xemer_theme'); ?>
+                                <?php echo get_field('title_get_offer_now' . $lang, 'option') ?? 'Nhận ngay ưu đãi mới nhất tại ILM'; ?>
                             </h3>
                             <div class="emaillist" id="es_form_f1-n1">
                                 <?php echo get_field('get_offer_now' . $lang, 'option') ?? ''; ?>
@@ -305,7 +319,7 @@ if ($google_maps):
                         </ul>
                         <div class="subscribe-form desktop">
                             <h3 class="subscribe-form-title">
-                                <?php _e('Nhận ngay ưu đãi mới nhất tại ILA', 'xemer_theme'); ?>
+                                <?php echo get_field('title_get_offer_now' . $lang, 'option') ?? 'Nhận ngay ưu đãi mới nhất tại ILM'; ?>
                             </h3>
                             <div class="emaillist" id="es_form_f1-n2">
                                 <?php echo get_field('get_offer_now' . $lang, 'option') ?? ''; ?>

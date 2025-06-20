@@ -73,6 +73,7 @@ get_header();
 
         $title_banner = !empty($section_2['title']) ? $section_2['title'] : '';
         $content_banner = !empty($section_2['content']) ? wp_kses_post($section_2['content']) : '';
+        $color_text = !empty($section_2['color_text']) ? $section_2['color_text'] : '#000';
         ?>
 
         <?php if ($background_image || $title_banner || $content_banner): ?>
@@ -86,11 +87,13 @@ get_header();
                     <div class="container">
                         <div class="banner-content-main" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
                             <?php if ($title_banner): ?>
-                                <h2 class="banner__title"><?php echo $title_banner; ?></h2>
+                                <h2 class="banner__title" style="color: <?php echo $color_text; ?>;"><?php echo $title_banner; ?></h2>
                             <?php endif; ?>
 
                             <?php if ($content_banner): ?>
-                                <?php echo $content_banner; ?>
+                                <div style="color: <?php echo $color_text; ?>;">
+                                    <?php echo $content_banner; ?>
+                                </div>
                             <?php endif; ?>
                         </div>
                     </div>
@@ -117,11 +120,11 @@ get_header();
                                     $bg_alt = !empty($item['background_image']['alt']) ? esc_attr($item['background_image']['alt']) : '';
                                     $title = !empty($item['title']) ? $item['title'] : '';
                                     $content = !empty($item['content']) ? wp_kses_post($item['content']) : '';
-                                    ?>
+                                ?>
                                     <div class="col-md-6 col-xl-6">
                                         <div class="box-item box-item-<?php echo $index + 1; ?>" data-aos="fade-up"
                                             data-aos-delay="50" data-aos-duration="800" <?php if ($bg_image): ?>
-                                                style="background-image: url('<?php echo $bg_image; ?>'); background-size: cover; background-position: center;"
+                                            style="background-image: url('<?php echo $bg_image; ?>'); background-size: cover; background-position: center;"
                                             <?php else: ?> style="background-color: #cabbb0;" <?php endif; ?>>
                                             <?php if ($bg_image): ?>
                                                 <div class="box-thumb d-none">
@@ -322,7 +325,7 @@ get_header();
                             $thumb = get_the_post_thumbnail_url($post, 'large');
                             $thumb_alt = get_post_meta(get_post_thumbnail_id($post), '_wp_attachment_image_alt', true);
                             $thumb_alt = $thumb_alt ?: get_the_title($post); // fallback alt
-                    
+
                             // Danh mục đầu tiên
                             $cats = get_the_category($post->ID);
                             $cat_link = !empty($cats) ? get_category_link($cats[0]->term_id) : '';
@@ -330,7 +333,7 @@ get_header();
 
                             // Thêm class riêng cho bài đầu tiên
                             $is_first = ($index === 0);
-                            ?>
+                        ?>
                             <?php if ($is_first): ?>
                                 <div class="col-xl-6 col-md-6">
                                     <div class="blog-main blog-first">
@@ -383,9 +386,9 @@ get_header();
                                             </div>
                                         <?php endif; ?>
                                     <?php endforeach; ?>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
                     </div>
                     <?php wp_reset_postdata(); ?>
                 <?php endif; ?>
