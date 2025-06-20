@@ -88,6 +88,9 @@
 		<link rel="stylesheet" id="page-ola-or-ielts-custom-css-css"
 			href="<?php echo THEME_URI . '/assets/'; ?>css/ola-or-ielts.css?ver=<?php echo _S_VERSION; ?>" media="all" />
 	<?php } ?>
+	<?php if (is_page_template('page-test_program.php')) { ?>
+		<link rel="stylesheet" id="page-ielts-sat-custom-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/ielts-sat.css?ver=<?php echo _S_VERSION; ?>" media="all">
+	<?php } ?>
 
 	<!-- page 2 -->
 	<?php if (is_page_template('page-seminar_event.php') || is_page_template('page-study_solutions_details.php') ||  is_page_template('page-study_solutions.php')) { ?>
