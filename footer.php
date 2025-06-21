@@ -561,6 +561,7 @@ if ($google_maps):
 <script src="<?php echo THEME_URI . '/assets_2/'; ?>js/archive-events.js?ver=<?php echo _S_VERSION; ?>" id="archive-events-js-js"></script>
 <script src="<?php echo THEME_URI . '/assets_2/'; ?>js/main.js?ver=<?php echo _S_VERSION; ?>" id="fptheme-main-js"></script>
 <script src="<?php echo THEME_URI . '/assets/'; ?>js/single.js?ver=<?php echo _S_VERSION; ?>" id="single-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/jquery.matchHeight.js?ver=<?php echo _S_VERSION; ?>" id="matchHeight-js"></script>
 
 <?php wp_footer(); ?>
 

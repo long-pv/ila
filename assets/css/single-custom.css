@@ -705,7 +705,7 @@ main.product-template-1 #section-9 .container .title-space p {
 	content: "";
 	width: 3rem;
 	height: 3rem;
-	background-image: url(/wp-content/themes/fptheme/assets/images/play-button.svg);
+	background-image: url('../images/play-button.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: absolute;
@@ -741,7 +741,7 @@ main.product-template-1 #section-9 .container .title-space p {
 	content: "";
 	width: 6rem;
 	height: 6rem;
-	background-image: url(/wp-content/themes/fptheme/assets/images/play-button.svg);
+	background-image: url('../images/play-button.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: absolute;
@@ -767,7 +767,7 @@ main.product-template-1 #section-9 .container .title-space p {
 	content: "";
 	width: 3rem;
 	height: 3rem;
-	background-image: url(/wp-content/themes/fptheme/assets/images/play-button.svg);
+	background-image: url('../images/play-button.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: absolute;
@@ -786,7 +786,7 @@ main.archive-template.archive-video .video-main .container .row .video-list .vid
 	content: "";
 	width: 3rem;
 	height: 3rem;
-	background-image: url("./../images/play-button.svg");
+	background-image: url("../images/play-button.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: absolute;
@@ -813,7 +813,7 @@ main.single-video .video-main .container .row .video-list .video-item .video-thu
 	content: "";
 	width: 3rem;
 	height: 3rem;
-	background-image: url("./../images/play-button.svg");
+	background-image: url("../images/play-button.svg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: absolute;

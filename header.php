@@ -103,6 +103,7 @@
 		<link rel="stylesheet" id="page-template-product-list-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/page-product-list.css?ver=<?php echo _S_VERSION; ?>" media="all">
 		<link rel="stylesheet" id="page-product-details-css-css" href="<?php echo THEME_URI . '/assets_2/'; ?>css/page-product-details.css?ver=<?php echo _S_VERSION; ?>" media="all">
 	<?php } ?>
+	<link rel="stylesheet" id="hotfix-css" href="<?php echo THEME_URI . '/assets/'; ?>css/hotfix.css?ver=<?php echo _S_VERSION; ?>" media="all">
 
 	<?php wp_head(); ?>
 </head>
