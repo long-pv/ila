@@ -175,7 +175,7 @@ if (LANG == 'en') {
                                         </p>
                                     </div>
                                     <?php
-                                    $form_search = get_field('form_search', 'option') ?? [];
+                                    $form_search = get_field('form_search' . $lang, 'option') ?? [];
                                     if ($form_search) :
                                     ?>
                                         <div class="col-sm-7 col-md-12 col-lg-8 col-xl-8">

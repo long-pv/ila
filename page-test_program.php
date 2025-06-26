@@ -97,27 +97,38 @@ get_header();
                                     <div class="row justify-content-center list-5-column">
                                         <?php
                                         foreach ($list as $item) :
+                                            if ($item['title'] || $item['description']):
                                         ?>
-                                            <div class="col-md-6 col-lg-4 col-xl-4">
-                                                <div class="box-item" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800" style="background: #b8a394">
-                                                    <div class="box-content">
-                                                        <h3>
-                                                            <span style="color: #ffffff">
-                                                                <b>
-                                                                    <?php echo $item['title'] ?? ''; ?>
-                                                                </b>
-                                                            </span>
-                                                        </h3>
+                                                <div class="col-md-6 col-lg-4 col-xl-4">
+                                                    <div class="box-item" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800" style="background: #b8a394">
+                                                        <div class="box-content">
+                                                            <h3>
+                                                                <span style="color: #ffffff">
+                                                                    <b>
+                                                                        <?php echo $item['title'] ?? ''; ?>
+                                                                    </b>
+                                                                </span>
+                                                            </h3>
 
-                                                        <p>
-                                                            <span style="font-weight: 400; color: #ffffff">
-                                                                <?php echo $item['description'] ?? ''; ?>
-                                                            </span>
-                                                        </p>
+                                                            <p>
+                                                                <span style="font-weight: 400; color: #ffffff">
+                                                                    <?php echo $item['description'] ?? ''; ?>
+                                                                </span>
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        <?php endforeach; ?>
+                                            <?php
+                                            else:
+                                            ?>
+                                                <div class="col-md-6 col-lg-4 col-xl-4">
+                                                    <div class="box-item" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800" style="background: #fff">
+                                                    </div>
+                                                </div>
+                                        <?php
+                                            endif;
+                                        endforeach;
+                                        ?>
                                     </div>
                                 </div>
                             </div>
@@ -186,27 +197,31 @@ get_header();
                                     <div class="row justify-content-center list-5-column">
                                         <?php
                                         foreach ($list as $item) :
+                                            if ($item['title'] || $item['description']):
                                         ?>
-                                            <div class="col-md-6 col-lg-4 col-xl-4">
-                                                <div class="box-item" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800" style="background: #fbf3b6">
-                                                    <div class="box-content">
-                                                        <h2>
-                                                            <span style="color: #000000">
-                                                                <b>
-                                                                    <?php echo $item['title'] ?? ''; ?>
-                                                                </b>
-                                                            </span>
-                                                        </h2>
+                                                <div class="col-md-6 col-lg-4 col-xl-4">
+                                                    <div class="box-item" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800" style="background: #fbf3b6">
+                                                        <div class="box-content">
+                                                            <h2>
+                                                                <span style="color: #000000">
+                                                                    <b>
+                                                                        <?php echo $item['title'] ?? ''; ?>
+                                                                    </b>
+                                                                </span>
+                                                            </h2>
 
-                                                        <p>
-                                                            <span style="font-weight: 400; color: #000000">
-                                                                <?php echo $item['description'] ?? ''; ?>
-                                                            </span>
-                                                        </p>
+                                                            <p>
+                                                                <span style="font-weight: 400; color: #000000">
+                                                                    <?php echo $item['description'] ?? ''; ?>
+                                                                </span>
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        <?php endforeach; ?>
+                                        <?php
+                                            endif;
+                                        endforeach;
+                                        ?>
                                     </div>
                                 </div>
                             </div>

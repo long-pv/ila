@@ -42,3 +42,9 @@ main.page-course-jumpstart .section-5 .box-course-background .row .col-md-6 .ban
 main.page-course-jumpstart .section-5 .box-course-background .row .col-md-6 img.img-background {
 	object-fit: cover;
 }
+
+@media screen and (min-width: 1180px) {
+	main.page-course-ola-ielts .section-4 .box-main {
+		padding-bottom: 100px;
+	}
+}
