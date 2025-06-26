@@ -180,6 +180,7 @@ if (LANG == 'en') {
                 </section>
                 <!--  -->
                 <?php
+                /*
                 $register_form = get_field('register_for_trial_class' . $lang, 'option');
                 if ($register_form && is_array($register_form)) :
                     $title = $register_form['title'] ?? 'ĐĂNG KÝ LỚP HỌC THỬ MIỄN PHÍ NGAY BÂY GIỜ!';
@@ -200,7 +201,7 @@ if (LANG == 'en') {
                             </div>
                         </div>
                     </section>
-                <?php endif; ?>
+                <?php endif; */ ?>
             </div>
         </div>
     </main>

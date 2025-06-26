@@ -127,7 +127,7 @@ get_header();
                                             style="background-image: url('<?php echo $bg_image; ?>'); background-size: cover; background-position: center;"
                                             <?php else: ?> style="background-color: #cabbb0;" <?php endif; ?>>
                                             <?php if ($bg_image): ?>
-                                                <div class="box-thumb d-none">
+                                                <div class="box-thumb">
                                                     <img src="<?php echo $bg_image; ?>" alt="<?php echo $bg_alt; ?>" />
                                                 </div>
                                             <?php endif; ?>

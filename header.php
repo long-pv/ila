@@ -80,7 +80,7 @@
 		media="all" />
 	<link rel="stylesheet" id="page-center-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/center.css?ver=<?php echo _S_VERSION; ?>"
 		media="all" />
-	<?php if (!is_page_template('page-study_program.php')) { ?>
+	<?php if (!is_page_template('page-study_program.php') && !is_page_template('page-about_us.php') && !is_page_template('page-recruitment_study_abroad.php')) { ?>
 		<link rel="stylesheet" id="category-css-css" href="<?php echo THEME_URI . '/assets/'; ?>css/archive.css?ver=<?php echo _S_VERSION; ?>"
 			media="all" />
 	<?php } ?>
@@ -159,7 +159,7 @@
 					<div class="row">
 						<div class="col-6">
 							<div class="logo-mobile">
-								<a href="https://ila.edu.vn/" class="custom-logo-link" rel="home" aria-current="page">
+								<a href="<?php echo home_url(); ?>" class="custom-logo-link" rel="home" aria-current="page">
 									<img width="250" height="107" src="<?php echo $logo; ?>" class="custom-logo" alt="logo ila 30 năm" decoding="async" sizes="100vw" />
 								</a>
 							</div>
