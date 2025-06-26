@@ -119,7 +119,7 @@ if (LANG == 'en') {
                                                                                                     href="<?php echo $item['youtube_url']; ?>">
                                                                                                     <div>
                                                                                                         <div>
-                                                                                                             <?php _e("XEM VIDEO", "xemer_theme") ?>
+                                                                                                            <?php _e("XEM VIDEO", "xemer_theme") ?>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </a>
@@ -174,99 +174,76 @@ if (LANG == 'en') {
                                             <?php echo $form_course['description'] ?? ''; ?>
                                         </p>
                                     </div>
-                                    <div class="col-sm-7 col-md-12 col-lg-8 col-xl-8">
-                                        <div class="form-course">
-                                            <div class="row">
-                                                <div class="col-md-4 col-lg-4 col-xl-4">
-                                                    <div class="ps-relative customer-course">
-                                                        <div class="icon-form">
-                                                            <img src="<?php echo THEME_URI . '/assets/'; ?>images/user-icon.png" alt="icon"
-                                                                width="24" height="24">
+                                    <?php
+                                    $form_search = get_field('form_search', 'option') ?? [];
+                                    if ($form_search) :
+                                    ?>
+                                        <div class="col-sm-7 col-md-12 col-lg-8 col-xl-8">
+                                            <div class="form-course">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-lg-4 col-xl-4">
+                                                        <div class="ps-relative customer-course">
+                                                            <div class="icon-form">
+                                                                <img src="<?php echo THEME_URI . '/assets/'; ?>images/user-icon.png" alt="icon"
+                                                                    width="24" height="24">
+                                                            </div>
+
+                                                            <select name="your_course" id="your_course">
+                                                                <option selected="" value="0"> <?php _e("Độ tuổi", "xemer_theme"); ?></option>
+                                                                <?php
+                                                                foreach ($form_search as $item) :
+                                                                ?>
+                                                                    <option value="<?php echo text_to_key($item['title']); ?>"> <?php echo $item['title']; ?> </option>
+                                                                <?php endforeach; ?>
+                                                            </select>
                                                         </div>
-                                                        <select name="your_course" id="your_course">
-                                                            <option selected="" value="0"> <?php _e("Độ tuổi", "xemer_theme"); ?></option>
-                                                            <option value="3_6_years_old"> <?php _e("3-6 tuổi", "xemer_theme"); ?> </option>
-                                                            <option value="6_11_years_old"> <?php _e("6-11 tuổi", "xemer_theme"); ?> </option>
-                                                            <option value="11_16_years_old"> <?php _e("11-16 tuổi", "xemer_theme"); ?> </option>
-                                                            <option value="working_people"> <?php _e("Người đi làm", "xemer_theme"); ?> </option>
-                                                        </select>
                                                     </div>
-                                                </div>
-                                                <div class="col-md-4 col-lg-5 col-xl-5">
-                                                    <div class="ps-relative customer-course-option">
-                                                        <div class="icon-form">
-                                                            <img src="<?php echo THEME_URI . '/assets/'; ?>images/book.png" alt="icon" width="24"
-                                                                height="24">
+                                                    <div class="col-md-4 col-lg-5 col-xl-5">
+                                                        <div class="ps-relative customer-course-option">
+                                                            <div class="icon-form">
+                                                                <img src="<?php echo THEME_URI . '/assets/'; ?>images/book.png" alt="icon" width="24"
+                                                                    height="24">
+                                                            </div>
+
+                                                            <script>
+                                                                // form_search
+                                                                <?php
+                                                                foreach ($form_search as $item):
+                                                                    $key = text_to_key($item['title']);
+                                                                ?>
+                                                                    const option_<?php echo $key; ?> = [
+                                                                        <?php
+                                                                        if ($item['list']):
+                                                                            foreach ($item['list'] as $item_2):
+                                                                                if ($item_2['link'] && $item_2['link']['title'] && $item_2['link']['url']):
+                                                                                    echo '{"title" : "' . $item_2['link']['title'] . '", "url" : "' . $item_2['link']['url'] . '"},';
+                                                                                endif;
+                                                                            endforeach;
+                                                                        endif;
+                                                                        ?>
+                                                                    ];
+                                                                    console.log(option_<?php echo $key; ?>);
+                                                                <?php endforeach; ?>
+                                                            </script>
+
+                                                            <select name="your_option" id="your_option">
+                                                                <option selected="" value="0">
+                                                                    <?php _e("Chương trình học", "xemer_theme"); ?>
+                                                                </option>
+
+                                                                <!-- các option ở jquery hãy thêm vào đây và xóa đi tương ứng theo lựa chọn -->
+                                                            </select>
                                                         </div>
-
-                                                        <script>
-                                                            const options_3_6_years_old = [
-                                                                <?php
-                                                                $s3_6_years_old = get_field('3_6_years_old' . $lang, 'option') ?? [];
-                                                                if ($s3_6_years_old):
-                                                                    foreach ($s3_6_years_old as $item):
-                                                                        echo '{"title" : "' . $item['link']['title'] . '", "url" : "' . $item['link']['url'] . '"},';
-                                                                    endforeach;
-                                                                endif;
-                                                                ?>
-                                                            ];
-
-                                                            const options_6_11_years_old = [
-                                                                <?php
-                                                                $s6_11_years_old = get_field('6_11_years_old' . $lang, 'option') ?? [];
-                                                                if ($s6_11_years_old):
-                                                                    foreach ($s6_11_years_old as $item):
-                                                                        echo '{"title" : "' . $item['link']['title'] . '", "url" : "' . $item['link']['url'] . '"},';
-                                                                    endforeach;
-                                                                endif;
-                                                                ?>
-                                                            ];
-
-                                                            const options_11_16_years_old = [
-                                                                <?php
-                                                                $s11_16_years_old = get_field('11_16_years_old' . $lang, 'option') ?? [];
-                                                                if ($s11_16_years_old):
-                                                                    foreach ($s11_16_years_old as $item):
-                                                                        echo '{"title" : "' . $item['link']['title'] . '", "url" : "' . $item['link']['url'] . '"},';
-                                                                    endforeach;
-                                                                endif;
-                                                                ?>
-                                                            ];
-
-                                                            const options_working_people = [
-                                                                <?php
-                                                                $working_people = get_field('working_people' . $lang, 'option') ?? [];
-                                                                if ($working_people):
-                                                                    foreach ($working_people as $item):
-                                                                        echo '{"title" : "' . $item['link']['title'] . '", "url" : "' . $item['link']['url'] . '"},';
-                                                                    endforeach;
-                                                                endif;
-                                                                ?>
-                                                            ];
-
-                                                            console.log(options_3_6_years_old);
-                                                            console.log(options_6_11_years_old);
-                                                            console.log(options_11_16_years_old);
-                                                            console.log(options_working_people);
-                                                        </script>
-
-                                                        <select name="your_option" id="your_option">
-                                                            <option selected="" value="0">
-                                                            <?php _e("Chương trình học", "xemer_theme"); ?> 
-                                                            </option>
-
-                                                            <!-- các option ở jquery hãy thêm vào đây và xóa đi tương ứng theo lựa chọn -->
-                                                        </select>
                                                     </div>
-                                                </div>
-                                                <div class="col-md-4 col-lg-3 col-xl-3">
-                                                    <button class="btn-change-option">
-                                                        <a href="#"><?php _e("Xem thêm", "xemer_theme") ?> </a>
-                                                    </button>
+                                                    <div class="col-md-4 col-lg-3 col-xl-3">
+                                                        <button class="btn-change-option">
+                                                            <a href="#"><?php _e("Xem thêm", "xemer_theme") ?> </a>
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                             <div class="col-sm-12 col-md-3 col-lg-2 col-xl-2">
@@ -309,7 +286,7 @@ if (LANG == 'en') {
                                                                 </span>
                                                                 <a class="button-text" href="<?php echo $item['link']; ?>">
                                                                     <span>
-                                                                    <?php _e("Khám phá", "xemer_theme") ?>
+                                                                        <?php _e("Khám phá", "xemer_theme") ?>
                                                                     </span>
                                                                 </a>
                                                             </button>
@@ -368,7 +345,7 @@ if (LANG == 'en') {
                                     </h2>
                                     <button>
                                         <a href="<?php echo $news['view_all'] ?? '#'; ?>">
-                                        <?php _e("Xem tất cả", "xemer_theme") ?>  <i class="fa-regular fa-arrow-right"></i>
+                                            <?php _e("Xem tất cả", "xemer_theme") ?> <i class="fa-regular fa-arrow-right"></i>
                                         </a>
                                     </button>
                                 </div>
@@ -394,7 +371,7 @@ if (LANG == 'en') {
                                 $thumb_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
                                 $category  = get_the_category();
                                 $category_link = !empty($category) ? get_category_link($category[0]->term_id) : '#';
-                                $category_name = !empty($category) ? $category[0]->name : _e("Chưa phân loại","xemer_theme");
+                                $category_name = !empty($category) ? $category[0]->name : _e("Chưa phân loại", "xemer_theme");
                             ?>
                                 <?php if ($i == 0): ?>
                                     <!-- Bài viết chính bên trái -->
@@ -510,7 +487,7 @@ if (LANG == 'en') {
                                                     <div class="video-archive">
                                                         <span>
                                                             <a href="<?php echo $multimedia['view_all'] ?? '#'; ?>">
-                                                            <?php _e("MULTIMEDIA","xemer_theme"); ?>
+                                                                <?php _e("MULTIMEDIA", "xemer_theme"); ?>
                                                             </a>
                                                         </span>
                                                     </div>
@@ -535,7 +512,7 @@ if (LANG == 'en') {
                                                                     </div>
                                                                     <div class="video-archive">
                                                                         <span>
-                                                                            <a href="<?php echo $multimedia['view_all'] ?? '#'; ?>"> <?php _e("MULTIMEDIA","xemer_theme"); ?> </a>
+                                                                            <a href="<?php echo $multimedia['view_all'] ?? '#'; ?>"> <?php _e("MULTIMEDIA", "xemer_theme"); ?> </a>
                                                                         </span>
                                                                     </div>
                                                                 </div>
@@ -576,7 +553,7 @@ if (LANG == 'en') {
                                     <h2><?php echo esc_html($title); ?></h2>
                                     <button>
                                         <a href="<?php echo esc_url($view_all); ?>">
-                                        <?php _e("Xem tất cả", "xemer_theme") ?> <i class="fa-regular fa-arrow-right"></i>
+                                            <?php _e("Xem tất cả", "xemer_theme") ?> <i class="fa-regular fa-arrow-right"></i>
                                         </a>
                                     </button>
                                 </div>
@@ -664,10 +641,12 @@ get_footer();
 ?>
 <script>
     const allOptions = {
-        "3_6_years_old": options_3_6_years_old,
-        "6_11_years_old": options_6_11_years_old,
-        "11_16_years_old": options_11_16_years_old,
-        "working_people": options_working_people
+        <?php
+        foreach ($form_search as $item):
+            $key = text_to_key($item['title']);
+            echo '"' . $key . '" : option_' . $key . ',';
+        endforeach;
+        ?>
     };
 
     jQuery(document).ready(function($) {
@@ -698,9 +677,9 @@ get_footer();
             if (url && url !== '0') {
                 window.location.href = url;
             } else {
-                alert('<?php _e("Vui lòng chọn chương trình học.","xemer_theme"); ?>');
+                alert('<?php _e("Vui lòng chọn chương trình học.", "xemer_theme"); ?>');
             }
-           
+
         });
     });
 </script>
