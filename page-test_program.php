@@ -361,7 +361,10 @@ get_header();
                                                             </div>
                                                         </div>
                                                     </div>
-                                                <?php endforeach; ?>
+                                                <?php
+                                                endforeach;
+                                                wp_reset_postdata();
+                                                ?>
                                             </div>
                                         </div>
                                     <?php endif; ?>
@@ -412,7 +415,10 @@ get_header();
                                                         </div>
                                                     </div>
                                                 </div>
-                                            <?php endforeach; ?>
+                                            <?php
+                                            endforeach;
+                                            wp_reset_postdata();
+                                            ?>
                                         </div>
                                     </div>
                                 <?php endif; ?>
@@ -421,6 +427,64 @@ get_header();
                     </div>
                 </section>
             <?php endif; ?>
+
+
+            <section id="section-5" class="section-hall-of-greatness aos-init aos-animate" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
+                <div class="container">
+                    <?php
+                    $section_6 = get_field('section_6') ?? '';
+                    if ($section_6):
+                        $title = $section_6['title'];
+                        $view_all = $section_6['view_all'];
+                    ?>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="title-blog">
+                                    <h2><?php echo esc_html($title); ?></h2>
+                                    <button>
+                                        <a href="<?php echo esc_url($view_all); ?>">
+                                            <?php _e("Xem tất cả", "xemer_theme") ?> <i class="fa-regular fa-arrow-right"></i>
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+
+                    <div class="hall-owl-slider owl-carousel owl-theme">
+                        <?php
+                        $students = new WP_Query(array(
+                            'post_type' => 'top_student',
+                            'posts_per_page' => -1,
+                        ));
+
+                        if ($students->have_posts()):
+                            while ($students->have_posts()): $students->the_post();
+                                $school_name = get_field('school_name');
+                                $achievement = get_field('achievement');
+                                $thumbnail_url = get_the_post_thumbnail_url(get_the_ID(), 'full');
+                                $thumbnail_url_254 = get_the_post_thumbnail_url(get_the_ID());
+                        ?>
+                                <div class="hall-item">
+                                    <div class="hall-image">
+                                        <?php if ($thumbnail_url): ?>
+                                            <img width="433" height="512" src="<?php echo esc_url($thumbnail_url); ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="<?php echo esc_attr(get_the_title()); ?>">
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="hall-content">
+                                        <h3><a href="#"><?php the_title(); ?></a></h3>
+                                        <p style="font-size: 16px;"><span><?php echo esc_html($school_name); ?></span></p>
+                                        <p><?php echo esc_html($achievement); ?></p>
+                                    </div>
+                                </div>
+                        <?php
+                            endwhile;
+                            wp_reset_postdata();
+                        endif;
+                        ?>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
     <!-- #content -->
