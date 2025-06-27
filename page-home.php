@@ -178,7 +178,7 @@ if (LANG == 'en') {
                                     $form_search = get_field('form_search' . $lang, 'option') ?? [];
                                     if ($form_search) :
                                     ?>
-                                        <div class="col-sm-7 col-md-12 col-lg-8 col-xl-8">
+                                        <div class="col-sm-7 col-md-12 col-lg-8 col-xl-8 mb-3 mb-md-0">
                                             <div class="form-course">
                                                 <div class="row">
                                                     <div class="col-md-4 col-lg-4 col-xl-4">
@@ -246,7 +246,7 @@ if (LANG == 'en') {
                                     <?php endif; ?>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-3 col-lg-2 col-xl-2">
+                            <div class="col-sm-12 col-md-3 col-lg-2 col-xl-2 d-none d-md-block">
                                 <div class="course-illustration">
                                     <img width="466" height="433" src="<?php echo $form_course['image'] ?? ''; ?>" data-id="1">
                                 </div>
