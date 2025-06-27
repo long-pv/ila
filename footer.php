@@ -20,7 +20,7 @@ $should_show_form = false;
 
 if ($register_form && is_array($register_form)) {
     $allowed_pages = $register_form['display_page'] ?? [];
-    if (!empty($allowed_pages) && in_array(get_the_ID(), $allowed_pages) || is_single()) {
+    if (!empty($allowed_pages) && in_array(get_the_ID(), $allowed_pages) || is_single() || is_page_template('page-study_program.php')) {
         $should_show_form = true;
     }
 }
