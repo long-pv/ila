@@ -187,14 +187,14 @@ if ($google_maps):
                             ?>
 
                             <?php
-                            $instagram = get_field('social_network_instagram', 'option') ?: '';
-                            if ($instagram):
+                            $tiktok = get_field('social_network_tiktok', 'option') ?: '';
+                            if ($tiktok):
                             ?>
                                 <li>
-                                    <a href="<?php echo $instagram; ?>" target="_blank">
+                                    <a href="<?php echo $tiktok; ?>" target="_blank">
                                         <img width="43" height="44"
-                                            src="<?php echo THEME_URI . '/assets/'; ?>images/logo-insta.png"
-                                            alt="instagram">
+                                            src="<?php echo THEME_URI . '/assets/'; ?>images/tiktok.png"
+                                            alt="tiktok">
                                     </a>
                                 </li>
                             <?php

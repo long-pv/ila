@@ -538,8 +538,8 @@
                 },
                 {
                     "key": "field_68237b24a604e",
-                    "label": "Instagram",
-                    "name": "instagram",
+                    "label": "Tiktok",
+                    "name": "tiktok",
                     "aria-label": "",
                     "type": "url",
                     "instructions": "",
@@ -694,5 +694,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1750436263
+    "modified": 1751038144
 }
