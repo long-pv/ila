@@ -146,11 +146,30 @@
 		<div class="nav-main-menu" id="myHeader">
 			<div class="container">
 				<div class="navbar-mobile">
+					<?php
+					// Xác định ngôn ngữ hiện tại
+					$current_lang = pll_current_language();          // vi | en | …
+					$target_lang  = ($current_lang === 'vi') ? 'en' : 'vi';   // Ngôn ngữ cần chuyển
+
+					// Lấy URL bài viết ở ngôn ngữ đối diện (nếu có)
+					$target_post_id = pll_get_post(get_the_ID(), $target_lang);
+					$target_url     = $target_post_id ? get_permalink($target_post_id)
+						: home_url('/' . $target_lang);
+
+					// Tùy biến cờ và nhãn
+					$flag_file = ($target_lang === 'vi') ? 'vi.png' : 'en_US.png';
+					$flag_alt  = ($target_lang === 'vi') ? 'Tiếng Việt' : 'English';
+					$lang_attr = ($target_lang === 'vi') ? 'vi-VN'      : 'en-US';
+					?>
 					<div class="polylang-language-mobile">
 						<ul>
-							<li class="lang-item lang-item-7 lang-item-en lang-item-first">
-								<a lang="en-US" hreflang="en-US" href="<?php echo home_url(); ?>">
-									<img width="37" height="28" src="<?php echo THEME_URI . '/assets/'; ?>images/en_US.png" alt="English" />
+							<li class="lang-item lang-item-<?php echo esc_attr($target_lang); ?>">
+								<a lang="<?php echo $lang_attr; ?>"
+									hreflang="<?php echo $lang_attr; ?>"
+									href="<?php echo esc_url($target_url); ?>">
+									<img width="37" height="28"
+										src="<?php echo THEME_URI . '/assets/images/' . $flag_file; ?>"
+										alt="<?php echo esc_attr($flag_alt); ?>" />
 								</a>
 							</li>
 						</ul>
