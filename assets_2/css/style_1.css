@@ -1348,7 +1348,7 @@ a:hover .nav-title,
 
 .navigation-top .current-menu-item > a,
 .navigation-top .current_page_item > a {
-	color: #1B3F94;
+	color: #0075a9;
 }
 
 .main-navigation {
@@ -1719,7 +1719,8 @@ body:not(.title-tagline-hidden) .site-branding-text {
 	transform: translateX(-50%) translateY(-50%);
 }
 
-.wp-custom-header .wp-custom-header-video-button { /* Specificity prevents .color-dark button overrides */
+.wp-custom-header .wp-custom-header-video-button {
+	/* Specificity prevents .color-dark button overrides */
 	background-color: rgba(34, 34, 34, 0.5);
 	border: 1px solid rgba(255, 255, 255, 0.6);
 	color: rgba(255, 255, 255, 0.6);
@@ -1735,7 +1736,8 @@ body:not(.title-tagline-hidden) .site-branding-text {
 }
 
 .wp-custom-header .wp-custom-header-video-button:hover,
-.wp-custom-header .wp-custom-header-video-button:focus { /* Specificity prevents .color-dark button overrides */
+.wp-custom-header .wp-custom-header-video-button:focus {
+	/* Specificity prevents .color-dark button overrides */
 	border-color: rgba(255, 255, 255, 0.8);
 	background-color: rgba(34, 34, 34, 0.8);
 	color: #fff;
@@ -1756,7 +1758,7 @@ body:not(.title-tagline-hidden) .site-branding-text {
 }
 
 /* For browsers that support 'object-fit' */
-@supports ( object-fit: cover ) {
+@supports (object-fit: cover) {
 	.has-header-image .custom-header-media img,
 	.has-header-video .custom-header-media video,
 	.has-header-image:not(.fptheme-front-page):not(.home) .custom-header-media img {
@@ -2390,12 +2392,12 @@ body:not(.fptheme-front-page) .entry-header {
 	width: 100%;
 }
 
-.site-info span[role=separator] {
+.site-info span[role="separator"] {
 	padding: 0 0.2em 0 0.4em;
 }
 
-.site-info span[role=separator]::before {
-	content: '\002f';
+.site-info span[role="separator"]::before {
+	content: "\002f";
 }
 
 /*--------------------------------------------------------------
@@ -2556,7 +2558,6 @@ h2.widget-title {
 .widget select {
 	width: 100%;
 }
-
 
 /* widget lists */
 
@@ -3249,14 +3250,12 @@ p > object:only-child {
 
 /* Adjust positioning of edit shortcuts, override style in customize-preview.css */
 @media screen and (min-width: 20em) {
-
 	body.customize-partial-edit-shortcuts-shown .site-header .site-title {
 		padding-left: 0;
 	}
 }
 
 @media screen and (min-width: 30em) {
-
 	/* Typography */
 
 	body,
@@ -3386,7 +3385,7 @@ p > object:only-child {
 
 @media screen and (min-width: 65em) {
 	html {
-		scroll-padding-top: calc( var(--wp-admin--admin-bar--height, 0px) + 72px );
+		scroll-padding-top: calc(var(--wp-admin--admin-bar--height, 0px) + 72px);
 	}
 
 	/* Typography */
@@ -3649,7 +3648,7 @@ p > object:only-child {
 
 	.main-navigation li li:hover,
 	.main-navigation li li.focus {
-		background: #1B3F94;
+		background: #0075a9;
 	}
 
 	.main-navigation li li a {
@@ -3798,7 +3797,7 @@ p > object:only-child {
 		background-attachment: fixed;
 	}
 
-	@supports ( -webkit-touch-callout: none ) {
+	@supports (-webkit-touch-callout: none) {
 		/* Image scrolls with the content in iOS Safari. */
 		.background-fixed .panel-image {
 			background-attachment: scroll;
@@ -4135,8 +4134,7 @@ p > object:only-child {
 	}
 }
 
-@media screen and ( min-width: 67em ) {
-
+@media screen and (min-width: 67em) {
 	/* Layout */
 
 	/* Navigation */
@@ -4185,8 +4183,7 @@ p > object:only-child {
 	}
 }
 
-@media screen and ( min-width: 79em ) {
-
+@media screen and (min-width: 79em) {
 	.has-sidebar .entry-content blockquote.alignleft {
 		margin-left: -20%;
 	}
@@ -4199,8 +4196,7 @@ p > object:only-child {
 	}
 }
 
-@media screen and ( max-width: 48.875em ) and ( min-width: 65em ) {
-
+@media screen and (max-width: 48.875em) and (min-width: 65em) {
 	.admin-bar .site-navigation-fixed.navigation-top,
 	.admin-bar .site-navigation-hidden.navigation-top {
 		top: 46px;
@@ -4212,7 +4208,6 @@ p > object:only-child {
 --------------------------------------------------------------*/
 
 @media print {
-
 	/* Hide elements */
 
 	form,

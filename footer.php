@@ -20,27 +20,30 @@ $should_show_form = false;
 
 if ($register_form && is_array($register_form)) {
     $allowed_pages = $register_form['display_page'] ?? [];
-    if (!empty($allowed_pages) && in_array(get_the_ID(), $allowed_pages)) {
+    if (!empty($allowed_pages) && in_array(get_the_ID(), $allowed_pages) || is_single() || is_page_template('page-study_program.php')) {
         $should_show_form = true;
     }
 }
 ?>
 
 <?php if ($should_show_form) :
-    $title = $register_form['title'] ?? 'ĐĂNG KÝ LỚP HỌC THỬ MIỄN PHÍ NGAY BÂY GIỜ!';
+    $title = $register_form['title'] ?? __('ĐĂNG KÝ LỚP HỌC THỬ MIỄN PHÍ NGAY BÂY GIỜ!', 'xemer_theme');;
     $form_content = $register_form['contact_form_7'] ?? '';
     $background = $register_form['background'] ?? 'https://ila.edu.vn/wp-content/uploads/2023/02/bg-course-section-6.png';
 ?>
     <section class="section-footer" id="form-submit-register" style="background-image: url(<?php echo $background; ?>);">
+        <img width="390" height="630" class="img-background-mb" src="https://ila.edu.vn/wp-content/uploads/2023/02/bg-course-section-6-mb.png" alt="">
         <div class="form-content">
             <div class="container">
-                <div class="form-register">
-                    <h3 class="form-title"><?php echo $title; ?></h3>
-                    <?php
-                    if (!empty($form_content)) {
-                        echo $form_content;
-                    }
-                    ?>
+                <div class="form-register-custom">
+                    <div class="form-register">
+                        <h3 class="form-title"><?php echo $title; ?></h3>
+                        <?php
+                        if (!empty($form_content)) {
+                            echo $form_content;
+                        }
+                        ?>
+                    </div>
                 </div>
             </div>
         </div>
@@ -49,6 +52,17 @@ if ($register_form && is_array($register_form)) {
 
 
 <style>
+    @media (max-width: 767px) {
+        .form-register-custom {
+            padding-bottom: 30px;
+        }
+    }
+
+    .main-header .nav-main-menu .navbar-menu {
+        max-height: 100vh !important;
+        overflow-y: auto !important;
+    }
+
     #form-submit-register .wpcf7-form p {
         margin: 0px;
     }
@@ -63,7 +77,7 @@ if ($register_form && is_array($register_form)) {
         font-family: "Montserrat Bold";
         padding: 12px 30px;
         border: none;
-        background: #2b378b;
+        background: #0075A9;
         border-radius: 50px;
         width: 204px;
         position: relative;
@@ -173,14 +187,14 @@ if ($google_maps):
                             ?>
 
                             <?php
-                            $instagram = get_field('social_network_instagram', 'option') ?: '';
-                            if ($instagram):
+                            $tiktok = get_field('social_network_tiktok', 'option') ?: '';
+                            if ($tiktok):
                             ?>
                                 <li>
-                                    <a href="<?php echo $instagram; ?>" target="_blank">
+                                    <a href="<?php echo $tiktok; ?>" target="_blank">
                                         <img width="43" height="44"
-                                            src="<?php echo THEME_URI . '/assets/'; ?>images/logo-insta.png"
-                                            alt="instagram">
+                                            src="<?php echo THEME_URI . '/assets/'; ?>images/tiktok.png"
+                                            alt="tiktok">
                                     </a>
                                 </li>
                             <?php
@@ -203,19 +217,23 @@ if ($google_maps):
                 <div class="col-lg-3 col-md-6">
                     <div class="box-footer">
                         <div class="subscribe-form mobile">
-                            <h3 class="subscribe-form-title">Nhận ngay ưu đãi mới nhất tại ILA</h3>
+                            <h3 class="subscribe-form-title">
+                                <?php echo get_field('title_get_offer_now' . $lang, 'option') ?? 'Nhận ngay ưu đãi mới nhất tại ILM'; ?>
+                            </h3>
                             <div class="emaillist" id="es_form_f1-n1">
                                 <?php echo get_field('get_offer_now' . $lang, 'option') ?? ''; ?>
                             </div>
                         </div>
 
-                        <h3 class="box-footer-title">Tiếng Anh cao cấp</h3>
+                        <h3 class="box-footer-title">
+                            <?php _e('Tiếng Anh cao cấp', 'xemer_theme'); ?>
+                        </h3>
                         <ul class="list-cate">
                             <?php
                             $advanced_english = get_field('footer_setting' . $lang . '_advanced_english', 'option') ?? [];
                             if ($advanced_english):
                                 foreach ($advanced_english as $item):
-                                    if ($item['link']['url'] && $item['link']['title']):
+                                    if ($item && $item['link'] && $item['link']['url'] && $item['link']['title']):
                             ?>
                                         <li>
                                             <a href="<?php echo $item['link']['url']; ?>">
@@ -232,7 +250,9 @@ if ($google_maps):
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="box-footer">
-                        <h3 class="box-footer-title">Tiếng Anh tiêu chuẩn</h3>
+                        <h3 class="box-footer-title">
+                            <?php _e('Tiếng Anh tiêu chuẩn', 'xemer_theme'); ?>
+                        </h3>
                         <ul class="list-cate mb-36">
                             <?php
                             $standard_english = get_field('footer_setting' . $lang . '_standard_english', 'option') ?? [];
@@ -251,13 +271,15 @@ if ($google_maps):
                             endif;
                             ?>
                         </ul>
-                        <h3 class="box-footer-title">Luyện thi & Du học</h3>
+                        <h3 class="box-footer-title">
+                            <?php _e('Luyện thi & Du học', 'xemer_theme'); ?>
+                        </h3>
                         <ul class="list-cate">
                             <?php
                             $exam_preparation_study_abroad = get_field('footer_setting' . $lang . '_exam_preparation_study_abroad', 'option') ?? [];
                             if ($exam_preparation_study_abroad):
                                 foreach ($exam_preparation_study_abroad as $item):
-                                    if ($item['link']['url'] && $item['link']['title']):
+                                    if ($item && $item['link'] && $item['link']['url'] && $item['link']['title']):
                             ?>
                                         <li>
                                             <a href="<?php echo $item['link']['url']; ?>">
@@ -274,13 +296,15 @@ if ($google_maps):
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="box-footer">
-                        <h3 class="box-footer-title">Tìm hiểu thêm</h3>
+                        <h3 class="box-footer-title">
+                            <?php _e('Tìm hiểu thêm', 'xemer_theme'); ?>
+                        </h3>
                         <ul class="list-cate mb-36">
                             <?php
                             $learn_more = get_field('footer_setting' . $lang . '_learn_more', 'option') ?? [];
                             if ($learn_more):
                                 foreach ($learn_more as $item):
-                                    if ($item['link']['url'] && $item['link']['title']):
+                                    if ($item && $item['link'] && $item['link']['url'] && $item['link']['title']):
                             ?>
                                         <li>
                                             <a href="<?php echo $item['link']['url']; ?>">
@@ -294,7 +318,9 @@ if ($google_maps):
                             ?>
                         </ul>
                         <div class="subscribe-form desktop">
-                            <h3 class="subscribe-form-title">Nhận ngay ưu đãi mới nhất tại ILA</h3>
+                            <h3 class="subscribe-form-title">
+                                <?php echo get_field('title_get_offer_now' . $lang, 'option') ?? 'Nhận ngay ưu đãi mới nhất tại ILM'; ?>
+                            </h3>
                             <div class="emaillist" id="es_form_f1-n2">
                                 <?php echo get_field('get_offer_now' . $lang, 'option') ?? ''; ?>
                             </div>
@@ -408,7 +434,7 @@ if ($google_maps):
         padding: 16px 50px 16px 50px;
         text-transform: uppercase;
         color: #ffffff;
-        background: #1B3F94;
+        background: #0075A9;
     }
 
     #form-contact-footer .wpcf7-form .wpcf7-spinner {
@@ -469,7 +495,7 @@ if ($google_maps):
         line-height: normal;
         padding: 16px 50px 16px 50px;
         text-transform: uppercase;
-        color: #1B3F94;
+        color: #0075A9;
         background-color: #EDAC20;
         border-radius: 50px;
         margin: 0px auto;
@@ -492,11 +518,11 @@ if ($google_maps):
 
 
 <!-- video home -->
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/n2.min.js" defer="" async=""></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/smartslider-frontend.min.js" defer="" async=""></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/ss-simple.min.js" defer="" async=""></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/w-bullet.min.js" defer="" async=""></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/index_add.js" defer="" async=""></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/n2.min.js?ver=<?php echo _S_VERSION; ?>" defer="" async=""></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/smartslider-frontend.min.js?ver=<?php echo _S_VERSION; ?>" defer="" async=""></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/ss-simple.min.js?ver=<?php echo _S_VERSION; ?>" defer="" async=""></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/w-bullet.min.js?ver=<?php echo _S_VERSION; ?>" defer="" async=""></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/index_add.js?ver=<?php echo _S_VERSION; ?>" defer="" async=""></script>
 
 <script>
     jQuery(function($) {
@@ -516,31 +542,32 @@ if ($google_maps):
         icon: '<svg class="icon icon-angle-down" aria-hidden="true" role="img"> <use href="#icon-angle-down" xlink:href="#icon-angle-down"><\/use> <span class="svg-fallback icon-angle-down"><\/span><\/svg>'
     };
 </script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/skip-link-focus-fix.js" id="fptheme-skip-link-focus-fix-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/navigation.js" id="fptheme-navigation-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/owl.carousel.min.js" id="owl-carousel-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/courses.js" id="page-course-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/wow.min.js" id="wow-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.magnific-popup.js" id="magnific-popup-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery-scrolltofixed-min.js" id="jquery-scrollfixed-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/list-center.js" id="fptheme-list-center-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/aboutus.js" id="page-about-us-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/timeline.js" id="timeline-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/main.js" id="main-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/global.js" id="fptheme-global-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.scrollTo.js" id="jquery-scrollto-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/page-template-teacher.js" id="page-template-teacher-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/email-subscribers-public.js" id="email-subscribers-js"></script>
-<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/page-product-detail.js" id="fptheme-product-detail-js"></script>
-<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/archive-events.js" id="archive-events-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/main.js" id="fptheme-main-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/single.js" id="single-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/skip-link-focus-fix.js?ver=<?php echo _S_VERSION; ?>" id="fptheme-skip-link-focus-fix-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/navigation.js?ver=<?php echo _S_VERSION; ?>" id="fptheme-navigation-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/owl.carousel.min.js?ver=<?php echo _S_VERSION; ?>" id="owl-carousel-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/courses.js?ver=<?php echo _S_VERSION; ?>" id="page-course-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/wow.min.js?ver=<?php echo _S_VERSION; ?>" id="wow-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.magnific-popup.js?ver=<?php echo _S_VERSION; ?>" id="magnific-popup-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery-scrolltofixed-min.js?ver=<?php echo _S_VERSION; ?>" id="jquery-scrollfixed-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/list-center.js?ver=<?php echo _S_VERSION; ?>" id="fptheme-list-center-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/aboutus.js?ver=<?php echo _S_VERSION; ?>" id="page-about-us-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/timeline.js?ver=<?php echo _S_VERSION; ?>" id="timeline-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/main.js?ver=<?php echo _S_VERSION; ?>" id="main-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/global.js?ver=<?php echo _S_VERSION; ?>" id="fptheme-global-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/jquery.scrollTo.js?ver=<?php echo _S_VERSION; ?>" id="jquery-scrollto-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/page-template-teacher.js?ver=<?php echo _S_VERSION; ?>" id="page-template-teacher-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/email-subscribers-public.js?ver=<?php echo _S_VERSION; ?>" id="email-subscribers-js"></script>
+<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/page-product-detail.js?ver=<?php echo _S_VERSION; ?>" id="fptheme-product-detail-js"></script>
+<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/archive-events.js?ver=<?php echo _S_VERSION; ?>" id="archive-events-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/main.js?ver=<?php echo _S_VERSION; ?>" id="fptheme-main-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/single.js?ver=<?php echo _S_VERSION; ?>" id="single-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets_2/'; ?>js/jquery.matchHeight.js?ver=<?php echo _S_VERSION; ?>" id="matchHeight-js"></script>
 
 <?php wp_footer(); ?>
 
 <!-- video -->
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/youtubehtml5.js" id="youtube-js-js"></script>
-<script src="<?php echo THEME_URI . '/assets/'; ?>js/video.min.js" id="video-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/youtubehtml5.js?ver=<?php echo _S_VERSION; ?>" id="youtube-js-js"></script>
+<script src="<?php echo THEME_URI . '/assets/'; ?>js/video.min.js?ver=<?php echo _S_VERSION; ?>" id="video-js-js"></script>
 <script type="text/javascript">
     function getYouTubeVideoID(url) {
         const regex = /(?:https?:\/\/)?(?:www\.)?youtube\.com\/watch\?v=([^\s&]+)/;

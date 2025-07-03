@@ -56,11 +56,11 @@ if (LANG == 'en') {
                         <div id="breadcrumbs">
                             <span>
                                 <span>
-                                    <a href="<?php echo esc_url(home_url('/')); ?>">Trang chủ</a>
+                                    <a href="<?php echo esc_url(home_url('/')); ?>"> <?php _e("Trang chủ", "xemer_theme"); ?> </a>
                                 </span> »
                                 <span>
                                     <a
-                                        href="<?php echo esc_url(get_post_type_archive_link('video_media')); ?>">Multimedia</a>
+                                        href="<?php echo esc_url(get_post_type_archive_link('video_media')); ?>"> <?php _e("Multimedia", "xemer_theme"); ?> </a>
                                 </span>
                             </span>
                         </div>
@@ -105,7 +105,7 @@ if (LANG == 'en') {
                                     </div>
                                     <div class="video-time-publish">
                                         <p>
-                                            <a href="<?php echo esc_url(home_url('/multimedia')); ?>">MULTIMEDIA</a>
+                                            <a href="<?php echo esc_url(home_url('/multimedia')); ?>"><?php _e("MULTIMEDIA", "xemer_theme"); ?></a>
                                             <span><?php echo $published; ?> (GTM+7)</span>
                                         </p>
                                     </div>
@@ -182,7 +182,7 @@ if (LANG == 'en') {
                                                     <i class="fa-solid fa-timer"></i> <?php echo esc_html($video_duration); ?>
                                                 </span>
                                                 <span class="category-link">
-                                                    <a href="/multimedia">MULTIMEDIA</a>
+                                                    <a href="/multimedia"><?php _e("MULTIMEDIA", "xemer_theme"); ?></a>
                                                 </span>
                                             </p>
                                         </div>

@@ -65,7 +65,7 @@ if (LANG == 'en') {
                                         $banner = get_field('banner');
                                         ?>
                                         <?php if ($banner): ?>
-                                            <header class="page-header" style="background: #1b3f94; width: 100%;">
+                                            <header class="page-header" style="background: #0075A9; width: 100%;">
                                                 <div class="archive-header-content">
                                                     <?php if (!empty($banner['title'])): ?>
                                                         <h1 class="page-title"><?php echo esc_html($banner['title']); ?></h1>
@@ -124,7 +124,7 @@ if (LANG == 'en') {
                                                             </div>
                                                             <div class="event-button">
                                                                 <button class="btn-register" data-id="<?php echo $button_id; ?>">
-                                                                    <a href="<?php echo $permalink; ?>">Đăng ký ngay</a>
+                                                                    <a href="<?php echo $permalink; ?>"> <?php _e("Đăng ký ngay", "xemer_theme"); ?> </a>
                                                                 </button>
                                                             </div>
                                                         </div>
@@ -152,7 +152,7 @@ if (LANG == 'en') {
                                                                     </div>
                                                                     <div class="event-button">
                                                                         <button class="btn-register" data-id="<?php echo $button_id; ?>">
-                                                                            <a href="<?php echo $permalink; ?>">Đăng ký ngay</a>
+                                                                            <a href="<?php echo $permalink; ?>"><?php _e("Đăng ký ngay", "xemer_theme"); ?></a>
                                                                         </button>
                                                                     </div>
                                                                 </div>
@@ -212,7 +212,7 @@ if (LANG == 'en') {
                                                                 </div>
                                                                 <div class="event-button">
                                                                     <button class="btn-register" data-id="<?php echo $event_id; ?>">
-                                                                        <a href="<?php echo $permalink; ?>">Đăng ký ngay</a>
+                                                                        <a href="<?php echo $permalink; ?>"><?php _e("Đăng ký ngay", "xemer_theme"); ?></a>
                                                                     </button>
                                                                 </div>
                                                             </div>

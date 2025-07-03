@@ -63,7 +63,7 @@ if (LANG == 'en') {
                                         }
                                         ?>
 
-                                        <h3 class="share-title">Chia sẻ bài viết</h3>
+                                        <h3 class="share-title"> <?php _e("Chia sẻ bài viết", "xemer_theme"); ?> </h3>
                                         <?php
                                         $post_url = get_permalink();
                                         $post_title = get_the_title();
@@ -148,8 +148,8 @@ if (LANG == 'en') {
 
                                         if ($related_posts->have_posts()):
                                         ?>
-                                            <div class="related-post">
-                                                <h2>Bài viết liên quan</h2>
+                                            <div class="related-post">   
+                                                <h2> <?php _e("Bài viết liên quan", "xemer_theme"); ?> </h2>
                                                 <?php while ($related_posts->have_posts()):
                                                     $related_posts->the_post(); ?>
                                                     <div class="post-item">
@@ -180,6 +180,7 @@ if (LANG == 'en') {
                 </section>
                 <!--  -->
                 <?php
+                /*
                 $register_form = get_field('register_for_trial_class' . $lang, 'option');
                 if ($register_form && is_array($register_form)) :
                     $title = $register_form['title'] ?? 'ĐĂNG KÝ LỚP HỌC THỬ MIỄN PHÍ NGAY BÂY GIỜ!';
@@ -200,7 +201,7 @@ if (LANG == 'en') {
                             </div>
                         </div>
                     </section>
-                <?php endif; ?>
+                <?php endif; */ ?>
             </div>
         </div>
     </main>

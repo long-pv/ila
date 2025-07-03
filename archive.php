@@ -65,33 +65,39 @@ if (LANG == 'en') {
 								<div class="col-lg-8">
 									<div class="row">
 										<?php
-										$post_index = 0;
 										while (have_posts()):
 											the_post();
-
-											if ($post_index === 0): ?>
-												<!-- Bài 1: Bài lớn -->
-												<div class="col-lg-8 col-sm-8">
-													<div class="post-item post-lg">
-														<div class="post-thumbnail">
-															<a href="<?php the_permalink(); ?>">
-																<?php the_post_thumbnail('full'); ?>
-															</a>
+										?>
+											<!-- Bài 1: Bài lớn -->
+											<div class="col-lg-8 col-sm-8">
+												<div class="post-item post-lg">
+													<div class="post-thumbnail">
+														<a href="<?php the_permalink(); ?>">
+															<?php the_post_thumbnail('full'); ?>
+														</a>
+													</div>
+													<div class="post-content">
+														<div class="post-content-title">
+															<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 														</div>
-														<div class="post-content">
-															<div class="post-content-title">
-																<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-															</div>
-															<div class="post-content-description">
-																<p><?php echo wp_trim_words(get_the_excerpt(), 30); ?></p>
-															</div>
+														<div class="post-content-description">
+															<p><?php echo wp_trim_words(get_the_excerpt(), 30); ?></p>
 														</div>
 													</div>
 												</div>
-												<div class="col-lg-4 col-sm-4">
-													<div class="row">
-													<?php
-												elseif ($post_index === 1 || $post_index === 2): ?>
+											</div>
+										<?php
+											break;
+										endwhile;
+										?>
+
+										<div class="col-lg-4 col-sm-4">
+											<div class="row">
+												<?php
+												$post_index = 0;
+												while (have_posts()):
+													the_post();
+													if ($post_index === 1 || $post_index === 2): ?>
 														<!-- Bài 2 và 3: Bài nhỏ -->
 														<div class="col-12">
 															<div class="post-item post-sm">
@@ -107,45 +113,47 @@ if (LANG == 'en') {
 																</div>
 															</div>
 														</div>
-														<?php if ($post_index === 2): ?>
-													</div> <!-- end .row -->
-												</div> <!-- end .col-lg-4 -->
-											<?php endif; ?>
-										<?php
-												elseif ($post_index > 2): ?>
-											<?php if ($post_index === 3): ?>
-												<div class="article-multiple">
-												<?php endif; ?>
-												<div class="row article-horizontal">
-													<div class="col-4">
-														<div class="post-thumbnail">
-															<a href="<?php the_permalink(); ?>">
-																<?php the_post_thumbnail('full'); ?>
-															</a>
-														</div>
-													</div>
-													<div class="col-8">
-														<div class="post-content">
-															<div class="post-content-title">
-																<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-															</div>
-															<div class="post-content-description">
-																<p><?php echo wp_trim_words(get_the_excerpt(), 20); ?></p>
-															</div>
-														</div>
-													</div>
-													<div class="col-12">
-														<span class="border-bottom"></span>
-													</div>
-												</div>
-											<?php endif; ?>
+												<?php
+													endif;
+													$post_index++;
+												endwhile;
+												?>
+											</div> <!-- end .row -->
+										</div> <!-- end .col-lg-4 -->
 
-										<?php
-											$post_index++;
-										endwhile;
-										if ($post_index > 2): ?>
-												</div> <!-- end .article-multiple -->
-											<?php endif; ?>
+										<div class="article-multiple">
+											<?php
+											$post_index = 0;
+											while (have_posts()):
+												the_post();
+												if ($post_index > 3): ?>
+													<div class="row article-horizontal">
+														<div class="col-4">
+															<div class="post-thumbnail">
+																<a href="<?php the_permalink(); ?>">
+																	<?php the_post_thumbnail('full'); ?>
+																</a>
+															</div>
+														</div>
+														<div class="col-8">
+															<div class="post-content">
+																<div class="post-content-title">
+																	<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+																</div>
+																<div class="post-content-description">
+																	<p><?php echo wp_trim_words(get_the_excerpt(), 20); ?></p>
+																</div>
+															</div>
+														</div>
+														<div class="col-12">
+															<span class="border-bottom"></span>
+														</div>
+													</div>
+											<?php
+												endif;
+												$post_index++;
+											endwhile;
+											?>
 
 											<!-- Pagination -->
 											<div class="panigation-archive" style="text-align: center; margin: 20px 0;">
@@ -161,6 +169,7 @@ if (LANG == 'en') {
 													?>
 												</div>
 											</div>
+										</div>
 									</div>
 								</div>
 

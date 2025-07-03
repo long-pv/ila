@@ -538,8 +538,8 @@
                 },
                 {
                     "key": "field_68237b24a604e",
-                    "label": "Instagram",
-                    "name": "instagram",
+                    "label": "Tiktok",
+                    "name": "tiktok",
                     "aria-label": "",
                     "type": "url",
                     "instructions": "",
@@ -574,6 +574,66 @@
             "rows": "",
             "placeholder": "",
             "new_lines": ""
+        },
+        {
+            "key": "field_68558985125f4",
+            "label": "Get Offer Now (copy)",
+            "name": "get_offer_now_copy",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_6855898b125f5",
+            "label": "Title Get Offer Now",
+            "name": "title_get_offer_now",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_6855899d125f6",
+            "label": "Title Get Offer Now (EN)",
+            "name": "title_get_offer_now_en",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_682caef69ab3d",
@@ -634,5 +694,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1748494484
+    "modified": 1751038144
 }

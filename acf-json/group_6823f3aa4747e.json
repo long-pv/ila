@@ -191,6 +191,24 @@
                     "toolbar": "basic",
                     "media_upload": 0,
                     "delay": 0
+                },
+                {
+                    "key": "field_6855880d3036c",
+                    "label": "Color text",
+                    "name": "color_text",
+                    "aria-label": "",
+                    "type": "color_picker",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "#000000",
+                    "enable_opacity": 0,
+                    "return_format": "string"
                 }
             ]
         },
@@ -507,5 +525,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1748494486
+    "modified": 1750435911
 }

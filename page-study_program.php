@@ -51,7 +51,8 @@ get_header();
 
                                 <?php if ($youtube_link): ?>
                                     <p>
-                                        <a class="open-popup" href="<?php echo $youtube_link; ?>">Xem video</a>
+                                        <a class="open-popup" href="<?php echo $youtube_link; ?>">
+                                            <?php _e("Xem video", "xemer_theme"); ?></a>
 
                                         <a class="open-popup" href="<?php echo $youtube_link; ?>" style="margin-left: 10px">
                                             <img width="65" height="64"
@@ -159,17 +160,15 @@ get_header();
                                     $content = isset($item['content']) ? wp_kses_post($item['content']) : '';
                                     ?>
 
-                                    <div class="col-md-6 col-xl-6">
-                                        <div class="box-item box-item-2" data-aos="fade-up" data-aos-delay="50"
-                                            data-aos-duration="800" style="background: #ddd365">
+                                    <div class="col-md-6 col-xl-6 mb-3 mb-md-0">
+                                        <div class="study_box_card" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800" style="background: #ddd365">
                                             <?php if ($image_url): ?>
-                                                <div class="box-thumb">
-                                                    <img width="615" height="760" src="<?php echo $image_url; ?>"
-                                                        alt="<?php echo $image_alt; ?>" />
-                                                </div>
+                                                <img class="study_box_card_thumb" width="615" height="760" src="<?php echo $image_url; ?>"
+                                                    alt="<?php echo $image_alt; ?>" />
                                             <?php endif; ?>
 
-                                            <div class="box-content">
+                                            <div class="study_box_card_content" data-mh="study_box_card_content">
+                                                <div class="overlay"></div>
                                                 <?php if ($title): ?>
                                                     <h2><?php echo $title; ?></h2>
                                                 <?php endif; ?>
@@ -268,7 +267,7 @@ get_header();
                                     <p>
                                         <button class="discover">
                                             <a href="<?php echo $link_box; ?>" target="_blank" rel="noopener">
-                                                Xem thêm
+                                                <?php _e("Xem thêm", "xemer_theme"); ?>
                                             </a>
                                         </button>
                                     </p>
@@ -341,7 +340,7 @@ get_header();
                                         <h2><?php echo $title ?></h2>
                                     <?php endif; ?>
                                     <button>
-                                        <a href="<?php echo $link; ?>">Xem tất cả <i
+                                        <a href="<?php echo $link; ?>"> <?php _e("Xem tất cả", "xemer_theme"); ?> <i
                                                 class="fa-regular fa-arrow-right"></i></a>
                                     </button>
                                 </div>
@@ -427,7 +426,7 @@ get_header();
                             <div class="col-xl-5">
                                 <div class="related-post">
                                     <div class="row">
-                                        <h3 class="related-title">Bài viết liên quan</h3>
+                                        <h3 class="related-title"> <?php _e("Bài viết liên quan", "xemer_theme"); ?> </h3>
                                         <?php foreach ($releated_posts as $post_item): ?>
                                             <?php
                                             $post_id = is_array($post_item) ? $post_item['ID'] : $post_item;
@@ -491,7 +490,8 @@ get_header();
 
                                 <button>
                                     <a href="<?php echo esc_url($link); ?>">
-                                        Xem tất cả <i class="fa-regular fa-arrow-right"></i>
+                                        <?php _e("Xem tất cả", "xemer_theme"); ?>
+                                        <i class="fa-regular fa-arrow-right"></i>
                                     </a>
                                 </button>
 

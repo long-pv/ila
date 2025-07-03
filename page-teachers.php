@@ -47,7 +47,8 @@ get_header();
 
                                 <?php if ($youtube_link): ?>
                                     <p>
-                                        <a class="open-popup" href="<?php echo $youtube_link; ?>">Xem video</a>
+                                        <a class="open-popup" href="<?php echo $youtube_link; ?>">
+                                            <?php _e("Xem video", "xemer_theme"); ?> </a>
 
                                         <a class="open-popup" href="<?php echo $youtube_link; ?>" style="margin-left: 10px">
                                             <img width="65" height="64"
@@ -72,6 +73,7 @@ get_header();
 
         $title_banner = !empty($section_2['title']) ? $section_2['title'] : '';
         $content_banner = !empty($section_2['content']) ? wp_kses_post($section_2['content']) : '';
+        $color_text = !empty($section_2['color_text']) ? $section_2['color_text'] : '#000';
         ?>
 
         <?php if ($background_image || $title_banner || $content_banner): ?>
@@ -85,11 +87,13 @@ get_header();
                     <div class="container">
                         <div class="banner-content-main" data-aos="fade-up" data-aos-delay="50" data-aos-duration="800">
                             <?php if ($title_banner): ?>
-                                <h2 class="banner__title"><?php echo $title_banner; ?></h2>
+                                <h2 class="banner__title" style="color: <?php echo $color_text; ?>;"><?php echo $title_banner; ?></h2>
                             <?php endif; ?>
 
                             <?php if ($content_banner): ?>
-                                <?php echo $content_banner; ?>
+                                <div style="color: <?php echo $color_text; ?>;">
+                                    <?php echo $content_banner; ?>
+                                </div>
                             <?php endif; ?>
                         </div>
                     </div>
@@ -123,7 +127,7 @@ get_header();
                                             style="background-image: url('<?php echo $bg_image; ?>'); background-size: cover; background-position: center;"
                                             <?php else: ?> style="background-color: #cabbb0;" <?php endif; ?>>
                                             <?php if ($bg_image): ?>
-                                                <div class="box-thumb d-none">
+                                                <div class="box-thumb">
                                                     <img src="<?php echo $bg_image; ?>" alt="<?php echo $bg_alt; ?>" />
                                                 </div>
                                             <?php endif; ?>
@@ -202,7 +206,7 @@ get_header();
                                                 <h3><img class="alignright wp-image-17625" src="<?php echo esc_url($image); ?>"
                                                         alt="<?php echo esc_attr($image_alt); ?>" width="400"
                                                         height="503"><strong><span
-                                                            style="color: #2b378b;"><?php the_title(); ?></span></strong></h3>
+                                                            style="color: #0075A9;"><?php the_title(); ?></span></strong></h3>
                                                 <!--  -->
                                                 <?php the_content(); ?>
                                             </div>
@@ -267,7 +271,7 @@ get_header();
                                                             src="<?php echo esc_url($image); ?>"
                                                             alt="<?php echo esc_attr($image_alt); ?>" width="400"
                                                             height="503"><strong><span
-                                                                style="color: #2b378b;"><?php the_title(); ?></span></strong>
+                                                                style="color: #0075A9;"><?php the_title(); ?></span></strong>
                                                     </h3>
                                                     <!--  -->
                                                     <?php the_content(); ?>

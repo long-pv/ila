@@ -1,0 +1,217 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Xemer Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-29 16:31+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.7.2; wp-6.8.1\n"
+"X-Domain: xemer_theme"
+
+#: page-study_solutions.php:152 page-study_solutions.php:203
+msgid " Xem thêm"
+msgstr ""
+
+#: page-recruitment_study_abroad.php:196
+msgid " Xem tất cả"
+msgstr ""
+
+#: page-home.php:190
+msgid "11-16 tuổi"
+msgstr ""
+
+#: page-home.php:188
+msgid "3-6 tuổi"
+msgstr ""
+
+#: page-home.php:189
+msgid "6-11 tuổi"
+msgstr ""
+
+#: functions.php:139
+msgid "Add widgets here."
+msgstr ""
+
+#: page-recruitment_study_abroad.php:265 page-study_program.php:431
+#: single.php:152
+msgid "Bài viết liên quan"
+msgstr ""
+
+#: page-news.php:171
+msgid "Bài viết phổ biến"
+msgstr ""
+
+#. Name of the template
+#: page-study_solutions_details.php:3
+msgid "Chi tiết giải pháp du học"
+msgstr ""
+
+#: single.php:66
+msgid "Chia sẻ bài viết"
+msgstr ""
+
+#. Name of the template
+#: page-study_program.php:3
+msgid "Chương Trình Học"
+msgstr ""
+
+#: page-home.php:255
+msgid "Chương trình học"
+msgstr ""
+
+#. Name of the template
+#: page-facilities.php:3
+msgid "Cơ Sở Vật Chất"
+msgstr ""
+
+#. Name of the template
+#: page-study_solutions.php:3
+msgid "Giải pháp du học"
+msgstr ""
+
+#. Name of the template
+#: page-about_us.php:3
+msgid "Giới Thiệu"
+msgstr ""
+
+#. Name of the template
+#: page-outstanding_students.php:3
+msgid "Gương mặt xuất sắc"
+msgstr ""
+
+#. URI of the theme
+msgid "http://underscores.me/"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://tramkienthuc.net/"
+msgstr ""
+
+#: page-home.php:312
+msgid "Khám phá"
+msgstr ""
+
+#: page-home.php:625
+msgid "Không gian học tập <br> chuẩn quốc tế tại ILA"
+msgstr ""
+
+#. Author of the theme
+msgid "longxemer"
+msgstr ""
+
+#: page-multimedia.php:191
+msgid "MULTIMEDIA"
+msgstr ""
+
+#: page-multimedia.php:130
+msgid "Multimedia"
+msgstr ""
+
+#. Name of the template
+#: page-multimedia.php:3
+msgid "Multimedia (video)"
+msgstr ""
+
+#: page-home.php:191
+msgid "Người đi làm"
+msgstr ""
+
+#: functions.php:62
+msgid "Primary"
+msgstr ""
+
+#: functions.php:137
+msgid "Sidebar"
+msgstr ""
+
+#. Description of the theme
+msgid "Thiết kế website WordPress chuyên nghiệp, chuẩn SEO, tối ưu UX/UI."
+msgstr ""
+
+#. Name of the template
+#: page-news.php:3
+msgid "Tin Tức"
+msgstr ""
+
+#. Name of the template
+#: page-news-bk.php:3
+msgid "Tin Tức Bk"
+msgstr ""
+
+#. Name of the template
+#: page-seminar_event.php:3
+msgid "Tin tức hội thảo - sự kiện"
+msgstr ""
+
+#: page-study_solutions_details.php:280
+msgid "TIPS DU HỌC"
+msgstr ""
+
+#: page-study_solutions_details.php:319 page-study_solutions_details.php:348
+msgid "Tips du học"
+msgstr ""
+
+#. Name of the template
+#: page-home.php:3 single-video_media.php:59
+msgid "Trang chủ"
+msgstr ""
+
+#. Name of the template
+#: page-training_center.php:3
+msgid "Trung tâm đào tạo"
+msgstr ""
+
+#: page-training_center.php:53
+msgid "TÌM TRUNG TÂM"
+msgstr ""
+
+#. Name of the template
+#: page-recruitment_study_abroad.php:3
+msgid "Tư vấn du học"
+msgstr ""
+
+#: page-recruitment_study_abroad.php:62 page-home.php:264
+#: page-study_program.php:272
+msgid "Xem thêm"
+msgstr ""
+
+#: page-home.php:371 page-home.php:579 page-study_program.php:345
+#: page-study_program.php:495 page-news.php:284 page-news.php:441
+msgid "Xem tất cả"
+msgstr ""
+
+#: page-home.php:122
+msgid "XEM VIDEO"
+msgstr ""
+
+#: page-facilities.php:50 page-teachers.php:51 page-study_program.php:55
+#: page-news.php:251
+msgid "Xem video"
+msgstr ""
+
+#. Name of the theme
+msgid "Xemer Theme"
+msgstr ""
+
+#: page-seminar_event.php:127 page-seminar_event.php:155
+#: page-seminar_event.php:215 page-study_solutions_details.php:212
+#: page-study_solutions_details.php:283
+msgid "Đăng ký ngay"
+msgstr ""
+
+#: page-home.php:187
+msgid "Độ tuổi"
+msgstr ""
+
+#. Name of the template
+#: page-teachers.php:3
+msgid "Đội Ngũ Giáo Viên"
+msgstr ""

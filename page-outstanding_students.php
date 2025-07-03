@@ -211,7 +211,7 @@ if (LANG == 'en') {
 
                                         <div class="hall-content">
                                             <h3>
-                                                <a href="<?php echo esc_url($permalink); ?>">
+                                                <a href="javascript:void(0);">
                                                     <?php echo esc_html($title); ?>
                                                 </a>
                                             </h3>
