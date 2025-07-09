@@ -164,29 +164,29 @@ if (LANG == 'en') {
                 $study_abroad = get_field('study_abroad_experience');
                 if ($study_abroad):
                     $list = $study_abroad['list'];
+                    if ($list):
                 ?>
-                    <div class="list-course-two-column">
-                        <style type="text/css">
-                            .list-course-two-column::before {
-                                background: #f0f4ff;
-                            }
-                        </style>
-                        <img width="92" height="122" class="img-pattern"
-                            src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-5.png"
-                            alt="images pattern">
-                        <img width="192" height="207" class="img-pattern no-mobile"
-                            src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-6.png"
-                            alt="images pattern">
-                        <div class="container">
-                            <div class="title-main-course">
-                                <h2><?php echo esc_html($study_abroad['title']); ?></h2>
-                            </div>
-                            <div class="list-course">
-                                <div class="row">
-                                    <?php
-                                    if ($list):
+                        <div class="list-course-two-column">
+                            <style type="text/css">
+                                .list-course-two-column::before {
+                                    background: #f0f4ff;
+                                }
+                            </style>
+                            <img width="92" height="122" class="img-pattern"
+                                src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-5.png"
+                                alt="images pattern">
+                            <img width="192" height="207" class="img-pattern no-mobile"
+                                src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-6.png"
+                                alt="images pattern">
+                            <div class="container">
+                                <div class="title-main-course">
+                                    <h2><?php echo esc_html($study_abroad['title']); ?></h2>
+                                </div>
+                                <div class="list-course">
+                                    <div class="row">
+                                        <?php
                                         foreach ($list as $item):
-                                    ?>
+                                        ?>
                                             <div class="col-lg-6 col-md-6 col-12 mb-3">
                                                 <div class="course-item">
                                                     <div class="course-thumb">
@@ -207,14 +207,16 @@ if (LANG == 'en') {
                                                     </div>
                                                 </div>
                                             </div>
-                                    <?php endforeach;
-                                    endif; ?>
+                                        <?php endforeach;
+                                        ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                <?php endif; ?>
-
+                <?php
+                    endif;
+                endif;
+                ?>
             </div>
         </section>
     </div><!-- #content -->
