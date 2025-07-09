@@ -29,26 +29,30 @@ if ($register_form && is_array($register_form)) {
 <?php if ($should_show_form) :
     $title = $register_form['title'] ?? __('ĐĂNG KÝ LỚP HỌC THỬ MIỄN PHÍ NGAY BÂY GIỜ!', 'xemer_theme');;
     $form_content = $register_form['contact_form_7'] ?? '';
-    $background = $register_form['background'] ?? 'https://ila.edu.vn/wp-content/uploads/2023/02/bg-course-section-6.png';
+    $background = $register_form['background'] ?? '';
+    if ($background && $form_content):
 ?>
-    <section class="section-footer" id="form-submit-register" style="background-image: url(<?php echo $background; ?>);">
-        <img width="390" height="630" class="img-background-mb" src="https://ila.edu.vn/wp-content/uploads/2023/02/bg-course-section-6-mb.png" alt="">
-        <div class="form-content">
-            <div class="container">
-                <div class="form-register-custom">
-                    <div class="form-register">
-                        <h3 class="form-title"><?php echo $title; ?></h3>
-                        <?php
-                        if (!empty($form_content)) {
-                            echo $form_content;
-                        }
-                        ?>
+        <section class="section-footer" id="form-submit-register" style="background-image: url(<?php echo $background; ?>);">
+            <img width="390" height="630" class="img-background-mb" src="<?php echo $background; ?>" alt="">
+            <div class="form-content">
+                <div class="container">
+                    <div class="form-register-custom">
+                        <div class="form-register">
+                            <h3 class="form-title"><?php echo $title; ?></h3>
+                            <?php
+                            if (!empty($form_content)) {
+                                echo $form_content;
+                            }
+                            ?>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-<?php endif; ?>
+        </section>
+<?php
+    endif;
+endif;
+?>
 
 
 <style>
@@ -202,7 +206,7 @@ if ($google_maps):
                             ?>
                         </ul>
                         <div class="logo-bct">
-                            <a href="https://www.dmca.com/Protection/Status.aspx?id=beeeb595-c70b-46b3-a077-a11cd6fce531&refurl=https%3a%2f%2fila.edu.vn%2f&rlo=true"
+                            <a href="https://www.dmca.com/Protection/Status.aspx?id=beeeb595-c70b-46b3-a077-a11cd6fce531&refurl=https%3a%2f%2film.edu.vn%2f&rlo=true"
                                 title="DMCA.com Protection Status" class="dmca-badge" style="margin-bottom: 15px;"
                                 target="_blank"> <img
                                     src="<?php echo THEME_URI . '/assets/'; ?>images/dmca-badge-w100-5x1-04.png"
@@ -331,7 +335,7 @@ if ($google_maps):
         </div>
         <div class="footer-bottom">
             <div class="logo-bct">
-                <a href="https://www.dmca.com/Protection/Status.aspx?id=beeeb595-c70b-46b3-a077-a11cd6fce531&refurl=https%3a%2f%2fila.edu.vn%2f&rlo=true"
+                <a href="https://www.dmca.com/Protection/Status.aspx?id=beeeb595-c70b-46b3-a077-a11cd6fce531&refurl=https%3a%2f%2film.edu.vn%2f&rlo=true"
                     title="DMCA.com Protection Status" class="dmca-badge" style="margin-bottom: 15px;" target="_blank">
                     <img src="<?php echo THEME_URI . '/assets/'; ?>images/dmca-badge-w100-5x1-04.png"
                         alt="DMCA.com Protection Status"></a>

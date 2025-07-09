@@ -179,29 +179,6 @@ if (LANG == 'en') {
                     </div>
                 </section>
                 <!--  -->
-                <?php
-                /*
-                $register_form = get_field('register_for_trial_class' . $lang, 'option');
-                if ($register_form && is_array($register_form)) :
-                    $title = $register_form['title'] ?? 'ĐĂNG KÝ LỚP HỌC THỬ MIỄN PHÍ NGAY BÂY GIỜ!';
-                    $form_content = $register_form['contact_form_7'] ?? '';
-                    $background = $register_form['background'] ?? 'https://ila.edu.vn/wp-content/uploads/2023/02/bg-course-section-6.png';
-                ?>
-                    <section class="section-footer" id="form-submit-register" style="background-image: url(<?php echo $background; ?>);">
-                        <div class="form-content">
-                            <div class="container">
-                                <div class="form-register">
-                                    <h3 class="form-title"><?php echo $title; ?></h3>
-                                    <?php
-                                    if (!empty($form_content)) {
-                                        echo $form_content;
-                                    }
-                                    ?>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                <?php endif; */ ?>
             </div>
         </div>
     </main>

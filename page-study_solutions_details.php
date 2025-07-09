@@ -53,11 +53,11 @@ if (LANG == 'en') {
                             <div class="content-main-product">
                                 <div class="content-product">
                                     <?php if ($title): ?>
-                                        <h1><?php echo esc_html($title); ?></h1>
+                                        <h1><?php echo $title; ?></h1>
                                     <?php endif; ?>
 
                                     <?php if ($description): ?>
-                                        <p><?php echo esc_html($description); ?></p>
+                                        <p><?php echo $description; ?></p>
                                     <?php endif; ?>
 
                                     <div class="intro-airc">
@@ -80,7 +80,7 @@ if (LANG == 'en') {
                             <!-- Họa tiết cố định -->
                             <div class="img-pattern">
                                 <img width="1794" height="603"
-                                    src="https://iladuhoc.edu.vn/wp-content/uploads/2024/04/background-pattern-product-list-new.png"
+                                    src="<?php echo THEME_URI . '/assets_2/images/background-pattern-product-list-new.png'; ?>"
                                     alt="background pattern product list" loading="lazy">
                             </div>
                         </div>
@@ -95,7 +95,7 @@ if (LANG == 'en') {
             <div class="container">
                 <div class="content-main-value">
                     <img width="64" height="65" class="pattern pattern-1"
-                        src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-16.png"
+                        src="<?php echo THEME_URI . '/assets_2/images/background-pattern-16.png'; ?>"
                         alt="background pattern 16">
                     <h2>
                         <span style="color: #0075A9;">
@@ -107,15 +107,15 @@ if (LANG == 'en') {
             </div>
             <div class="list-core-value">
                 <img width="1909" height="452" class="pattern pattern-2"
-                    src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-11.png"
+                    src="<?php echo THEME_URI . '/assets_2/images/background-pattern-11.png'; ?>"
                     alt="background pattern 11">
                 <img width="214" height="194" class="pattern pattern-3"
-                    src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-12.png"
+                    src="<?php echo THEME_URI . '/assets_2/images/background-pattern-12.png'; ?>"
                     alt="background pattern 12">
                 <div class="container">
                     <div class="list-core-first" style="background-color: #ffee65">
                         <img width="1101" height="508" class="pattern pattern-4"
-                            src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-10.png"
+                            src="<?php echo THEME_URI . '/assets_2/images/background-pattern-10.png'; ?>"
                             alt="background pattern 10">
                         <div class="core-main">
                             <?php if (have_rows('core_value_list_value')): ?>
@@ -151,10 +151,10 @@ if (LANG == 'en') {
                     </div>
                     <div class="list-core-last">
                         <img width="214" height="194" class="pattern pattern-5"
-                            src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-13.png"
+                            src="<?php echo THEME_URI . '/assets_2/images/background-pattern-13.png'; ?>"
                             alt="background pattern 13">
                         <img width="86" height="88" class="pattern pattern-6"
-                            src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-15.png"
+                            src="<?php echo THEME_URI . '/assets_2/images/background-pattern-15.png'; ?>"
                             alt="background pattern 15">
                         <div class="content-thumb">
                             <?php $image2 = get_field('core_value_image_2'); ?>
@@ -169,7 +169,7 @@ if (LANG == 'en') {
                                     the_row(); ?>
                                     <p>
                                         <img decoding="async" class="size-full wp-image-842 alignleft"
-                                            src="https://iladuhoc.edu.vn/wp-content/uploads/2024/05/icon-check.png" alt=""
+                                            src="<?php echo THEME_URI . '/assets_2/images/icon-check.png'; ?>" alt=""
                                             width="30" height="30" />
                                         <?php the_sub_field('title'); ?>
                                     </p>
@@ -179,7 +179,7 @@ if (LANG == 'en') {
                     </div>
                 </div>
                 <img width="235" height="204" class="pattern pattern-7"
-                    src="https://iladuhoc.edu.vn/wp-content/themes/fptheme/assets/images/background-pattern-14.png"
+                    src="<?php echo THEME_URI . '/assets_2/images/background-pattern-14.png'; ?>"
                     alt="background pattern 14">
             </div>
         </section>
@@ -188,7 +188,7 @@ if (LANG == 'en') {
         <?php
         $cta = get_field('cta');
         if ($cta):
-            ?>
+        ?>
             <section class="section-cta-product" id="section-3">
                 <div class="cta-product-image">
                     <?php if (!empty($cta['background'])): ?>
@@ -203,16 +203,15 @@ if (LANG == 'en') {
                 <div class="cta-content-product">
                     <?php if (!empty($cta['title'])): ?>
                         <div class="cta-desc">
-                            <?php echo esc_html($cta['title']); ?>
+                            <?php echo $cta['title']; ?>
                         </div>
                     <?php endif; ?>
-                    <?php if (!empty($cta['link'])): ?>
-                        <div class="cta-button">
-                            <button class="btn-register">
-                                <a href="<?php echo esc_url($cta['link']); ?>"><?php _e("Đăng ký ngay", "xemer_theme"); ?></a>
-                            </button>
-                        </div>
-                    <?php endif; ?>
+
+                    <div class="cta-button">
+                        <button class="btn-register">
+                            <a href="<?php echo $cta['link'] ?: '#colophon'; ?>"><?php _e("Đăng ký ngay", "xemer_theme"); ?></a>
+                        </button>
+                    </div>
                 </div>
             </section>
         <?php endif; ?>
@@ -224,7 +223,7 @@ if (LANG == 'en') {
             $faq_title = $faqs['title'];
             $faq_image = $faqs['image'];
             $faq_list = $faqs['list'];
-            ?>
+        ?>
             <section class="section-faq-product" id="section-4">
                 <div class="container">
                     <div class="row">
@@ -258,10 +257,10 @@ if (LANG == 'en') {
                                         <div class="faq-item <?php echo $is_active; ?>">
                                             <div class="faq-question">
                                                 <i class="fa-solid <?php echo $icon_class; ?>"></i>
-                                                <h3><?php echo esc_html($item_title); ?></h3>
+                                                <h3><?php echo $item_title; ?></h3>
                                             </div>
                                             <div class="faq-answer" <?php echo $style; ?>>
-                                                <?php echo nl2br(esc_html($item_content)); ?>
+                                                <?php echo $item_content; ?>
                                             </div>
                                         </div>
                                     <?php endforeach; ?>
@@ -352,11 +351,11 @@ if (LANG == 'en') {
                                             </div>
                                         <?php endif; ?>
                                     <?php endwhile; ?>
-                                </div> <!-- .row -->
-                            </div> <!-- .col-xl-12 -->
-                        </div> <!-- .col-xl-6 -->
-                        <?php wp_reset_postdata(); ?>
-                    <?php endif; ?>
+                                        </div> <!-- .row -->
+                                    </div> <!-- .col-xl-12 -->
+                                </div> <!-- .col-xl-6 -->
+                                <?php wp_reset_postdata(); ?>
+                            <?php endif; ?>
                 </div>
             </div>
         </section>
@@ -372,7 +371,7 @@ if ($sign_up_for_consultation):
     $bg = $sign_up_for_consultation['background'] ?? '';
     $title = $sign_up_for_consultation['title'] ?? '';
     $contact_form_7 = $sign_up_for_consultation['contact_form_7'] ?? '';
-    ?>
+?>
     <footer id="colophon" class="site-footer" style="padding: 0px;">
         <div class="footer-contact-form rocket-lazyload entered lazyloaded"
             style="background-image: url('<?php echo $bg; ?>'); margin-bottom: 0px;">
